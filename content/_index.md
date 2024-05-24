@@ -8,6 +8,6 @@ header = { title = "Secret Weblog", img = "img/me-grok.webp", img_alt = "Martijn
 
 +++
 
-Welcome to Martijn Faassen's secret weblog, established 8 January 2005.
+This is Martijn Faassen's secret weblog, established 8 January 2005.
 
 Content is mostly programming related.
