@@ -20,11 +20,11 @@ before, and most of all, there were more women. It was underscored by a
 13 year old girl giving a lightning talk -- that was just not going to
 happen at EuroPython 5 years ago.
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/MqMlfNgBmKU?rel=0&start=720" frameborder="0" allowfullscreen></iframe>
+{{ youtube(id="MqMlfNgBmKU", start=720) }}
 
 This is a very positive trend and I hope it continues. I know it takes a
 lot of work on the part of the organizers to get this far.
 
 I gave a talk at EuroPython myself this year, and I think it went well:
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/gyDKMAWPyuY?rel=0" frameborder="0" allowfullscreen></iframe>
+{{ youtube(id="gyDKMAWPyuY")}}

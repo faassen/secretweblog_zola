@@ -26,7 +26,7 @@ reports:
 
 At his keynote at PyCon, he said it again:
 
-![image](/guido_no.jpg)
+![image](/img/guido_no.jpg)
 
 A very good thing happened to recognize the reality that Python 2.7 is
 still massively popular: the end of life date for Python 2.7 was

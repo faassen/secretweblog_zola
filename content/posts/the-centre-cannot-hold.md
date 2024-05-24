@@ -104,6 +104,6 @@ And there is life after Zope. Next I will talk a bit about what came
 after.
 
 This blog entry is a part of a [series on
-Zope](/posts/my-exit-from-zope.html) and my
+Zope](/posts/my-exit-from-zope) and my
 involvement with it.
-[Previous](/posts/back-to-the-center.html).
+[Previous](/posts/back-to-the-center).

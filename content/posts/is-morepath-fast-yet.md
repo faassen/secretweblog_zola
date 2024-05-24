@@ -134,8 +134,7 @@ interpreted language.
 So how has Morepath's performance evolved over time? Here's a nice
 graph:
 
-<img src="/morepath_performance.png" width="1000" height="600"
-alt="Morepath performance over time" />
+![Morepath performance over time](/img/morepath_performance.png)
 
 So what does this chart tell us? Before its 0.1 release when it still
 used werkzeug, Morepath was actually about as slow as Flask. After we

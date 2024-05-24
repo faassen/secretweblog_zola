@@ -117,7 +117,7 @@ First we define a class `Customer` that defines the customer. In a
 real-world application this is backed by some database, perhaps using an
 ORM like SQLAlchemy, but we'll keep it simple here:
 
-``` python
+```python
 class Customer(object):
     def __init__(self, name):
         self.id = None  # we will set it after creation
@@ -132,7 +132,7 @@ Then there's a `CustomerCollection` that represents a collection of
 database, and implemented in terms of database operations to query and
 add customers, but here we show a simple in-memory implementation:
 
-``` python
+```python
 class CustomerCollection(object):
      def __init__(self):
          self.customers = {}
@@ -153,7 +153,7 @@ customer_collection = CustomerCollection()
 
 We register this collection at the path `/customers`:
 
-``` python
+```python
 @App.path(model=CustomerCollection, path='/customers')
 def get_customer_collection():
     return customer_collection
@@ -161,8 +161,8 @@ def get_customer_collection():
 
 We register `Customer` at the path `/customers/{id}`:
 
-``` python
-@App.path(model=Customer, path='/customers/{id}' 
+```python
+@App.path(model=Customer, path='/customers/{id}'
           converters={'id': int})
 def get_customer(id):
     return customer_collection.get(id)
@@ -175,7 +175,7 @@ automatically, as internally we use integer ids.
 We now register a `dump_json` that can transform the `Customer` object
 into `JSON`:
 
-``` python
+```python
 @App.dump_json(model=Customer)
 def dump(self, request):
    return {
@@ -188,7 +188,7 @@ def dump(self, request):
 Now we are ready to implement a `GET` (the default) view for `Customer`,
 so that `/customer/{id}` works:
 
-``` python
+```python
 @App.json(model=Customer)
 def customer_default(self, request):
     return self
@@ -202,7 +202,7 @@ Now let's work on the `POST` of new customers on `/customers`.
 We register a `load_json` directive that can transform JSON into a
 `Customer` instance:
 
-``` python
+```python
 @App.load_json()
 def load(json, request):
     if json['@type'] == 'Customer':
@@ -213,7 +213,7 @@ def load(json, request):
 We now can register a view that handles the `POST` of a new `Customer`
 to the `CustomerCollection`:
 
-``` python
+```python
 @App.json(model=CustomerCollection,
           request_method='POST',
           body_model=Customer)
@@ -229,7 +229,7 @@ transformed to JSON.
 For good measure let's also define a way to transform the
 `CustomerCollection` into JSON:
 
-``` python
+```python
 @App.dump_json(model=CustomerCollection)
 def dump_customer_collection(self, request):
     return {
@@ -247,7 +247,7 @@ instances and the `CustomerCollection` itself.
 
 We now need to add a `GET` view for `CustomerCollection`:
 
-``` python
+```python
 @App.json(model=CustomerCollection)
 def customer_collection_default(self, request):
     return self
@@ -275,48 +275,42 @@ Morepath does the following:
 `/customers` and `/customers/1`  
 `200 Ok` (if customer `1` exists)
 
-*Well, of course!*
+_Well, of course!_
 
 `/flub`  
 `404 Not Found`
 
-*Yeah, but other web frameworks do this too.*
+_Yeah, but other web frameworks do this too._
 
 `/customers/1000`  
-`404 Not Found` (if customer `1000` *doesn't* exist)
+`404 Not Found` (if customer `1000` _doesn't_ exist)
 
-*Morepath automates this for you if you return None from the
-\`\`@App.path\`\` directive.*
+_Morepath automates this for you if you return None from the
+\`\`@App.path\`\` directive._
 
 `/customers/not_an_integer`  
 `400 Bad Request`
 
-*Oh, okay. That's nice!*
+_Oh, okay. That's nice!_
 
 `PUT` on `/customers/1`  
 `405 Method Not Allowed`
 
-*You know about this status code, but does your web framework?*
+_You know about this status code, but does your web framework?_
 
 `POST` on `/customers` of JSON that does not have `@type` `Customer`  
 `422 Unprocessable Entity`
 
-<div class="youtube">
-
-kf0yQbrY9Pw
-
-</div>
-
-*Yes, 422 Unprocessable Entity is a real HTTP status code, and it's used
+_Yes, 422 Unprocessable Entity is a real HTTP status code, and it's used
 in REST APIs -- the Github API uses it for instance. Other REST API use
-400 Bad Request for this case. You can make Morepath do this as well.*
+400 Bad Request for this case. You can make Morepath do this as well._
 
 ## Under the hood
 
 Here's the part of the Morepath codebase that implements much of this
 behavior:
 
-``` python
+```python
 @App.predicate(generic.view, name='model', default=None, index=ClassIndex)
 def model_predicate(obj):
     return obj.__class__
@@ -364,7 +358,7 @@ Don't like `422 Unprocessable Entity` when `body_model` doesn't match?
 Want `400 Bad Request` instead? Just override the `predicate_fallback`
 for this in your own application:
 
-``` python
+```python
 class MyApp(morepath.App):
     pass
 

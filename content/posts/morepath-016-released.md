@@ -105,13 +105,11 @@ benchmark) for the development version. **I am happy to announce that
 we've managed to increase performance even more in our 0.16 release.
 It's now more than 28000 requests per second!**
 
-<img src="/morepath_016_performance.png" width="1000" height="600"
-alt="Morepath performance over time" />
+![Morepath performance over time](/img/morepath_016_performance.png)
 
 Let's compare Morepath with some other carefully selected frameworks:
 
-<img src="/morepath_performance_compared.png" width="1000" height="600"
-alt="Morepath performance compared" />
+![Morepath performance compared](/img/morepath_performance_compared.png)
 
 **Cool, Morepath 0.16 is actually faster than Pyramid at this point in
 time!** I don't expect it to last long given that the Pyramid devs

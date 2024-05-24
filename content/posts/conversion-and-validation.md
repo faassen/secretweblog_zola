@@ -7,7 +7,7 @@ slug = "conversion-and-validation"
 tags = ["planetpython", "python", "morepath", "web", "development", "boundaries"]
 +++
 
-In software development we deal with *boundaries* between systems.
+In software development we deal with _boundaries_ between systems.
 
 Examples of boundaries are:
 
@@ -35,12 +35,12 @@ places where things can go wrong. All that is more work, more error
 prone, and less fun.
 
 Boundaries are our friends. So much so that programming languages give
-us tools like functions and classes to create *new* boundaries in
+us tools like functions and classes to create _new_ boundaries in
 software. With a solid, clear boundary in place in the middle of our
 software, both halves can be easier to understand and easier to manage.
 
 One of the most interesting things that happen on the boundaries in
-software is *conversion* and *validation* of values. I find it very
+software is _conversion_ and _validation_ of values. I find it very
 useful to have a clear understanding of these concepts during software
 development. To understand each other better it's useful to share this
 understanding out loud. So here is how I define these concepts and how I
@@ -77,7 +77,7 @@ this discussion we will ignore it, as it doesn't change all that much in
 this example.
 
 So when the user submits a form with the birth date field, the inputs in
-the form are *serialized* to a longer string that is then sent to the
+the form are _serialized_ to a longer string that is then sent to the
 server as the body of a POST request. This serialization happens
 according to what's specified in the form tag's `enctype` attribute.
 When the enctype is `multipart/form-data`, the request to the server
@@ -102,7 +102,7 @@ So now this request arrives at the web server. Let's imagine our web
 server is in Python, and that there's a web framework like Django or
 Flask or Pyramid or [Morepath](http://morepath.readthedocs.org) in
 place. This web framework takes the serialized HTTP request, that is,
-the string, and then *converts* it into a `request` object.
+the string, and then _converts_ it into a `request` object.
 
 This request object is much more convenient to work with in Python than
 the HTTP request string. Instead of having one blob of a string, you can
@@ -137,7 +137,7 @@ request object was implemented by the [Webob](http://webob.org/) library
 ## Converting the string to a date
 
 But the birthdate at this point is still a string `21-10-1985`. We now
-want to *convert* it into something more convenient to Python. Python
+want to _convert_ it into something more convenient to Python. Python
 has a `datetime` library with a `date` type, so we'd like to get one of
 those.
 
@@ -163,11 +163,11 @@ framework can help you with this.
 
 It's important to note that we should isolate this conversion to one
 place in our application: the boundary where the value comes in. We
-don't want to pass the birth date *string* around in our code and only
+don't want to pass the birth date _string_ around in our code and only
 convert it into a date when we need to do something with it that
 requires a `date` object. Doing conversion "just in time" like that has
 a lot of problems: code duplication is one of them, but even worse is
-that we would need worry about conversion errors *everywhere* instead of
+that we would need worry about conversion errors _everywhere_ instead of
 in one place.
 
 ## Validating the date
@@ -178,7 +178,7 @@ probably don't expect time travellers to fill in the form, so we can
 safely reject any birth dates set in the future as invalid.
 
 We've already converted the birth date from a string into a convenient
-Python `date` object, so *validating* that the date is not in the future
+Python `date` object, so _validating_ that the date is not in the future
 is now easy:
 
     >>> from datetime import date
@@ -186,7 +186,7 @@ is now easy:
     True
 
 Validation needs the value to be in a convenient form, so validation
-happens *after* conversion. Validation does *not* transform the value;
+happens _after_ conversion. Validation does _not_ transform the value;
 it only checks whether the value is valid according to additional
 criteria.
 
@@ -220,10 +220,10 @@ internal format afterward. That would be best.
 
 But imagine our database is dumb and expects our dates to be in a string
 format. Now the task is up to our application: we need transform the
-date to a string *before* the database boundary.
+date to a string _before_ the database boundary.
 
 Let's say the database layer expects date strings in the format
-'YYYY-MM-DD'. We then have to *serialize* our Python date object to that
+'YYYY-MM-DD'. We then have to _serialize_ our Python date object to that
 format before we pass it into the database:
 
     >>> birthdate.strftime('%Y-%m-%d')
@@ -236,21 +236,25 @@ always succeeds.
 
 So we have:
 
-Transformation:  
+### Transformation:
+
 Transform data from one type to another. Transformation by itself cannot
 fail, as it is assumed to always get correct input. It is a bug in the
 software if it does not. Conversion and serialization both do
 transformation.
 
-Conversion:  
+### Conversion:
+
 Transform input across a boundary into a more convenient form inside
 that boundary. Fails if the input cannot be transformed.
 
-Serialization  
+### Serialization
+
 Transform valid data as output across a boundary into a form convenient
 to outside. Cannot fail if there are no bugs in the software.
 
-Validation:  
+### Validation:
+
 Check whether input across a boundary that is already converted to
 convenient form is valid inside that boundary. Can fail. Does not
 transform.
@@ -277,13 +281,13 @@ application to do their work.
 
 # Serialization and parsing
 
-Serialization is transformation of data to a *particular* type, such as
+Serialization is transformation of data to a _particular_ type, such as
 a string or a memory buffer. These types are convenient for
 communicating across the boundary: storing on the file system, storing
 data in a database, or passing data through the network.
 
 The opposite of serialization is deserialization and this is done by
-*parsing*: this takes data in its serialized form and transforms it into
+_parsing_: this takes data in its serialized form and transforms it into
 a more convenient form. Parsing can fail if its input is not correct.
 Parsing is therefore conversion, but not all conversion is parsing.
 
@@ -311,14 +315,14 @@ they say:
 
 # Input validation
 
-We can pick apart conversion and find *input validation* inside.
+We can pick apart conversion and find _input validation_ inside.
 Conversion does input validation before transformation, and
 serialization (and plain transformation) does not.
 
 Input validation is very different from application-level validation.
-Input validation is conceptually done just *before* the convenient form
+Input validation is conceptually done just _before_ the convenient form
 is created, and is an inherent part of the conversion. In practice, a
-converter typically *parses* data, doing both in a single step.
+converter typically _parses_ data, doing both in a single step.
 
 I prefer to reserve the term "validation" for application-level
 validation and discuss input validation only when we talk about
@@ -328,7 +332,7 @@ But sometimes conversion from one perspective is validation from
 another.
 
 Take the example above where we want to store a Python date in a
-database. What if this operation does not work for *all* Python date
+database. What if this operation does not work for _all_ Python date
 objects? The database layer could accept dates in a different range than
 the one supported by the Python `date` object. The database may
 therefore may therefore be offered a date that is outside of its range
@@ -346,7 +350,7 @@ later.
 Consider a web application with an application-level validation layer,
 and another layer of validation in the database.
 
-Maybe the database *also* has a rule to make sure that the birth date is
+Maybe the database _also_ has a rule to make sure that the birth date is
 not in the future. It gives an error when we give a date in the future.
 Since validation errors can now occur at the database layer, we need to
 worry about properly handling them.
