@@ -14,7 +14,7 @@ now and has been since early 2007. It's something I use during
 development every day.
 
 Let's review some of the highlights of whave happened since [last year's
-birthday](http://faassen.n--tree.net/blog/view/weblog/2007/10/15/0).
+birthday](@/posts/happy-birthday-grok.md).
 
 - Grok has a Plone-based website. This site hopefully looks welcoming to
   new users and thanks to the CMS backing it, it allows people to

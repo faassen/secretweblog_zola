@@ -8,7 +8,7 @@ tags = ["grok", "sprint"]
 +++
 
 In my [previous
-article](http://faassen.n--tree.net/blog/view/weblog/2008/04/11/0) on
+article](@/posts/grokkerdam-sprint-topics.md) on
 the [Grokkerdam](http://wiki.zope.org/grok/GrokkerdamSprint) sprint, I
 discussed various topics people may want to work on during the sprint.
 This blog entry is dedicated to some more topics, all security-related.

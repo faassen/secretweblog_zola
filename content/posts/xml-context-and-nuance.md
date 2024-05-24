@@ -11,7 +11,7 @@ Originally this was buried in a comment to an
 [article](http://copia.ogbuji.net/blog/2005-08-30/Python___X) on Uche's
 weblog, but he suggested I post it on my own weblog, here goes. The
 history of this long running discussion is
-[here](http://faassen.n--tree.net/blog/view/weblog/2005/01/30/0).
+[here](@/posts/about-the-disdain-for-xml-among-python-programmers.md).
 
 I think for PJE [to speak about people detecting (or not) 'context and
 nuance'](http://dirtsimple.org/2005/08/at-last-xml-enthusiast-who-actually.html)

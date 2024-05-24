@@ -14,13 +14,7 @@ accessing and manipulating CMS content. Implementing this API in a CMS could
 bring a number of potential benefits to it, such as interoperability,
 learnability, not reinventing the wheel, and so on. I go deeper into possible
 reasons for adopting any specification in my previous article [Criteria for
-evaluating specifications](posts/criteria-for-evaluating-specifications/).
-
-\_\`JSR-170\`:
-<http://jcp.org/aboutJava/communityprocess/final/jsr170/index.html>
-
-\_\`Criteria for evaluating specifications\`:
-<http://faassen.n--tree.net/blog/view/weblog/2005/03/01/0>
+evaluating specifications](@/posts/criteria-for-evaluating-specifications.md).
 
 JSR-170 has some counts against it. For starters, it's huge. When I
 first looked at it, its design was also somewhat shaky (and it was even

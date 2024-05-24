@@ -112,13 +112,13 @@ living with it forever.
 
 ## The importance of standards
 
-Yes, following established specifications is often a good idea, so I (as
-a member of the Zope community) have often argued it's useful to follow
+Yes, following established specifications is often a good idea, so I (as a
+member of the Zope community) have often argued it's useful to follow
 specifications. In fact, I wrote a [whole
-article](http://faassen.n--tree.net/blog/view/weblog/2005/3/1/0) about
-how to evaluate them. Note that not all specifications are equally
-valuable. Sometimes they're inappropriate for the job. Sometimes they're
-too heavy and more light-weight processes are in order.
+article](@/posts/criteria-for-evaluating-specifications.md) about how to
+evaluate them. Note that not all specifications are equally valuable. Sometimes
+they're inappropriate for the job. Sometimes they're too heavy and more
+light-weight processes are in order.
 
 _"Lots of packages are being added in the Zope3 repository without
 proper reviewing, implying: "we find this useful, hence someone else may
@@ -302,14 +302,12 @@ _"What is "pythonic" what is not? but who cares basically as long as you
 have a good API and a great framework? Really, it is better to spend
 energy on more important things."_
 
-You seem to be implying we spend a lot of time arguing about some
-mystical quantity called Pythonic, being on some "trip" so to speak, but
-you know that's not what we do most of the time. Besides, for a system
-to be Pythonic _means_ that system has a good API, following the
-conventions of the Python language and community.
-[Here](http://faassen.n--tree.net/blog/view/weblog/2005/08/06/0) is what
-I had to say about this, when I stopped for a change and _did_ discuss
-it.
+You seem to be implying we spend a lot of time arguing about some mystical
+quantity called Pythonic, being on some "trip" so to speak, but you know that's
+not what we do most of the time. Besides, for a system to be Pythonic _means_
+that system has a good API, following the conventions of the Python language
+and community. [Here](@/posts/what-is-pythonic.md) is what I had to say about
+this, when I stopped for a change and _did_ discuss it.
 
 ## Balkanization
 

@@ -19,9 +19,7 @@ same time, to help cross the chasm that exists between Python 2 and
 Python 3.
 
 This is something I remember blogging about, and I think also talking to
-Guido about, back in 2007:
-
-<http://faassen.n--tree.net/blog/view/weblog/2007/6/22/0>
+Guido about, [back in 2007](@/posts/python-3-worries-feedback.md).
 
 The idea was rejected back then as far as I can recall. It would of
 course make, as Aaron also say, the Python runtime a lot more

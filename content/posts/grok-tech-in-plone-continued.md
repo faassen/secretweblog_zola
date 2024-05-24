@@ -7,12 +7,11 @@ slug = "grok-tech-in-plone-continued"
 tags = ["grok", "plone", "silva"]
 +++
 
-In [my previous blog
-entry](http://faassen.n--tree.net/blog/view/weblog/2008/10/18/0) I tried
-to make the case for Plone adopting Grok technology. I gave some
-background on Grok and talked about some of the pain points that I think
-Plone has and that Grok has been trying to tackle. My goal was to
-explain where Grok is coming from, and why it's a good fit for Plone.
+In [my previous blog entry](@/posts/why-i-think-grok-can-make-plone-easier.md)
+I tried to make the case for Plone adopting Grok technology. I gave some
+background on Grok and talked about some of the pain points that I think Plone
+has and that Grok has been trying to tackle. My goal was to explain where Grok
+is coming from, and why it's a good fit for Plone.
 
 Martin Aspeli, in a comment, wrote the following:
 

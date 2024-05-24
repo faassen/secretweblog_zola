@@ -27,10 +27,10 @@ Weblog" to reflect my increasing focus on JavaScript code too. I still
 love Python, though, so I will be writing more Python-related content as
 well.
 
-The blog's URL changed too: it's now at <http://blog.startifact.com>
-instead. I've put redirects in place on the old
-<http://faassen.n--tree.net/blog> location to preserve links to the old
-articles.
+The blog's URL changed too: it's now at <http://blog.startifact.com> instead.
+I've put redirects in place on the old <http://faassen.n--tree.net/blog>
+location to preserve links to the old articles. [2024 note: those redirects are
+long broken, but I've fixed internal links in the old posts at last]
 
 I also hope that with this refresh I'll start blogging a bit more often!
 

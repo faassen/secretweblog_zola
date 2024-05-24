@@ -12,7 +12,7 @@ Zope](http://compoundthinking.com/blog/index.php/2008/09/17/djangocon-and-learni
 [what Zope can learn from
 Mozilla](http://philikon.wordpress.com/2008/09/17/what-zope-can-learn-from-mozilla/),
 and a few years ago already we had [what Zope can learn from Ruby on
-Rails](http://faassen.n--tree.net/blog/view/weblog/2005/04/06/0). (and
+Rails](@/posts/what-zope-can-learn-from-ruby-on-rails.md). (and
 www.zope.org still sucks, but grok.zope.org and repoze.org don't)
 
 Since the Zope of almost a decade ago was mentioned by a TurboGears guy

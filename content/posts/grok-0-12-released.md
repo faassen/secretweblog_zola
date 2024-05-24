@@ -99,11 +99,10 @@ Grok so far. We really are creating abstractions and reusable libraries
 the way it's supposed to be done: by doing it step-by-step and learning
 from code that already works.
 
-A next step on this path is a better directive implementation for
-Martian, something I mentioned in [an earlier blog
-entry](http://faassen.n--tree.net/blog/view/weblog/2008/04/11/0). This
-should help us making grokkers easier to read, and help up maintain
-consistency. Most importantly, it should make it easier to expand our
-introspection tools for Grok, giving them knowledge about Grok
-directives. We will start on this project as part of the Summer of Code
-project of Uli Fouquet (with me as the mentor).
+A next step on this path is a better directive implementation for Martian,
+something I mentioned in [an earlier blog
+entry](@/posts/grokkerdam-sprint-topics.md). This should help us making
+grokkers easier to read, and help up maintain consistency. Most importantly, it
+should make it easier to expand our introspection tools for Grok, giving them
+knowledge about Grok directives. We will start on this project as part of the
+Summer of Code project of Uli Fouquet (with me as the mentor).

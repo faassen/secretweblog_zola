@@ -13,14 +13,13 @@ in Halle, Germany. The design discussions for Grok are older - they go
 back to EuroPython. And the Zope 3 project, the base without which Grok
 would be nothing, started development in 2001.
 
-But one has to start somewhere, and in that sprint Grok really came
-together. Four hackers sat together. A beamer projected our code on a
-wall. We started to hammer out the design and code of Grok. At the
-beginning of the sprint there was a rough sketch of a design and no
-code. At the end of that sprint, we had Grok. Grok's caveman theme was
-born at this sprint. In case you missed it, here is [my
-report](http://faassen.n--tree.net/blog/view/weblog/2006/11/09/0) on
-that first sprint.
+But one has to start somewhere, and in that sprint Grok really came together.
+Four hackers sat together. A beamer projected our code on a wall. We started to
+hammer out the design and code of Grok. At the beginning of the sprint there
+was a rough sketch of a design and no code. At the end of that sprint, we had
+Grok. Grok's caveman theme was born at this sprint. In case you missed it, here
+is [my report](@/posts/grok-or-what-i-did-on-my-holiday.md) on that first
+sprint.
 
 Over the last year, much has happened. We've had more sprints. We've
 presented Grok at conferences. We have given Grok tutorials. We built up

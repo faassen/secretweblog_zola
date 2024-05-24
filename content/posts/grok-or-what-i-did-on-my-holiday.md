@@ -21,7 +21,7 @@ here and there: we worked on Grok.
 
 This is Grok:
 
-![image](http://faassen.n--tree.net/grok.jpg)
+![image](/img/me-grok.webp)
 
 Grok is a caveman.
 

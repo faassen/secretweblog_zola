@@ -29,7 +29,7 @@ drastically, in the face of customer feedback and a coming into focus of
 sometimes vague requirements. Since Zope 3 tries to stay out of the way
 of your Python code, you can refactor like you'd do with any piece of
 Python software. In fact, I talked about just this in an older
-[post](http://faassen.n--tree.net/blog/view/weblog/2005/09/06/0):
+[post](@/posts/practical-experience-with-zope-3.md):
 
 > Jeff Shell already mentioned that Zope 3 makes it easier to build an
 > extensible framework while actually building something useful for a

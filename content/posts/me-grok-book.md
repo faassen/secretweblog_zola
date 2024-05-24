@@ -8,7 +8,7 @@ tags = ["grok"]
 +++
 
 This is awesome. There is now a published
-[book](http://www.packtpub.com/grok-1-0-web-development/book?utm_source=faassen.n--tree.net&utm_medium=bookrev&utm_content=blog&utm_campaign=mdb_002451)
+[book](https://www.packtpub.com/product/grok-1-0-web-development/9781847197481)
 about [Grok](http://grok.zope.org)!
 
 Thank you, Carlos, very much, for writing this book. That was a lot of

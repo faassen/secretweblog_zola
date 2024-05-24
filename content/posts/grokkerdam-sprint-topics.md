@@ -78,9 +78,8 @@ UI.
 ## Relational database integration
 
 I already wrote much about this [earlier this
-week](http://faassen.n--tree.net/blog/view/weblog/2008/04/08/0). I think
-making relational database integration a first class citizen is a really
-important topic for Grok.
+week](@/posts/sqlalchemy-with-grok.md). I think making relational database
+integration a first class citizen is a really important topic for Grok.
 
 ## Improving KSS integration
 

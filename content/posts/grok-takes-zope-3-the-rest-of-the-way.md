@@ -22,17 +22,16 @@ detriment. Hopefully most people will only read the title and the first
 paragraph, as the rest of the article goes into another project and how
 it failed to make use of Zope 3, and why.
 
-This is interesting reading to me. I care about Zope 3 technologies. I
-think it is great stuff. I want people to use it more. I want the
-community of people who use it to grow, so we get _more_ great stuff. We
-can do a lot to make this happen. We shouldn't sit back and think if we
-build great technology, they will come. We should take the attitude that
-if smart people don't use Zope technology, it's [our
-fault](http://faassen.n--tree.net/blog/view/weblog/2008/04/05/0). Yes, I
-can think of other reasons for non-uptake of Zope that have nothing to
-do with the faults of the Zope community, but I'm not so interested in
-those reasons. I am interested in things we _can_ fix. The rest will
-have to take care of itself.
+This is interesting reading to me. I care about Zope 3 technologies. I think it
+is great stuff. I want people to use it more. I want the community of people
+who use it to grow, so we get _more_ great stuff. We can do a lot to make this
+happen. We shouldn't sit back and think if we build great technology, they will
+come. We should take the attitude that if smart people don't use Zope
+technology, it's [our fault](@/posts/no-you-are-smart-enough-for-zope.md). Yes,
+I can think of other reasons for non-uptake of Zope that have nothing to do
+with the faults of the Zope community, but I'm not so interested in those
+reasons. I am interested in things we _can_ fix. The rest will have to take
+care of itself.
 
 The bit in Lennart's blog about z3ext, a new Zope 3-based CMS which I
 know little about myself, is a good example of why first impressions are

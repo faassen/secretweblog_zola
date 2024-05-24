@@ -7,14 +7,13 @@ slug = "grok-sprint-zwei-the-ascent-of-man"
 tags = ["grok", "sprint"]
 +++
 
-Yesterday I returned from "Grok Sprint Zwei", the second grok sprint,
-hosted by Philipp von Weitershausen in Dresden, Germany (and partially
-at Gocept for the warming up). Grok is a project to make Zope 3 safe,
-easy and fun for cavemen and other hominids like ourselves. Zope 3 of
-course is the powerful and flexible framework for the construction of
-web applications. See
-[here](http://faassen.n--tree.net/blog/view/weblog/2006/11/09/0) for my
-initial introduction of the Zope Grok project.
+Yesterday I returned from "Grok Sprint Zwei", the second grok sprint, hosted by
+Philipp von Weitershausen in Dresden, Germany (and partially at Gocept for the
+warming up). Grok is a project to make Zope 3 safe, easy and fun for cavemen
+and other hominids like ourselves. Zope 3 of course is the powerful and
+flexible framework for the construction of web applications. See
+[here](@/posts/grok-or-what-i-did-on-my-holiday.md) for my initial introduction
+of the Zope Grok project.
 
 To summarize, Grok is an advanced alternate way to construct Zope 3
 based applications that makes it possible to use the powerful Zope 3
@@ -30,7 +29,7 @@ having to write lots of configuration code. Instead, we apply
 Besides a project, Grok is also a caveman. Here he is again, relaxing
 after his work at the sprint:
 
-![image](http://faassen.n--tree.net/grok_relax.png)
+[2024 note: image is sadly lost]
 
 We had five people participating in the sprint. Everybody present at the
 first sprint was back: Philipp von Weitershausen, Christian Theune,

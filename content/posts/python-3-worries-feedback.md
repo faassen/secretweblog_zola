@@ -8,11 +8,10 @@ tags = ["python3"]
 +++
 
 I've received a lot of feedback to [my previous blog
-entry](http://faassen.n--tree.net/blog/view/weblog/2007/06/20/0). I
-stated there that I'm worried about the costs of breaking backwards
-compatibility in Python 3, and its cost to the Python community. I'm
-glad I received this feedback, because the topic bears a bit of
-attention.
+entry](@/posts/brief-python-3000-thoughts.md). I stated there that I'm worried
+about the costs of breaking backwards compatibility in Python 3, and its cost
+to the Python community. I'm glad I received this feedback, because the topic
+bears a bit of attention.
 
 There was a whole series of comments saying the transition cost wouldn't
 be as high as I estimated. More in the range of switching from Python

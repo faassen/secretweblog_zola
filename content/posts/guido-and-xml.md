@@ -9,9 +9,8 @@ tags = ["xml", "python"]
 
 I think Guido's [post on
 XML](http://www.artima.com/weblogs/viewpost.jsp?thread=146647) is a good
-occasion to point again to my rant [about the disdain for XML among
-Python
-programmers](http://faassen.n--tree.net/blog/view/weblog/2005/01/30/0),
+occasion to point again to my rant [about the disdain for XML among Python
+programmers](@/posts/about-the-disdain-for-xml-among-python-programmers.md),
 posted almost exactly a year ago on this blog.
 
 I don't think Guido is right on the no XML in my template issue. I don't

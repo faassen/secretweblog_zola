@@ -189,12 +189,12 @@ happened already.
 Jython will gain a bunch of powerful libraries, and a lot of feedback on
 what is involved in porting a complicated Python framework to Jython.
 
-For the Zope side, the hope is that in future you'd be able to deploy,
-say, your Grok application, on the Jython platform. This means we'd also
-have full access to the many java libraries. Another side effect is that
-this project would make it easier to port these libraries to _other_
-Python interpreter platforms as well. I wrote more about this
-[here](http://faassen.n--tree.net/blog/view/weblog/2008/04/14/0).
+For the Zope side, the hope is that in future you'd be able to deploy, say,
+your Grok application, on the Jython platform. This means we'd also have full
+access to the many java libraries. Another side effect is that this project
+would make it easier to port these libraries to _other_ Python interpreter
+platforms as well. I wrote more about this
+[here](@/posts/porting-zope-to-different-pythons.md).
 
 Mentor Frank Wierzbicki is project lead of the Jython project, recently
 hired by Sun to work full time on Jython. He is the best mentor we could

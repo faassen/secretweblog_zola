@@ -7,11 +7,10 @@ slug = "empowering-the-power-users"
 tags = ["framework", "zope"]
 +++
 
-In [my last
-article](http://faassen.n--tree.net/blog/view/weblog/2005/12/15/0) I
-talked about the problems that occur on the borderland between content
-and software, but didn't give enough examples. I figured I'd add some
-more text about this very important topic.
+In [my last article](@/posts/the-borderland-between-content-and-software.md) I
+talked about the problems that occur on the borderland between content and
+software, but didn't give enough examples. I figured I'd add some more text
+about this very important topic.
 
 One response to the problem I describe is to treat this as an either/or
 choice. You could say: either give someone all the power in the world,

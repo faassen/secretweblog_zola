@@ -227,13 +227,11 @@ such a separate infrastructure entirely independently from PyPI. It's an
 extra release step too, making the entire release process that's
 automated so nicely by distutils and setuptools more cumbersome again.
 
-I think it would be useful to allow people to ship "known-good"
-requirements _along_ with the distributions, and host these directly on
-PyPI. Someone that uses a library will not be forced to use these
-requirements, but can opt to do so if they wish. Requirement lists
-should be able to build on and override other requirements lists. I
-wrote down [some ideas on how this might
-work](http://faassen.n--tree.net/blog/view/weblog/2007/09/26/0) in 2007.
-Perhaps the people working on this problem today will find some of my
-old thoughts useful, so if you're really interested in these topics,
-please read the linked article.
+I think it would be useful to allow people to ship "known-good" requirements
+_along_ with the distributions, and host these directly on PyPI. Someone that
+uses a library will not be forced to use these requirements, but can opt to do
+so if they wish. Requirement lists should be able to build on and override
+other requirements lists. I wrote down [some ideas on how this might
+work](@/posts/the-challenges-of-version-management-in-an-eggified-world.md) in 2007. Perhaps the people working on this problem today will find some of my old
+thoughts useful, so if you're really interested in these topics, please read
+the linked article.

@@ -9,8 +9,8 @@ tags = ["grok"]
 
 Lots more is going on in the Grok world, so the Grok Status Update has
 received a part 3. See also [part
-1](http://faassen.n--tree.net/blog/view/weblog/2008/06/02/0) and [part
-2](http://faassen.n--tree.net/blog/view/weblog/2008/06/03/0).
+1](@/posts/grok-status-update-part-1.md) and [part
+2](@/posts/grok-status-update-part-2.md).
 
 **grok.OrderedContainer**
 
@@ -106,13 +106,12 @@ All this work will land in Grok 0.13.
 
 **CRUD**
 
-[Joachim
-Schmitz](http://faassen.n--tree.net/blog/view/weblog/2008/05/14/0) and
-myself worked on a demonstrator project to see how we could construct a
-powerful CRUD framework on top of Grok, automating the user interface.
-This is code that typically needs a lot of pluggability, and
-pluggability is where the Zope component architecture shines. Hopefully
-we'll see more progress on CRUD in Grok in the future.
+[Joachim Schmitz](@/posts/in-memoriam-joachim-schmitz.md) and myself worked on
+a demonstrator project to see how we could construct a powerful CRUD framework
+on top of Grok, automating the user interface. This is code that typically
+needs a lot of pluggability, and pluggability is where the Zope component
+architecture shines. Hopefully we'll see more progress on CRUD in Grok in the
+future.
 
 **EuroPython Grok sprint**
 

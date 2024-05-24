@@ -8,7 +8,7 @@ tags = ["grok"]
 +++
 
 I continue yesterday's [status
-update](http://faassen.n--tree.net/blog/view/weblog/2008/06/02/0) with
+update](@/posts/grok-status-update-part-1.md) with
 some more topics. Lots of stuff is going on in the Grok world!
 
 **grokproject improvements**

@@ -9,9 +9,9 @@ tags = ["python", "python3"]
 
 It has been made abundantly clear to me that some core developers did
 not appreciate
-[my](http://faassen.n--tree.net/blog/view/weblog/2007/06/20/0)
-[previous](http://faassen.n--tree.net/blog/view/weblog/2007/6/22/0)
-[communications](http://faassen.n--tree.net/blog/view/weblog/2007/6/23/0)
+[my](@/posts/brief-python-3000-thoughts.md)
+[previous](@/posts/python-3-worries-feedback.md)
+[communications](@/posts/the-purpose-to-my-whinging-about-the-transition-to-python-3.md)
 concerning my worries surrounding transition to Python 3.
 
 I thought matters were resolved and wanted to let the issue rest for a

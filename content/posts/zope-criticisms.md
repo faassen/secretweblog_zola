@@ -72,10 +72,9 @@ on PyPI. Some of these are reusable independently, but far too many
 still pull in way too many dependencies (basically all the others), due
 to some seriously circular dependencies between them.
 
-Recently I and others have spent quite a bit of time in trying to make
-these dependencies
-[better](http://faassen.n--tree.net/blog/view/weblog/2009/01/29/0), and
-this is part of an on-going process.
+Recently I and others have spent quite a bit of time in trying to make these
+dependencies [better](@/posts/cleaning-up-zope-3-s-dependencies.md), and this
+is part of an on-going process.
 
 I think this is a mischaracterization therefore in the sense that is
 something the community knows about and is actively working on.
@@ -114,7 +113,7 @@ on PyPI.
 Chris has said in the past that this is a sort of "false optimum" that
 stops people from really fixing documentation issues, and I agree with
 him there that this is wrong (even though [I do value
-doctests](http://faassen.n--tree.net/blog/view/weblog/2008/12/01/0)). We
+doctests](@/posts//i-like-doctests.md)). We
 should make an effort to change our culture and redirect our
 documentation efforts to go beyond doctests. We've seen the adoption of
 Sphinx in our community in the last year, and I have good hopes we will
@@ -170,12 +169,11 @@ indeed, probably because they know us so well. :)
 > a constitutional inability to attract new users
 
 I share that concern [very
-much](http://faassen.n--tree.net/blog/view/weblog/2005/04/06/0). Part of
-the reason we don't attract more users is our lack of attention to
-documentation, proper web presentation, and our "here's a giant toolbox,
-it's flexible, you figure it out" approach. Grok has been one answer to
-this, and we've had a lot of good progress in bringing the old Zope 2
-documentation up to speed as well.
+much](@/posts/what-zope-can-learn-from-ruby-on-rails.md). Part of the reason we
+don't attract more users is our lack of attention to documentation, proper web
+presentation, and our "here's a giant toolbox, it's flexible, you figure it
+out" approach. Grok has been one answer to this, and we've had a lot of good
+progress in bringing the old Zope 2 documentation up to speed as well.
 
 It's good that the Zope technology is so central to other projects which
 do attract new users (Grok, Zope 2, especially through Plone) so we

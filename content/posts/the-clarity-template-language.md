@@ -7,16 +7,15 @@ slug = "the-clarity-template-language"
 tags = ["templating"]
 +++
 
-The [ClearSilver](http://www.clearsilver.net) templating language does
-not have a very pleasant syntax for people familiar with the TAL
-notation of Zope Page Templates. That's not to say ClearSilver's syntax
-is awful; it's deliberately simple, and I'm sure one could get used to
-it pretty quickly. Still, I started wondering what ClearSilver syntax
-would look like if it were more like TAL. Let's call such a theoretical
-TAL-like ClearSilver "Clarity". Perhaps this is a bit confusing, as it's
-the same name as the ClearSilver integration package I talked about
-[before](http://faassen.n--tree.net/blog/view/weblog/2005/04/15/0), but
-it's a nice name. :)
+The [ClearSilver](http://www.clearsilver.net) templating language does not have
+a very pleasant syntax for people familiar with the TAL notation of Zope Page
+Templates. That's not to say ClearSilver's syntax is awful; it's deliberately
+simple, and I'm sure one could get used to it pretty quickly. Still, I started
+wondering what ClearSilver syntax would look like if it were more like TAL.
+Let's call such a theoretical TAL-like ClearSilver "Clarity". Perhaps this is a
+bit confusing, as it's the same name as the ClearSilver integration package I
+talked about [before](@/posts/clarity-clearsilver-integration-for-zope-3.md),
+but it's a nice name. :)
 
 The Clarity templating language could be seen as a simple frontend to
 ClearSilver, meaning there is a one-to-one mapping of any Clarity code

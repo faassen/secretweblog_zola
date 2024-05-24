@@ -13,10 +13,10 @@ is of course, _yes, it should_, and, what's more, _yes it will_, and
 [Infrae](http://www.infrae.com) will be one party working on it. In
 fact, we've [already worked on it](http://codespeak.net/svn/z3/zopexml).
 
-Paul is right in that many Zope 3 developers, and many Python developers
-in general, don't give XML a high priority. I wrote about some of the
-possible attitudes surrounding this
-[before](http://faassen.n--tree.net/blog/view/weblog/2005/01/30/0).
+Paul is right in that many Zope 3 developers, and many Python developers in
+general, don't give XML a high priority. I wrote about some of the possible
+attitudes surrounding this
+[before](@/posts/about-the-disdain-for-xml-among-python-programmers.md).
 
 I am involved in Zope 3 development, and I care deeply about XML
 support, and have been thinking it over for, well, years now. In
