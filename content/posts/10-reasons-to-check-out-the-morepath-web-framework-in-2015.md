@@ -7,7 +7,7 @@ slug = "10-reasons-to-check-out-the-morepath-web-framework-in-2015"
 tags = ["python", "planetpython", "morepath"]
 +++
 
-Happy new year everybody! Last year we've made a *lot* of progress on
+Happy new year everybody! Last year we've made a _lot_ of progress on
 the Morepath web framework for Python. It will go quite a lot further in
 2015 as well. Here are 10 reasons why you should check out Morepath this
 year:
@@ -21,7 +21,7 @@ year:
     Morepath does not make you write write verbose and failure-prone
     special cased code to handle status codes. Instead, [Morepath does
     HTTP status codes correctly right
-    away.](/posts/better-rest-with-morepath-08.html#what-about-http-status-codes)
+    away.](@/posts/better-rest-with-morepath-08.md#what-about-http-status-codes)
 
 2.  **Morepath makes hyperlinks to objects**. In a typical routing web
     framework, to make a URL, you need to remember the name of a route,
@@ -31,7 +31,7 @@ year:
     it does so little, it encourages you to skip it entirely and write
     even more hardcoded URL generation code everywhere.
 
-    Morepath makes it *easier* to do the right thing. [Morepath lets you
+    Morepath makes it _easier_ to do the right thing. [Morepath lets you
     link to Python
     objects](http://morepath.readthedocs.org/en/latest/superpowers.html#link-with-ease).
     Morepath also understands URL parameters can be part of URLs too,
@@ -54,7 +54,7 @@ year:
 
 5.  **All views are reusable**. Morepath does not have a separate
     sub-framework to let you write more reusable and generic views than
-    the normal ones. Instead *any* view you create in Morepath is
+    the normal ones. Instead _any_ view you create in Morepath is
     already reusable. And remember - you don't have to hardcode route
     names, which makes views more generic by default.
 
@@ -66,7 +66,7 @@ year:
 
 6.  **Subclass applications**. Morepath does not have a separate
     sub-framework to let you write reusable blueprints for applications.
-    Instead, *any* application you create in Morepath is already
+    Instead, _any_ application you create in Morepath is already
     reusable in that way. In the real world, applications evolve into
     frameworks all the time, and Morepath does not stand in your way
     with special cases.
@@ -105,7 +105,7 @@ year:
     performance, perhaps it's not doing enough for you.** But Morepath
     has more than adequate performance - [on "Hello world" at least
     Morepath outpaces some very popular web Python frameworks
-    comfortably](/posts/better-rest-with-morepath-08.html#faster).
+    comfortably](@/posts/better-rest-with-morepath-08.md#faster).
 
 10. **Documentation**. Some Python micro frameworks also have micro
     documentation. Instead, [Morepath has lots of
