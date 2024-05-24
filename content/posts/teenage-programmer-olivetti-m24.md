@@ -7,7 +7,7 @@ slug = "teenage-programmer-olivetti-m24"
 tags = ["programming", "history"]
 +++
 
-This is Part 2 of a [series](/posts/teenage-programmer-alphatronic/).
+This is Part 2 of a [series](@/posts/teenage-programmer-alphatronic.md).
 
 # The Olivetti M24
 

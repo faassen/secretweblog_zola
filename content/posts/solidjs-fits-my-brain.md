@@ -14,7 +14,7 @@ it's cool and fits my brain.
 # React
 
 I got interested in React because of a talk by Pete Hunt at [JSConf
-Europe](/posts/jsconf-eu-2013-impressions/)
+Europe](@/posts/jsconf-eu-2013-impressions.md)
 back in 2013. React was a baby then, a controversial baby, and this talk
 convinced me and many others to give it a serious look. What did I
 learn?
@@ -78,7 +78,7 @@ benchmarks SolidJS performs near the speed of hand-optimized DOM
 manipulation.
 
 Does performance matter a lot? It's
-[complicated](/posts/is-premature-optimization-the-root-of-all-evil/).
+[complicated](@/posts/is-premature-optimization-the-root-of-all-evil.md).
 
 React is fast enough for most purposes, and frameworks tend to engage in
 performance matches as it's an easy benchmark to compare. Users of

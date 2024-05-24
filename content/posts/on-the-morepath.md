@@ -107,7 +107,7 @@ change your app's routes completely.
 # Reuse and Flexibility
 
 Morepath is powered by the generic function library
-[Reg](/posts/reg-now-with-more-generic).
+[Reg](@/posts/reg-now-with-more-generic.md).
 This provides a general mechanism for composing, extending and
 overriding behavior.
 
@@ -132,7 +132,7 @@ lets you do this too.
 
 That's a lot of power in a small package. It's in fact a condensation of
 15 years of [my experience with
-Zope](/posts/my-exit-from-zope) packed
+Zope](@/posts/my-exit-from-zope.md) packed
 together into a micro-framework.
 
 # Development Status

@@ -13,7 +13,7 @@ _Things fall apart; the centre cannot hold_
 Coming](https://en.wikipedia.org/wiki/The_Second_Coming_%28poem%29) by
 Yeats)
 
-[Last time](/posts/back-to-the-center) I
+[Last time](@/posts/back-to-the-center.md) I
 talked about how I went back to the center of the Zope project. Over the
 course of the year following, we managed to refactor the Zope Toolkit,
 clean up the dependency structure, and we could drop many of its
@@ -104,6 +104,6 @@ And there is life after Zope. Next I will talk a bit about what came
 after.
 
 This blog entry is a part of a [series on
-Zope](/posts/my-exit-from-zope) and my
+Zope](@/posts/my-exit-from-zope.md) and my
 involvement with it.
-[Previous](/posts/back-to-the-center).
+[Previous](@/posts/back-to-the-center.md).

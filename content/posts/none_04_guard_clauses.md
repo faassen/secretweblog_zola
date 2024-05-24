@@ -9,38 +9,42 @@ tags = ["python", "patterns", "pythonic", "planetpython"]
 
 # The Story of None: Part 4 - Guard Clauses
 
-[part 1](/posts/none_01_the_beginning)
-[part 2](/posts/none_02_recognizing)
-[part 3](/posts/none_03_handling_it)
-[part 4](/posts/none_04_guard_clauses)
-[part 5](/posts/none_05_more_on_guarding)
-[part 6](/posts/none_06_avoiding_it)
+[part 1](@/posts/none_01_the_beginning.md)
+[part 2](@/posts/none_02_recognizing.md)
+[part 3](@/posts/none_03_handling.md)
+[part 4](@/posts/none_04_guard_clauses.md)
+[part 5](@/posts/none_05_more_on_guarding.md)
+[part 6](@/posts/none_06_avoiding_it.md)
 
 ## Last time...
 
-[Last time](/posts/none_03_handling_it) in the
+[Last time](@/posts/none_03_handling.md) in the
 Story of None we ended up with this validation function:
 
-    def validate_end_date_later_than_start(start_date, end_date):
-        if start_date is None and end_date is None:
-            return
-        if start_date is None:
-            return
-        if end_date is None:
-            return
-        if end_date <= start_date:
-            raise ValidationError(
-                "The end date should be later than the start date.")
+```python
+def validate_end_date_later_than_start(start_date, end_date):
+    if start_date is None and end_date is None:
+        return
+    if start_date is None:
+        return
+    if end_date is None:
+        return
+    if end_date <= start_date:
+        raise ValidationError(
+            "The end date should be later than the start date.")
+```
 
 So let's apply some boolean logic and rewrite all this to be slightly
 shorter (but still readable):
 
-    def validate_end_date_later_than_start(start_date, end_date):
-        if start_date is None or end_date is None:
-            return
-        if end_date <= start_date:
-            raise ValidationError(
-                "The end date should be later than the start date.")
+```python
+def validate_end_date_later_than_start(start_date, end_date):
+    if start_date is None or end_date is None:
+        return
+    if end_date <= start_date:
+        raise ValidationError(
+            "The end date should be later than the start date.")
+```
 
 ## Guard Clauses
 
@@ -52,20 +56,24 @@ true.
 Instead we could have written the function without guard clauses, like
 this:
 
-    def validate_end_date_later_than_start(start_date, end_date):
-        if start_date is not None and end_date is not None:
-            if end_date <= start_date:
-               raise ValidationError(
-                  "The end date should be later than the start date.")
+```python
+def validate_end_date_later_than_start(start_date, end_date):
+    if start_date is not None and end_date is not None:
+        if end_date <= start_date:
+            raise ValidationError(
+                "The end date should be later than the start date.")
+```
 
 or like this:
 
-    def validate_end_date_later_than_start(start_date, end_date):
-        if (start_date is not None and
-            end_date is not None and
-            end_date <= start_date):
-               raise ValidationError(
-                  "The end date should be later than the start date.")
+```python
+def validate_end_date_later_than_start(start_date, end_date):
+    if (start_date is not None and
+        end_date is not None and
+        end_date <= start_date):
+            raise ValidationError(
+                "The end date should be later than the start date.")
+```
 
 I think both alternatives are a lot less clear than the one with the
 guard clause in it.
@@ -100,11 +108,11 @@ We worry about `None` so we can _stop_ worrying about `None` when it
 matters. Ah, such a relief! Thank you guard clauses!
 
 We'll talk a bit more about guard clauses
-[next](/posts/none_05_more_on_guarding).
+[next](@/posts/none_05_more_on_guarding.md).
 
-[part 1](/posts/none_01_the_beginning)
-[part 2](/posts/none_02_recognizing)
-[part 3](/posts/none_03_handling_it)
-[part 4](/posts/none_04_guard_clauses)
-[part 5](/posts/none_05_more_on_guarding)
-[part 6](/posts/none_06_avoiding_it)
+[part 1](@/posts/none_01_the_beginning.md)
+[part 2](@/posts/none_02_recognizing.md)
+[part 3](@/posts/none_03_handling.md)
+[part 4](@/posts/none_04_guard_clauses.md)
+[part 5](@/posts/none_05_more_on_guarding.md)
+[part 6](@/posts/none_06_avoiding_it.md)

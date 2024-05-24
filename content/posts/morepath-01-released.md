@@ -32,12 +32,12 @@ you find any sections where things are unclear or missing!
 There are still some docs floating around that I intend to integrate
 into the main documentation. One bit involves the permission and
 authentication docs; I previously blogged a
-[description](/posts/morepath-security).
+[description](@/posts/morepath-security.md).
 
 You can integrate Morepath with SQLAlchemy or the ZODB using
 [more.transaction](http://pypi.python.org/pypi/more.transaction). I've
 just made a 0.1 release of that too. See [this blog
-entry](/posts/racing-the-morepath-sqlalchemy-integration)
+entry](@/posts/racing-the-morepath-sqlalchemy-integration.md)
 for more information on what's going on with that, and here is [example
 code](https://github.com/morepath/morepath_sqlalchemy).
 

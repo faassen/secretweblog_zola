@@ -9,7 +9,7 @@ tags = ["software development", "python", "planetpython", "reg", "morepath"]
 
 I posted an article about programming yesterday. ([punctuated
 equilibrium in software
-development](/posts/punctuated-equilibrium-in-software))
+development](@/posts/punctuated-equilibrium-in-software.md))
 In it I try to share some insights I've had about software development,
 and illustrate it with a library I work on that I think is interesting.
 I posted it to reddit `/r/programming`, obviously hoping to get a bit of
@@ -69,7 +69,7 @@ Strongpinion knows there's ONE tool that's right for EVERY job.
 
 If someone doesn't agree with Bob Strongpinion's choice of tools,
 they're either stupid, or more likely,
-[evil](/posts/they-say-something-i-dont-like-so-they-must-be-lying).
+[evil](@/posts/they-say-something-i-dont-like-so-they-must-be-lying.md).
 Bob Strongpinion may not have more experience in a problem domain than
 you do, but it's the RIGHT experience so he's still right.
 
@@ -101,7 +101,7 @@ I sometimes wish I could be more like Bob Strongpinion when I promote my
 own work. As you can see from the above, I can channel him pretty well.
 I snuck him in while rejecting him, how sneaky! The Strongpinion must be
 strong in me. I've even done a [list of 10 bullet
-points](/posts/10-reasons-to-check-out-the-morepath-web-framework-in-2015)
+points](@/posts/10-reasons-to-check-out-the-morepath-web-framework-in-2015.md)
 before. It got some upvotes.
 
 But in the end I keep choosing not to be him.

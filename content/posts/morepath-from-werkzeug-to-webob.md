@@ -19,7 +19,7 @@ In this post I'd like to explain what lead me there.
 Having had now quite a bit of experience with both Werkzeug and WebOb I
 will offer some points of comparison and feedback that may be useful to
 improve Werkzeug and WebOb both, but I have done that in [a followup
-post](/posts/webob-and-werkzeug-compared).
+post](@/posts/webob-and-werkzeug-compared.md).
 
 # Performance Testing
 
@@ -246,4 +246,4 @@ Morepath and Pyramid now have the same basic Tween API.
 
 I've followed up this post with [some feedback about Werkzeug and WebOb
 in
-general](/posts/webob-and-werkzeug-compared).
+general](@/posts/webob-and-werkzeug-compared.md).

@@ -8,7 +8,7 @@ tags = ["planetpython", "python", "morepath"]
 +++
 
 Yesterday I wrote [an
-article](/posts/morepath-from-werkzeug-to-webob)
+article](@/posts/morepath-from-werkzeug-to-webob.md)
 discussing why Morepath switched from the
 [Werkzeug](http://werkzeug.pocoo.org) library to the
 [WebOb](http://webob.org) library. I promised a followup with some

@@ -10,7 +10,7 @@ tags = ["javascript", "python", "obviel", "planetpython", "packaging"]
 # Introduction
 
 \[UPDATE: This post has [new 2015
-followup](/posts/javascript-dependencies-revisited-an-example-project)\]
+followup](@/posts/javascript-dependencies-revisited-an-example-project.md)\]
 
 This is about managing dependencies in a well-tested client-side
 JavaScript codebase, how I got overwhelmed, and how I automated the
@@ -26,7 +26,7 @@ this document can help you to _become_ overwhelmed. And then perhaps it
 can help a little to become less so.
 
 \[update: I've created a
-[followup](/posts/js-dependency-tools-redux)
+[followup](@/posts/js-dependency-tools-redux.md)
 to this post further analyzing the various options available\]
 
 # A Client-side Codebase
@@ -79,9 +79,9 @@ write unit tests and depend on stuff in them without worrying.
 # My Python Background
 
 Over the years, I've
-[worked](/posts/the-ghost-of-packaging-past-and-future)
+[worked](@/posts/the-ghost-of-packaging-past-and-future.md)
 [a
-lot](/posts/a-history-of-python-packaging)
+lot](@/posts/a-history-of-python-packaging.md)
 with Python dependency management; PyPI, distutils, setuptools, pip etc.
 And build tools like buildout. And of course, the Python `import`
 statement. I learned a lot about JavaScript tools, and the Python tools

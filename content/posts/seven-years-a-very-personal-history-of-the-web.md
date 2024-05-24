@@ -42,7 +42,7 @@ this day.
 
 Zope helped shape who I am and how I think, especially as a web
 developer. In 2013 I wrote a
-[retrospective](/posts/my-exit-from-zope)
+[retrospective](@/posts/my-exit-from-zope.md)
 that went into the history of Zope and my involvement with it.
 
 **But I did not just process it by writing blog posts. I also processed
@@ -58,7 +58,7 @@ provide more flexibility than a framework ever could.
 
 In a "X considered Y" style post I argued that [web frameworks should be
 considered
-useful](/posts/web-frameworks-considered-useful).
+useful](@/posts/web-frameworks-considered-useful.md).
 Not that many people needed convincing, but hey, why not?
 
 I wrote:
@@ -140,7 +140,7 @@ on the client, not spread between client and server. This makes reuse of
 UI components a lot easier.**
 
 By 2010, I had [played with client-side template languages
-already](/posts/the-new-hot-thing-in-web-development-client-side-templating-languages).
+already](@/posts/the-new-hot-thing-in-web-development-client-side-templating-languages.md).
 I was about to build a few large web applications, and I wanted them to
 be dynamic and single page. But client-side JavaScript could easily
 become a mess. I wanted something that would help organize client-side
@@ -152,13 +152,13 @@ code better. I wanted a higher-level framework.
 framework, by bringing over concepts from server frameworks to the
 client, and to see what happens to them. Cool things happen!** We
 started with templates and then moved to MVC. We created a notion of
-[components](/posts/the-core-of-obviel)
+[components](@/posts/the-core-of-obviel.md)
 you could [compose
-together](/posts/powerful-composition-with-obviel-data-render).
+together](@/posts/powerful-composition-with-obviel-data-render.md).
 We created a client-side [form
 library](http://www.obviel.org/en/1.0/form.html) based on that. In 2011
 we released this as
-[Obviel](/posts/obviel).
+[Obviel](@/posts/obviel.md).
 
 **For a little while in 2010, early 2011, I thought I was the only one
 with this cool idea of a client-side web framework. It turns out that I
@@ -181,7 +181,7 @@ development.
 # React
 
 I went to my first [JS
-conference](/posts/jsconf-eu-2013-impressions)
+conference](@/posts/jsconf-eu-2013-impressions.md)
 in September of 2013. I had originally submitted a talk about Obviel to
 it, but it wasn't accepted. _Everybody_ was promoting their shiny new
 client-side framework by that time.
@@ -207,7 +207,7 @@ React actually let go of them.
 
 In early 2013 I read an interesting blog post which prompted me to write
 [Modern Client-Side
-Times](/posts/modern-client-side-times),
+Times](@/posts/modern-client-side-times.md),
 in which I considered the changed role of the server web framework if it
 was to be the servant to JavaScript instead of its master.
 
@@ -244,11 +244,11 @@ server Python web framework. I gave an [over-long keynote at PyCON
 DE](https://www.youtube.com/watch?v=9A5T9C2OBB4) that year to describe
 the creative processes that had gone behind it. I gave a [more focused
 talk](https://www.youtube.com/watch?v=gyDKMAWPyuY) at [EuroPython
-2014](/posts/my-visit-to-europython-2014)
+2014](@/posts/my-visit-to-europython-2014.md)
 that I think works better as an introduction.
 
 I [announced Morepath on my
-blog](/posts/on-the-morepath):
+blog](@/posts/on-the-morepath.md):
 
 > For a while now I've been working on Morepath. I thought I'd say a bit
 > about it here.
@@ -265,7 +265,7 @@ therefore it needs to be good at HTTP, and any HTTP application benefits
 from that, no matter whether they render their UI on the client or the
 server. Still, it was only in early 2015 that Morepath [gained official
 support for server
-templates](/posts/server-templating-in-morepath-010).
+templates](@/posts/morepath_templating.md).
 
 2014 was full with Morepath development. I announced it at EuroPython.
 It slowed down a little in 2015, then picked up speed again in 2016.
@@ -313,9 +313,9 @@ Want to help?
 I've been itching to do something significant on the client-side again.
 It's been a little while since I got to do React. I enjoyed attending
 [React Europe
-2015](/posts/thoughts-about-react-europe)
+2015](@/posts/thoughts-about-react-europe.md)
 and [React Europe
-2016](/posts/impressions-of-react-europe-2016).
+2016](@/posts/impressions-of-react-europe-2016.md).
 I played with React Native for a bit last year. I want to work with that
 stuff again.
 
@@ -332,4 +332,4 @@ continue to be creative for the next 7 years, as I really enjoy it.**
 I'm a freelancer, so the clients I work for in part shape my creative
 future. Hint. [Let me know if you have something interesting for me to
 work
-on](/posts/looking-for-new-challenges).
+on](@/posts/looking-for-new-challenges.md).

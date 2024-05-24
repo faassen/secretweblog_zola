@@ -36,4 +36,4 @@ We're planning a few big changes for Obviel after 1.0:
   split Obviel's code into smaller modules, and still generate a simple
   usable `.js` package so it's easy to include in a codebase. See this
   blog entry for [some of my packaging
-  explorations](/posts/overwhelmed-by-javascript-dependencies).
+  explorations](@/posts/overwhelmed-by-javascript-dependencies.md).

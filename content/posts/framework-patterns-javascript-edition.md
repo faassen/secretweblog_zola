@@ -9,12 +9,12 @@ tags = ["javascript", "typescript", "react", "frameworks"]
 
 Software developers use software frameworks all the time, so it's good
 to think about them. You might even [create one
-yourself](/posts/roll-your-own-frameworks/),
+yourself](@/posts/roll-your-own-frameworks.md),
 but even if you don't, understanding the design principles underlying
 them helps you evaluate and use frameworks better.
 
 A few years ago I wrote a [post about
-patterns](/posts/framework-patterns)
+patterns](@/posts/framework-patterns.md)
 I've seen in frameworks. In it, while I did discuss other languages, I
 mostly used examples from the Python world. This is a revised version
 that focuses on frameworks written in JavaScript or TypeScript.
@@ -988,7 +988,7 @@ I hope this overview helped you understand the decisions made by
 frameworks a bit better.
 
 And if you design a framework -- which [you should
-do](/posts/roll-your-own-frameworks/), as
+do](@/posts/roll-your-own-frameworks.md), as
 larger applications need frameworks to stay coherent -- you now
 hopefully have some more concepts to work with to help you make better
 design decisions.

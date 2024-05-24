@@ -8,7 +8,7 @@ tags = ["python", "planetpython", "zope", "reg", "morepath"]
 +++
 
 A month ago I first
-[announced](/posts/reg-component-architecture-reimagined)
+[announced](@/posts/reg-component-architecture-reimagined.md)
 the [Reg](http://reg.readthedocs.org) library for Python. After posting
 it I got a comment asking why I didn't just use
 [simplegeneric](https://pypi.python.org/pypi/simplegeneric) or [PEP

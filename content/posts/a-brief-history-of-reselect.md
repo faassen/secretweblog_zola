@@ -152,7 +152,7 @@ check it in somewhere so I put it on my personal Github page. At the end
 of the day we had a pretty nice little library.
 
 I enjoyed the conference a lot, went home and wrote a
-[report](/posts/thoughts-about-react-europe).
+[report](@/posts/thoughts-about-react-europe.md).
 
 # Reselect afterwards
 
@@ -229,7 +229,7 @@ The other lesson I learned is more personal. I used to be part of a
 larger open source community centered around Zope. But for various
 reasons that community stopped being creative and is slowly fading out;
 I wrote a blog series about [my exit from
-Zope](/posts/my-exit-from-zope). I was a
+Zope](@/posts/my-exit-from-zope.md). I was a
 large player in the Zope community for quite a few years. In contrast
 I'm a bit player in the React community. But I greatly enjoy the
 community's creativity and the connections I'm making. I missed that in

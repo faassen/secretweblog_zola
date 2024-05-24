@@ -266,8 +266,8 @@ I think people at times care so much about the performance of frameworks
 because it's easy. So performance is used as a marketing gimmick.
 
 People say, for instance, their web Python framework is faster. I've
-[done that](/posts/is-morepath-fast-yet)
-[myself](/posts/morepath-016-released).
+[done that](@/posts/is-morepath-fast-yet.md)
+[myself](@/posts/morepath-016-released.md).
 But let's not forget that this framework is in _Python_. If you _really_
 need insanely high performance at single core low level HTTP handling, I
 would suggest you take a look at other languages. In any case, when I

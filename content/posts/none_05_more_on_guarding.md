@@ -9,16 +9,16 @@ tags = ["python", "patterns", "pythonic", "planetpython"]
 
 # The Story of None: Part 5 -- More on Guarding
 
-[part 1](/posts/none_01_the_beginning)
-[part 2](/posts/none_02_recognizing)
-[part 3](/posts/none_03_handling_it)
-[part 4](/posts/none_04_guard_clauses)
-[part 5](/posts/none_05_more_on_guarding)
-[part 6](/posts/none_06_avoiding_it)
+[part 1](@/posts/none_01_the_beginning.md)
+[part 2](@/posts/none_02_recognizing.md)
+[part 3](@/posts/none_03_handling.md)
+[part 4](@/posts/none_04_guard_clauses.md)
+[part 5](@/posts/none_05_more_on_guarding.md)
+[part 6](@/posts/none_06_avoiding_it.md)
 
 ## Last time...
 
-[Last time](/posts/none_04_guard_clauses)
+[Last time](@/posts/none_04_guard_clauses.md)
 in the Story of None we've discussed the concept of a _guard clause_.
 This is simply an `if` statement at the beginning of a function that
 returns early if a certain condition is true.
@@ -36,10 +36,12 @@ So let's discuss some other brief examples of guard clauses.
 Raising an exception is good when the input really should be considered
 an error and the developer should know about it:
 
-    def divide(a, b):
-        if b == 0:
-           raise ZeroDivisionError("Really I don't know, man!")
-        return a / b
+```python
+  def divide(a, b):
+      if b == 0:
+          raise ZeroDivisionError("Really I don't know, man!")
+      return a / b
+```
 
 In this case you know that the way to handle `b` being `0` is to _not_
 handle it and instead to loudly complain that there is some error, by
@@ -54,10 +56,12 @@ on.
 Let's say we want to implement dictionary `.get` as a function
 ourselves, with a guard against a missing dictionary key:
 
-    def get(d, key, default=None):
-        if key not in d:
-            return default
-        return d[key]
+```python
+def get(d, key, default=None):
+    if key not in d:
+        return default
+    return d[key]
+```
 
 This guard clause returns a default value if the guard clause condition
 is true. As you can see here the guard clause can be dependent on
@@ -77,10 +81,12 @@ Let's consider this rather contrived (as there are much better
 implementations without recursion in Python) example where we
 recursively add all numbers in a list:
 
-    def add(numbers):
-        if len(numbers) == 0:
-            return 0
-        return numbers[0] + add(numbers[1:])
+```python
+def add(numbers):
+    if len(numbers) == 0:
+        return 0
+    return numbers[0] + add(numbers[1:])
+```
 
 The main part of the function says: the sum of all the numbers in a list
 `numbers` is the first entry in that list added to the sum of the rest
@@ -216,25 +222,31 @@ sure what to do, here is a list of things to consider:
   If you feel you need to handle an unexpected case, throw an exception.
   In Python you can throw a basic exception like this:
 
-      if value == 0:
-        raise Exception("Something went wrong")
+  ```python
+  if value == 0:
+    raise Exception("Something went wrong")
+  ```
 
   But of course it makes sense to use more specific exceptions when you
   can:
 
-      if not isinstance(value, basestring):
-         raise TypeError("Expected string, not %r" % value)
+  ```python
+  if not isinstance(value, basestring):
+      raise TypeError("Expected string, not %r" % value)
+  ```
 
   Sometimes you need to make up new exceptions specific to your library
   or application as none of the built-in ones is appropriate:
 
-      class WorkflowError(Exception):
-        pass
+  ```python
+  class WorkflowError(Exception):
+    pass
 
-      ...
+  # ...
 
-      if invalid(workflow_state):
-         raise WorkflowError("Invalid workflow state: %s" % workflow_state)
+  if invalid(workflow_state):
+      raise WorkflowError("Invalid workflow state: %s" % workflow_state)
+  ```
 
   Exceptions do the right stuff automatically:
 
@@ -250,13 +262,13 @@ sure what to do, here is a list of things to consider:
   In the case of unexpected input, I can often rely on the language to
   fail with an exception anyway in the appropriate spot.
 
-[Next time](/posts/none_06_avoiding_it)
+[Next time](@/posts/none_06_avoiding_it.md)
 we'll consider a way to avoid having to scatter guard clauses throughout
 our codebase: normalization.
 
-[part 1](/posts/none_01_the_beginning)
-[part 2](/posts/none_02_recognizing)
-[part 3](/posts/none_03_handling_it)
-[part 4](/posts/none_04_guard_clauses)
-[part 5](/posts/none_05_more_on_guarding)
-[part 6](/posts/none_06_avoiding_it)
+[part 1](@/posts/none_01_the_beginning.md)
+[part 2](@/posts/none_02_recognizing.md)
+[part 3](@/posts/none_03_handling.md)
+[part 4](@/posts/none_04_guard_clauses.md)
+[part 5](@/posts/none_05_more_on_guarding.md)
+[part 6](@/posts/none_06_avoiding_it.md)

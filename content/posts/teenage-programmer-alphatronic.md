@@ -19,8 +19,8 @@ I had a long article sitting as a draft for a few years. Today I read
 reminded me of it. There's quite a lot of material, so I will publish it
 as a series. Here is part 1.
 
-- [Part 1: The Alphatronic](/posts/teenage-programmer-alphatronic/)
-- [Part 2: Olivetti M24](/posts/teenage-programmer-olivetti-m24/)
+- [Part 1: The Alphatronic](@/posts/teenage-programmer-alphatronic.md)
+- [Part 2: Olivetti M24](@/posts/teenage-programmer-olivetti-m24.md)
 
 # In a Dutch Village
 
@@ -126,5 +126,5 @@ the machine and you learned to work with them.
 # Next time...
 
 Thanks for reading so far! [Next
-time](/posts/teenage-programmer-olivetti-m24/), we'll delve into my
+time](@/posts/teenage-programmer-olivetti-m24.md), we'll delve into my
 programming adventures with the upgraded computer in my dad's office.

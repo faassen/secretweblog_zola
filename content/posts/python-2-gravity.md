@@ -258,5 +258,5 @@ because then people will be inclined to give up before they even start.
 This is why I think a continued future for Python 2.x would be in the
 community's interest, even in The Python's interest. I created a
 [\#python2.8 IRC
-channel](/posts/python28-discussion-channel-on-freenode)
+channel](@/posts/python28-discussion-channel-on-freenode.md)
 on freenode to gauge interest and discuss this further.

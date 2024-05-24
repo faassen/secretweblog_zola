@@ -659,7 +659,7 @@ configure the way our system works. Here we plug in the
 
 [Pyramid](https://trypyramid.com/) and [Plone](https://plone.org/) both
 are descendants of
-[Zope](/posts/my-exit-from-zope), and
+[Zope](@/posts/my-exit-from-zope.md), and
 you can use ZCML, a XML-derived configuration language with them both.
 
 Here is some ZCML from Plone:

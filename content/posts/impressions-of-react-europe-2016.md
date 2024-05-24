@@ -64,7 +64,7 @@ the Mozilla offices in Paris.
 Last year's hackathon was special: I met up with Lee Bannard and we
 worked on reselect, which became quite a popular little library for use
 with Redux. You might enjoy [my story on
-that](/posts/a-brief-history-of-reselect).
+that](@/posts/a-brief-history-of-reselect.md).
 
 I was very happy to see Lee again at this year's hackathon. We didn't
 create any new code this time; we spent most of our time learning about
@@ -213,7 +213,7 @@ Cheng Lou's talk was a very high level talk about the benefits and the
 costs of abstraction. This is something I care about a lot as a
 developer: how do I avoid over-engineering and under-engineering (I've
 [written about it
-before](/posts/under-engineering-over-engineering-right-engineering)),
+before](@/posts/under-engineering-over-engineering-right-engineering.md)),
 and solve problems at the right level? Software has many forces on many
 levels pulling at it, from end-users to low-level details, and how do
 you balance out these forces? Engineering is _so_ much about dealing
@@ -253,7 +253,7 @@ people _too_. I can keep up. The Internet overall helps with learning:
 the resources on the Internet for a new developer may be overwhelming,
 but they are also of tremendous value. Preethi called for more
 intermediate-level resources. I am not sure [this series I
-wrote](/posts/none_01_the_beginning)
+wrote](@/posts/none_01_the_beginning.md)
 counts; I suspect Preethi is beyond it, but perhaps others will enjoy
 it.
 

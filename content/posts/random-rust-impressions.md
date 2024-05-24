@@ -29,7 +29,7 @@ it's complete overkill and could just as well be sync Python, but it's
 cool that it uses almost zero CPU or memory.
 
 This year I wrote an artificial life simulation that actually does work:
-[Apilar](/posts/apilar-an-alife-system/). I
+[Apilar](@/posts/apilar-an-alife-system.md). I
 made it run on multiple cores, and hooked it up with a web frontend
 written in TypeScript using [Axum](https://github.com/tokio-rs/axum).
 
@@ -351,7 +351,7 @@ being, beware.
 
 It took a while to get used to it, but I am now fairly proficient at
 writing plain synchronous Rust code. I wrote
-[Apilar](/posts/apilar-an-alife-system/) in a
+[Apilar](@/posts/apilar-an-alife-system.md) in a
 48 hours programming contest, and it included a new stack-based
 programming language with assembler and disassembler, a CLI and
 text-based visualization.

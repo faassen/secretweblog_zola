@@ -9,17 +9,17 @@ tags = ["python", "patterns", "pythonic", "planetpython"]
 
 # The Story of None: Part 6 - Avoiding It
 
-[part 1](/posts/none_01_the_beginning)
-[part 2](/posts/none_02_recognizing)
-[part 3](/posts/none_03_handling_it)
-[part 4](/posts/none_04_guard_clauses)
-[part 5](/posts/none_05_more_on_guarding)
-[part 6](/posts/none_06_avoiding_it)
+[part 1](@/posts/none_01_the_beginning.md)
+[part 2](@/posts/none_02_recognizing.md)
+[part 3](@/posts/none_03_handling.md)
+[part 4](@/posts/none_04_guard_clauses.md)
+[part 5](@/posts/none_05_more_on_guarding.md)
+[part 6](@/posts/none_06_avoiding_it.md)
 
 ## Last time...
 
 [Last
-time](/posts/none_05_more_on_guarding)
+time](@/posts/none_05_more_on_guarding.md)
 we've discussed guard clauses and when not to use them. We've discussed
 the paranoia developers sometimes feel that causes them to write useless
 or even harmful guard clauses. The best way to reduce paranoia about
@@ -31,12 +31,14 @@ So let's talk about ways to accomplish this.
 
 The date validator in its last incarnation looked like this:
 
-    def validate_end_date_later_than_start(start_date, end_date):
-        if start_date is None or end_date is None:
-            return
-        if end_date <= start_date:
-            raise ValidationError(
-                "The end date should be later than the start date.")
+```python
+def validate_end_date_later_than_start(start_date, end_date):
+    if start_date is None or end_date is None:
+        return
+    if end_date <= start_date:
+        raise ValidationError(
+            "The end date should be later than the start date.")
+```
 
 Here we want to validate two date values which may be missing, in which
 case we treat `start_date` as "indefinite past" and `end_date` as
@@ -45,8 +47,10 @@ case we treat `start_date` as "indefinite past" and `end_date` as
 We could create special sentinel objects for "indefinite future" and
 "indefinite past":
 
-    INDEFINITE_PAST = date(datetime.MINYEAR, 1, 1)
-    INDEFINITE_FUTURE = date(datetime.MAXYEAR, 12, 31)
+```python
+INDEFINITE_PAST = date(datetime.MINYEAR, 1, 1)
+INDEFINITE_FUTURE = date(datetime.MAXYEAR, 12, 31)
+```
 
 where `MINYEAR` is `1` and `MAXYEAR` is `9999`.
 
@@ -60,12 +64,14 @@ If we can be sure that those are used instead of `None` before the
 `validate_end_date_later_than_start` function is called, we can simplify
 it to this:
 
-    def validate_end_date_later_than_start(start_date, end_date):
-        if end_date <= start_date:
-            raise ValidationError(
-                "The end date should be later than the start date.")
+```python
+def validate_end_date_later_than_start(start_date, end_date):
+    if end_date <= start_date:
+        raise ValidationError(
+            "The end date should be later than the start date.")
+```
 
-which is what we started out with in the first place in [Part 1](/posts/none_01_the_beginning) long
+which is what we started out with in the first place in [Part 1](@/posts/none_01_the_beginning.md) long
 ago, without any guards! Awesome!
 
 ## Edge case
@@ -81,34 +87,36 @@ handling this edge case is fine.
 If we insist on making the edge case go away, we could deal with it by
 subclassing the `date` class to construct these sentinels instead:
 
-    class IndefinitePast(date):
-        def __lt__(self, other):
-            return True
+```python
+class IndefinitePast(date):
+    def __lt__(self, other):
+        return True
 
-        def __le__(self, other):
-            return True
+    def __le__(self, other):
+        return True
 
-        def __gt__(self, other):
-            return False
+    def __gt__(self, other):
+        return False
 
-        def __ge__(self, other):
-            return False
+    def __ge__(self, other):
+        return False
 
-    class IndefiniteFuture(date):
-        def __lt__(self, other):
-            return False
+class IndefiniteFuture(date):
+    def __lt__(self, other):
+        return False
 
-        def __le__(self, other):
-            return False
+    def __le__(self, other):
+        return False
 
-        def __gt__(self, other):
-            return True
+    def __gt__(self, other):
+        return True
 
-        def __ge__(self, other):
-            return True
+    def __ge__(self, other):
+        return True
 
-    INDEFINITE_PAST = IndefinitePast(datetime.MINYEAR, 1, 1)
-    INDEFINITE_FUTURE = IndefiniteFuture(datetime.MAXYEAR, 12, 31)
+INDEFINITE_PAST = IndefinitePast(datetime.MINYEAR, 1, 1)
+INDEFINITE_FUTURE = IndefiniteFuture(datetime.MAXYEAR, 12, 31)
+```
 
 This is a lot more code though, and therefore in many situations this
 would be overkill.
@@ -132,15 +140,17 @@ clauses as far on the outside of the calling chain as possible.
 In the case of our date input, somewhere in the input processing we'd
 call these functions:
 
-    def process_start_date(d):
-         if d is None:
-             return INDEFINITE_PAST
-         return d
+```python
+def process_start_date(d):
+        if d is None:
+            return INDEFINITE_PAST
+        return d
 
-    def process_end_date(d):
-         if d is None:
-             return INDEFINITE_FUTURE
-         return d
+def process_end_date(d):
+        if d is None:
+            return INDEFINITE_FUTURE
+        return d
+```
 
 None of those `None`'s to worry about anymore after that!
 
@@ -176,9 +186,9 @@ you've learned something.
 Let me know if you would like to see more stuff like this -discussions
 of fairly low-level patterns that happen during development.
 
-[part 1](/posts/none_01_the_beginning)
-[part 2](/posts/none_02_recognizing)
-[part 3](/posts/none_03_handling_it)
-[part 4](/posts/none_04_guard_clauses)
-[part 5](/posts/none_05_more_on_guarding)
-[part 6](/posts/none_06_avoiding_it)
+[part 1](@/posts/none_01_the_beginning.md)
+[part 2](@/posts/none_02_recognizing.md)
+[part 3](@/posts/none_03_handling.md)
+[part 4](@/posts/none_04_guard_clauses.md)
+[part 5](@/posts/none_05_more_on_guarding.md)
+[part 6](@/posts/none_06_avoiding_it.md)

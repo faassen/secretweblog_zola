@@ -37,7 +37,7 @@ language community puts an emphasis on clarity, and Zope was using
 Python in strange new ways, not always clear or clean.
 
 This blog entry is a part of a [series on
-Zope](/posts/my-exit-from-zope) and my
+Zope](@/posts/my-exit-from-zope.md) and my
 involvement with it. [The first
-entry](/posts/my-exit-from-zope).
-[Next](/posts/the-weirdness-of-zope).
+entry](@/posts/my-exit-from-zope.md).
+[Next](@/posts/the-weirdness-of-zope.md).

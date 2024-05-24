@@ -9,7 +9,7 @@ tags = ["lxml"]
 
 # lxml findall and xpath performance
 
-Update: lxml got quite a bit faster since this entry, see [here](/posts/lxml-performance-progress/).
+Update: lxml got quite a bit faster since this entry, see [here](@/posts/lxml-performance-progress.md).
 
 I've been testing `findall()` performance on etree versus
 ElementTree/cElementTree. cElementTree and even ElementTree are quite a

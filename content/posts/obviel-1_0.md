@@ -18,15 +18,15 @@ validation, and routing. Obviel stays close to HTML but lets you build
 sophisticated components when you need to.
 
 Obviel has come a long way since its
-[beginnings](/posts/obviel). On top
+[beginnings](@/posts/obviel.md). On top
 of the core we've added a template language, an internationalization
 system that integrates with JavaScript and templates alike and a routing
 library. So it's high time for the One Dot Oh release!
 
 # Standout Features of Obviel
 
-- a [powerful core](/posts/the-core-of-obviel) that enables [model-driven UI
-  composition](/posts/powerful-composition-with-obviel-data-render). If you know jQuery it will be
+- a [powerful core](@/posts/the-core-of-obviel.md) that enables [model-driven UI
+  composition](@/posts/powerful-composition-with-obviel-data-render.md). If you know jQuery it will be
   easy to learn this core.
 
 - Integrated internationalization (i18n) based on
@@ -80,8 +80,8 @@ transfer has been complete and the code now lives [on
 github](https://github.com/obviel/obviel).
 
 We've been doing
-[lots](/posts/overwhelmed-by-javascript-dependencies)
-of [research](/posts/js-dependency-tools-redux)
+[lots](@/posts/overwhelmed-by-javascript-dependencies.md)
+of [research](@/posts/js-dependency-tools-redux.md)
 on using a JavaScript module system for Obviel so we can better maintain the
 codebase. I've been overwhelmed by the options, but soon we'll pick one, I
 promise! We'll also introduce various JavaScript codebase maintenance tools

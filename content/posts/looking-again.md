@@ -75,10 +75,10 @@ lot of ideas about them!
 
 To learn more about what interests me and how I think, you can also
 consult [my blog
-highlights](/posts/secret-weblog-highlights).
+highlights](@/posts/secret-weblog-highlights.md).
 
 A recent post that I'm a bit proud of is [framework
-patterns](/posts/framework-patterns).
+patterns](@/posts/framework-patterns.md).
 
 # Technical Skills
 

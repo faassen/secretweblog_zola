@@ -76,7 +76,7 @@ go around the center, and start a new project to try to turn the new
 Zope into a modern web framework: Grok.
 
 This blog entry is a part of a [series on
-Zope](/posts/my-exit-from-zope) and my
+Zope](@/posts/my-exit-from-zope.md) and my
 involvement with it.
-[Previous](/posts/jim-fulton-zope-architect).
-[Next](/posts/grok).
+[Previous](@/posts/jim-fulton-zope-architect.md).
+[Next](@/posts/implementing-grok.md).
