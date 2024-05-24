@@ -12,7 +12,7 @@ tags = ["python", "grok", "zope", "planetpython"]
 I got the idea for Grok in the summer of 2006. In the fall I still
 hadn't done anything yet about it. Then I gave [a talk at a German Zope
 User Group (DZUG)
-conference](/posts/older/dzug-keynote.html)
+conference](/posts/older/dzug-keynote)
 (the video of that now appears to have sadly disappeared off the
 internet; if it's still somewhere I'd appreciate to get the link!). This
 was the series of conferences that a few years ago got broadened into
@@ -50,7 +50,7 @@ from the start. This was beneficial when we went home and had to
 cooperate online.
 
 I wrote a
-[report](/posts/older/grok-or-what-i-did-on-my-holiday.html)
+[report](/posts/older/grok-or-what-i-did-on-my-holiday)
 about the sprint and Grok to my blog back then; it may be interesting
 reading for some.
 
@@ -159,7 +159,7 @@ make Grok smaller and more comprehensible all the way down, we would
 need to fix this.
 
 This blog entry is a part of a [series on
-Zope](/posts/my-exit-from-zope.html) and my
+Zope](/posts/my-exit-from-zope) and my
 involvement with it.
-[Previous](/posts/grok.html).
-[Next](/posts/back-to-the-center.html).
+[Previous](/posts/grok).
+[Next](/posts/back-to-the-center).

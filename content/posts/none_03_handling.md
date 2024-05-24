@@ -9,16 +9,16 @@ tags = ["python", "patterns", "pythonic", "planetpython"]
 
 # The Story of None: Part 3 - Handling It
 
-[part 1](/posts/none_01_the_beginning.html)
-[part 2](/posts/none_02_recognizing.html)
-[part 3](/posts/none_03_handling_it.html)
-[part 4](/posts/none_04_guard_clauses.html)
-[part 5](/posts/none_05_more_on_guarding.html)
-[part 6](/posts/none_06_avoiding_it.html)
+[part 1](/posts/none_01_the_beginning)
+[part 2](/posts/none_02_recognizing)
+[part 3](/posts/none_03_handling_it)
+[part 4](/posts/none_04_guard_clauses)
+[part 5](/posts/none_05_more_on_guarding)
+[part 6](/posts/none_06_avoiding_it)
 
 ## Last time...
 
-In [part 1](/posts/none_01_the_beginning.html) of the Story of None we've seen this validation function:
+In [part 1](/posts/none_01_the_beginning) of the Story of None we've seen this validation function:
 
     def validate_end_date_later_than_start(start_date, end_date):
         if end_date <= start_date:
@@ -26,7 +26,7 @@ In [part 1](/posts/none_01_the_beginning.html) of the Story of None we've seen t
                 "The end date should be later than the start date.")
 
 We've determined `start_date` and `end_date` may be `None`. In [part
-2](/posts/none_02_recognizing.html) we've seen that we can recognize this case by using `is None` or
+2](/posts/none_02_recognizing) we've seen that we can recognize this case by using `is None` or
 `is not None`.
 
 So:
@@ -119,12 +119,12 @@ case correctly already anyway. That's fine and will often be the case,
 but not _always_ so we do need to briefly think about this case before
 we stop worrying about it.
 
-[Next time](/posts/none_04_guard_clauses.html)
+[Next time](/posts/none_04_guard_clauses)
 we'll talk about what this pattern really is.
 
-[part 1](/posts/none_01_the_beginning.html)
-[part 2](/posts/none_02_recognizing.html)
-[part 3](/posts/none_03_handling_it.html)
-[part 4](/posts/none_04_guard_clauses.html)
-[part 5](/posts/none_05_more_on_guarding.html)
-[part 6](/posts/none_06_avoiding_it.html)
+[part 1](/posts/none_01_the_beginning)
+[part 2](/posts/none_02_recognizing)
+[part 3](/posts/none_03_handling_it)
+[part 4](/posts/none_04_guard_clauses)
+[part 5](/posts/none_05_more_on_guarding)
+[part 6](/posts/none_06_avoiding_it)

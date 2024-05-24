@@ -118,7 +118,7 @@ old Zope generated difficulty as well as opportunity. But through these
 projects Zope did continue to evolve, renew itself, and stay relevant.
 
 This blog entry is a part of a [series on
-Zope](/posts/my-exit-from-zope.html) and my
+Zope](/posts/my-exit-from-zope) and my
 involvement with it.
-[Previous](/posts/object-publishing.html).
-[Next](/posts/jim-fulton-zope-architect.html).
+[Previous](/posts/object-publishing).
+[Next](/posts/jim-fulton-zope-architect).

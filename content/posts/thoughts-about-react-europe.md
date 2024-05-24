@@ -24,7 +24,7 @@ approach to state.
 Another reason I really like React is because its community is so
 creative. I missed being involved with such a creative community after
 my exit from
-[Zope](/posts/my-exit-from-zope.html), which
+[Zope](/posts/my-exit-from-zope), which
 was due in large part as it had become less creative. A lot of the web
 is being rethought by the React community. Whether all of those ideas
 are good remains to be seen, but it's certainly exciting and good will
@@ -133,7 +133,7 @@ introduction](https://github.com/facebook/graphql), [GraphQL draft
 specification](http://facebook.github.io/graphql/) and a [reference
 implementation in JavaScript](https://github.com/graphql/graphql-js),
 resolving a
-[criticism](/posts/graphql-and-rest.html) I
+[criticism](/posts/graphql-and-rest) I
 had in a previous blog post. I started reading the spec that night (I
 had missed out on the intro; it's a better place to start!).
 

@@ -116,7 +116,7 @@ as it's a lightweight framework.**
 demonstrates my point that web framework performance isn't that
 important overall.** I don't fully understand why Flask is relatively
 slow, but I know [part of the reason is
-werkzeug](/posts/morepath-from-werkzeug-to-webob.html),
+werkzeug](/posts/morepath-from-werkzeug-to-webob),
 its request/response implementation. Morepath is actually doing a lot
 more sophisticated stuff underneath than Flask and it's still faster.
 That Pyramid is faster than Morepath is impressive, as what it needs to
@@ -153,7 +153,7 @@ I do know what caused the huge bump in performance in 0.8. This marked
 the switch to Reg 0.9, which is a dispatch library that is used heavily
 by Morepath. Reg 0.9 got faster, as this is when [Reg switched to a more
 flexible and efficient predicate dispatch
-approach](/posts/punctuated-equilibrium-in-software.html).
+approach](/posts/punctuated-equilibrium-in-software).
 
 Performance was stable again until version 0.11, when it went down
 again. In 0.11 we introduced a measure to make the request object

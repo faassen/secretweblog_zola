@@ -99,7 +99,7 @@ Collider, which, they told us, was going to collide hadrons Real Soon
 Now.
 
 This blog entry is a part of a [series on
-Zope](/posts/my-exit-from-zope.html) and my
+Zope](/posts/my-exit-from-zope) and my
 involvement with it.
-[Previous](/posts/the-new-zope-as-a-web-framework.html).
-[Next](/posts/implementing-grok.html).
+[Previous](/posts/the-new-zope-as-a-web-framework).
+[Next](/posts/implementing-grok).

@@ -23,10 +23,9 @@ agree with. Thanks Ian! Everybody should read Ian Bicking:
 
 # I told you so
 
-I've been thinking about this for a while. I brought my worries up in
-2007, before Python 3 was released:
-
-</posts/older/brief-python-3000-thoughts.html>
+I've been thinking about this for a while. I brought [my
+worries](@/posts/brief-python-3000-thoughts.md) up in 2007, before Python 3
+was released.
 
 I'll quote myself:
 
@@ -43,11 +42,11 @@ read about exciting new features I won't be using any time soon?
 
 I got feedback and wrote followups:
 
-</posts/older/python-3-worries-feedback.html>
+[Python 3 worries: feedback](@/posts/python-3-worries-feedback.md)
 
-</posts/older/the-purpose-to-my-whinging-about-the-transition-to-python-3.html>
+[the purpose to my "whinging" about the transition to Python 3](@/posts/the-purpose-to-my-whinging-about-the-transition-to-python-3.md)
 
-</posts/older/communicating-with-core-developers-on-the-python-3-transition.html>
+[Communicating with core developers on the Python 3 transition](@/posts/communicating-with-core-developers-on-the-python-3-transition.md)
 
 The feedback burned me quite heavily. I decided I was not going to
 actively do anything about Python 3 and would just develop Python 2 code
@@ -56,12 +55,12 @@ and let others worry about the problem.
 I shut up about Python 3 in public for years, until briefly in 2011, in
 response to a blog post by Armin Ronacher:
 
-</posts/older/python-2-8--1.html>
+[Python 2.8 +1](@/posts/python-2-8--1.md)
 
 In early 2012 the now sadly deceased Aaron Swartz also talked about this
 topic, and I responded, saying "I told you so" (not Aaron personally):
 
-</posts/older/cassandra-and-how-pypy-could-help-with-python-3.html>
+[Cassandra and how PyPy could help with Python 3](@/posts/cassandra-and-how-pypy-could-help-with-python-3.md)
 
 # The path taken
 

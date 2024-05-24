@@ -31,7 +31,7 @@ than code that has a lot of moving
 [imperative](https://en.wikipedia.org/wiki/Imperative_programming)
 parts. This way frameworks also help you structure your application. My
 article [Framework
-Patterns](/posts/framework-patterns.html)
+Patterns](/posts/framework-patterns)
 discusses a bunch of ways frameworks let you do that.
 
 I will fully admit my bias up front: I like creating frameworks. But
@@ -256,7 +256,7 @@ Ember, Angular, React and Vue came along. Now it's easy.
 
 I won't go into the technical details of how to create a framework here.
 Look at existing frameworks for guidance, and read my [Framework
-Patterns](/posts/framework-patterns.html)
+Patterns](/posts/framework-patterns)
 article. Instead I want to discuss ways to incrementally create
 frameworks while you build an application.
 
@@ -265,7 +265,7 @@ frameworks while you build an application.
 Certainly do not try to build a grand unifying framework that will solve
 everything once it is done. This is a trap. It will result in analysis
 paralysis or
-[over-engineering](/posts/older/under-engineering-over-engineering-right-engineering.html).
+[over-engineering](/posts/older/under-engineering-over-engineering-right-engineering).
 You risk solving problems you don't actually have and blinding yourself
 to the problems you do need to solve. Do not make the construction of a
 framework a requirement for the construction of the application that

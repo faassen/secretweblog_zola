@@ -30,10 +30,10 @@ with the server-side, the only game in town then, but over the last 10
 years I've shifted more and more to the client-side and JavaScript,
 where much of the creativity is today. I am however still very much at
 home on the server as well. I've done
-[React](/posts/a-brief-history-of-reselect.html),
+[React](/posts/a-brief-history-of-reselect),
 I've done REST, I've done hypermedia APIs, I've
-[dug](/posts/graphql-and-rest.html) into
-[GraphQL](/posts/the-emerging-graphql-python-stack.html).
+[dug](/posts/graphql-and-rest) into
+[GraphQL](/posts/the-emerging-graphql-python-stack).
 **If you need a web developer with deep insight in the whole stack, look
 no further.**
 
@@ -42,7 +42,7 @@ career. I came to Python early; I have seen Python grow from a small
 language with no name recognition to the enormously popular language it
 is today. I greatly enjoy using it. I've also criticized it [where I
 felt it was
-needed](/posts/python-2-gravity.html), painful
+needed](/posts/python-2-gravity), painful
 as it was. **If you need a very experienced Python developer, contact
 me.**
 

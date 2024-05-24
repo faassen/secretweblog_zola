@@ -14,7 +14,7 @@ but even if you don't, understanding the design principles underlying
 them helps you evaluate and use frameworks better.
 
 A few years ago I wrote a [post about
-patterns](/posts/framework-patterns.html)
+patterns](/posts/framework-patterns)
 I've seen in frameworks. In it, while I did discuss other languages, I
 mostly used examples from the Python world. This is a revised version
 that focuses on frameworks written in JavaScript or TypeScript.

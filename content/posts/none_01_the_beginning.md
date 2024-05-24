@@ -9,12 +9,12 @@ tags = ["python", "patterns", "pythonic", "planetpython"]
 
 # The Story of None: Part 1 - The Beginning
 
-[part 1](/posts/none_01_the_beginning.html)
-[part 2](/posts/none_02_recognizing.html)
-[part 3](/posts/none_03_handling_it.html)
-[part 4](/posts/none_04_guard_clauses.html)
-[part 5](/posts/none_05_more_on_guarding.html)
-[part 6](/posts/none_06_avoiding_it.html)
+[part 1](/posts/none_01_the_beginning)
+[part 2](/posts/none_02_recognizing)
+[part 3](/posts/none_03_handling_it)
+[part 4](/posts/none_04_guard_clauses)
+[part 5](/posts/none_05_more_on_guarding)
+[part 6](/posts/none_06_avoiding_it)
 
 ## Introduction
 
@@ -93,12 +93,12 @@ see this:
 
 That's not what we want!
 
-So [next](/posts/none_02_recognizing.html) we
+So [next](/posts/none_02_recognizing) we
 will talk about how to recognize `None` properly in the first place.
 
-[part 1](/posts/none_01_the_beginning.html)
-[part 2](/posts/none_02_recognizing.html)
-[part 3](/posts/none_03_handling_it.html)
-[part 4](/posts/none_04_guard_clauses.html)
-[part 5](/posts/none_05_more_on_guarding.html)
-[part 6](/posts/none_06_avoiding_it.html)
+[part 1](/posts/none_01_the_beginning)
+[part 2](/posts/none_02_recognizing)
+[part 3](/posts/none_03_handling_it)
+[part 4](/posts/none_04_guard_clauses)
+[part 5](/posts/none_05_more_on_guarding)
+[part 6](/posts/none_06_avoiding_it)

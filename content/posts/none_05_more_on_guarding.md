@@ -9,16 +9,16 @@ tags = ["python", "patterns", "pythonic", "planetpython"]
 
 # The Story of None: Part 5 -- More on Guarding
 
-[part 1](/posts/none_01_the_beginning.html)
-[part 2](/posts/none_02_recognizing.html)
-[part 3](/posts/none_03_handling_it.html)
-[part 4](/posts/none_04_guard_clauses.html)
-[part 5](/posts/none_05_more_on_guarding.html)
-[part 6](/posts/none_06_avoiding_it.html)
+[part 1](/posts/none_01_the_beginning)
+[part 2](/posts/none_02_recognizing)
+[part 3](/posts/none_03_handling_it)
+[part 4](/posts/none_04_guard_clauses)
+[part 5](/posts/none_05_more_on_guarding)
+[part 6](/posts/none_06_avoiding_it)
 
 ## Last time...
 
-[Last time](/posts/none_04_guard_clauses.html)
+[Last time](/posts/none_04_guard_clauses)
 in the Story of None we've discussed the concept of a _guard clause_.
 This is simply an `if` statement at the beginning of a function that
 returns early if a certain condition is true.
@@ -250,13 +250,13 @@ sure what to do, here is a list of things to consider:
   In the case of unexpected input, I can often rely on the language to
   fail with an exception anyway in the appropriate spot.
 
-[Next time](/posts/none_06_avoiding_it.html)
+[Next time](/posts/none_06_avoiding_it)
 we'll consider a way to avoid having to scatter guard clauses throughout
 our codebase: normalization.
 
-[part 1](/posts/none_01_the_beginning.html)
-[part 2](/posts/none_02_recognizing.html)
-[part 3](/posts/none_03_handling_it.html)
-[part 4](/posts/none_04_guard_clauses.html)
-[part 5](/posts/none_05_more_on_guarding.html)
-[part 6](/posts/none_06_avoiding_it.html)
+[part 1](/posts/none_01_the_beginning)
+[part 2](/posts/none_02_recognizing)
+[part 3](/posts/none_03_handling_it)
+[part 4](/posts/none_04_guard_clauses)
+[part 5](/posts/none_05_more_on_guarding)
+[part 6](/posts/none_06_avoiding_it)

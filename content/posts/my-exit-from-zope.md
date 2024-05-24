@@ -36,23 +36,23 @@ to some.
 I will post the entries in this series here:
 
 - [the Rise of
-  Zope](/posts/the-rise-of-zope.html)
+  Zope](/posts/the-rise-of-zope)
 - [the Weirdness of
-  Zope](/posts/the-weirdness-of-zope.html)
+  Zope](/posts/the-weirdness-of-zope)
 - [Object
-  Publishing](/posts/object-publishing.html)
-- [Renewing Zope](/posts/renewing-zope.html)
+  Publishing](/posts/object-publishing)
+- [Renewing Zope](/posts/renewing-zope)
 - [Jim Fulton, Zope
-  Architect](/posts/jim-fulton-zope-architect.html)
+  Architect](/posts/jim-fulton-zope-architect)
 - [The New Zope as a Web
-  Framework](/posts/the-new-zope-as-a-web-framework.html)
-- [Grok: the Idea](/posts/grok.html)
+  Framework](/posts/the-new-zope-as-a-web-framework)
+- [Grok: the Idea](/posts/grok)
 - [Implementing
-  Grok](/posts/implementing-grok.html)
+  Grok](/posts/implementing-grok)
 - [Back to the
-  Center](/posts/back-to-the-center.html)
+  Center](/posts/back-to-the-center)
 - [The Centre Cannot
-  Hold](/posts/the-centre-cannot-hold.html)
+  Hold](/posts/the-centre-cannot-hold)
 
 <blockquote class="twitter-tweet"><p>the Zope is dead! Long live the Zope!</p>&mdash; Martijn Faassen (@faassen) <a href="https://twitter.com/faassen/statuses/378159021636603906">September 12, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

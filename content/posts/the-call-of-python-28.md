@@ -96,7 +96,7 @@ We could say, fine, they can stay on Python 2 forever then! Well, at
 least until 2020. I think this would be unwise, as these organizations
 are paying a lot of developers money to work on Python code. This has an
 effect on the community as a whole. It contributes to [the gravity of
-Python 2](/posts/python-2-gravity.html).
+Python 2](/posts/python-2-gravity).
 
 Those organizations, and thus the wider Python community, would be
 helped if there was an incremental way to upgrade their code bases to

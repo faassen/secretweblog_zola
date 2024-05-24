@@ -62,7 +62,7 @@ But it was too late. And at least the problem was clear now.
 # The Cave Sprint
 
 So the beginning of 2009 I organized a [small
-sprint](/posts/older/cleaning-up-zope-3-s-dependencies.html).
+sprint](/posts/older/cleaning-up-zope-3-s-dependencies).
 We'd just moved house and now had the room for it. I'm now in two minds
 about this sprint: while we did manage to make a good first step in
 cleaning up dependencies, it was also the beginning of the end of my
@@ -104,7 +104,7 @@ again? The answer was no, but that will have to wait for the next
 article in this series.
 
 This blog entry is a part of a [series on
-Zope](/posts/my-exit-from-zope.html) and my
+Zope](/posts/my-exit-from-zope) and my
 involvement with it.
-[Previous](/posts/implementing-grok.html).
-[Next](/posts/the-centre-cannot-hold.html).
+[Previous](/posts/implementing-grok).
+[Next](/posts/the-centre-cannot-hold).

@@ -9,16 +9,16 @@ tags = ["python", "patterns", "pythonic", "planetpython"]
 
 # The Story of None: Part 2 - Recognizing It
 
-[part 1](/posts/none_01_the_beginning.html)
-[part 2](/posts/none_02_recognizing.html)
-[part 3](/posts/none_03_handling_it.html)
-[part 4](/posts/none_04_guard_clauses.html)
-[part 5](/posts/none_05_more_on_guarding.html)
-[part 6](/posts/none_06_avoiding_it.html)
+[part 1](/posts/none_01_the_beginning)
+[part 2](/posts/none_02_recognizing)
+[part 3](/posts/none_03_handling_it)
+[part 4](/posts/none_04_guard_clauses)
+[part 5](/posts/none_05_more_on_guarding)
+[part 6](/posts/none_06_avoiding_it)
 
 ## Last time...
 
-In [part 1](/posts/none_01_the_beginning.html) of the Story of None we've seen
+In [part 1](/posts/none_01_the_beginning) of the Story of None we've seen
 this validation function:
 
     def validate_end_date_later_than_start(start_date, end_date):
@@ -123,12 +123,12 @@ In JavaScript by the way the idiom is `value === null` and
 `value !== null`, as triple comparison is identity comparison in
 JavaScript.
 
-[Next time](/posts/none_03_handling_it.html)
+[Next time](/posts/none_03_handling_it)
 we'll apply this approach to our validation function.
 
-[part 1](/posts/none_01_the_beginning.html)
-[part 2](/posts/none_02_recognizing.html)
-[part 3](/posts/none_03_handling_it.html)
-[part 4](/posts/none_04_guard_clauses.html)
-[part 5](/posts/none_05_more_on_guarding.html)
-[part 6](/posts/none_06_avoiding_it.html)
+[part 1](/posts/none_01_the_beginning)
+[part 2](/posts/none_02_recognizing)
+[part 3](/posts/none_03_handling_it)
+[part 4](/posts/none_04_guard_clauses)
+[part 5](/posts/none_05_more_on_guarding)
+[part 6](/posts/none_06_avoiding_it)

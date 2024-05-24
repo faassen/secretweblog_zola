@@ -19,7 +19,7 @@ tags = ["python", "patterns", "pythonic", "planetpython"]
 ## Last time...
 
 [Last
-time](/posts/none_05_more_on_guarding.html)
+time](/posts/none_05_more_on_guarding)
 we've discussed guard clauses and when not to use them. We've discussed
 the paranoia developers sometimes feel that causes them to write useless
 or even harmful guard clauses. The best way to reduce paranoia about
@@ -176,9 +176,9 @@ you've learned something.
 Let me know if you would like to see more stuff like this -discussions
 of fairly low-level patterns that happen during development.
 
-[part 1](/posts/none_01_the_beginning.html)
-[part 2](/posts/none_02_recognizing.html)
-[part 3](/posts/none_03_handling_it.html)
-[part 4](/posts/none_04_guard_clauses.html)
-[part 5](/posts/none_05_more_on_guarding.html)
-[part 6](/posts/none_06_avoiding_it.html)
+[part 1](/posts/none_01_the_beginning)
+[part 2](/posts/none_02_recognizing)
+[part 3](/posts/none_03_handling_it)
+[part 4](/posts/none_04_guard_clauses)
+[part 5](/posts/none_05_more_on_guarding)
+[part 6](/posts/none_06_avoiding_it)

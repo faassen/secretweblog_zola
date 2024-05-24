@@ -96,7 +96,7 @@ foot, [Acquisition](https://pypi.python.org/pypi/Acquisition) is still
 available as a library on PyPI today.
 
 This blog entry is a part of a [series on
-Zope](/posts/my-exit-from-zope.html) and my
+Zope](/posts/my-exit-from-zope) and my
 involvement with it.
-[Previous](/posts/the-rise-of-zope.html).
-[Next](/posts/object-publishing.html).
+[Previous](/posts/the-rise-of-zope).
+[Next](/posts/object-publishing).

@@ -10,11 +10,11 @@ tags = ["javascript", "obviel", "packaging"]
 # Introduction
 
 \[UPDATE: This post has [new 2015
-followup](/posts/javascript-dependencies-revisited-an-example-project.html)\]
+followup](/posts/javascript-dependencies-revisited-an-example-project)\]
 
 Recently I looked into JavaScript dependency management and wrote a long
 post about it where I was
-[overwhelmed](/posts/overwhelmed-by-javascript-dependencies.html)
+[overwhelmed](/posts/overwhelmed-by-javascript-dependencies)
 and found some solutions. Since then I've learned a few new things and
 have thought a bit more, and I thought I'd share.
 
@@ -572,7 +572,7 @@ however, so fine-grained module reuse of other packages is not possible.
 # Still overwhelmed
 
 I'm still
-[overwhelmed](/posts/overwhelmed-by-javascript-dependencies.html)
+[overwhelmed](/posts/overwhelmed-by-javascript-dependencies)
 by the choices available as well as all the details. But I know a bit
 more about what's possible and what I want now. Are there any players in
 this field that I missed? Undoubtedly more will come out of the woodwork

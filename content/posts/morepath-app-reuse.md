@@ -9,14 +9,14 @@ tags = ["planetpython", "python", "zope", "morepath"]
 
 I'm working on a new Python web microframework called Morepath, as I've
 mentioned
-[before](/posts/on-the-morepath.html). Here's
+[before](/posts/on-the-morepath). Here's
 the [code](https://github.com/morepath/morepath) and here's a [draft
 quickstart](https://github.com/morepath/morepath/blob/master/doc/quickstart.rst).
 Morepath is a microframework with a difference: it's small and easy to
 learn like the others, but has special super powers under the hood.
 
 One of those super powers is
-[Reg](/posts/reg-now-with-more-generic.html),
+[Reg](/posts/reg-now-with-more-generic),
 which along with Morepath's model/view separation makes it easy to write
 reusable views. But in this article I'll talk about another super power:
 Morepath's application reuse patterns.
@@ -270,7 +270,7 @@ configuration system.
 
 This is because Morepath, like Grok or Pyramid, comes from the rich
 [Zope
-heritage](/posts/my-exit-from-zope.html),
+heritage](/posts/my-exit-from-zope),
 where we've thought about this stuff. And Morepath wraps all that power
 in a small, easy, reusable little framework.
 

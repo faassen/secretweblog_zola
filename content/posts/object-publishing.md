@@ -86,10 +86,10 @@ can also _construct_ a URL with just a model. This is very powerful and,
 in the RESTful, client-side web of today more relevant than ever.[1]
 
 This blog entry is a part of a [series on
-Zope](/posts/my-exit-from-zope.html) and my
+Zope](/posts/my-exit-from-zope) and my
 involvement with it.
-[Previous](/posts/the-weirdness-of-zope.html).
-[Next](/posts/renewing-zope.html).
+[Previous](/posts/the-weirdness-of-zope).
+[Next](/posts/renewing-zope).
 
 [1] I myself have explored combining routing and traversal in my older
 [Traject](https://pypi.python.org/pypi/traject) library and the

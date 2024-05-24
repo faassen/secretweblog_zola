@@ -195,7 +195,7 @@ many other languages, such as Python, we're on our own. But we certainly
 still have to pay attention to `None`.
 
 See also my [the Story of
-None](/posts/none_01_the_beginning.html).
+None](/posts/none_01_the_beginning).
 
 # Back to process_items
 

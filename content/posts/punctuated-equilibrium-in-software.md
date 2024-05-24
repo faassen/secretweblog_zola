@@ -412,4 +412,4 @@ devs [are one click away](https://discord.gg/0xRQrJnOPiRsEANa).
 
 **Self-serving mercenary statement**: if you need a developer and like
 what you hear, talk to me -- I'm on the [lookout for interesting
-projects](/posts/looking-for-project.html).
+projects](/posts/looking-for-project).

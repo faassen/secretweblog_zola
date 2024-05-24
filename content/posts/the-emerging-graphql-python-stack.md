@@ -58,7 +58,7 @@ they're not commonly used.
 REST will be here to stay for the foreseeable future. There is also
 nothing inherent in REST that stops you from solving this -- I wrote
 about this in a [previous blog
-entry](/posts/graphql-and-rest.html). But
+entry](/posts/graphql-and-rest). But
 meanwhile GraphQL has already solved much of this stuff, so at the very
 least is interesting to explore.
 
