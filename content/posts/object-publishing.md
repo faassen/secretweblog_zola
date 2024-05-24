@@ -4,10 +4,10 @@ date = 2013-10-23
 slug = "object-publishing"
 
 [taxonomies]
-tags = ["python", "zope", "planetpython"]
+tags = ["python", "zope", "planetpython", "rest"]
 +++
 
-# Introduction
+## Introduction
 
 A final early Zope innovation that I want to talk about is object
 publishing. Object publishing is one of those ideas that seemed weird at
@@ -15,7 +15,7 @@ the time. In fact, in its execution Zope would still be considered weird
 by many today. But in an important way the idea of publishing code on
 URLs is now absolutely the norm.
 
-# The Web in 1998
+## The Web in 1998
 
 Let's go back to 1998, when Zope was born. Let's look at a URL:
 
@@ -34,7 +34,7 @@ server that were CGI scripts. When someone accesses the file, the script
 would be executed and produce HTML content. So `script.cgi` or
 `script.pl` or `script.py` or something.
 
-# Zope's way
+## Zope's way
 
 Zope was different. The path in a URL in Zope did not map to a file in
 the filesystem anymore, but to a piece of Python code. Zope was one of
@@ -62,7 +62,7 @@ were expecting a `.cgi` or `.pl` or `.php` or `.asp` or `.cfm`.
 Bizarrely enough for a little while we had an effort to bring them back
 so people would be less confused.
 
-# The Web today
+## The Web today
 
 A variation of Zope's approach is now the norm. Most web development
 frameworks in Python and other languages don't map URL paths to files
@@ -95,3 +95,17 @@ involvement with it.
 [Traject](https://pypi.python.org/pypi/traject) library and the
 so-new-oh-no-I-gotta-write-the-docs
 [Morepath](https://github.com/morepath/morepath) web framework.
+
+## Preserved Comments
+
+### Jose Di Nunzio
+
+> And that's how zope ruined me for any other web platform. Object traversal is
+> so beautiful that I can't tolerate not using it.
+
+### Martijn Faassen
+
+> Pyramid does object traversal, so you're not ruined for Pyramid. Morepath is
+> my attempt to merge some of the qualities of routing with the qualities of
+> traversal, but it doesn't quite count yet as being "there", lacking docs and
+> such

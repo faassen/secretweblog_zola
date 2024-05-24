@@ -4,10 +4,10 @@ date = 2013-01-30
 slug = "modern-client-side-times"
 
 [taxonomies]
-tags = ["planetpython", "python", "javascript", "framework", "django"]
+tags = ["planetpython", "python", "javascript", "framework", "django", "rest"]
 +++
 
-# Introduction
+## Introduction
 
 Reinout wrote [a blog
 post](http://reinout.vanrees.org/weblog/2013/01/30/defense-of-django.html)
@@ -35,7 +35,7 @@ years, I figure I'd comment. I've been working on and with
 [Obviel](http://obviel.org), and I've mostly worked with Grok-based
 RESTful + JSON backends.
 
-# The new way obsoletes the old?
+## The new way obsoletes the old?
 
 So, back to Reinout's question: is the new paradigm going to obsolete
 the old? Does the rich client-side user interface approach obsolete
@@ -58,7 +58,7 @@ about what server-side web frameworks do and what this might look like
 in the client. Your knowledge of server side web development is not
 obsoleted even if you develop in the client-side paradigm.
 
-# What goes and what stays?
+## What goes and what stays?
 
 With a single-page rich client application, the server-side web
 framework has to do less. What tends to go away from the server side?
@@ -97,7 +97,7 @@ useful. The main thing that changes is that what goes over the wire from
 server to client isn't rendered HTML anymore. This is a major change
 that affects everything, but much does stay the same nonetheless.
 
-# Random extra points
+## Random extra points
 
 Reinout makes a few assorted extra points, and I'll respond to some:
 
@@ -183,7 +183,7 @@ Reinout makes a few assorted extra points, and I'll respond to some:
   [Fanstatic](https://pypi.org/project/fanstatic/), by the way. But it's one
   way of many.
 
-# Conclusions
+## Conclusions
 
 Server-side web applications aren't going to go away. Server-side
 concepts often apply to the client side. These things will exist in
@@ -200,3 +200,37 @@ client side, and that is fun!
 And a plug for [Obviel](http://obviel.org): Obviel is a client-side web
 framework that you can adopt incrementally, and it's informed by
 server-side concepts.
+
+## Preserved Comments
+
+### Balazs Ree
+
+> I agree with your conclusion: our server side applications will not go away,
+> at least not today. I can also see natural points in real life web apps where
+> the two technologies can connect with each other.
+>
+> Regarding unit testing front-end JavaScript: "Untested code is broken code",
+> this actually applies in the same way to JS as to say, Python. But while we
+> have a culture which says that a Python code is immediately rejected if there
+> are no tests, we don't yet have the same culture for JS. But the culture will
+> arrive, because the modern testing environments make it easy to do Test
+> Driven Development with JS, and even run the tests automatically on each
+> supported browser whenever you save a new version of the source in your
+> editor. I am using BusterJS for that, and this has already become my daily
+> practice.
+>
+> Part of the story of testing JS, that when you start unittesting your code,
+> you realise that you have to develop modular code. If you have no components,
+> just a blob of JS in an HTML page, you will not be able to test your units,
+> as you have no units.
+>
+> In my experience, the easier part of JS testing is to learn is how to write
+> your test. The more difficult part to learn is, how to write modular JS that
+> is testable. This means that unittesting will be your teacher to write better
+> code, once you take the effort to do it.
+
+### Martijn Faassen
+
+> That's a good point; there are habits to write proper modular JS code just
+> like there are habits to do the same for Python, and one way to learn them is
+> to do testing.

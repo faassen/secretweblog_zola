@@ -10,7 +10,7 @@ tags = ["python", "planetpython", "zope", "plone", "silva"]
 Besides the use of Python, what were some of the other weirdnesses of
 early Zope?
 
-# Web UI
+## Web UI
 
 Zope featured a web-based user interface, which was rare thing at the
 time. The user interface was a hybrid between a CMS and a development
@@ -29,7 +29,7 @@ is [Plone](http://plone.org). Both are still around. Plone has always
 had a very vibrant community, something I witnessed again first hand
 last year at the Plone conference.
 
-# Extensibility
+## Extensibility
 
 Although the APIs were sometimes weird, you could extend Zope with new
 components written in Python; just modules in files. Over time the Zope
@@ -50,7 +50,7 @@ Extensibility remained a focus of the Zope project throughout its
 history. In a future post I'll talk about some of the extensibility
 mechanisms that were introduced later.
 
-# ZODB
+## ZODB
 
 Another innovation of Zope was the Zope Object Database (ZODB). The ZODB
 is a Python object database, offering near transparent persistence for
@@ -83,7 +83,7 @@ offer the tools to build one. I was one of the people who did
 (hurry.query), but a query engine is really one of those things you want
 to be taken care of by dedicated maintainers.
 
-# Acquisition
+## Acquisition
 
 Zope also innovated on something that is too weird to go into much
 detail about here: acquisition. Store an object in an attribute of
@@ -100,3 +100,10 @@ Zope](@/posts/my-exit-from-zope.md) and my
 involvement with it.
 [Previous](@/posts/the-rise-of-zope.md).
 [Next](@/posts/object-publishing.md).
+
+## Preserved Comments
+
+### Mikko Ohtamaa
+
+> Acquisition is like something poking you from behind in sauna, when you do
+> not expect it

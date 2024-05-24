@@ -41,3 +41,41 @@ which the path was cleared in the last 5 years or so.
 
 \[update: this is still in git; the Morepath 0.1 release is Python 2
 only. But it will be included in the upcoming Morepath 0.2 release\]
+
+## Preserved Comments
+
+### Alec Munro
+
+> Happy to contribute. I was trying to pick a framework for a new project, and
+> I really wanted to use Python 3. After a brief experimentation with Morepath,
+> it seemed very promising, but then I noticed the lack of Python 3 support,
+> and almost switched back to Flask.
+>
+> Curiousity got the better of me, thankfully, and I thought at least I should
+> look and see what was missing to support Python 3. Running the hello world
+> app under python 3, it turned out to be a half-dozen mostly trivial things in
+> the framework code (direct references to 'unicode', urlencode and cookiejar
+> moving, etc.). After fixing those I grabbed Tox and confirmed that I hadn't
+> broken anything for 2.7.
+>
+> Then I added 3.4 to the tox.ini, which revealed quite a lot of failing tests
+> under 3. A very significant portion of these were simply due to webob's
+> request.body being a byte string, and most of the others were similar. There
+> were one or two pieces where I think the solution is a bit on the ugly side
+> to keep it running in 2 and 3, but hopefully we can clean those up.
+>
+> I really appreciate what you've got going on with Morepath, and I've
+> benefited hugely from your other contributions throughout the years, so it
+> feels very good to be able to give back a bit. It's especially cathartic
+> since I managed to avoid making any contributions during the PyCon sprints
+> this week.
+
+### Martijn Faassen
+
+> I'm glad curiosity got the better of you! You're the first person who
+> actually did something significant with the Morepath source code besides
+> myself that I know of. So I'm curious to hear more about your experiences.
+> Also I hope Morepath works out for your project!
+
+> If you're on IRC, there's a #morepath channel on freenode we hang out on.
+> (that invitation applies to anyone interested in Morepath of course)

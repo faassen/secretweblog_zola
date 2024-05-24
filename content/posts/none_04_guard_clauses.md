@@ -114,3 +114,33 @@ We'll talk a bit more about guard clauses
 [part 4](@/posts/none_04_guard_clauses.md)
 [part 5](@/posts/none_05_more_on_guarding.md)
 [part 6](@/posts/none_06_avoiding_it.md)
+
+## Preserved Comments
+
+### Brutus_dmc
+
+> What about try/except? Something like this:
+
+```python
+def validate_end_date_later_than_start(start_date, end_date):
+  try:
+    if end_date <= start_date:
+      raise ValidationError(
+        "The end date should be later than the start date."
+      )
+  except TypeError:
+    if start_date is not None and end_date is not None:
+      raise
+```
+
+### Martijn Faassen
+
+> I wouldn't do it this way either. You have to go through extra work in the
+> catch handler to make sure it's not some _other_ TypeError you are dealing
+> with (of course with this particular logic that's less likely, but a real
+> problem in other cases). I find the logic much harder to understand too.
+> Compare a date, if there's a TypeError, then check whether the start_date and
+> the end_date are not-None, then raise the error again?
+
+> Plus this only works for guard clauses that raise exceptions. What do you do
+> when a return value is in play?

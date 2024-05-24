@@ -7,7 +7,7 @@ slug = "jim-fulton-zope-architect"
 tags = ["python", "planetpython", "zope"]
 +++
 
-# Introduction
+## Introduction
 
 I hope to have shown that Zope in 1998 was massively creative: traversal
 based object publishing, a web UI, a pluggable architecture, a NoSQL
@@ -21,7 +21,7 @@ doesn't take away from Jim's creativity -- he helped others be creative
 too. Creativity is very important to me in my life as a developer, and I
 respect it immensely in him.
 
-# Meeting Jim
+## Meeting Jim
 
 In the year 2000 I went to the International Python Conference in
 Washington DC. This was the first time I'd been to any Python
@@ -46,7 +46,7 @@ contributed a little bit of code to these at best -- Jim wrote much of
 it. Still I was proud that some of my ideas were taken up and put in the
 new Zope, thanks to Jim.
 
-# Jim at Sprints
+## Jim at Sprints
 
 The new Zope in the heady days of the early 2000s was developed using
 sprints. A sprint was a few days when people would come together
@@ -69,7 +69,7 @@ friendly, smart, and engaging. He helped channel lots of people's
 creativity energies into the new Zope project. I learned a lot from my
 interactions with Jim, and enjoyed them tremendously.
 
-# Jim and me
+## Jim and me
 
 In the years afterwards Zope was moving less quickly. Jim had less time
 for Zope, as there are of course still customer projects to work on.
@@ -90,7 +90,7 @@ hide HTML on the client-side, I like client-side HTML template
 languages. And so on. So sometimes we argued, but we respected each
 other.
 
-# After Zope
+## After Zope
 
 In 2010 Jim and I last saw each other at the Zope Summit. At the end, we
 had a stupid fight about a stupid thing -- a result primarily, I think,
@@ -114,3 +114,22 @@ Zope](@/posts/my-exit-from-zope.md) and my
 involvement with it.
 [Previous](@/posts/renewing-zope.md).
 [Next](@/posts/the-new-zope-as-a-web-framework.md).
+
+## Preserved Comments
+
+### Johannes Raggam
+
+> you've all built great software, which i still love. thanks for that!
+
+### edeadlk
+
+> Regardless of the outcome of that phone call, please continue writing the
+> series! You're sharing a wonderful (and important) piece of history here
+
+### Martijn Faassen
+
+> Thank you. I still have some more material, though I'm getting closer to the
+> end now.
+
+> Jim and I had a nice phone call earlier today. I think we'll be staying in
+> touch more closely from now on.

@@ -7,7 +7,7 @@ slug = "graphql-and-rest"
 tags = ["react", "graphql", "rest", "javascript", "morepath"]
 +++
 
-# Introduction
+## Introduction
 
 There is a new trend in open source that I'm not sure I like very much:
 big companies announce that they are _going_ to open source something,
@@ -42,7 +42,7 @@ React challenges MVC and bi-directional data binding.
 is a rethink of the way client-side web applications talk to their
 backend. GraphQL challenges REST.
 
-# REST
+## REST
 
 So what was REST again? Rich frontend applications these days typically
 talk to a HTTP backend. These backends follow some basic REST patterns:
@@ -69,7 +69,7 @@ they have hyperlinks between resources. I wrote a web framework named
 easier to create complex hypermedia APIs, so you can say I'm pretty
 heavily invested in REST.
 
-# Challenging REST
+## Challenging REST
 
 GraphQL challenges REST. The core idea is that the code that best knows
 what data is needed for a UI is not on the server but on the client. The
@@ -127,7 +127,7 @@ To talk to the backend, there is only a single HTTP end-point that
 receives all these queries, or alternatively you use a non-HTTP
 mechanism like web sockets. Very unRESTful indeed!
 
-# REST and shaping data
+## REST and shaping data
 
 Since I'm invested in REST, I've been wondering about whether we can
 bring some of these ideas to REST APIs. Perhaps we can even map GraphQL
@@ -220,7 +220,7 @@ The server could supply this map of GraphQL type to URI template to the
 server, so the server can make the translation of the GraphQL to the
 REST API.
 
-# Further speculation
+## Further speculation
 
 What about queries for multiple objects? We could use some kind of
 collection URL with a filter:
@@ -236,7 +236,7 @@ the objects's URL in a standard way such as with an `@id` field, you can
 then get a handle on the object and send it `POST`, `PUT` and `DELETE`
 requests.
 
-# Conclusion
+## Conclusion
 
 All this is wild speculation, as we don't really know enough about
 GraphQL yet to fully understand its capabilities. It's quite possible
@@ -259,3 +259,85 @@ Though it makes me slightly uncomfortable, I greatly appreciate it.
 Hopefully my feedback wasn't too dumb; luckily you can't blame me too
 much for that as I can legitimately claim ignorance! I'm looking forward
 to learning more.
+
+### Preserved Comments
+
+#### Frank P
+
+> So, somebody noticed that query languages may be useful for application
+> development. In the end, we might even get something having well-defined
+> semantics like SQL (around 1974?). An interesting question for any "web-scale
+> query language" (any HTTP API, in fact) may be, wether to limit the
+> expressible computational complexity in the language or the actual load per
+> request in a robust implementation to avoid malicious or careless users to
+> knock out the infrastructure (imagine a GraphQL query that gives you _all_ of
+> Facebook's data).
+>
+> Regarding GraphQL (or any query language) vs. REST, I'd say that both may
+> well work together. We could usefully have services that provide navigable
+> REST-style resources/collections and one or more query language HTTP APIs at
+> the same time. Or REST collections that support queries/projections in one
+> way or the other, like you demonstrated. We could have GET
+> /users?graphql=<gibberish> or so.
+>
+> While dogmatic REST and using-the-web-as-it-was-designed _maybe_ gives us
+> discoverable, machine-readable, interlinked resources, hopefully supporting
+> web-scale automation (if only we could standardize "semantics" of data),
+> simply using web browsers as client runtimes is generating a huge demand for
+> simple application programming approaches using well-known services and APIs.
+> And that is not a bad place for a frontend framework and a related query
+> language. For me, not everything has to look like JSON, but that's another
+> question...
+
+### Laurence Rowe
+
+> There's a really interesting presentation from Jafar Husain about Netflix's >
+> approach to the same problem: https://www.youtube.com/watch?v=hOE6nVVr14c
+>
+> I'm using a variation of JSON-LD framing to define the 'join' across the
+> graph and return a deeply embedded object as the response. This is the
+> representation you want at the point of rendering your page, but the driving
+> factor behind this decision in our app was that it made facetting across the
+> embedded objects possible when indexed in Elasticsearch.
+>
+> The downside of this is that it separates the specification of the 'frame'
+> from the UI code where you know what's needed. It also significantly bloats
+> our complex pages, flattening our data in transit would avoid a lot of
+> repetition.
+>
+> The key point seems to be conceptualising your application's data as a graph.
+> Doing so gives you the flexibility to layer more intelligent transports above
+> it.
+
+### maparent
+
+> Hello, Martijn!
+>
+> I had to work with both those issues in a project I'm involved in: I have not
+> put filters in my requests, but related objects.
+>
+> So I have paths such as /api/Classname/instanceId/relation_name/instanceId/...
+>
+> Relations are, in my case, introspected from sqlalchemy, and translated to
+> database joins.
+>
+> Each object obtained through the relationship has its canonical URL as
+> /api/OtherClassname/instanceid, but the indirect path has further properties:
+> An object creation through POST will populate the relationship, e.g. with
+> association tables.
+>
+> On the query side, we do not have generic queries as you propose, but we have
+> a named "view specification" that specifies fields given. It is possible in a
+> view specification to refer to another view specification for sub-objects.
+>
+> I'd be glad to discuss it more, but the main ideas are here:
+>
+> https://github.com/assembl/assembl/blob/develop/assembl/views/api2/__init__.py
+>
+> https://github.com/assembl/assembl/blob/develop/assembl/view_def/__init__.py
+>
+> Some of this is terribly ad hoc, but I'd love to discuss ways to expand REST
+> in > this direction in a more regular fashion.
+>
+> Best,
+> Marc-Antoine

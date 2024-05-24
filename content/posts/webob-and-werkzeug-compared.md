@@ -183,3 +183,15 @@ what WSGI request/response implementation to use, and also to the
 maintainers of Werkzeug and WebOb themselves.
 
 Let me know what you think!
+
+## Preserved Comments
+
+### Luciano Ramalho
+
+> Thanks for the writeup, Martijn! I noticed another advantage of WebOb over
+> Werkzeug in 2010 when experimenting with form generation for semi-structured
+> databases. If I had a repeating field with the same name in all instances,
+> WebOb correctly preserved their ordering, while Werkzeug did not (neither did
+> the Django HTTP machinery). At the time I looked up the relevant standards
+> and confirmed that such ordering must be preserved, so WebOb was the only one
+> that was compliant in that regard.
