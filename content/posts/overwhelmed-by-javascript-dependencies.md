@@ -79,9 +79,9 @@ write unit tests and depend on stuff in them without worrying.
 # My Python Background
 
 Over the years, I've
-[worked](/posts/older/the-ghost-of-packaging-past-and-future)
+[worked](/posts/the-ghost-of-packaging-past-and-future)
 [a
-lot](/posts/older/a-history-of-python-packaging)
+lot](/posts/a-history-of-python-packaging)
 with Python dependency management; PyPI, distutils, setuptools, pip etc.
 And build tools like buildout. And of course, the Python `import`
 statement. I learned a lot about JavaScript tools, and the Python tools

@@ -22,7 +22,7 @@ are more successfully inventing them.
 # What is Pythonic?
 
 [What is
-Pythonic?](/posts/older/what-is-pythonic)
+Pythonic?](/posts/what-is-pythonic)
 from 2005 is one of the earliest entries in my blog, and one of the most
 popular ones. It's because it answers a question many who learn Python
 will ask: what the heck does "Pythonic?" mean?
@@ -30,13 +30,13 @@ will ask: what the heck does "Pythonic?" mean?
 # Programming
 
 [Under-engineering, over-engineering,
-right-engineering](/posts/older/under-engineering-over-engineering-right-engineering)
+right-engineering](/posts/under-engineering-over-engineering-right-engineering)
 talks about the careful balancing act we have to do as developers:
 what's the Goldilocks zone of engineering complexity for a particular
 problem?
 
 [Debugging Strategy: easy stuff
-first](/posts/older/debugging-strategy-easy-stuff-first)
+first](/posts/debugging-strategy-easy-stuff-first)
 gives the following advice: even though the bug can't possibly be caused
 by a thing, if that thing is quick and easy to check, check anyway.
 
@@ -70,7 +70,7 @@ lwn](https://lwn.net/Articles/750833/) that said the following:
 > heady days of Python 3000 (around 2007, say).
 
 Anyone, you say? In 2007, I wrote [Brief Python 3000
-thoughts](/posts/older/brief-python-3000-thoughts).
+thoughts](/posts/brief-python-3000-thoughts).
 The Greek myth of [Cassandra](https://en.wikipedia.org/wiki/Cassandra)
 resonates with me now. I am glad the end of this transition now appears
 to be in sight at last.
@@ -85,7 +85,7 @@ software that breaks compatibility.
 # Modern client-side times
 
 In an [otherwise not very relevant
-article](/posts/older/new-year-s-python-meme)
+article](/posts/new-year-s-python-meme)
 in 2009, I wrote this:
 
 > If I can count techniques I've been trying to pioneer myself:
@@ -99,7 +99,7 @@ still.
 
 In 2011, I wrote about my experiment in 2003, [when I first tried to
 build a client-side template
-language](/posts/older/the-new-hot-thing-in-web-development-client-side-templating-languages):
+language](/posts/the-new-hot-thing-in-web-development-client-side-templating-languages):
 
 > I told other developers about it, and they all asked "why?". My answer
 > was something like "I don't know man, it's just cool!"
@@ -122,13 +122,13 @@ from 2017.
 # Open Source
 
 In [The importance of
-communication](/posts/older/titus-brown-on-the-importance-of-communication)
+communication](/posts/titus-brown-on-the-importance-of-communication)
 I tell the tale of how making lots of noise helped me in open source. I
 do make a lot of noise. I admit it can be a bit much. But it has also
 benefited me and it may benefit you.
 
 I discuss [how to handle
-ideas](/posts/older/how-to-handle-ideas)
+ideas](/posts/how-to-handle-ideas)
 when they are offered to an open source project.
 
 In [a massive multi-part

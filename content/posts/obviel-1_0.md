@@ -18,7 +18,7 @@ validation, and routing. Obviel stays close to HTML but lets you build
 sophisticated components when you need to.
 
 Obviel has come a long way since its
-[beginnings](/posts/older/obviel). On top
+[beginnings](/posts/obviel). On top
 of the core we've added a template language, an internationalization
 system that integrates with JavaScript and templates alike and a routing
 library. So it's high time for the One Dot Oh release!

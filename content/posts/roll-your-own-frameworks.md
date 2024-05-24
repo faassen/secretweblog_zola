@@ -265,7 +265,7 @@ frameworks while you build an application.
 Certainly do not try to build a grand unifying framework that will solve
 everything once it is done. This is a trap. It will result in analysis
 paralysis or
-[over-engineering](/posts/older/under-engineering-over-engineering-right-engineering).
+[over-engineering](/posts/under-engineering-over-engineering-right-engineering).
 You risk solving problems you don't actually have and blinding yourself
 to the problems you do need to solve. Do not make the construction of a
 framework a requirement for the construction of the application that

@@ -213,7 +213,7 @@ Cheng Lou's talk was a very high level talk about the benefits and the
 costs of abstraction. This is something I care about a lot as a
 developer: how do I avoid over-engineering and under-engineering (I've
 [written about it
-before](/posts/older/under-engineering-over-engineering-right-engineering)),
+before](/posts/under-engineering-over-engineering-right-engineering)),
 and solve problems at the right level? Software has many forces on many
 levels pulling at it, from end-users to low-level details, and how do
 you balance out these forces? Engineering is _so_ much about dealing

@@ -58,7 +58,7 @@ provide more flexibility than a framework ever could.
 
 In a "X considered Y" style post I argued that [web frameworks should be
 considered
-useful](/posts/older/web-frameworks-considered-useful).
+useful](/posts/web-frameworks-considered-useful).
 Not that many people needed convincing, but hey, why not?
 
 I wrote:
@@ -140,7 +140,7 @@ on the client, not spread between client and server. This makes reuse of
 UI components a lot easier.**
 
 By 2010, I had [played with client-side template languages
-already](/posts/older/the-new-hot-thing-in-web-development-client-side-templating-languages).
+already](/posts/the-new-hot-thing-in-web-development-client-side-templating-languages).
 I was about to build a few large web applications, and I wanted them to
 be dynamic and single page. But client-side JavaScript could easily
 become a mess. I wanted something that would help organize client-side
@@ -158,7 +158,7 @@ together](/posts/powerful-composition-with-obviel-data-render).
 We created a client-side [form
 library](http://www.obviel.org/en/1.0/form.html) based on that. In 2011
 we released this as
-[Obviel](/posts/older/obviel).
+[Obviel](/posts/obviel).
 
 **For a little while in 2010, early 2011, I thought I was the only one
 with this cool idea of a client-side web framework. It turns out that I

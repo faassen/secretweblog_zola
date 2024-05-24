@@ -62,7 +62,7 @@ But it was too late. And at least the problem was clear now.
 # The Cave Sprint
 
 So the beginning of 2009 I organized a [small
-sprint](/posts/older/cleaning-up-zope-3-s-dependencies).
+sprint](/posts/cleaning-up-zope-3-s-dependencies).
 We'd just moved house and now had the room for it. I'm now in two minds
 about this sprint: while we did manage to make a good first step in
 cleaning up dependencies, it was also the beginning of the end of my
