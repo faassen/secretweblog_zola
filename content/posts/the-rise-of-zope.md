@@ -1,6 +1,6 @@
 +++
 title = "The Rise of Zope"
-date = 2013-10-21
+date = 2013-10-21 10:00:00
 slug = "the-rise-of-zope"
 
 [taxonomies]
