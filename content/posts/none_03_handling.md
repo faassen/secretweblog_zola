@@ -20,10 +20,12 @@ tags = ["python", "patterns", "pythonic", "planetpython"]
 
 In [part 1](@/posts/none_01_the_beginning.md) of the Story of None we've seen this validation function:
 
-    def validate_end_date_later_than_start(start_date, end_date):
-        if end_date <= start_date:
-            raise ValidationError(
-                "The end date should be later than the start date.")
+```python
+def validate_end_date_later_than_start(start_date, end_date):
+    if end_date <= start_date:
+        raise ValidationError(
+            "The end date should be later than the start date.")
+```
 
 We've determined `start_date` and `end_date` may be `None`. In [part
 2](@/posts/none_02_recognizing.md) we've seen that we can recognize this case by using `is None` or
@@ -74,12 +76,14 @@ but in this case we are sure as we make it up ourselves.)
 
 Let's express that in code:
 
-    def validate_end_date_later_than_start(start_date, end_date):
-        if start_date is None:
-            return
-        if end_date <= start_date:
-            raise ValidationError(
-                "The end date should be later than the start date.")
+```python
+def validate_end_date_later_than_start(start_date, end_date):
+    if start_date is None:
+        return
+    if end_date <= start_date:
+        raise ValidationError(
+            "The end date should be later than the start date.")
+```
 
 ## `end_date is None`
 
@@ -87,14 +91,16 @@ If `end_date` is `None`, it's in the indefinite future. `start_date` can
 not be later than a date in the indefinite future, so we don't need to
 check then either. Let's express this in code too:
 
-    def validate_end_date_later_than_start(start_date, end_date):
-        if start_date is None:
-            return
-        if end_date is None:
-            return
-        if end_date <= start_date:
-            raise ValidationError(
-                "The end date should be later than the start date.")
+```python
+def validate_end_date_later_than_start(start_date, end_date):
+    if start_date is None:
+        return
+    if end_date is None:
+        return
+    if end_date <= start_date:
+        raise ValidationError(
+            "The end date should be later than the start date.")
+```
 
 ## `start_date is None and end_date is None`
 
@@ -103,16 +109,18 @@ indefinite past is always earlier than the indefinite future, so we're
 safe too and don't need to compare dates either. We can express this in
 code too:
 
-    def validate_end_date_later_than_start(start_date, end_date):
-        if start_date is None and end_date is None:
-            return
-        if start_date is None:
-            return
-        if end_date is None:
-            return
-        if end_date <= start_date:
-            raise ValidationError(
-                "The end date should be later than the start date.")
+```python
+def validate_end_date_later_than_start(start_date, end_date):
+    if start_date is None and end_date is None:
+        return
+    if start_date is None:
+        return
+    if end_date is None:
+        return
+    if end_date <= start_date:
+        raise ValidationError(
+            "The end date should be later than the start date.")
+```
 
 It turns out the last bit was superfluous as turn out to handle this
 case correctly already anyway. That's fine and will often be the case,

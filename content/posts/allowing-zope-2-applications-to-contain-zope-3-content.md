@@ -7,8 +7,6 @@ slug = "allowing-zope-2-applications-to-contain-zope-3-content"
 tags = ["zope"]
 +++
 
-# Allowing Zope 2 applications to contain Zope 3 content
-
 Five, the system to use Zope 3 within Zope 2, is a pain sometimes. Five
 is full of hacks to ensure backwards compatibility with Zope 2. This
 stops developers from using full-fledged Zope 3 strategies in places.
@@ -22,7 +20,7 @@ long-standing work on a branch of Zope 2 to make acquisition also
 inspect the \_\_parent\_\_ attribute. This should help make some of the
 hacks go away.
 
-Five so far is about everything Zope 3 *except* content objects. You can
+Five so far is about everything Zope 3 _except_ content objects. You can
 do just about anything Zope 3 can with Zope 2, except store plain,
 simple, Zope 3 content objects. I think if we added the ability to store
 Zope 3 content objects to Zope 2, we could take a leap forward in
@@ -72,7 +70,7 @@ What needs to be done?
   expect the combining of security systems would be the trickiest parts.
   Perhaps there are good ways to sidestep this issue.
 - directives: Five works in part by reimplementing some of Zope 3's
-  directives to make them work for Zope 2. Unfortunately the *original*
+  directives to make them work for Zope 2. Unfortunately the _original_
   version of the directives would need to be used to support pure Zope 3
   content. Possibly both sets of directives can be supported by
   migrating Five's registrations to a new namespace. It's going to break

@@ -14,7 +14,7 @@ complete report; I met a lot of people and had a lot of conversations.
 This was my first JSConf. I've been to a lot of Python conferences in
 the past. I was a bit nervous as for the first time in years I was going
 to a conference where I didn't really know anybody, but that is also an
-important reason *why* I was going - since a large part of what I do now
+important reason _why_ I was going - since a large part of what I do now
 in web development is JavaScript, I wanted to engage with its community.
 
 # Travel to Berlin
@@ -160,7 +160,7 @@ another: how usable web sites are.
 
 (can't find the slides yet)
 
-## `/be`
+## Brendan Eich
 
 There was a talk somewhat mysteriously marked `/be` in the schedule of
 day 1. This turned out to be a talk by Brendan Eich, creator of
@@ -220,7 +220,7 @@ context of AJAX, using the implementation in jQuery.
 I thought I was familiar with generators from Python, but I hadn't
 thought about their implications for async programming at all (even
 though I knew the Twisted folks had). During this talk I also realized I
-needed to understand yield *expressions* (as opposed to just the yield
+needed to understand yield _expressions_ (as opposed to just the yield
 statement) better, in both Python and JavaScript!
 
 A very enlightning talk that prodded me into the realization that I
@@ -292,7 +292,7 @@ during relax.js yesterday.
 ## I have a dreamcode: build apps, not backends - Alex Feyerke
 
 Alex Feyerke gave a talk discussing technologies that let you develop
-rich-client JavaScript applications *without* having to develop the
+rich-client JavaScript applications _without_ having to develop the
 backend for them. It turns out there's a lot of activity in this space -
 turn-key generic backends that you can start building front-end apps on
 immediately. I definitely need to look into this more. (I've been wildly
@@ -324,7 +324,7 @@ framework. His arguments against the use of templating in web frameworks
 are interesting but do not yet convince me. His description of how React
 side-steps the whole data binding issue by doing something more like a
 real-time 3d engine does, in particular gaining efficiency by
-re-rendering components but only sending *diffs* into the real browser
+re-rendering components but only sending _diffs_ into the real browser
 DOM were extremely thought-provoking.
 
 I like to have my thoughts in this area provoked, so I want to thank
@@ -369,7 +369,7 @@ screw up our own continent just fine; no moral superiority there.)
 
 By the way, given that Adam Baldwin (Security First talk) and Adam
 Brault (People First talk) are both from the same company (&yet), how
-are we going to put *both* people and security first, guys? Are you both
+are we going to put _both_ people and security first, guys? Are you both
 part of [OM](https://en.wikipedia.org/wiki/Operation_Mindfuck) or
 something?
 
@@ -408,7 +408,7 @@ the conference, and others recognized me from the Python community.
 Nice, but it was easy to make new connections too.
 
 I liked the length of the conference at 2 days. I was rather horrified
-to see that EuroPython is now *5* days of talks. That's just too much
+to see that EuroPython is now _5_ days of talks. That's just too much
 for me; after 3 days I'm totally done with talks. I think the JSConf
 approach of being very selective about talks is better.
 

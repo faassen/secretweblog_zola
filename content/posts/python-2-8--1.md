@@ -7,8 +7,6 @@ slug = "python-2-8--1"
 tags = ["python3"]
 +++
 
-# Python 2.8: +1
-
 Armin Ronacher bravely shares his [thoughts on Python
 3](http://lucumr.pocoo.org/2011/12/7/thoughts-on-python3/).
 
@@ -20,7 +18,7 @@ is just bizarre from my perspective. What is this supposed to
 accomplish? Encourage people to port code to Python 3? And if so, is
 this really the right way to encourage people?
 
-Why do I use the word *bravely*? Because when I shared my worries about
+Why do I use the word _bravely_? Because when I shared my worries about
 the upgrade discontinuity between Python 2 and Python 3 back in 2007, I
 got burned pretty badly in the ensuing discussions. Please don't hurt
 Armin: what he's doing is very brave and I'm very glad someone is

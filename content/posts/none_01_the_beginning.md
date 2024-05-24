@@ -70,10 +70,12 @@ implementation can then detect this and deal with it accordingly.
 
 Let's look at an example in more detail. This is a validation function:
 
-    def validate_end_date_later_than_start(start_date, end_date):
-        if end_date <= start_date:
-            raise ValidationError(
-                "The end date should be later than the start date.")
+```python
+def validate_end_date_later_than_start(start_date, end_date):
+    if end_date <= start_date:
+        raise ValidationError(
+            "The end date should be later than the start date.")
+```
 
 The idea is that the function passes silently if the arguments
 (`start_date` and `end_date`) are valid, but will fail with a

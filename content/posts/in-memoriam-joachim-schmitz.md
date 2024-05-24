@@ -25,7 +25,9 @@ bottom right corner, looking pensively at the laptop in front of us,
 while I'm explaining some code to him. It's Joachim as I knew him, in
 his element, surrounded by fellow enthusiasts.
 
-![image](http://faassen.n--tree.net/grokkerdam_joachim.jpg)
+[2024 update; unfortunately I think we lost the picture during a blog
+transition years ago. I tried looking for it in the wayback machine to no
+avail]
 
 I wrote the following message to his friends and family, and I want to
 share it with everybody. I wrote it for myself, as someone who knew
@@ -58,7 +60,7 @@ friends and relatives must have noticed Joachim was frequently away at
 one Zope related event or another. He wasn't away. It's when he was with
 us! He became a regular face at Zope-related events. I saw him several
 times each year following the first meeting. He was there so often and
-so reliably that we joked with him: you again! you're *always* there!
+so reliably that we joked with him: you again! you're _always_ there!
 
 It isn't a proper Zope event without Joachim there.
 

@@ -21,10 +21,12 @@ tags = ["python", "patterns", "pythonic", "planetpython"]
 In [part 1](@/posts/none_01_the_beginning.md) of the Story of None we've seen
 this validation function:
 
-    def validate_end_date_later_than_start(start_date, end_date):
-        if end_date <= start_date:
-            raise ValidationError(
-                "The end date should be later than the start date.")
+```python
+def validate_end_date_later_than_start(start_date, end_date):
+    if end_date <= start_date:
+        raise ValidationError(
+            "The end date should be later than the start date.")
+```
 
 We've decided that `start_date` or `end_date` may be omitted (and be
 `None`), and that this function is therefore buggy: we'll get a
@@ -37,13 +39,17 @@ One reaction to a `TypeError` is to do a type check to see whether the
 values are really of the right types, in this case, `date`, and to only
 proceed if they are. Something like:
 
-    if type(start_date) == date:
-       ...
+```python
+if type(start_date) == date:
+    ...
+```
 
 or:
 
-    if isinstance(start_date, date):
-        ...
+```python
+if isinstance(start_date, date):
+    ...
+```
 
 This works, but I think this signals the wrong thing to the reader of
 the code.
@@ -67,8 +73,10 @@ So we want to make sure that `start_date` and `end_date` are present.
 That something is _there_. It's now very tempting to check for their
 presence with a clause like this:
 
-    if start_date:
-       ...
+```python
+if start_date:
+    ...
+```
 
 This again will work, at least in this particular case, where the
 arguments are dates.
@@ -82,8 +90,10 @@ if we were, for example, comparing `start_age` and `end_age`, where the
 ages are integer numbers, we'd be in trouble if we did something like
 this:
 
-    if end_age and start_age and end_age >= start_age:
-       raise ValidationError("End age should come before start age")
+```python
+if end_age and start_age and end_age >= start_age:
+    raise ValidationError("End age should come before start age")
+```
 
 `end_age` could be `0`, and `0` would definitely come before a
 `start_age` of say, `10`, and we still don't raise `ValidationError`. A
