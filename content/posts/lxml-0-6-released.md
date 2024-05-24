@@ -4,7 +4,7 @@ date = 2005-05-15
 slug = "lxml-0-6-released"
 
 [taxonomies]
-tags = ["lxml", "release"]
+tags = ["lxml"]
 +++
 
 I've released lxml 0.6. lxml is an alternative, more Pythonic binding

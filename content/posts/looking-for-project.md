@@ -4,7 +4,7 @@ date = 2013-02-26
 slug = "looking-for-project"
 
 [taxonomies]
-tags = ["planetpython", "work"]
+tags = ["planetpython"]
 +++
 
 I'm looking for a project to inspire me! I'm a creative developer with

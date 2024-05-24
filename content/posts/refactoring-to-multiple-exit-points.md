@@ -4,7 +4,7 @@ date = 2019-08-21
 slug = "refactoring-to-multiple-exit-points"
 
 [taxonomies]
-tags = ["refactoring", "python", "planetpython", "patterns"]
+tags = ["programming", "python", "planetpython"]
 +++
 
 # Introduction

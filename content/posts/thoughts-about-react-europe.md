@@ -4,7 +4,7 @@ date = 2015-07-06
 slug = "thoughts-about-react-europe"
 
 [taxonomies]
-tags = ["react", "javascript", "python"]
+tags = ["react", "javascript", "python", "graphql"]
 +++
 
 Last week I visited the React Europe conference in Paris; it was the

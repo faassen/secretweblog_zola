@@ -4,7 +4,7 @@ date = 2013-10-21 10:00:00
 slug = "the-rise-of-zope"
 
 [taxonomies]
-tags = ["python", "zope", "planetpython"]
+tags = ["python", "zope", "planetpython", "open source"]
 +++
 
 Zope at its birth in 1998 was neither a content management system nor a

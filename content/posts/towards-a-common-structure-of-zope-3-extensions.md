@@ -4,7 +4,7 @@ date = 2005-10-07
 slug = "towards-a-common-structure-of-zope-3-extensions"
 
 [taxonomies]
-tags = ["zope", "packaging"]
+tags = ["zope", "packaging", "linux"]
 +++
 
 Quite a few Zope 3 extensions are starting to appear. This is great.

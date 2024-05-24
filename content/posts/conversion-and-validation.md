@@ -4,7 +4,7 @@ date = 2014-09-26
 slug = "conversion-and-validation"
 
 [taxonomies]
-tags = ["planetpython", "python", "morepath", "web", "development", "boundaries"]
+tags = ["planetpython", "python", "morepath", "programming"]
 +++
 
 In software development we deal with _boundaries_ between systems.
@@ -227,7 +227,7 @@ Let's say the database layer expects date strings in the format
 format before we pass it into the database:
 
     >>> birthdate.strftime('%Y-%m-%d')
-    '1985-10-21'
+    '1985-10-21'# Communicating with core developers on the Python 3 transition
 
 This is serialization and not conversion because this transformation
 always succeeds.

@@ -4,7 +4,7 @@ date = 2014-07-28
 slug = "my-visit-to-europython-2014"
 
 [taxonomies]
-tags = ["python", "europython", "planetpython", "morepath"]
+tags = ["python", "conference", "planetpython", "morepath"]
 +++
 
 I had a fun time at EuroPython 2014 in Berlin last week. It was a very

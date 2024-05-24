@@ -4,7 +4,7 @@ date = 2008-06-20
 slug = "a-misconception-about-the-zodb"
 
 [taxonomies]
-tags = ["zope", "zodb"]
+tags = ["zope"]
 +++
 
 The ZODB is a powerful object database for Python objects. It's very

@@ -4,7 +4,7 @@ date = 2005-03-11
 slug = "five-0-3-released"
 
 [taxonomies]
-tags = ["zope", "release"]
+tags = ["zope"]
 +++
 
 I'm happy to announce the release of Five 0.3 today, the Zope 3 in Zope

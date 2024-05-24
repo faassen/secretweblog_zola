@@ -4,7 +4,7 @@ date = 2008-12-01
 slug = "i-like-doctests"
 
 [taxonomies]
-tags = ["testing", "python"]
+tags = ["programming", "python"]
 +++
 
 It seems to be a recent trend to point out things you don't like about

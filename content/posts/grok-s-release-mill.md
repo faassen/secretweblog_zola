@@ -4,7 +4,7 @@ date = 2008-10-07
 slug = "grok-s-release-mill"
 
 [taxonomies]
-tags = ["grok", "release", "silva", "plone"]
+tags = ["grok", "silva", "plone"]
 +++
 
 It already happened last week, but I thought I'd mention our Grok 0.14

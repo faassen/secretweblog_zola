@@ -4,7 +4,7 @@ date = 2008-06-24
 slug = "grok-0-13-released"
 
 [taxonomies]
-tags = ["grok", "release"]
+tags = ["grok"]
 +++
 
 Grok 0.13 was released yesterday. [Grok](http://grok.zope.org), of

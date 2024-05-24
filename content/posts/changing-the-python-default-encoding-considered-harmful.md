@@ -4,7 +4,7 @@ date = 2005-08-02
 slug = "changing-the-python-default-encoding-considered-harmful"
 
 [taxonomies]
-tags = ["python", "unicode", "silva"]
+tags = ["python", "i18n", "silva"]
 +++
 
 Ian Bicking [complains about unicode in

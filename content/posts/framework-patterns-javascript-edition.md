@@ -4,7 +4,7 @@ date = 2021-11-01
 slug = "framework-patterns-javascript-edition"
 
 [taxonomies]
-tags = ["javascript", "typescript", "react", "frameworks"]
+tags = ["javascript", "typescript", "react", "framework"]
 +++
 
 Software developers use software frameworks all the time, so it's good

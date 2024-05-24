@@ -4,7 +4,7 @@ date = 2022-01-12
 slug = "is-premature-optimization-the-root-of-all-evil"
 
 [taxonomies]
-tags = ["planetpython optimization python javascript"]
+tags = ["planetpython", "programming", "python", "javascript", "rust"]
 +++
 
 Among programmers there is a saying: **premature optimization is the

@@ -4,7 +4,7 @@ date = 2009-10-07
 slug = "grok-1-0-released"
 
 [taxonomies]
-tags = ["grok", "release"]
+tags = ["grok"]
 +++
 
 Grok 1.0 was released today! Almost exactly three years after the first

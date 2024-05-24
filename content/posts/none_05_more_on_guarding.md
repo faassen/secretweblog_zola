@@ -4,7 +4,7 @@ date = 2013-02-04
 slug = "none_05_more_on_guarding"
 
 [taxonomies]
-tags = ["python", "patterns", "pythonic", "planetpython"]
+tags = ["python", "programming", "pythonic", "planetpython"]
 +++
 
 [part 1](@/posts/none_01_the_beginning.md)

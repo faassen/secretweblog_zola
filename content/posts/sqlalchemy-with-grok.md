@@ -4,7 +4,7 @@ date = 2008-04-08
 slug = "sqlalchemy-with-grok"
 
 [taxonomies]
-tags = ["grok", "sqlalchemy"]
+tags = ["grok"]
 +++
 
 Grok needs a great relational database integration story. Grok already

@@ -4,7 +4,7 @@ date = 2012-05-31
 slug = "obviel-1-0b"
 
 [taxonomies]
-tags = ["obviel", "release", "templating"]
+tags = ["obviel", "templating", "rest"]
 +++
 
 It's been quiet around [Obviel](http://www.obviel.org/), the client-side

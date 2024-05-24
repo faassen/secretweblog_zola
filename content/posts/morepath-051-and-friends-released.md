@@ -4,7 +4,7 @@ date = 2014-08-28
 slug = "morepath-051-and-friends-released"
 
 [taxonomies]
-tags = ["morepath", "planetpython", "bower", "python", "bowerstatic", "reg", "more.static"]
+tags = ["morepath", "planetpython", "python", "static", "reg"]
 +++
 
 I've just released a whole slew things of things, the most important is

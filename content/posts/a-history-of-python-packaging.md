@@ -4,7 +4,7 @@ date = 2009-11-09
 slug = "a-history-of-python-packaging"
 
 [taxonomies]
-tags = ["python", "packaging"]
+tags = ["python", "packaging", "linux"]
 +++
 
 ## Introduction
@@ -141,9 +141,9 @@ thus isolate each project from each other.
 ## Buildout
 
 In 2006 as well, Jim Fulton created Buildout, building on Setuptools and
-easy_install. Buildout can create an isolated project environment like
+easy*install. Buildout can create an isolated project environment like
 virtualenv does, but is more ambitious: the goal is to create a system
-for _repeatable_ installations of potentially very complex projects.
+for \_repeatable* installations of potentially very complex projects.
 Instead of writing an `INSTALL.txt` that tells others who to install the
 prerequites for a package (Python or not), with Buildout these
 prerequisites can be installed automatically.

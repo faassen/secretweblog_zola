@@ -4,7 +4,7 @@ date = 2020-05-18
 slug = "roll-your-own-frameworks"
 
 [taxonomies]
-tags = ["python", "javascript", "frameworks", "development", "planetpython"]
+tags = ["python", "javascript", "framework", "programming", "planetpython"]
 +++
 
 # Introduction

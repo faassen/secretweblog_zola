@@ -4,7 +4,7 @@ date = 2005-04-28
 slug = "icalendar-0-10-released"
 
 [taxonomies]
-tags = ["release"]
+tags = ["linux"]
 +++
 
 The last couple of months I've been heavily involved in a cool Zope +

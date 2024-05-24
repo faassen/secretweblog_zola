@@ -4,7 +4,7 @@ date = 2014-07-01
 slug = "announcing-bowerstatic"
 
 [taxonomies]
-tags = ["python", "planetpython", "bowerstatic", "morepath"]
+tags = ["python", "planetpython", "static", "morepath"]
 +++
 
 I've been working on something new these last few weeks that I'd like to

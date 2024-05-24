@@ -4,7 +4,7 @@ date = 2005-10-04
 slug = "benji-york-is-doing-good-work"
 
 [taxonomies]
-tags = ["testing", "zope"]
+tags = ["zope"]
 +++
 
 [Benji York](http://www.benjiyork.com/), a relatively recent Zope

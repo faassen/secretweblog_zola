@@ -4,7 +4,7 @@ date = 2007-04-14
 slug = "debugging-strategy-easy-stuff-first"
 
 [taxonomies]
-tags = ["development"]
+tags = ["programming"]
 +++
 
 I've been writing software for quite a while now, but the software I

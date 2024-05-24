@@ -4,7 +4,7 @@ date = 2008-04-01
 slug = "explicit-is-better-than-implicit-and-what-it-means-for-grok"
 
 [taxonomies]
-tags = ["grok", "joke"]
+tags = ["grok"]
 +++
 
 **This post was, of course, an April Fool's joke**

@@ -4,7 +4,7 @@ date = 2005-04-28
 slug = "five-1-0-released"
 
 [taxonomies]
-tags = ["zope", "release", "silva"]
+tags = ["zope", "silva"]
 +++
 
 Yesterday I've released the one dot oh version of

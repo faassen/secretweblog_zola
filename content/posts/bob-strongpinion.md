@@ -4,7 +4,7 @@ date = 2016-09-07
 slug = "bob-strongpinion"
 
 [taxonomies]
-tags = ["software development", "python", "planetpython", "reg", "morepath"]
+tags = ["software development", "python", "planetpython", "reg", "morepath", "linux"]
 +++
 
 I posted an article about programming yesterday. ([punctuated

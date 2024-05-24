@@ -4,7 +4,7 @@ date = 2007-11-01
 slug = "under-engineering-over-engineering-right-engineering"
 
 [taxonomies]
-tags = ["development"]
+tags = ["programming"]
 +++
 
 I just ran into a post in a series called "Tools of The Effective

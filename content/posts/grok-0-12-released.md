@@ -4,7 +4,7 @@ date = 2008-04-25
 slug = "grok-0-12-released"
 
 [taxonomies]
-tags = ["grok", "release"]
+tags = ["grok"]
 +++
 
 It happened a few days already, but I hadn't mentioned it here yet:

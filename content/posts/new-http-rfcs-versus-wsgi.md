@@ -4,7 +4,7 @@ date = 2014-08-19
 slug = "new-http-rfcs-versus-wsgi"
 
 [taxonomies]
-tags = ["planetpython", "python", "wsgi", "http"]
+tags = ["planetpython", "python", "wsgi"]
 +++
 
 Recently [new HTTP 1.1
@@ -13,7 +13,7 @@ published that obsolete the old HTTP 1.1 RFCs. They are extensively
 rewritten.
 
 Unfortunately the WSGI PEP 3333 refers to something only made explicit
-in the *old* version of the RFCs, but which is much harder to find in
+in the _old_ version of the RFCs, but which is much harder to find in
 the new versions of the RFCs. I thought I'd leave a report of my
 investigations here so that others who may run into this in the future
 can find it.
@@ -75,14 +75,14 @@ Confusingly, while the new RFC 7230 refers to the concept of
 Connection header field; just because they're defined as hop-by-hop in
 this specification doesn't exempt them."
 
-it doesn't actually *say* any headers are hop-by-hop anywhere else.
+it doesn't actually _say_ any headers are hop-by-hop anywhere else.
 Instead it mandates some headers should be added to `Connection`.
 
-But wait: `Transfer-Encoding` is *not* to be listed in the `Connection`
+But wait: `Transfer-Encoding` is _not_ to be listed in the `Connection`
 header, as it's not hop-by-hop. At least, not anymore. I've seen it
 described as 'hopX-by-hopY', but not in the RFC. This is, I think,
-because a HTTP proxy *could* let these through without having to remove
-them. But not for a WSGI over HTTP proxy: it *MUST* remove
+because a HTTP proxy _could_ let these through without having to remove
+them. But not for a WSGI over HTTP proxy: it _MUST_ remove
 `Transfer-Encoding`, as WSGI applications have no such concept.
 
 I think the WSGI PEP should be updated in terms of the new HTTP RFC. It

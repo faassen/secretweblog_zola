@@ -4,7 +4,7 @@ date = 2020-02-05
 slug = "looking-again"
 
 [taxonomies]
-tags = ["python", "planetpython", "javascript", "typescript", "mobx", "frameworks"]
+tags = ["python", "planetpython", "javascript", "typescript", "react", "framework"]
 +++
 
 ![Passion flower on my balcony](/img/passion_flower.jpg)

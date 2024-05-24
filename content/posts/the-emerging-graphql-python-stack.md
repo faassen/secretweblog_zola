@@ -4,7 +4,7 @@ date = 2015-09-28
 slug = "the-emerging-graphql-python-stack"
 
 [taxonomies]
-tags = ["javascript", "python", "planetpython", "graphql", "relay"]
+tags = ["javascript", "python", "planetpython", "graphql", "rest"]
 +++
 
 GraphQL is an interesting technology originating at Facebook. It is a

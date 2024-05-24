@@ -4,7 +4,7 @@ date = 2013-05-13
 slug = "overwhelmed-by-javascript-dependencies"
 
 [taxonomies]
-tags = ["javascript", "python", "obviel", "planetpython", "packaging"]
+tags = ["javascript", "python", "obviel", "planetpython", "packaging", "linux"]
 +++
 
 # Introduction

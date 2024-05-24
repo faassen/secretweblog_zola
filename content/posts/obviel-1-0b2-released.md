@@ -4,7 +4,7 @@ date = 2012-07-19
 slug = "obviel-1-0b2-released"
 
 [taxonomies]
-tags = ["obviel", "release"]
+tags = ["obviel"]
 +++
 
 Since the last release of Obviel 1.0b2, I've been plugging away at

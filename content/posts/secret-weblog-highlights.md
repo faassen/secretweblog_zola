@@ -4,7 +4,7 @@ date = 2019-09-24
 slug = "secret-weblog-highlights"
 
 [taxonomies]
-tags = ["python", "javascript", "programming", "client-side"]
+tags = ["python", "javascript", "programming"]
 +++
 
 This is an _old_ blog by now. I started it in 2005. But I'm not old! No

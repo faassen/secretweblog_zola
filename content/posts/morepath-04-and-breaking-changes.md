@@ -4,7 +4,7 @@ date = 2014-07-07
 slug = "morepath-04-and-breaking-changes"
 
 [taxonomies]
-tags = ["morepath", "planetpython", "python", "bowerstatic"]
+tags = ["morepath", "planetpython", "python", "static"]
 +++
 
 I've just released Morepath 0.4!

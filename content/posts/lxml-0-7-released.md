@@ -4,7 +4,7 @@ date = 2005-06-15
 slug = "lxml-0-7-released"
 
 [taxonomies]
-tags = ["lxml", "release"]
+tags = ["lxml"]
 +++
 
 I'm happy to announce I've released lxml 0.7 earlier today! It contains

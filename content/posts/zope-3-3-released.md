@@ -4,7 +4,7 @@ date = 2006-09-27
 slug = "zope-3-3-released"
 
 [taxonomies]
-tags = ["zope", "release"]
+tags = ["zope"]
 +++
 
 [Zope 3.3](http://www.zope.org/Products/Zope3/3.3.0) is

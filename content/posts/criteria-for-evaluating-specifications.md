@@ -4,7 +4,7 @@ date = 2005-03-01
 slug = "criteria-for-evaluating-specifications"
 
 [taxonomies]
-tags = ["standards"]
+tags = ["standards", "linux"]
 +++
 
 As Andrew Tannenbaum said, "The nice thing about standards is that there

@@ -4,7 +4,7 @@ date = 2013-11-23
 slug = "why-linux-works-for-me"
 
 [taxonomies]
-tags = ["linux", "twitter"]
+tags = ["linux", "community"]
 +++
 
 # Introduction
@@ -19,11 +19,11 @@ describing various frustrating problems the author had with Linux, who
 was sincerely trying it out; applications that didn't do what was asked
 of them, things generally not cooperating, and intimations that others
 had experienced pain as well. Constructive feedback all. It also said
-Linux doesn't work. It said Mac OS X and Windows *do* work.
+Linux doesn't work. It said Mac OS X and Windows _do_ work.
 
 Heh, I thought, "Linux doesn't work" isn't really right. I've been using
 this Linux thing since 1995. Obviously Linux works for me. So I replied:
-"Heh, Linux works for me. Linux doesn't work *for you*."
+"Heh, Linux works for me. Linux doesn't work _for you_."
 
 Don't reply stuff to strangers on Twitter! The original person didn't
 reply (and hasn't yet. probably still resting in all innocence of this
@@ -62,7 +62,7 @@ Hopefully nothing sounds mansplainy.
 
 I have been struggling with issues on Linux so long that I feel quite
 spoiled these days. Mostly when I install Linux things just work. I
-remember back in 2000 or so I would have to work hard getting my *mouse*
+remember back in 2000 or so I would have to work hard getting my _mouse_
 to work. Back in 2004 or so I remember having to wrestle with
 nsdiswrapper to install a Windows driver just to make the wireless work.
 And I remember struggling to hear sound.
@@ -105,7 +105,7 @@ worked just fine there -- the hardware was fine.
 No fix was possible; there was some bug somewhere in the NVidia driver.
 But it was impossible to upgrade. We had to wait half a year or so for
 Apple to create an update of their operating system including NVidia
-driver, and then *buy the upgrade* to get this bug fixed.
+driver, and then _buy the upgrade_ to get this bug fixed.
 
 Topsy-turvy world. Not usually true. But a good story.
 
@@ -187,8 +187,8 @@ that often.
 
 But with Linux I can download and install a huge range of programming
 environments and libraries and tools, from mainstream to obscure, within
-*seconds*. Windows and Mac OS X don't match that. Modern Linux package
-repositories are *awesome* for this purpose. I know I could get stuff
+_seconds_. Windows and Mac OS X don't match that. Modern Linux package
+repositories are _awesome_ for this purpose. I know I could get stuff
 like that set up with Mac OS X or even Windows, but it'd entail more
 tinkering than I have patience for. So the scales balance the other way,
 for me.

@@ -4,7 +4,7 @@ date = 2005-04-08
 slug = "lxml-released-at-last"
 
 [taxonomies]
-tags = ["lxml", "release"]
+tags = ["lxml"]
 +++
 
 I've finally found the time to release lxml. So here then is

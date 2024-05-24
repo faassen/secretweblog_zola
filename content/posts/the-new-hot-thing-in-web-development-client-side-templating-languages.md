@@ -4,7 +4,7 @@ date = 2011-11-18
 slug = "the-new-hot-thing-in-web-development-client-side-templating-languages"
 
 [taxonomies]
-tags = ["templating"]
+tags = ["templating", "linux"]
 +++
 
 Back in 2003 I found myself at a sprint (a hackaton) to help build a web

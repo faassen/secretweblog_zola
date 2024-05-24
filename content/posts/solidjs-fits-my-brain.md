@@ -4,7 +4,7 @@ date = 2022-07-14
 slug = "solidjs-fits-my-brain"
 
 [taxonomies]
-tags = ["javascript", "react", "solidjs"]
+tags = ["javascript", "react"]
 +++
 
 In this article I'm going to talk about the

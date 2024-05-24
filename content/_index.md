@@ -5,6 +5,7 @@ template = "index.html"
 [extra]
 section_path = "posts/_index.md"
 header = { title = "Secret Weblog", img = "img/me-grok.webp", img_alt = "Martijn Faassen" }
+max_posts = 10
 
 +++
 

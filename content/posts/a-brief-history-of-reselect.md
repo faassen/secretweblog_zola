@@ -4,7 +4,7 @@ date = 2015-10-12
 slug = "a-brief-history-of-reselect"
 
 [taxonomies]
-tags = ["javascript", "open source", "redux", "react", "reselect", "zope", "sprints"]
+tags = ["javascript", "open source", "react", "zope", "sprint"]
 +++
 
 # Introduction

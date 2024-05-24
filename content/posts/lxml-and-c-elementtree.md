@@ -4,7 +4,7 @@ date = 2006-02-24
 slug = "lxml-and-c-elementtree"
 
 [taxonomies]
-tags = ["lxml"]
+tags = ["lxml", "linux"]
 +++
 
 I saw a [blog entry by Julien

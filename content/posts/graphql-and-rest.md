@@ -4,13 +4,13 @@ date = 2015-06-10
 slug = "graphql-and-rest"
 
 [taxonomies]
-tags = ["react", "graphql", "relay", "rest", "hypermedia", "javascript", "morepath"]
+tags = ["react", "graphql", "rest", "javascript", "morepath"]
 +++
 
 # Introduction
 
 There is a new trend in open source that I'm not sure I like very much:
-big companies announce that they are *going* to open source something,
+big companies announce that they are _going_ to open source something,
 but the release is nowhere in sight yet. Announcing something invites
 feedback, especially if it's announced as open source. When the software
 in question is available already as closed source for people to play
@@ -118,7 +118,7 @@ interested in its `id`, `name` and `isViewerFriend` fields.
 
 You also want another object it is connected to: the `profilePicture`.
 You want the `uri`, `width` and `height` fields of this. While there is
-no public GraphQL specification out there yet, I *think* that `size: 50`
+no public GraphQL specification out there yet, I _think_ that `size: 50`
 means to restrict the subquery for a profile picture to only those of
 size 50. I'm not sure what happens if no `profilePicture` of this size
 is available, though.
@@ -190,7 +190,7 @@ The whole query now looks like this:
       field=profilePicture.height
 
 The result of this query would look the same as in the GraphQL example.
-It's important to notice that this REST API is not fully *normalized* --
+It's important to notice that this REST API is not fully _normalized_ --
 the `profilePicure` data is not behind a separate URL that the client
 then needs to go to. Instead, the object is embedded in the result for
 the sake of convenience and performance.

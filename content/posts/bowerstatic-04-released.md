@@ -4,7 +4,7 @@ date = 2014-09-08
 slug = "bowerstatic-04-released"
 
 [taxonomies]
-tags = ["planetpython", "python", "bower", "bowerstatic", "morepath"]
+tags = ["planetpython", "python", "static", "morepath"]
 +++
 
 What's [BowerStatic](http://bowerstatic.readthedocs.org)? It's a little

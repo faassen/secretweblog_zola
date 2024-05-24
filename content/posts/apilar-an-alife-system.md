@@ -4,7 +4,7 @@ date = 2022-08-01
 slug = "apilar-an-alife-system"
 
 [taxonomies]
-tags = ["alife", "rust", "langjam"]
+tags = ["alife", "rust"]
 +++
 
 A week ago I participated in the

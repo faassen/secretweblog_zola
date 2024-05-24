@@ -4,7 +4,7 @@ date = 2019-08-15
 slug = "mstform-a-form-library-for-mobx-state-tree"
 
 [taxonomies]
-tags = ["javascript", "react", "forms", "mobx"]
+tags = ["javascript", "react"]
 +++
 
 # Introduction

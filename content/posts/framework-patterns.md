@@ -4,7 +4,7 @@ date = 2019-12-04
 slug = "framework-patterns"
 
 [taxonomies]
-tags = ["python", "planetpython", "morepath", "frameworks"]
+tags = ["python", "planetpython", "morepath", "framework"]
 +++
 
 A software framework is code that calls your (application) code. That's

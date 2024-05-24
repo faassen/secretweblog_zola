@@ -4,7 +4,7 @@ date = 2014-01-06
 slug = "python-2-gravity"
 
 [taxonomies]
-tags = ["planetpython", "python", "python3"]
+tags = ["planetpython", "python", "python3", "linux"]
 +++
 
 Recently there have been some discussions about Python 3 adoption.

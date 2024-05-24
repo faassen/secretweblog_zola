@@ -4,7 +4,7 @@ date = 2006-04-06
 slug = "lxml-0-9-1-released"
 
 [taxonomies]
-tags = ["lxml", "release"]
+tags = ["lxml", "linux"]
 +++
 
 A bit late, but still worth a blog entry: lxml 0.9.1 was released last
