@@ -7,8 +7,6 @@ slug = "a-constructive-general-meeting-of-the-zope-foundation"
 tags = ["zope foundation", "zope"]
 +++
 
-# A constructive general meeting of the Zope Foundation
-
 We just had a constructive general meeting of the Zope Foundation on
 IRC, the first one under the new bylaws.
 

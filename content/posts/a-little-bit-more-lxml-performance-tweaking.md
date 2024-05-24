@@ -7,8 +7,6 @@ slug = "a-little-bit-more-lxml-performance-tweaking"
 tags = ["lxml"]
 +++
 
-# a little bit more lxml performance tweaking
-
 Today I merged the backpointer branch with the lxml trunk, and have been
 cleaning up a bit more. In particular I've cleaned up some useless extra
 subclasses that were only necessary to introduce weak reference support

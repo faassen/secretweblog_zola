@@ -7,8 +7,6 @@ slug = "about-the-disdain-for-xml-among-python-programmers"
 tags = ["python", "xml", "standards"]
 +++
 
-# About the disdain for XML among Python programmers
-
 Last december Phillip Eby (PJE) posted a [a nice
 rant](http://dirtsimple.org/2004/12/python-is-not-java.html). It was
 [widely](http://www.plope.org/Members/chrism/why_not_xml)
@@ -24,7 +22,7 @@ where it has at least a bit more chance to be read. What's the good of
 ranting if nobody hears you, after all?
 
 I think a lot of the disdain for XML from Python programmers is nothing
-more than elitism. *Misguided* elitism. Another part that I suspect
+more than elitism. _Misguided_ elitism. Another part that I suspect
 plays a role for some people is finding an excuse not to learn more
 about it. "See, XML sucks, Python is superior, so me not knowing a lot
 about it is fine". Finally, it's ignoring that there is more than one
@@ -106,7 +104,7 @@ sometimes designing your own grammar from scratch may be worth doing,
 but many cases it's not necessary and XML is good enough. It's a useful
 tool in the toolbox in that case.
 
-*Of course* you could do anything you can do with XML with Python
+_Of course_ you could do anything you can do with XML with Python
 datastructures, and anything you do with XSLT with custom Python
 transformation code, and so on. You could even build a framework to do
 so. It would also be a lot of work. And you'll lose out on all the
@@ -120,7 +118,7 @@ So, Python people, resistance is futile. Be assimilated by the XML
 collective. Feel free to be smarter about it than many: stay sensible
 and stay critical, to where XML makes sense and where it doesn't, but
 throw out the disdain that makes you unable to see valid opportunities
-for its use. *Learn* from XML technologies.
+for its use. _Learn_ from XML technologies.
 
 PJE is very smart. I am sure his view of it all is actually a bit more
 nuanced than his tone. Looking at Chandler source code (as I suspect he

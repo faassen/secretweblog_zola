@@ -7,8 +7,6 @@ slug = "icalendar-0-10-released"
 tags = ["release"]
 +++
 
-# iCalendar 0.10 released!
-
 The last couple of months I've been heavily involved in a cool Zope +
 Five based project involving calendaring, about which more will be
 announced shortly. As part of this project I've had the opportunity to

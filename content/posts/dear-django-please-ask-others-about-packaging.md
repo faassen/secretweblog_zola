@@ -7,8 +7,6 @@ slug = "dear-django-please-ask-others-about-packaging"
 tags = ["django", "packaging"]
 +++
 
-# Dear Django, please ask others about packaging!
-
 ## Introduction
 
 Dear Django, and any human beings interested in what I have to say
@@ -17,7 +15,7 @@ responding to [Tarek's
 post](http://blog.ziade.org/2012/09/10/dear-django-help-python-packaging/).
 
 But I'm actually currently not that concerned about Python packaging -
-it's good to see it is improving! This blog post is *really* a plea for
+it's good to see it is improving! This blog post is _really_ a plea for
 people to learn from others if possible, in this case about packaging.
 So if you take message to heart already, you can just stop reading now
 and I won't mind.
@@ -43,7 +41,7 @@ has talked about Django and packaging
 all for Django look into adopting distutils2. Sounds like a good way
 forward for Django!
 
-I think Tarek or others could also help distutils2 adoption a *lot* by
+I think Tarek or others could also help distutils2 adoption a _lot_ by
 offering interoperability features between old & smelly stuff with
 distutils2. More of that please! I hope we'll get to a world soon where
 I can adopt distutils2-based packages in my existing buildout-based
@@ -74,7 +72,7 @@ So I get a bit frustrated when Tarek
 > something you want or are subcultures additions from some specific
 > communities.
 
-This is because he is not countering any *specific* argument about bits
+This is because he is not countering any _specific_ argument about bits
 not being production ready, nor is it about particular missing features,
 meaning this counterargument is, frankly, just as worthless as saying
 "it's not production ready" without elaboration. It may even be somewhat
@@ -84,7 +82,7 @@ To ignore hard-won experience merely on the basis handwaving it away as
 "subculture additions from some specific communities" is to throw out
 the experience of those communities, and then you risk being condemned
 to repeat some bad history, as, face it, quite a few of us subculture
-folks over here (and I'm including Tarek) have *way* more experience
+folks over here (and I'm including Tarek) have _way_ more experience
 with Python packaging than the subculture of the Django core developers.
 
 ## Subculture grumbles
@@ -111,7 +109,7 @@ If I were to build large projects, I'd probably want some features along
 the lines of buildout for including non-Python code. Can we do without
 such quaint notions in modern times?
 
-Hohum, so, if you are thinking about adopting distutils2, please *do*
+Hohum, so, if you are thinking about adopting distutils2, please _do_
 ask yourself what particular neat features are offered by setuptools,
 buildout, pip, mr.developer, instead of saying "it's just some
 subculture thing we don't care about".

@@ -7,8 +7,6 @@ slug = "obviel"
 tags = ["obviel"]
 +++
 
-# Obviel
-
 ## Introduction
 
 This document is an introduction to Obviel from the perspective of how
@@ -89,8 +87,8 @@ became Obviel. Thanks JW!
 The idea developed around this time was that the JSON returned by the
 server to JavaScript should have a type marker to describe what kind of
 JSON we are dealing with then. In Obviel we call this type marker an
-*iface*, short for interface. On the client, we could then hook up
-*views* to ifaces. This way if the client is confronted with some
+_iface_, short for interface. On the client, we could then hook up
+_views_ to ifaces. This way if the client is confronted with some
 unknown JSON, it would know what to do with it by looking up the
 appropriate view for that iface. This helps with REST and therefore with
 loose coupling: the client code not only doesn't need to know what

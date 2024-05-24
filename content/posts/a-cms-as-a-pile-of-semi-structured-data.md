@@ -7,8 +7,6 @@ slug = "a-cms-as-a-pile-of-semi-structured-data"
 tags = ["cms", "xml", "standards"]
 +++
 
-# A CMS as a pile of semi-structured data
-
 Paul Everitt and I have long been communicating about the role of XML in
 the CMS world. Recently, he posted the following [blog
 entry](http://radio.weblogs.com/0116506/2005/03/02.html#a290) and asked
@@ -55,7 +53,7 @@ things like folder structures or topic structures, or structured
 document content, for a number of reasons.
 
 While the files in the referenced demo are perhaps in one big pile,
-these files contain a *lot* of structure that can be exploited. It's
+these files contain a _lot_ of structure that can be exploited. It's
 just not represented as folders and topics. Someone has to put this
 structure in there.
 
@@ -63,7 +61,7 @@ How will you get (non-computer-savvy) people to produce such structured
 content? I.e. how do you get enough consistency to actually be able to
 do smart queries like the ones demonstrated? Jon Udell alone can be
 trusted to produce semantic XHTML, but a whole organization? With Silva,
-we took a lot of care so that we get *some* semi-structured content out
+we took a lot of care so that we get _some_ semi-structured content out
 of it all (Silva XML).
 
 In addition, organizations use structuring techniques like folders and

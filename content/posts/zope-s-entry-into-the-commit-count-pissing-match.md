@@ -7,8 +7,6 @@ slug = "zope-s-entry-into-the-commit-count-pissing-match"
 tags = ["zope"]
 +++
 
-# Zope's entry into the commit count pissing match
-
 Mark Ramm-Christensen of the TurboGears project starts what looks like
 it will be a great [commit count pissing
 match](http://compoundthinking.com/blog/index.php/2008/06/24/but-im-not-dead-yet/#comments)

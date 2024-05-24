@@ -7,8 +7,6 @@ slug = "to-pycon-i-go"
 tags = ["conference"]
 +++
 
-# To PyCon I Go
-
 I decided to attend PyCon this year; there are a lot of people going
 there that I'd like to meet, and a lot of people I'd like to run into
 again. Oh, and there are cool talks too!

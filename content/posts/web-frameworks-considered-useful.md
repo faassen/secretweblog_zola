@@ -7,8 +7,6 @@ slug = "web-frameworks-considered-useful"
 tags = ["framework"]
 +++
 
-# web frameworks considered useful
-
 There is a a strain of thought in the Python web development community
 these days that considers web frameworks a bad idea. Even beginners are
 sometimes told: why do you need a framework anyway? Just build your app
@@ -28,7 +26,7 @@ just did it at a low level. But because the framework forces a certain
 way of working on me, it becomes needlessly difficult. I have to create
 workarounds, and it sucks.
 
-Frameworks *can* get into your way, as they've made certain choices. How
+Frameworks _can_ get into your way, as they've made certain choices. How
 much they are constraining depends on the framework, your experience
 with it, and what you're trying to accomplish.
 
@@ -37,7 +35,7 @@ you're trying to perform is something that a framework makes very easy.
 The first time around you use a framework for something that it is good
 at, you're going to be impressed at how easy it was to accomplish your
 task. Before long however, you might become so used to the benefits that
-a framework brings that you won't even *notice* what the framework is
+a framework brings that you won't even _notice_ what the framework is
 doing for you anymore; it's now in the background. And humans are very
 attuned to pain, so the pain points are going to remain. You're going to
 remember the ugly workarounds better than the times when things just
@@ -59,20 +57,20 @@ pain go away, instead of avoiding it entirely?
 
 ## Building from scratch feels more productive
 
-A developer might argue to the last point: no, I am a *lot* more
+A developer might argue to the last point: no, I am a _lot_ more
 productive if I build something from scratch, and list a whole range of
 things they've built up in a short amount of time.
 
 And of course building something from scratch can feel very liberating,
 and sometimes it is the right way to go. But frequently you will only
-*feel* more productive - if you're spending time to reimplement the
+_feel_ more productive - if you're spending time to reimplement the
 features of the framework you discarded, you might be productive in
 implementing those features, but what about the task you're actually
 trying to accomplish? What about the web app you're trying to build? And
 how much code that only you understand will you end up trying to
 maintain?
 
-There are cases where you may *feel* a lot more productive, because
+There are cases where you may _feel_ a lot more productive, because
 you're having more fun, when you actually aren't. We all know
 programmers like to reinvent wheels. Reusing existing code may be more
 painful, but it isn't necessarily less productive, although of course it
@@ -95,13 +93,13 @@ so on to do everything from interfacing with a web server to talking to
 a database. Instead of picking a ready-made pre-assembled framework, you
 can instead pick and choose the best of breed components that are out
 there and use those to develop your application. Since you are doing it,
-it may be better suited to *your* requirements than any pre-assembled
+it may be better suited to _your_ requirements than any pre-assembled
 framework can offer. You'll understand it better too.
 
 I believe there is a lot of value in this approach. The Python web
 development world has been moving in this direction for a while; there's
 the emphasis on WSGI, and there is the emphasis on easily distributing
-and combining libraries. I'll note that the Python web *framework*
+and combining libraries. I'll note that the Python web _framework_
 development has been moving in this direction too, because web framework
 developers are also aware of the benefit of sharing useful components
 with each other.
@@ -135,7 +133,7 @@ components you are using?
 Finally, these smaller components are often quite complex frameworks
 too - and if you integrate them yourself there might be less unity of
 vision than a good framework can offer, and the whole might end up
-*harder* to understand.
+_harder_ to understand.
 
 The burden of assembling and integrating best of breed components can be
 shared: that's what the developers of a framework do. And if you base
@@ -149,7 +147,7 @@ something you may benefit from in the future.
 So it often makes sense to share the assembling and integration of
 components in an open source fashion just like it makes sense to share
 the components themselves. An assembly is not just a collection of loose
-parts, it can be a *new* thing, with a vision of it own.
+parts, it can be a _new_ thing, with a vision of it own.
 
 ## Conclusion
 

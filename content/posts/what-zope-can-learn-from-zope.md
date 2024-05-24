@@ -7,8 +7,6 @@ slug = "what-zope-can-learn-from-zope"
 tags = ["zope"]
 +++
 
-# What Zope can learn from Zope
-
 So we've had [what Django can learn from
 Zope](http://compoundthinking.com/blog/index.php/2008/09/17/djangocon-and-learning-from-zope-2/),
 [what Zope can learn from
@@ -68,7 +66,7 @@ control system.
 ### Fine-grained components
 
 Zope 2 introduced a powerful component programming model. Zope 2 is
-extensible through so-called *Products*, which often were used to create
+extensible through so-called _Products_, which often were used to create
 new ways to help developers program in the web UI. As an example, one
 product I wrote back in 2001 is called Formulator, which helps people
 construct web forms by putting together fields in the Zope UI.

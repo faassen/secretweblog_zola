@@ -7,8 +7,6 @@ slug = "credit-where-credit-s-due"
 tags = ["zope"]
 +++
 
-# Credit where credit's due
-
 Thank you Phillip Eby for giving credit where's credit's due in your
 comment on this
 [article](http://www.groovie.org/articles/2005/09/30/best-of-breed-controllers-for-mvc-web-frameworks).

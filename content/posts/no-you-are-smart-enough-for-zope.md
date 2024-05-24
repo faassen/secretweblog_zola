@@ -7,8 +7,6 @@ slug = "no-you-are-smart-enough-for-zope"
 tags = ["zope"]
 +++
 
-# No, you are smart enough for Zope
-
 This [blog
 entry](http://wyattbaldwin.com/2008/04/04/ruby-on-rails-revisited/) on
 picking web frameworks is quite interesting. It doesn't give a lot of
@@ -25,9 +23,9 @@ Zope, and had the following to say:
 > Anyway, I might just not be smart enough for Zope.
 
 It's very polite to say that the problem is that he's not smart enough
-for Zope, but of course that's not true. It's *Zope*'s problem. If you
+for Zope, but of course that's not true. It's _Zope_'s problem. If you
 cannot learn Zope while you can learn so many other technologies, that's
-a failure of the Zope community. *My* community.
+a failure of the Zope community. _My_ community.
 
 Some in our community, including myself, are very much concerned with
 this problem. I believe in fact there is universal acknowledgment within
@@ -42,10 +40,10 @@ takes a while. There are multiple paths we've been taking:
   been doing a good job so far, but there's a lot more to do. Come join
   us and help us if you're interested.
 - Finally fix our Zope web presence. This has been something we
-  should've fixed *years* ago, but progress has been very slow. It's
+  should've fixed _years_ ago, but progress has been very slow. It's
   easy to get a bunch of web developers to debate what technology they
   should be using for a web site. It's also fairly easy to get some nice
-  layouts for your website. It's *hard* to get good content written.
+  layouts for your website. It's _hard_ to get good content written.
   When you ask for that, you tend to hear crickets all of a sudden. That
   said, in the background we are making real progress.
 
@@ -62,9 +60,9 @@ Plone community (including its own Plone Foundation) and the wildly
 successful Plone conferences as a very important part of the wider Zope
 community.
 
-I think our community would've been even *more* vibrant if we paid more
+I think our community would've been even _more_ vibrant if we paid more
 attention to attracting newcomers to Zope technologies. Plone in
-particular *has* been doing pretty well in attracting newcomers. We can
+particular _has_ been doing pretty well in attracting newcomers. We can
 learn from them, and from the other communities around web frameworks.
 
 I believe passionately in this mission of attracting people to our

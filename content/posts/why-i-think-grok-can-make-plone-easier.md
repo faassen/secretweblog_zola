@@ -7,8 +7,6 @@ slug = "why-i-think-grok-can-make-plone-easier"
 tags = ["grok", "plone"]
 +++
 
-# Why I think Grok can make Plone easier
-
 Let me start off by saying that I'm not a Plone developer. I've got a
 lot of experience with Zope 2 development though, and I keep an eye on
 the Plone community. I hope the Plone developers will not mind a
@@ -50,7 +48,7 @@ there. This results in frustration and head-scratching.
 
 In addition, when given a powerful tool for creating pluggable
 frameworks, it's easy for a developer to go overboard, and create
-something powerful, very pluggable, but not very *agile*. That's not
+something powerful, very pluggable, but not very _agile_. That's not
 directly the fault of the tool itself. Building a good framework and
 using tools well is a learning process. But in the mean time this is
 results in yet more complexity for people to deal with.
@@ -77,7 +75,7 @@ compatibility...
 Still, Plone is being rewritten, step by step, to make use of Zope 3's
 component and configuration technology. Misteps are made. People are
 frustrated. But I do believe Plone is fundamentally going in the right
-direction with this. The Plone developers have been working for *years*
+direction with this. The Plone developers have been working for _years_
 on creating a uniform system for customizing and extending Plone,
 building on Zope 3 foundations. Ironically, but entirely understandably,
 this effort is also a source of frustration.
@@ -98,7 +96,7 @@ because it's an XML dialect, but that's really superficial.
 
 Then I worked with it. I learned over time that ZCML is one of the
 aspects of Zope 3 that cuts down on my agility as a developer. Not
-because it's XML, but because it's *separate*. I have to do too many
+because it's XML, but because it's _separate_. I have to do too many
 mental context switches - Python code to ZCML and back. If I forget to
 write a bit of ZCML to hook things up, which is easy to do, things won't
 work. I don't see the complete picture when reading the code, and I
@@ -149,7 +147,7 @@ the developer's experience a lot.
 Why should Plone developers believe a guy who is partially responsible
 for bringing the whole ZCML mess to you in the first place? Above I make
 the case that the Five project brought a lot of value to us, not just
-frustration. And the Five project allows us to *share* our frustrations
+frustration. And the Five project allows us to _share_ our frustrations
 in a larger community: although I'm not a Plone developer, I've shared
 some of your frustrations, and helped start work on a solution: Grok.
 
@@ -175,7 +173,7 @@ bringing a smooth learning curve towards the advanced technologies of
 Zope 3, while not breaking compatibility with it. We try to make our
 "new layer" as thin as possible, choosing to replace an existing layer
 instead of piling yet another new one on top of it. We're about making
-the easy things easy; thanks to Zope 3, the hard things are *already*
+the easy things easy; thanks to Zope 3, the hard things are _already_
 possible and we do not take away from this power.
 
 I hope the Plone project will align its interests with those of the Grok

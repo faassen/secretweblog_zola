@@ -7,8 +7,6 @@ slug = "a-buildout-for-lxml"
 tags = ["packaging", "lxml"]
 +++
 
-# A buildout for lxml
-
 I've created what's called a "buildout" for lxml, and I figured I'd let
 everybody know how cool that is.
 

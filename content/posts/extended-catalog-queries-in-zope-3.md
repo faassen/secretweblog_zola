@@ -7,8 +7,6 @@ slug = "extended-catalog-queries-in-zope-3"
 tags = ["zope"]
 +++
 
-# extended catalog queries in Zope 3
-
 Yesterday I managed to build something in just a few hours in Zope 3
 that I wouldn't have been able to build so easily in Zope 2. What I've
 built is an extended query system for the Zope 3 catalogs.

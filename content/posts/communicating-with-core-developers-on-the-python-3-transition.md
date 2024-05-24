@@ -7,8 +7,6 @@ slug = "communicating-with-core-developers-on-the-python-3-transition"
 tags = ["python", "python3"]
 +++
 
-# Communicating with core developers on the Python 3 transition
-
 It has been made abundantly clear to me that some core developers did
 not appreciate
 [my](http://faassen.n--tree.net/blog/view/weblog/2007/06/20/0)
@@ -38,7 +36,7 @@ My intent was:
 - express my own worries concerning the impact on the community.
 - trying to help prepare the community for the upcoming transition
   phase: it's not going to be a cakewalk.
-- express how I would like core developers to *communicate* the
+- express how I would like core developers to _communicate_ the
   transition. Core developers will naturally want to attract developers
   to the Python 3 platform. My fear is that the core developers, by
   communicating their enthusiasm, will sometimes inadvertently cause

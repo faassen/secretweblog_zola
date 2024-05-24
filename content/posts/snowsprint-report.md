@@ -7,15 +7,13 @@ slug = "snowsprint-report"
 tags = ["grok", "sprint"]
 +++
 
-# Snowsprint report
-
 This year, like last year, will be a year of
 [Grok](http://grok.zope.org) for me. Grok has given me real hope that
 Zope technologies can compete, and compete well, with other Python-based
 web frameworks. In the Zope community, as well as outside it, we are
 well aware of Zope's flaws, both technology and community-wise. We
 sometimes think too little about Zope's assets, which are huge. Zope 3
-is *great* technology, years ahead of the competition in the
+is _great_ technology, years ahead of the competition in the
 pluggability department, and Zope's community is well established. One
 of those things in the Zope community is the yearly [Snow
 Sprint](http://www.openplans.org/projects/snow-sprint-2008/project-home).
@@ -32,7 +30,7 @@ meters high up in Austria, in the middle of nowhere surrounded by
 [gorgeous snow-covered
 mountains](http://www.flickr.com/photos/mrtopf/tags/snowsprint2008/).
 This was a bit problematic when I developed an acute toothache in the
-weekend after I arrived. Ouch! *Ouch*! Luckily I was able to descend the
+weekend after I arrived. Ouch! _Ouch_! Luckily I was able to descend the
 mountain on monday and an Austrian dentist fixed me up.
 
 My personal mission at the Snow Sprint was to work on Grok, and

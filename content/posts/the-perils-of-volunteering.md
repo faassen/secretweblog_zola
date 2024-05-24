@@ -7,8 +7,6 @@ slug = "the-perils-of-volunteering"
 tags = ["zope foundation"]
 +++
 
-# The Perils of Volunteering
-
 I'm on the board of the Zope Foundation. In fact, until thursday this
 week, when hopefully the new board gets seated, I'm its chairman.
 
@@ -63,7 +61,7 @@ volunteer, grumble, but point taken.
 
 The new board should definitely improve this, so I put it on the list of
 todo items for the new board. Even the old board will. So when we
-announce the election result, we make sure we *did* announce that to
+announce the election result, we make sure we _did_ announce that to
 zope-announce, today.
 
 Lennart Regebro doesn't always read the email the Foundation sends to

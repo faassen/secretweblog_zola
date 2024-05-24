@@ -7,8 +7,6 @@ slug = "grok-s-release-mill"
 tags = ["grok", "release", "silva", "plone"]
 +++
 
-# Grok's release mill
-
 It already happened last week, but I thought I'd mention our Grok 0.14
 release. [Grok](http://grok.zope.org) 0.14 is the first release of Grok
 that officially works with Python 2.5, though unofficially Grok has
@@ -64,7 +62,7 @@ Still, why is it worth it?
 
 In the abstract, splitting off separate packages helps us safeguard
 conceptual integrity of a package. Giving a package a separate identity
-makes us think about what this package is really *for*, and helps keep
+makes us think about what this package is really _for_, and helps keep
 the scope of a package clear.
 
 Since we use separate packages with separate reponsibilities, it allows
@@ -77,7 +75,7 @@ code reusability. The Grok developers want the Grok technologies to be
 used by many people. We've already seen the uptake of our
 <span class="title-ref">grokcore.\*</span> packages in plain Zope 3
 projects by developers who like some of Grok's features but don't want
-to pull in *all* of Grok. Even more importantly Zope 2 developers are
+to pull in _all_ of Grok. Even more importantly Zope 2 developers are
 starting to use our technology in CMS projects such as
 [Silva](http://www.infrae.com/products/silva) and
 [Plone](http://www.plone.org). The martian package has also seen use in

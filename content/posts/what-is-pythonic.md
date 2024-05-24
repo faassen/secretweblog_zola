@@ -7,9 +7,7 @@ slug = "what-is-pythonic"
 tags = ["python", "pythonic"]
 +++
 
-# What is Pythonic?
-
-*What the heck does "pythonic" mean?*
+_What the heck does "pythonic" mean?_
 
 This was a question asked a few months ago, on, of all places, the
 EuroPython mailing list, which is mainly used to plan the EuroPython
@@ -156,7 +154,7 @@ accomplish the same thing. It should also follow common Python
 conventions concerning idioms.
 
 Of course the problem is that frameworks, being frameworks, almost
-*inevitably* try to introduce patterns and ways of doing things that may
+_inevitably_ try to introduce patterns and ways of doing things that may
 not be familiar if you're used to smaller applications. That's how you
 exploit the power of a framework. Zope 2, a framework I'm intimately
 familiar with, is an example of a framework that definitely introduces a

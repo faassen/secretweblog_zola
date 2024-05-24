@@ -7,11 +7,9 @@ slug = "zope-3-will-support-xml"
 tags = ["zope", "xml", "silva"]
 +++
 
-# Zope 3 will support XML
-
 Paul Everitt asks [Should Zope 3 support
 XML?](http://radio.weblogs.com/0116506/2005/03/11.html#a303). The answer
-is of course, *yes, it should*, and, what's more, *yes it will*, and
+is of course, _yes, it should_, and, what's more, _yes it will_, and
 [Infrae](http://www.infrae.com) will be one party working on it. In
 fact, we've [already worked on it](http://codespeak.net/svn/z3/zopexml).
 

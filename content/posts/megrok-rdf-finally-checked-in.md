@@ -7,8 +7,6 @@ slug = "megrok-rdf-finally-checked-in"
 tags = ["grok"]
 +++
 
-# megrok.rdf finally checked in
-
 Jasper Op de Coul and I worked on megrok.rdf during the post-europython
 [Grok](http://grok.zope.org) sprint a few weeks ago. We had a few
 logistical problems concerning access to svn.zope.org, but yesterday

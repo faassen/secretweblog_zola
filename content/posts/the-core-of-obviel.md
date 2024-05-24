@@ -7,8 +7,6 @@ slug = "the-core-of-obviel"
 tags = ["obviel", "javascript"]
 +++
 
-# The Core of Obviel
-
 ## Start with jQuery
 
 Obviel's core principle is pretty simple if you know jQuery.
@@ -35,17 +33,17 @@ Once you know this, you know the most important thing about Obviel.
 
 ## Views
 
-Now how does Obviel *know* how to render `obj` on `el`?
+Now how does Obviel _know_ how to render `obj` on `el`?
 
 You need to tell Obviel first (typically when the JavaScript file is
-being loaded) by defining a *view*:
+being loaded) by defining a _view_:
 
     obviel.view({
       iface: 'animal',
       html: '<p>This is an animal</p>'
     });
 
-This view works for the *iface* `animal`. An iface is a simple marker on
+This view works for the _iface_ `animal`. An iface is a simple marker on
 objects you want to render. So if you have this object:
 
     var obj = {

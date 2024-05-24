@@ -7,8 +7,6 @@ slug = "fixing-the-zope-release-process"
 tags = ["zope", "silva"]
 +++
 
-# Fixing the Zope release process
-
 ## Fixing the Zope release process
 
 In this article, I will identify problems with the Zope release
@@ -161,7 +159,7 @@ Wait a moment -- do more contribution in fact drive regular releases?
 No, not necessarily. The process needs to be in place to channel
 contributions the right way. Unstabilizing contributions shouldn't come
 just before a release, for instance, as in that case, the contribution
-will *delay* the release.
+will _delay_ the release.
 
 So let's not blame anyone; let's blame the process. Let's now look at
 how to fix it.
@@ -169,8 +167,8 @@ how to fix it.
 ### How to handle lack of resources
 
 Lack of resources delay a release, but we also need to face it: there is
-*always* a lack of developer resources. Good developers experienced with
-a project are *always* scarce. Doing regular and predictable releases
+_always_ a lack of developer resources. Good developers experienced with
+a project are _always_ scarce. Doing regular and predictable releases
 will hopefully attract more resources, but they'll never be sufficient,
 as human ambition always outstrips any resources
 
@@ -221,7 +219,7 @@ concepts.
 - Try to use standard procedures for releases as much as possible, so
   that it is easier for people to help out. If they need to jump through
   special hoops just for your project, they're more likely to give up,
-  even if they're *better* hoops. The project innovates enough already
+  even if they're _better_ hoops. The project innovates enough already
   in its core focus. [YAGNI](http://c2.com/cgi/wiki?YouArentGonnaNeedIt)
   applies here.
 - Do not depend on superheroic effort to make a release happen. Only
@@ -231,10 +229,10 @@ concepts.
 ### A special recommendation for Zope
 
 One thing that repeatedly seems to have gone wrong with Zope in the past
-is setting a release date and *sticking to it*. I hope I have pointed
-out that this *important*. In my opinion, it should at times be more
+is setting a release date and _sticking to it_. I hope I have pointed
+out that this _important_. In my opinion, it should at times be more
 important than features, quality, or cleanups. By that I mean is that on
-a regular basis, the *highest* priority should be given to making a
+a regular basis, the _highest_ priority should be given to making a
 release happen on time, and everything else should be compromised to a
 certain extent to make this happen.
 

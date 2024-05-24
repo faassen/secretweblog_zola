@@ -7,12 +7,10 @@ slug = "a-history-of-python-packaging"
 tags = ["python", "packaging"]
 +++
 
-# A history of Python packaging
-
 ## Introduction
 
 Earlier this year I was at PyCon in the US. I had an interesting
-experience there: people were talking about the *problem* of packaging
+experience there: people were talking about the _problem_ of packaging
 and distributing Python libraries. People had the impression that this
 was an urgent problem that hadn't been solved yet. I detected a vibe
 asking for the Python core developers to please come and solve our
@@ -22,10 +20,10 @@ I felt like I had stepped into a parallel universe. I've been using
 powerful tools to assemble applications from Python packages
 automatically for years now. Last summer at EuroPython, when this
 discussion came up again, I maintained that packaging and distributing
-Python libraries is a *solved problem*. I put the point strongly, to
+Python libraries is a _solved problem_. I put the point strongly, to
 make people think. I fully agree that the current solutions are
 imperfect and that they can be improved in many ways. But I also
-maintain that the current solutions are indeed *solutions*.
+maintain that the current solutions are indeed _solutions_.
 
 There is now a lot of packaging infrastructure in the Python community,
 a lot of technology, and a lot of experience. I think that for a lot of
@@ -145,7 +143,7 @@ thus isolate each project from each other.
 In 2006 as well, Jim Fulton created Buildout, building on Setuptools and
 easy_install. Buildout can create an isolated project environment like
 virtualenv does, but is more ambitious: the goal is to create a system
-for *repeatable* installations of potentially very complex projects.
+for _repeatable_ installations of potentially very complex projects.
 Instead of writing an `INSTALL.txt` that tells others who to install the
 prerequites for a package (Python or not), with Buildout these
 prerequisites can be installed automatically.

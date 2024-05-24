@@ -7,8 +7,6 @@ slug = "sqlalchemy-with-grok"
 tags = ["grok", "sqlalchemy"]
 +++
 
-# SQLAlchemy with Grok
-
 Grok needs a great relational database integration story. Grok already
 has a great database story: by default, we use an object database: the
 ZODB. The ZODB is great as you can just store normal Python objects. You
@@ -197,7 +195,7 @@ that offer such a facility, so we need to investigate those.
 Grok makes it very easy to make custom traversers to set up your URL
 space. Let's combine it with a query example. If you want to make an
 object that acts as the base of all users in URL space
-(base/*username*), you could do this:
+(base/_username_), you could do this:
 
     class UserContainer(grok.Model):
          def traverse(self, name):

@@ -7,8 +7,6 @@ slug = "zope-3-3-released"
 tags = ["zope", "release"]
 +++
 
-# Zope 3.3 released!
-
 [Zope 3.3](http://www.zope.org/Products/Zope3/3.3.0) is
 [released](http://mail.zope.org/pipermail/zope-announce/2006-September/002016.html)!
 

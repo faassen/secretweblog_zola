@@ -7,8 +7,6 @@ slug = "debugging-strategy-easy-stuff-first"
 tags = ["development"]
 +++
 
-# Debugging strategy: easy stuff first
-
 I've been writing software for quite a while now, but the software I
 write still has bugs. One uses various strategies to avoid bugs, but
 bugs still creep in. Bugs happens all the time. I sometimes believe only
@@ -43,7 +41,7 @@ versions of the libraries you're using really correct? Check whether the
 web application that has the bug is really actually being run by the
 server you thought it was. Perhaps there's another server hanging around
 serving the buggy app and all your efforts have no effect. Check whether
-the API you know so very well *really* works in the way you thought it
+the API you know so very well _really_ works in the way you thought it
 did. It might be just a one line program to check. Yeah, it's unlikely,
 but you won't waste a lot of time, so just do it.
 
@@ -55,11 +53,11 @@ of head scratching only to slap your forehead in the end. If it wasn't
 the cause of the bug, at least you've not wasted a lot of time to
 exclude it, and you can move on.
 
-Don't check unlikely causes that are *hard* to check first. You may end
+Don't check unlikely causes that are _hard_ to check first. You may end
 up checking those anyway, as it could be them after all. But not
 initially. First check the easy stuff.
 
-Also don't check the *likely* causes first that are *hard* to verify.
+Also don't check the _likely_ causes first that are _hard_ to verify.
 You think it's probably a threading issue? Oh no, that's difficult to
 debug! What if that wasn't the real cause for the bug after all? You've
 just spent hours testing for it. What if it turned out the bug was

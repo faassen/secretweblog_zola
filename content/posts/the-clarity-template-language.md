@@ -7,8 +7,6 @@ slug = "the-clarity-template-language"
 tags = ["templating"]
 +++
 
-# the Clarity Template Language
-
 The [ClearSilver](http://www.clearsilver.net) templating language does
 not have a very pleasant syntax for people familiar with the TAL
 notation of Zope Page Templates. That's not to say ClearSilver's syntax

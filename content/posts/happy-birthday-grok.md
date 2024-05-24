@@ -7,8 +7,6 @@ slug = "happy-birthday-grok"
 tags = ["grok"]
 +++
 
-# Happy birthday Grok!
-
 Grok the codebase is 1 year old this week! One year ago, from the 12th
 of october until the 17th of october 2006, we started the Grok project
 in Halle, Germany. The design discussions for Grok are older - they go

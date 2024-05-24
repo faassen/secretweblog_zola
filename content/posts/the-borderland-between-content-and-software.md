@@ -7,8 +7,6 @@ slug = "the-borderland-between-content-and-software"
 tags = ["cms", "zope", "silva", "plone"]
 +++
 
-# The borderland between content and software
-
 Paul Everitt
 [writes](http://radio.weblogs.com/0116506/2005/12/15.html#a380):
 
@@ -28,8 +26,8 @@ so I know the trouble that this scenario can cause.
 
 Paul is talking about the interesting dividing line between content and
 software, and between content authors and programmers. Let's keep it
-clear and call this the *borderland*, as calling it just *software* or
-just *content* warps our perspective -- we need to see it as both.
+clear and call this the _borderland_, as calling it just _software_ or
+just _content_ warps our perspective -- we need to see it as both.
 
 Paul also writes:
 
@@ -53,7 +51,7 @@ we move away from the apparently paradisical state Paul describes?
 At Infrae, we have a lot of experience with people, end users and
 scripters writing software/content through the web, using facilities in
 Zope, Silva, and Formulator. While this is indeed very empowering for
-the end-user or scripter, it can also lead to an *enormous* increase in
+the end-user or scripter, it can also lead to an _enormous_ increase in
 maintenance burden.
 
 This gets noticed by the software developers and system administrators
@@ -61,7 +59,7 @@ who will have to do the occasional maintenance (such as upgrades). They
 will have to deal not only with Silva and Zope (or Plone and Zope), but
 also the software/content that grew around it. This increases the
 complexity enormously. We can't do away with this extra code that grew
-around it; it's *necessary* for deployment of the software in that
+around it; it's _necessary_ for deployment of the software in that
 particular production setting. But we'd sure as hell wish it'd been more
 maintainable.
 
@@ -80,7 +78,7 @@ attempts to make through the web work together with filesystem tools,
 with varying success, but I think nobody denies that this is a major
 pain. A general trend was to develop this stuff as code on the
 filesystem, as that made life a lot easier. Through the web development
-helps a class of users, but it can also be seen as a *hindrance* to the
+helps a class of users, but it can also be seen as a _hindrance_ to the
 adoption of Zope as a software development platform by software
 developers. This is also an important audience to us.
 

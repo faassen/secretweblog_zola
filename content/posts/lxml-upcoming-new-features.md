@@ -7,8 +7,6 @@ slug = "lxml-upcoming-new-features"
 tags = ["lxml"]
 +++
 
-# lxml upcoming new features
-
 lxml has undergone quite a bit of development since lxml 0.6. While 0.7
 is not yet released, this release should be coming soon, and to whet
 your appetites here's a partial list of new features:
@@ -38,7 +36,7 @@ offer too much control to the user either.
 
 The W3C DOM, as usual, offers way too much API for namespace handling,
 which results in all kinds of scary interactions I don't want to worry
-about. I did add an attribute to *read* prefix information, but unlike
+about. I did add an attribute to _read_ prefix information, but unlike
 the DOM, will not make this writeable, as this quickly gets pretty
 insane, so that route towards namespace control is out.
 

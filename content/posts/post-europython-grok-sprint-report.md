@@ -7,8 +7,6 @@ slug = "post-europython-grok-sprint-report"
 tags = ["sprint", "grok", "silva"]
 +++
 
-# Post-EuroPython Grok sprint report
-
 This is a report on the [Grok](http://grok.zope.org) sprint that
 followed EuroPython. Thanks to the EuroPython organizers for giving us
 the space!

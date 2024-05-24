@@ -7,8 +7,6 @@ slug = "lxml-findall-and-xpath-performance"
 tags = ["lxml"]
 +++
 
-# lxml findall and xpath performance
-
 Update: lxml got quite a bit faster since this entry, see [here](@/posts/lxml-performance-progress.md).
 
 I've been testing `findall()` performance on etree versus

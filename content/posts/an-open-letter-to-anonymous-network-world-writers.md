@@ -7,8 +7,6 @@ slug = "an-open-letter-to-anonymous-network-world-writers"
 tags = ["open source"]
 +++
 
-# An open letter to anonymous Network World writers
-
 Dear anonymous Network World writers claiming to speak for corporate IT
 executives,
 

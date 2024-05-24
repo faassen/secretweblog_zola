@@ -7,8 +7,6 @@ slug = "zope-foundation-accepting-student-applications-in-the-google-summer-of-c
 tags = ["zope foundation"]
 +++
 
-# Zope Foundation accepting student applications in the Google Summer of Code
-
 Are you a student and are you interested to hack on Zope, the ZODB or
 Grok for the summer? Do you want to be helped by an expert mentor? And
 get money and a t-shirt? The Zope Foundation is participating in the

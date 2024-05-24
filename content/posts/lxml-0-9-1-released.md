@@ -7,8 +7,6 @@ slug = "lxml-0-9-1-released"
 tags = ["lxml", "release"]
 +++
 
-# lxml 0.9.1 released!
-
 A bit late, but still worth a blog entry: lxml 0.9.1 was released last
 week! This is a bugfix release following up on the great 0.9 release
 done a bit before.

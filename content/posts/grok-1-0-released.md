@@ -7,8 +7,6 @@ slug = "grok-1-0-released"
 tags = ["grok", "release"]
 +++
 
-# Grok 1.0 released!
-
 Grok 1.0 was released today! Almost exactly three years after the first
 lines of code were written, and many Grok-based applications later,
 we've finally released Grok 1.0.

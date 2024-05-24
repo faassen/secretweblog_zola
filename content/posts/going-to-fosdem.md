@@ -7,8 +7,6 @@ slug = "going-to-fosdem"
 tags = ["conference"]
 +++
 
-# Going to FOSDEM
-
 This weekend I'm off to FOSDEM, a large free software/open source event
 in Brussels. For years I intended to go but for years I didn't make it.
 But this weekend I'll be there, taking the train later today!

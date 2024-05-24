@@ -7,8 +7,6 @@ slug = "benji-york-is-doing-good-work"
 tags = ["testing", "zope"]
 +++
 
-# Benji York is doing good work
-
 [Benji York](http://www.benjiyork.com/), a relatively recent Zope
 Corporation employee, first appeared on my "does interesting stuff"
 radar due to his work with Zope 3 testing: zope.testbrowser, which
@@ -31,7 +29,7 @@ This is not the only thing Benji has been up to though; today I
 discovered [his new weblog](http://www.benjiyork.com/blog/), where he
 says good stuff on a topic close to my heart: Zope 3 marketing.
 
-Moreover he is actually *doing* something about it. He's written the
+Moreover he is actually _doing_ something about it. He's written the
 beginnings of a [Zope 3 quickstart
 guide](http://www.benjiyork.com/quick_start.txt) that should help people
 on their way when learning Zope 3. Perhaps it can eventually lead to a

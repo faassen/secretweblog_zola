@@ -7,8 +7,6 @@ slug = "under-engineering-over-engineering-right-engineering"
 tags = ["development"]
 +++
 
-# under-engineering, over-engineering, right-engineering
-
 I just ran into a post in a series called "Tools of The Effective
 Developer". This one is called [Make It Work -
 First!](http://www.hans-eric.com/2007/10/29/tools-of-the-effective-developer-make-it-work-first/).
@@ -37,7 +35,7 @@ therefore have an interest in powerful, flexible code, and a tendency to
 anticipate future features.
 
 Over-engineering frequently results in code that overanticipates
-tremendously. It's full of all kinds of *interesting* features and
+tremendously. It's full of all kinds of _interesting_ features and
 pluggability points that end up not being needed in the future at all.
 On the other hand, features that may be essential to the task at hand
 might not be very well done, as they got lost between all the other
@@ -72,16 +70,16 @@ the most important ingredients to reach success. Right-engineering is
 more the application of good development strategies than it is pure
 coding skill. You can't "become" a right-engineer after some period of
 learning and growth, resulting in you always finding the right balance
-between over-engineering and under-engineering for the job. What *can*
+between over-engineering and under-engineering for the job. What _can_
 happen is that a developer will adopt strategies that increase the
 chances of finding that balance.
 
 A developer should recognize that the right amount of engineering (and
-*what* to actually engineer) is highly dependent on how the software is
+_what_ to actually engineer) is highly dependent on how the software is
 actually going to be used. The best way to find out how software is
-going to be used is often to actually *use* it: use your api in
+going to be used is often to actually _use_ it: use your api in
 automated (doc)tests, get the customer to use prototypes and development
 versions, and get the customer to put the software in production when
-it's *good enough*, instead of when it's *optimal*. Software development
+it's _good enough_, instead of when it's _optimal_. Software development
 is frequently software evolution. Get feedback and go back and improve
 your code.

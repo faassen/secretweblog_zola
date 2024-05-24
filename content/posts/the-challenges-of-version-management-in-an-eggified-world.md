@@ -7,17 +7,15 @@ slug = "the-challenges-of-version-management-in-an-eggified-world"
 tags = ["packaging", "python"]
 +++
 
-# the challenges of version management in an eggified world
-
 Zope 3, and [Grok](http://grok.zope.org) in the last few months have
 been switching to a brave new eggified world of installation. The idea
 is that you compose your Zope application from a large amount of smaller
 packages, each providing their own components. I've sometimes described
-this Zope as an *integrated megaframework*. Zope is an *integrated*
+this Zope as an _integrated megaframework_. Zope is an _integrated_
 framework where packages follow common coding conventions, and the
 component architecture defines a way for packages to work with each
 other. Grok tries to step up by aiming for an integrated feel for
-developers. At the same time, Zope is a *megaframework*, allowing you to
+developers. At the same time, Zope is a _megaframework_, allowing you to
 swap in best of breed components as they come available. Don't like
 zope.formlib? Swap in z3c.form for your form generation needs instead.
 
@@ -115,7 +113,7 @@ even want to count on bug for bug compatibility.
 To allow flexibility, instead of hardcoding version numbers in
 `install_requires` in `setup.py`, you only loosely specify them. You
 say, for instance, that `zope.component` requires `zope.interface`, but
-not which version. If you *know* that your version of `zope.component`
+not which version. If you _know_ that your version of `zope.component`
 needs a feature that's only in `zope.interface` 3.2 or later, you'd
 write `zope.interface >= 3.2`.
 
@@ -139,12 +137,12 @@ their applications to put the following section in their application's
 
 This can be made work well if you don't use a framework like Grok but
 instead develop an application from scratch that uses a long list of
-components. But in the case of Grok we want the *framework* to specify
+components. But in the case of Grok we want the _framework_ to specify
 these dependencies. We don't want to require all application developers
 to replicate a long list of dependencies in their `buildout.cfg`. It's
 easy to make mistakes, it's hard to communicate about such lists to
 everybody, and what do people do when they need to perform an upgrade to
-a newer version of Grok? They'd need to get a *new* long list and edit
+a newer version of Grok? They'd need to get a _new_ long list and edit
 their `buildout.cfg` again. It'd be a lot nicer if they only had to deal
 with the change of a single version number instead.
 
@@ -196,7 +194,7 @@ places the new version on the cheeseshop, we will now also need to
 maintain a list of dependencies somewhere and create a new URL whenever
 we release Grok. We also need to communicate this new URL to our
 userbase, and this is different from the usual Python dependency
-mechanism, which is defined in `setup.py`. This isn't a *major* problem,
+mechanism, which is defined in `setup.py`. This isn't a _major_ problem,
 but it makes the release process more cumbersome nonetheless so it's
 less than ideal.
 

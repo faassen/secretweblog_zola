@@ -7,8 +7,6 @@ slug = "zope-and-scaling-down"
 tags = ["zope", "framework"]
 +++
 
-# Zope and scaling down
-
 Ian Bicking [posts](http://blog.ianbicking.org/zope-3-and-modeling.html)
 about what he percieves is a focus of Zope 3 on modeling up-front:
 
@@ -65,13 +63,13 @@ object in a schema, but I'm sure Ian as the creator of SQLObject
 wouldn't object too strenuously to this.
 
 Or perhaps Ian gets the idea indeed from my comment on hello world. I
-used the word "small", but I meant *really* small; the context was
+used the word "small", but I meant _really_ small; the context was
 "hello world". Zope 3 doesn't scale down well enough to tiny web
 applications of the "hello world" scale; the overhead of ZCML and such
 feels too big then. We need to do work there.
 
 But as soon as there's enough code for your web app to be useful to do
-*anything*, the overhead of ZCML and interfaces quickly shrinks. I'm not
+_anything_, the overhead of ZCML and interfaces quickly shrinks. I'm not
 saying it couldn't be improved further, but to say that Zope 3 does
 big-design up-front because "hello world" is slightly more difficult
 than it should be is a bit of a stretch. We're still programming in

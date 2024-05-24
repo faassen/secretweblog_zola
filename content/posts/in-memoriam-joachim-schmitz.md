@@ -7,8 +7,6 @@ slug = "in-memoriam-joachim-schmitz"
 tags = ["community"]
 +++
 
-# In Memoriam Joachim Schmitz
-
 This is a rather unusual blog entry. I sincerely hope I don't have to
 write blog entries like this very often. I usually write about
 technology, and the community surrounding it. This community is, of

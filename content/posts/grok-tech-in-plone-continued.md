@@ -7,8 +7,6 @@ slug = "grok-tech-in-plone-continued"
 tags = ["grok", "plone", "silva"]
 +++
 
-# Grok tech in Plone continued
-
 In [my previous blog
 entry](http://faassen.n--tree.net/blog/view/weblog/2008/10/18/0) I tried
 to make the case for Plone adopting Grok technology. I gave some
@@ -35,12 +33,12 @@ them here.
 
 ## Not enough people are using Grok; Grok is too esoteric
 
-The too-clever answer would be that enough people *would* be using Grok
+The too-clever answer would be that enough people _would_ be using Grok
 if the Plone community hopped on board. :)
 
 Grok technology expands on a technology choice that Plone already made:
 Zope 3. Grok is the project that is trying to make Zope 3 technology
-feel *less* esoteric. It seems to me therefore that Grok technology is a
+feel _less_ esoteric. It seems to me therefore that Grok technology is a
 way to make Plone's technology choices feel less esoteric, not more.
 
 I would also be interested in hearing alternative suggestions. Are
@@ -81,7 +79,7 @@ effects:
   come to a road block and they want to override the default behavior,
   they are ready to learn a new directive.
 
-If you are unsure about Grok's behavior, you can *always* be explicit by
+If you are unsure about Grok's behavior, you can _always_ be explicit by
 writing all the directives down explicitly yourself.
 
 As to the suggestion that Grok code is hard to debug when things don't
@@ -103,7 +101,7 @@ of a large framework and the tension between moving forward and
 backwards compatibility, which I already described in my previous
 article.
 
-Grok provides a *smooth* transition path at least for the Zope 3 code
+Grok provides a _smooth_ transition path at least for the Zope 3 code
 that already exists in Plone. It allows a gradual transition. It's good
 as this is the only way forward for a larger system with so many users.
 This is bad because two ways will co-exist at the same time. I'm not

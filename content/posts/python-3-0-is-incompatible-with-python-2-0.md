@@ -7,8 +7,6 @@ slug = "python-3-0-is-incompatible-with-python-2-0"
 tags = ["python3"]
 +++
 
-# Python 3.0 is incompatible with Python 2.0
-
 Jesse Noller
 [wrote](http://jessenoller.com/2008/02/01/i-hate-slashdot-python-3000-is-incompatible/):
 
@@ -19,7 +17,7 @@ and then says:
 > A sensationalist title, summary and normal slashdot commenters:
 > "Python 3.0 To Be Backwards Incompatible"
 
-I don't see how the title is sensationalist. Python 3.0 *is* backwards
+I don't see how the title is sensationalist. Python 3.0 _is_ backwards
 incompatible with Python 2.0. Conversion scripts are supplied, but that
 fundamental reality stands. The
 [summary](http://it.slashdot.org/article.pl?sid=08/02/01/1624247) on
@@ -59,15 +57,15 @@ this.
 
 The language developers are working on a migration script and are
 adjusting the Python 2.x line of Python so that we can prepare our code
-bases. By all means, spread that news too *in addition* to the backwards
+bases. By all means, spread that news too _in addition_ to the backwards
 incompatibility news. But don't object if news sources forgo such
 subtleties in spreading the main message to take home about Python 3.0:
-without special action on your part, your code *will* break when you try
+without special action on your part, your code _will_ break when you try
 to run it with the new interpreter. Adopting Python 3.0 as a community
 will mean an awful lot of code to transition. It'll be a process of
 years, and it won't be easy.
 
-(as an aside: I *think* I wrote a reasonable posting about Python 3.0
+(as an aside: I _think_ I wrote a reasonable posting about Python 3.0
 just now. Of course that's what I thought when I posted about this last
 time, and then I had people land on my head like a ton of bricks. It
 left a very unpleasant taste in my mouth. Let's hope this time will be

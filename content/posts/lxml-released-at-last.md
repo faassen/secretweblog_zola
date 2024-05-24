@@ -7,8 +7,6 @@ slug = "lxml-released-at-last"
 tags = ["lxml", "release"]
 +++
 
-# lxml released at last
-
 I've finally found the time to release lxml. So here then is
 [lxml](http://codespeak.net/lxml), release 0.5!
 

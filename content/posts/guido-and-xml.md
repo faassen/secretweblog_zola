@@ -7,8 +7,6 @@ slug = "guido-and-xml"
 tags = ["xml", "python"]
 +++
 
-# Guido and XML
-
 I think Guido's [post on
 XML](http://www.artima.com/weblogs/viewpost.jsp?thread=146647) is a good
 occasion to point again to my rant [about the disdain for XML among

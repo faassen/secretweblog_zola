@@ -7,8 +7,6 @@ slug = "lxml-0-7-released"
 tags = ["lxml", "release"]
 +++
 
-# lxml 0.7 released!
-
 I'm happy to announce I've released lxml 0.7 earlier today! It contains
 quite a bit of important work, from XInclude and XML Schema support to a
 better implementation of tostring(). See the

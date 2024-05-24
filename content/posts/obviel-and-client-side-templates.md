@@ -7,8 +7,6 @@ slug = "obviel-and-client-side-templates"
 tags = ["obviel", "templating"]
 +++
 
-# Obviel and client-side templates
-
 Armin Ronacher just wrote an [interesting blog
 post](http://lucumr.pocoo.org/2011/11/15/modern-web-applications-are-here/).
 

@@ -7,8 +7,6 @@ slug = "criteria-for-evaluating-specifications"
 tags = ["standards"]
 +++
 
-# Criteria for evaluating specifications
-
 As Andrew Tannenbaum said, "The nice thing about standards is that there
 are so many to choose from." Apparently he followed this up by: "And if
 you really don't like all the standards you just have to wait another
@@ -74,7 +72,7 @@ fully RDF compliant.
 
 ### Implementation quality
 
-How well is the specification *implemented* within the industry? If a
+How well is the specification _implemented_ within the industry? If a
 specification is well implemented, this helps interoperability between
 software. CSS is an example of a specification that is implemented
 commonly by browsers, but not all to the same level of quality. The

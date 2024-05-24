@@ -7,8 +7,6 @@ slug = "new-year-s-python-meme"
 tags = ["python"]
 +++
 
-# New Year's Python Meme
-
 From
 [Tarek](http://tarekziade.wordpress.com/2009/12/28/new-years-python-meme/)
 through

@@ -7,20 +7,18 @@ slug = "obviel-1-0b"
 tags = ["obviel", "release", "templating"]
 +++
 
-# Obviel 1.0b
-
 It's been quiet around [Obviel](http://www.obviel.org/), the client-side
 web framework that I've been working on. That isn't because there wasn't
 any activity. The opposite is the case: I've just released Obviel 1.0b
 with a ton of new goodies. And when I mean a ton I do mean a ton:
 
-- a whole new *template language* called [Obviel
+- a whole new _template language_ called [Obviel
   Template](http://www.obviel.org/en/1.0b/template.html) that supports
   sub-views & i18n
 - gettext-style [i18n in
   JavaScript](http://www.obviel.org/en/1.0b/i18n.html)
-- and the most out there new thing: an actual client-side *routing
-  library* called [Traject](http://www.obviel.org/en/1.0b/traject.html)
+- and the most out there new thing: an actual client-side _routing
+  library_ called [Traject](http://www.obviel.org/en/1.0b/traject.html)
 
 For more details, here's the
 [changelog](http://www.obviel.org/en/1.0b/CHANGES.html).

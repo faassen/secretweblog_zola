@@ -7,8 +7,6 @@ slug = "grok-0-13-released"
 tags = ["grok", "release"]
 +++
 
-# Grok 0.13 released!
-
 Grok 0.13 was released yesterday. [Grok](http://grok.zope.org), of
 course, is the powerful web application development framework. See the
 details in the release notes here:
@@ -46,7 +44,7 @@ with the Grok project. This is one of the best aspects of Zope 3
 development, which Grok shares.
 
 Of course all these reusable libraries don't take away from Grok's
-integrated feel. Grok is a megaframework, but it's also *integrated*. If
+integrated feel. Grok is a megaframework, but it's also _integrated_. If
 you just want to use Grok to build your web applications, you don't need
 to worry about these underlying components unless you want move into
 quite advanced areas.

@@ -7,8 +7,6 @@ slug = "lxml-performance-progress"
 tags = ["lxml"]
 +++
 
-# lxml performance progress
-
 Such progress a few days can bring. Just last week the lxml.etree
 performance figures on ElementTree operations like `findall` lost out
 badly to pure Python code. So badly, it was pretty embarassing:
@@ -37,8 +35,7 @@ these smarter people if it wasn't so much fun. :)
 My figure is still not as good as (c)ElementTree, but it shows the
 overall API has sped up by quite a bit.
 
-So,I just managed to speed up lxml.etree find operation by over a factor
-7. I suspect the remaining factor 2 or so will be a lot harder, but it's
+So,I just managed to speed up lxml.etree find operation by over a factor 7. I suspect the remaining factor 2 or so will be a lot harder, but it's
 at least reasonable now.
 
 As a side effect, xpath overhead has also gone down quite dramatically.

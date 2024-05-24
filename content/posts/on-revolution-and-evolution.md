@@ -7,8 +7,6 @@ slug = "on-revolution-and-evolution"
 tags = ["open source", "zope", "plone", "silva"]
 +++
 
-# On Revolution and Evolution
-
 Malthe
 [started](http://mockit.blogspot.com/2008/01/revolution-that-would-be-televised.html)
 an
@@ -28,8 +26,7 @@ concerns:
 - I realized that a complete rewrite of Silva based on Zope 3 was going
   to be unlikely.
 
-I participated early on and enthusiastically in the development of Zope
-3. I'm still a big fan of the project. At the time it was generally
+I participated early on and enthusiastically in the development of Zope 3. I'm still a big fan of the project. At the time it was generally
 assumed that this was the next-generation platform that in time would
 replace Zope 2. The stories about how we were going to port Zope 2 code
 over were always vague. Luckily Silva can almost completely export its
@@ -81,12 +78,12 @@ projects.
 It's true that reimplementing software is very attractive to software
 developers (it is to me). It's also true it's frequently not a good
 idea. I disagree with the position that rewrites from scratch are
-*always* a bad idea. I do agree that any idea to rewrite should be
+_always_ a bad idea. I do agree that any idea to rewrite should be
 scrutinized aggressively. It's good that it's happening. This needs to
 be done, as rewrites have huge costs. Even backwards incompatible
 changes have a severe cost, especially where they are done low-down in
 the stack. Rewrites are like backwards incompatible changes with a lot
-*more* confusion to the community. If one would change the name for the
+_more_ confusion to the community. If one would change the name for the
 new effort, is it a good idea for Plone? I think it could lead to useful
 things, but it could as well lead to nowhere. I don't know.
 
@@ -147,8 +144,7 @@ We will end up going full circle. People keep asking me about supporting
 Grok technology in Zope 2. I think this will eventually happen; it's not
 hard, and so many people are asking about it one day someone will
 actually get up and do the work. Unless someone pays me a lot of money,
-I'm not going to do it myself. I'll support it though! Grok needs Zope
-2. Grok needs Plone. We can count on many of our best contributors to
+I'm not going to do it myself. I'll support it though! Grok needs Zope 2. Grok needs Plone. We can count on many of our best contributors to
 come from those communities.
 
 Perhaps the Zope community evolves by [punctuated

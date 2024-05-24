@@ -7,8 +7,6 @@ slug = "cassandra-and-how-pypy-could-help-with-python-3"
 tags = ["python3", "python"]
 +++
 
-# Cassandra and how PyPy could help with Python 3
-
 It's probably something everything has experienced in one way or
 another, but I now know a little what Cassandra felt like. No, not the
 [Cassandra database](https://en.wikipedia.org/wiki/Apache_Cassandra) but
@@ -89,7 +87,7 @@ Showing that even a lazy developer will spend a little effort talking
 when he thinks it might be useful, I [brought
 up](http://mail.libexpat.org/pipermail/pypy-dev/2011-December/008877.html)
 this idea on the Python mailing list a few months ago. I got the hopeful
-feedback that it *should* be possible to run the Python 3 and Python 2
+feedback that it _should_ be possible to run the Python 3 and Python 2
 interpreters in the same runtime with PyPy - it is a good starting point
 for such a project. And that then a lot of work would be required after
 that to integrate the two. It hasn't gone anywhere further since that

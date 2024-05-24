@@ -7,8 +7,6 @@ slug = "hurry-library-in-the-zope-3-base"
 tags = ["zope"]
 +++
 
-# hurry library in the Zope 3 base
-
 Since various people were curious to see especially the little query
 language we wrote on top of the Zope 3 catalog, I've just put up the
 generic libraries we developed for documentlibrary project online, at

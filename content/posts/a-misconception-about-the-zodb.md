@@ -7,8 +7,6 @@ slug = "a-misconception-about-the-zodb"
 tags = ["zope", "zodb"]
 +++
 
-# A misconception about the ZODB
-
 The ZODB is a powerful object database for Python objects. It's very
 mature - it's been around for more than a decade. It is transactional,
 has advanced features like clustering (ZEO), blob support, and yes, it
@@ -17,7 +15,7 @@ ZODB as its default data storage, and it's seen a lot of battle testing.
 
 As a result of various discussions in the past, I realized that some
 smart, informed people, seem to think the ZODB doesn't do what it
-actually does. The ZODB is *really* an object database. It really does
+actually does. The ZODB is _really_ an object database. It really does
 get references between objects right. It's not an object store where
 references have to be indirect (a string, for instance). Somehow this
 misconception about the ZODB is widespread.
@@ -64,7 +62,7 @@ Let's use this code:
     >>> b.ref.message
     'Second message'
 
-So what's special here? There's *nothing* special! All this is the way
+So what's special here? There's _nothing_ special! All this is the way
 you'd expect it from Python. The ZODB's mission is to take normal Python
 objects and persist them. This means that when you restart the
 application, all your objects and the reference between them will still
@@ -79,20 +77,20 @@ twice, once for `a`, once for `b`. This may be the case if `c` doesn't
 inherit from the special `Persistent` superclass, but if it does, there
 really will only be that instance.
 
-The ZODB offers *transparent* object persistence. It's almost exactly
+The ZODB offers _transparent_ object persistence. It's almost exactly
 like a pool of normal Python objects. They can reference each other just
 fine. The only requirements I know of are:
 
 - if you don't inherit your class from `Persistent`, or use a python
   builtin (which doesn't inherit from `Persistent`), instances of that
-  class *can* be serialized multiple times.
+  class _can_ be serialized multiple times.
 - if you want to persist your object, your object needs to be connected
   to another persistent object (such as the database root dictionary).
 - since the ZODB is a transactional storage, you need to actually commit
   the transaction sometimes to make sure your changes are stored.
 - if you have a non-Persistent subobject (like a list) and you change
   it, you need to manually flag the persistence machinery on the object
-  that its subobject changed, with `_p_changed`. This is *only*
+  that its subobject changed, with `_p_changed`. This is _only_
   necessary if some of the objects are not sublclasses of `Persistent`.
   For common built-in collections in Python such as list and dictionary
   there are replacements (`PersistentList`, `PersistentMapping`), and

@@ -7,8 +7,6 @@ slug = "changing-the-python-default-encoding-considered-harmful"
 tags = ["python", "unicode", "silva"]
 +++
 
-# Changing the Python default encoding considered harmful
-
 Ian Bicking [complains about unicode in
 Python](http://blog.ianbicking.org/do-i-hate-unicode-or-do-i-hate-ascii.html)
 and wants to [change the default
@@ -66,7 +64,7 @@ application is encoded (preferably to UTF-8).
 Thinking it was easier before unicode came along is probably slightly
 deceptive -- you would've run into worse problems as soon as your system
 had to deal with more encodings than latin-1. String encoding issues
-just are *hard*.
+just are _hard_.
 
 That's not to say the situation with Python's unicode support isn't
 frustrating. I've thought long and hard about this when I suffered
@@ -80,5 +78,5 @@ Python had been set to UTF-8 instead of to ascii. On the one hand this
 is catching more errors. If you're willing to break the ease of
 backporting code to older Python versions, I believe if, say, Python
 2.5, shipped with a default encoding of UTF-8, it wouldn't actually
-*break* anything. But if I did it for *my* Python, I'd have problems
+_break_ anything. But if I did it for _my_ Python, I'd have problems
 soon as I gave my code to someone else.

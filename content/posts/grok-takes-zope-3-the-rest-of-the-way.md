@@ -7,8 +7,6 @@ slug = "grok-takes-zope-3-the-rest-of-the-way"
 tags = ["grok", "zope"]
 +++
 
-# Grok takes Zope 3 the rest of the way
-
 My friend Lennart's blog entry [Zope 3 rocks and
 rolls](http://regebro.wordpress.com/2008/04/18/zope-3-rocks-and-rolls/)
 is fascinating, not least as it has one of the most misleading titles
@@ -26,14 +24,14 @@ it failed to make use of Zope 3, and why.
 
 This is interesting reading to me. I care about Zope 3 technologies. I
 think it is great stuff. I want people to use it more. I want the
-community of people who use it to grow, so we get *more* great stuff. We
+community of people who use it to grow, so we get _more_ great stuff. We
 can do a lot to make this happen. We shouldn't sit back and think if we
 build great technology, they will come. We should take the attitude that
 if smart people don't use Zope technology, it's [our
 fault](http://faassen.n--tree.net/blog/view/weblog/2008/04/05/0). Yes, I
 can think of other reasons for non-uptake of Zope that have nothing to
 do with the faults of the Zope community, but I'm not so interested in
-those reasons. I am interested in things we *can* fix. The rest will
+those reasons. I am interested in things we _can_ fix. The rest will
 have to take care of itself.
 
 The bit in Lennart's blog about z3ext, a new Zope 3-based CMS which I
@@ -55,7 +53,7 @@ compatibility, typically in an innocuous way. As a result Grok suddenly
 failed to install properly. Most people who tried out Grok at such a
 point in time probably went away in frustration. We never heard from
 them in the first place. This is a loss of people to a community that
-the community cannot even *see*. Karl Fogel describes this disastrous
+the community cannot even _see_. Karl Fogel describes this disastrous
 problem quite well in his book [Producing Open Source
 Software](http://producingoss.com/).
 
@@ -95,7 +93,7 @@ list, we should be fine in reusing these components.
 One of the essential strategies to ensure your project can be built on
 is to release it; Lennart mentions this too. When people work with a
 released version, they know it doesn't change unless they decide to
-switch to a newer release. A release should *include* a stable set of
+switch to a newer release. A release should _include_ a stable set of
 versions for dependencies: we learned this lesson the hard way with
 Grok. Having this stability means you can start to build things on it.
 Release your projects! Zope 3 has been a moving target without a proper
@@ -106,17 +104,16 @@ more than stable enough to do so back then, though in its defense it
 couldn't happen yet then as we had the egg teething problems to work
 out.
 
-Lennart also talks about how religious doctesting is a problem in Zope
-3. He says that doctests are often hard to read and go into low-level
+Lennart also talks about how religious doctesting is a problem in Zope 3. He says that doctests are often hard to read and go into low-level
 details of the package without giving the easy picture of how to use the
 code. That's true. Doctests often make for pretty sucky documentation.
 
 But I still see the glass as being half-full here where Lennart sees it
 as a problem. A module with a doctest is usually further along on the
-path towards good documentation than one *not* doing doctesting. The
+path towards good documentation than one _not_ doing doctesting. The
 documentation tends to suck as it often lacks context and is too heavy
-on the details, and there's no tutorial, but it's *there*. That's a
-whole lot better than having *no* documentation about how things go
+on the details, and there's no tutorial, but it's _there_. That's a
+whole lot better than having _no_ documentation about how things go
 together at all. Realistically, no documentation is often the
 alternative for busy developers. I'll take flawed documentation any day!
 Incidentally I also think doctests help make tests easier to follow;
@@ -148,7 +145,7 @@ expected too much from Zope 3. The nice thing about Plone is that it's
 there, does a lot, and works out of the box. Lennart is intimately
 familiar with it too. Zope 3 is not about being an application that just
 works, but a "roll it yourself" toolkit. But that doesn't take away the
-problems with Zope 3 that we *can* fix.
+problems with Zope 3 that we _can_ fix.
 
 Lennart concludes that Zope 3 isn't ready when you want to reuse other
 people's modules. That's true - it's half-way there, which I think is
@@ -159,9 +156,9 @@ fix this.
 
 I've stopped expecting a fix of this kind of thing from the Zope 3
 community. As I see it, the Zope 3 community is primarily interested in
-technical problems, and write flexible, reusable components that *they*
+technical problems, and write flexible, reusable components that _they_
 can reuse. They aren't very interested in actually doing the rest of the
-work to make sure *other* people can reuse their stuff. If they were,
+work to make sure _other_ people can reuse their stuff. If they were,
 Zope 3 would have a proper website by now. Even experienced Zope
 developers that very familiar with Zope 3 technologies like Lennart,
 bounce off.
@@ -173,7 +170,7 @@ be happy they are already bringing their components half-way to
 reusability by others, which as I said before, is actually quite far.
 The amount of work to do that shouldn't be underestimated.
 
-While the Zope 3 community is not fixing this, the wider *Zope*
+While the Zope 3 community is not fixing this, the wider _Zope_
 community is actualy busy fixing this. The project to fix it has a name:
 Grok. We care about attracting people to our project, and we got proof
 as we got a website: <http://grok.zope.org>

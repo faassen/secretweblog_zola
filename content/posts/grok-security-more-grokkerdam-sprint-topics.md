@@ -7,8 +7,6 @@ slug = "grok-security-more-grokkerdam-sprint-topics"
 tags = ["grok", "sprint"]
 +++
 
-# Grok security: more Grokkerdam sprint topics
-
 In my [previous
 article](http://faassen.n--tree.net/blog/view/weblog/2008/04/11/0) on
 the [Grokkerdam](http://wiki.zope.org/grok/GrokkerdamSprint) sprint, I
@@ -25,7 +23,7 @@ table, for instance.
 
 Unfortunately, this flexibility also has the usual price: it takes some
 time and effort to figure out how it works. It would be nice if Grok had
-some default authentication setup that was just *there*. It should let
+some default authentication setup that was just _there_. It should let
 you manage users (in the ZODB) and let them log in. Then you can move on
 with the more important parts of your application, and you don't have to
 spend time building a user interface for user management when the basics
@@ -64,9 +62,9 @@ policy in Grok. This would make a good sprint task.
 ## Skin-based security
 
 Grok offers a skin concept. You can put your views for an object in a
-namespace called a *skin* and then trigger the use of this namespace in
+namespace called a _skin_ and then trigger the use of this namespace in
 the URL (++skin++foo), or in code. A skin presents all views available
-in a *layer*. Views can be associated with a layer, causing these views
+in a _layer_. Views can be associated with a layer, causing these views
 to be in those skins that use this layer. Layers are interfaces, and
 this means a layer can inherit from another one, or be composed from
 multiple smaller layers.
@@ -118,7 +116,7 @@ start writing security declarations right away, at the start of
 development. You then have to maintain them throughout the evolution of
 your application. Early on in development many developer typically don't
 really know yet what permissions would go with what methods. I don't
-even know what methods there are yet. Or what *classes* there are.
+even know what methods there are yet. Or what _classes_ there are.
 
 Since I also don't know exactly what permissions I'd want in my
 application yet, I'd be tempted to just declare everything public, so I
@@ -133,16 +131,15 @@ world" on the screen.
 
 Because you sometimes really want to be able to call a method and don't
 have time to figure out why the security proxies aren't letting you
-*this* time, or even if you know, don't have time to refactor the
+_this_ time, or even if you know, don't have time to refactor the
 application so it is right and proper with security, people sometimes
 remove proxies manually in order to do this. Security by default once
 again actually may end up making you less secure.
 
-Security-proxies spread around, a bit like acquisition wrappers in Zope
-2. This probably sounds rather worrying to those who have worked with
+Security-proxies spread around, a bit like acquisition wrappers in Zope 2. This probably sounds rather worrying to those who have worked with
 Zope 2 acquisition. With Zope 2 implicit acquisition, your objects
 suddenly have attributes that are not really theirs. With Zope 3
-security proxies, your objects appear to *lack* attributes that the user
+security proxies, your objects appear to _lack_ attributes that the user
 you are logged in as doesn't have the permission for. Your object also
 lacks those attributes that you haven't actually declared the permission
 for yet. The declarations are off in some ZCML file, so it's not
@@ -152,7 +149,7 @@ policy, an object without a parent connection is forbidden to be used at
 all. All this can cause quite a bit of frustration during development.
 
 Finally, after all this, security proxies don't atually wrap
-*everything*: some common operations actually result in content-objects
+_everything_: some common operations actually result in content-objects
 that aren't proxies. If you use a catalog index to look up objects you
 actually get unproxied objects back. Suddenly, no security checks are
 taking place at all. Just when you were used to them.

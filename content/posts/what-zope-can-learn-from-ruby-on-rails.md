@@ -7,8 +7,6 @@ slug = "what-zope-can-learn-from-ruby-on-rails"
 tags = ["zope"]
 +++
 
-# What Zope can learn from Ruby on Rails
-
 Ian Bicking just posted an [insightful
 analysis](http://blog.ianbicking.org/what-really-makes-rails-work.html)
 of what makes Ruby on Rails work. What struck me most was the following:
@@ -45,7 +43,7 @@ components (Products) that offer to add new functionality in a 'building
 block' way is also something that looks attractive. The ease of creating
 dynamic web pages using the web user interface also helped first
 impressions a lot; the amount of stuff you could do with a few simple
-(then) DTML pages impressed people *a lot* (and then the bad part of the
+(then) DTML pages impressed people _a lot_ (and then the bad part of the
 Zope learning curve kicks in, but that's after the decision to adopt
 Zope has been made). That Zope is implemented in Python doesn't play a
 role for many decision makers at all.
@@ -100,5 +98,5 @@ support they need.
 
 Technical excellence and quality are important, but for this to be
 useful, we also need a community, and to gain a community, marketing can
-help a lot. So, let's think a bit about *buzz*, *hype*, and *pretty
-pictures*.
+help a lot. So, let's think a bit about _buzz_, _hype_, and _pretty
+pictures_.

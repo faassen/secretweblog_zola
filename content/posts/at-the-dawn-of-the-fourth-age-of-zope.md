@@ -7,8 +7,6 @@ slug = "at-the-dawn-of-the-fourth-age-of-zope"
 tags = ["zope", "silva", "plone"]
 +++
 
-# At the Dawn of the Fourth Age of Zope
-
 Some years ago, in 2004, I came up with the following quote to promote
 the Five project, which was the first step towards the inclusion of Zope
 3 technologies in Zope 2. Zope 3 technologies are now heavily used in
@@ -17,10 +15,10 @@ now, but back then we were just at the start of this process. The quote
 itself was creatively adapted from the first season intro of Babylon 5,
 a 90s scifi TV show:
 
-*"It was the dawn of the third age of Zope. The Five project was a dream
+_"It was the dawn of the third age of Zope. The Five project was a dream
 given form. Its goal: to use Zope 3 technologies in Zope 2.x by creating
 a Zope 2 product where Zope 3 and Zope 2 could work out their
-differences peacefully."*
+differences peacefully."_
 
 I realized today we are now at the dawn of a new age of Zope: the fourth
 age.

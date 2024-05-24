@@ -7,8 +7,6 @@ slug = "xml-context-and-nuance"
 tags = ["xml"]
 +++
 
-# XML, context and nuance
-
 Originally this was buried in a comment to an
 [article](http://copia.ogbuji.net/blog/2005-08-30/Python___X) on Uche's
 weblog, but he suggested I post it on my own weblog, here goes. The

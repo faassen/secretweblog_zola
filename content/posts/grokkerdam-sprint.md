@@ -7,8 +7,6 @@ slug = "grokkerdam-sprint"
 tags = ["grok", "sprint"]
 +++
 
-# Grokkerdam sprint!
-
 It was planned for a long time, but at last we are going to hold a
 [Grok](http://grok.zope.org) sprint in the Netherlands. To be more
 precise, in Rotterdam. Rotterdam will be "Grokkerdam" for the duration

@@ -7,8 +7,6 @@ slug = "zope-community-evaluating-jsr-170"
 tags = ["zope", "standards"]
 +++
 
-# Zope community evaluating JSR-170
-
 [JSR-170](https://jcp.org/en/jsr/detail?id=170) or the Java Content Repository
 API, appeared on my radar somewhere early in 2004. JSR-170 is interesting to
 creators of content management systems because it promises a common API for

@@ -7,8 +7,6 @@ slug = "me-grok-book"
 tags = ["grok"]
 +++
 
-# ME GROK BOOK
-
 This is awesome. There is now a published
 [book](http://www.packtpub.com/grok-1-0-web-development/book?utm_source=faassen.n--tree.net&utm_medium=bookrev&utm_content=blog&utm_campaign=mdb_002451)
 about [Grok](http://grok.zope.org)!

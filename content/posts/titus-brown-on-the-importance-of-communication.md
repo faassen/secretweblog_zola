@@ -7,8 +7,6 @@ slug = "titus-brown-on-the-importance-of-communication"
 tags = ["community", "open source"]
 +++
 
-# Titus Brown on the importance of communication
-
 I just read an [insightful article by Titus
 Brown](http://ivory.idyll.org/blog/dec-09/aggressive-competence) about
 the importance of communication in a team project, in the context of

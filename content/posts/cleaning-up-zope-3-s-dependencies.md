@@ -7,8 +7,6 @@ slug = "cleaning-up-zope-3-s-dependencies"
 tags = ["zope", "django"]
 +++
 
-# Cleaning up Zope 3's dependencies
-
 This week a bunch of us (myself, Christian Theune, Wolfgang Schnerring,
 Brandon Rhodes, Jan-Wijbrand Kolman and Sylvain Viollon) have been
 sprinting in my house at the "Grok Cave sprint". We've been working on
@@ -36,8 +34,8 @@ the Zope test runner) to help us keep track of things. We've also made a
 lot of use of an existing tool to track dependencies between packages
 called `tl.eggdeps`.
 
-That's all gobbledygook to most people. So here are the *before* and the
-*after* pictures (of the `zope.container` and
+That's all gobbledygook to most people. So here are the _before_ and the
+_after_ pictures (of the `zope.container` and
 `zope.location`/`zope.traversing` work in particular).
 
 Here is the **before**, the dependency graph of `zope.app.container`

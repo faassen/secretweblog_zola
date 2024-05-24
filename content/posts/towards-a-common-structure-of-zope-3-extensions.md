@@ -7,8 +7,6 @@ slug = "towards-a-common-structure-of-zope-3-extensions"
 tags = ["zope", "packaging"]
 +++
 
-# Towards a common structure of Zope 3 extensions
-
 Quite a few Zope 3 extensions are starting to appear. This is great.
 There is all the great work done within the [Z3ECM svn
 repository](http://svn.nuxeo.org/trac/pub/browser/z3lab/). There's
@@ -36,7 +34,7 @@ The word "python package" in this text means what is importable in
 Python. It has the `__init__.py`. It's like a Python module, but bigger.
 
 These packages are not necessarily identical, and in fact I'll argue
-they *shouldn't* be identical. When I say "package" I mean the former
+they _shouldn't_ be identical. When I say "package" I mean the former
 distribution package, when I say "python package" I'll mean the latter.
 
 ## Why is a common package layout important?
@@ -109,7 +107,7 @@ distribution package, which has an `__init__.py`.
 This is not good if you want your package to be released to the world,
 or possibly even be picked up by a Linux distributor. When I download a
 release tarball of some interesting Python extension, I expect to be
-able to unpack it, and *not* find all the source right there. No, I
+able to unpack it, and _not_ find all the source right there. No, I
 expect a nice `README.txt`, a `INSTALL.txt`, a `setup.py`, and perhaps a
 testrunner and a `doc` directory. I don't want to be bothered with lots
 of files of the source code itself.

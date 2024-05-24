@@ -7,8 +7,6 @@ slug = "jean-marc-s-implications"
 tags = ["zope"]
 +++
 
-# Jean-Marc's implications
-
 Jean-Marc Orliaguet is rewriting CPSSkins again, this time in Java, as
 Nuxeo is [switching their CPS platform from Python and Zope to the Java
 language](http://www.nuxeo.com/en/java-switch) . The reasons for this
@@ -22,9 +20,9 @@ community. If it's all a bit long and ranty, please forgive me.
 
 I'm going to quote Jean-Marc copiously here. Let's start:
 
-*"You probably read the news the other day. There have been very few
+_"You probably read the news the other day. There have been very few
 reactions so far apart from Phillip reporting the news and Paul making
-an allusion to it."*
+an allusion to it."_
 
 Jean-Marc, the news means Nuxeo's exiting our Zope community. I
 sincerely regret Nuxeo's leaving, as they contributed a lot. It's a
@@ -71,11 +69,11 @@ implement one, though.
 
 Jean-Marc says:
 
-*"The bottom-line is that there is only one chance for a developer to
+_"The bottom-line is that there is only one chance for a developer to
 get the API right, because other developers expect it to be stable and
-easy to extend."*
+easy to extend."_
 
-I can't get an API right the first time unless I have a *lot* of
+I can't get an API right the first time unless I have a _lot_ of
 experience with the problem at hand, meaning having gotten the API wrong
 already a number of times. That appears to be true at first sight for
 Jean-Marc too; I'm sure it's easier to get the API right for CPSSkins
@@ -92,8 +90,8 @@ built-in support.
 
 Jean-Marc:
 
-*"And no, the deprecation feature is not a tool available to developers
-for doing cosmetic refactoring or for renaming packages."*
+_"And no, the deprecation feature is not a tool available to developers
+for doing cosmetic refactoring or for renaming packages."_
 
 This point is not backed up by argumentation. I'm a big believer in
 iterative development as I know I'm not smart enough to get things right
@@ -122,16 +120,16 @@ how to evaluate them. Note that not all specifications are equally
 valuable. Sometimes they're inappropriate for the job. Sometimes they're
 too heavy and more light-weight processes are in order.
 
-*"Lots of packages are being added in the Zope3 repository without
+_"Lots of packages are being added in the Zope3 repository without
 proper reviewing, implying: "we find this useful, hence someone else may
 find it useful too". This is relatively harmless for utility packages
 that have a limited scope, but for framework foundation modules this is
-a problem."*
+a problem."_
 
 Jean-Marc, you're implying we're adding new framework foundation modules
 to Zope 3 without proper reviewing. I don't think that's happening.
-We've added *non-framework packages* to the Zope 3 *software
-repository*. That doesn't mean they're core and that doesn't mean you
+We've added _non-framework packages_ to the Zope 3 _software
+repository_. That doesn't mean they're core and that doesn't mean you
 have to use them.
 
 Before I start using a piece of open source software I evaluate how
@@ -151,8 +149,8 @@ It's important to realize that people learn, though. Software components
 that are perfectly good at some stage may still be replaced by better
 ones later. This process of evolution is healthy.
 
-*"But having 3 or 4 different specifications of a same basic feature
-because they were hurried in simply means a lack of concertation."*
+_"But having 3 or 4 different specifications of a same basic feature
+because they were hurried in simply means a lack of concertation."_
 
 Sure. Are you implying we're hurrying in features a lot? Are you
 implying we regularly have 3 or 4 different specifications of same basic
@@ -162,9 +160,9 @@ with Java software?
 Concerning package naming convention, I don't think we're doing too
 badly. Zope uses namespace packages extensively.
 
-*"Otherwise as a developer I may well start using a zope.abc package to
+_"Otherwise as a developer I may well start using a zope.abc package to
 learn 3 months later that the package was just the result of an
-experiment, and that it will be replaced by a "better" implementation."*
+experiment, and that it will be replaced by a "better" implementation."_
 
 I'm missing something here. Are you implying we just dump everything
 into the 'zope' namespace package? We clearly do not. Zope Corporation
@@ -179,8 +177,8 @@ balance between too cumbersome and too lightweight pretty well overall.
 
 ## The Design Patterns
 
-*"There are no such things as adapters, factories, utilities, events in
-the Java language, these are just design patterns."*
+_"There are no such things as adapters, factories, utilities, events in
+the Java language, these are just design patterns."_
 
 The implication here is that these things are all available in the
 Python language, but I think Jean-Marc here is comparing the Java
@@ -215,9 +213,9 @@ Indeed:
   helps you implement the design pattern where you want to decouple the
   caller from the callee and such.
 
-*"In other words, in some cases using the Adapter pattern may be a good
+_"In other words, in some cases using the Adapter pattern may be a good
 idea while in other cases, it may be a bad idea. One cannot know the
-solution until the problem to be solved has been described."*
+solution until the problem to be solved has been described."_
 
 Indeed, sometimes the adapter pattern is not a good idea, and sometimes
 it is. You seem to be implying that we think it's always a good idea and
@@ -229,9 +227,9 @@ right one automatically. The latter is what Zope's component
 architecture offers and it makes it more easy to devise APIs with plugin
 points.
 
-*"My impression is that the 4 basic patterns promoted in the zope3
+_"My impression is that the 4 basic patterns promoted in the zope3
 architecture as the "new religion" are predefined solutions to problems
-that are yet to be identified."*
+that are yet to be identified."_
 
 Let me hereby correct your impression, as it doesn't appear to be
 correct. Zope 3's component architecture provides useful facilities for
@@ -243,8 +241,8 @@ identified several problems in architecture we keep running into and
 that we'd like to have some assistance with. Hence the component
 architecture.
 
-*"Conclusion: the Component Architecture is not a universal solution for
-particular problems."*
+_"Conclusion: the Component Architecture is not a universal solution for
+particular problems."_
 
 You seem to be implying we think it is. No, it's a bit more subtle than
 that, just like Design Patterns.
@@ -269,13 +267,13 @@ having low developer overhead for hooking things up. One of the reasons
 of the success of Ruby on Rails is that it is a reaction to the overhead
 of getting things set up in Java. This therefore appears to be a
 criticism we possibly share with the Java world, not necessarily
-something to *learn* from the Java world.
+something to _learn_ from the Java world.
 
-*"Conclusion: the Component Architecture does not replace high-level API
-design"*
+_"Conclusion: the Component Architecture does not replace high-level API
+design"_
 
 You seem to be implying that someone thinks it does. We don't. We think
-that it *helps* in API design, as it gives you tools enabling you to
+that it _helps_ in API design, as it gives you tools enabling you to
 write pluggable APIs, such as interface-based lookup of adapters and
 utilities.
 
@@ -300,22 +298,22 @@ for the pointers!
 
 ## The "pythonic" trip
 
-*"What is "pythonic" what is not? but who cares basically as long as you
+_"What is "pythonic" what is not? but who cares basically as long as you
 have a good API and a great framework? Really, it is better to spend
-energy on more important things."*
+energy on more important things."_
 
 You seem to be implying we spend a lot of time arguing about some
 mystical quantity called Pythonic, being on some "trip" so to speak, but
 you know that's not what we do most of the time. Besides, for a system
-to be Pythonic *means* that system has a good API, following the
+to be Pythonic _means_ that system has a good API, following the
 conventions of the Python language and community.
 [Here](http://faassen.n--tree.net/blog/view/weblog/2005/08/06/0) is what
-I had to say about this, when I stopped for a change and *did* discuss
+I had to say about this, when I stopped for a change and _did_ discuss
 it.
 
 ## Balkanization
 
-*"The balkanization of the Python community is a real issue I think."*
+_"The balkanization of the Python community is a real issue I think."_
 
 Indeed. As you might know I've been
 [arguing](http://lists.nuxeo.com/pipermail/z3lab/2005-May/000020.html)
@@ -341,26 +339,26 @@ NetBeans for IDEs, multiple UI toolkits, and so on.
 I'm going to quote this section entirely, as this one really upset me on
 a personal level:
 
-*"Self-criticism is about being able to see what others did and admit
+_"Self-criticism is about being able to see what others did and admit
 when it is the case that they did some things better; especially taking
 a look at JEE, JBoss, Eclipse, or Ruby-On-Rails, Turbogears, Django,
-etc.*
+etc._
 
-*JBoss Seam for instance was created as a Java response to the
-Ruby-on-Rails' success.*
+_JBoss Seam for instance was created as a Java response to the
+Ruby-on-Rails' success._
 
-*What has the Zope Community's response been to RoR?*
+_What has the Zope Community's response been to RoR?_
 
-- *"that's just because they have a better web site"*
-- *"that's just hot air and marketing, all that we need is a better web
-  site"*
+- _"that's just because they have a better web site"_
+- _"that's just hot air and marketing, all that we need is a better web
+  site"_
 
-*Maybe it is time for constructive self-criticism?"*
+_Maybe it is time for constructive self-criticism?"_
 
-Come *on*, Jean-Marc. You imply here, no, outright say, that we do not
+Come _on_, Jean-Marc. You imply here, no, outright say, that we do not
 engage in constructive self-criticism, while nothing could be further
 from the truth. I, along with many others in the Zope community, fully
-admit other communities have done things better than Zope, *including*
+admit other communities have done things better than Zope, _including_
 the Java community, and I personally have been working on these issues
 where I can.
 
@@ -372,12 +370,12 @@ in it for a long time now, as you should well know.
 
 You also mischaracterize our position concerning a web site. I do
 believe we need a better web site for Zope and better marketing towards
-developers in general. I think that's *one* lesson we can learn from
+developers in general. I think that's _one_ lesson we can learn from
 Ruby on Rails and friends. Do you disagree?
 
-You imply we believe that's the *only* thing other platforms have going
+You imply we believe that's the _only_ thing other platforms have going
 for it. I feel offended by the implication that you think we do, and
-that we're so blind we don't even *look*. We do.
+that we're so blind we don't even _look_. We do.
 
 Jean-Marc, you appear to be saying a lot by implication. It's not my
 preferred style of criticism.

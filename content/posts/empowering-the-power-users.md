@@ -7,8 +7,6 @@ slug = "empowering-the-power-users"
 tags = ["framework", "zope"]
 +++
 
-# Empowering the power users
-
 In [my last
 article](http://faassen.n--tree.net/blog/view/weblog/2005/12/15/0) I
 talked about the problems that occur on the borderland between content
@@ -21,10 +19,10 @@ and deal with the maintenance risk, or not give it at all. If those are
 the only choices, then I'd give all the power to programmers only, and
 no programming powers to end users at all.
 
-But it's not an either/or choice. The problem occurs when you *do* want
+But it's not an either/or choice. The problem occurs when you _do_ want
 to give non-programmers access to software development facilities, so
 they can tweak and customize a system. You want to, as these power
-users, *customizers*, can be very successful creating the things they
+users, _customizers_, can be very successful creating the things they
 need. But you don't want to, because what they create tends to be hard
 to maintain and develop further.
 
@@ -51,7 +49,7 @@ Formulator. It's a simple form design system. People can develop forms
 in a web interface. Empowered lots of people. Also gave me (and others
 at Infrae) lots of problems as Formulator solves only half of what
 people really want to do -- creating and validating the forms, but not
-actually *doing* something with the form input. What people really want
+actually _doing_ something with the form input. What people really want
 to do is send an email, create a database record, or create a new
 content object. If they want to do that, they suddenly have to grapple
 with rather a lot of detail, and I'll among those telling them that
@@ -99,7 +97,7 @@ conceptual integrity better than UIs.
 
 So what do I want to do? I want to allow people to tweak just a single
 page template without introducing fragility and maintainability issues
-to the whole system, without forcing them to have to *learn* about the
+to the whole system, without forcing them to have to _learn_ about the
 system's complexities. I want to look for ways to make ZCML easier. I
 want to look for ways to express ZCML-like things through the web. I
 want to try applying domain specific languages more. I want to

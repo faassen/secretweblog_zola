@@ -7,8 +7,6 @@ slug = "the-ghost-of-packaging-past-and-future"
 tags = ["python", "packaging", "django"]
 +++
 
-# The Ghost of Packaging Past and Future
-
 There has been a recent discussion on how packaging of Python libraries
 should be done. As frequently happens, the Zope community sometimes
 encounters problems before many other communities do, and I think we
@@ -22,7 +20,7 @@ James Bennett
 
 Ian Bicking then [pointed
 out](http://blog.ianbicking.org/2008/12/14/a-few-corrections-to-on-packaging/)
-that this is impossible, as pip is actually *built upon* setuptools.
+that this is impossible, as pip is actually _built upon_ setuptools.
 
 With Grok we don't use <span class="title-ref">easy_install</span> much.
 setuptools, overall, is great to have. It's hardly perfect, but it
@@ -122,7 +120,7 @@ We publish these version lists on canonical URLs on
 <http://grok.zope.org/releaseinfo> that grokproject automatically
 inspects when you create a new project.
 
-An important feature is that in *your* project you can override which
+An important feature is that in _your_ project you can override which
 versions you really want, and extend it with versions of other packages
 that your project is using. Grok gives you its own list to reuse, but
 doesn't force you to do so. This is possible because buildout has a
@@ -195,7 +193,7 @@ each developer that used Grok would need to figure out a large list of
 versions, as Grok is composed from a large list of dependencies.
 
 While I fully agree that it's important that end developers should
-*have* the ability to determine the exact version of each package if
+_have_ the ability to determine the exact version of each package if
 they should want to, I think often they want to delegate this job to the
 developers of a larger project (like Grok or Django) to determine what
 combination is known to work.
@@ -230,7 +228,7 @@ extra release step too, making the entire release process that's
 automated so nicely by distutils and setuptools more cumbersome again.
 
 I think it would be useful to allow people to ship "known-good"
-requirements *along* with the distributions, and host these directly on
+requirements _along_ with the distributions, and host these directly on
 PyPI. Someone that uses a library will not be forced to use these
 requirements, but can opt to do so if they wish. Requirement lists
 should be able to build on and override other requirements lists. I

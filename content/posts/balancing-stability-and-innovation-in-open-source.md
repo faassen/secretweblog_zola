@@ -7,8 +7,6 @@ slug = "balancing-stability-and-innovation-in-open-source"
 tags = ["open source"]
 +++
 
-# Balancing stability and innovation in open source
-
 A good open source community should have a good developer and user
 **support infrastructure**. It should have things such as:
 
@@ -24,7 +22,7 @@ A good open source community should have a good developer and user
 and so on. These are very important. Most open source communities
 probably feel they can do a lot better in some of the areas above.
 
-All that is necessary and important, but it isn't *enough*.
+All that is necessary and important, but it isn't _enough_.
 
 A living, functional open source community should also have **vision**.
 It should support an **atmosphere of ideas**. Not just small ideas, but
@@ -34,7 +32,7 @@ everyone that uses it.
 A community shouldn't only be in maintenance mode with improvements
 taking place in the periphery, or only in matters where consensus can
 easily be reached. A community should also be able to innovate in areas
-where consensus is *difficult*, because sometimes that is necessary in
+where consensus is _difficult_, because sometimes that is necessary in
 order to move forward.
 
 Innovation is much easier in a smaller, younger community. In a larger,
@@ -43,7 +41,7 @@ there is so much more focus on maintenance and stability. In such a
 community, innovations will need to be more incremental in order to
 safeguard stability. Incremental improvements can add up, however -
 **evolution** can be very innovative. A living, functional community can
-aim improvements in directions where they *do* add up.
+aim improvements in directions where they _do_ add up.
 
 A innovative community should have the following qualities:
 
@@ -71,7 +69,7 @@ A living open source community shouldn't discourage fundamental
 innovations because the support infrastructure isn't right yet. It will
 never be perfect - this is another way in which perfection can be the
 enemy of the good. The community should support improvements to the
-support infrastructure *and* allow innovation at the same time. A great
+support infrastructure _and_ allow innovation at the same time. A great
 quality of open source communities is that **people can work in
 parallel**.
 

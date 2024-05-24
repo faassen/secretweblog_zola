@@ -7,8 +7,6 @@ slug = "i-like-doctests"
 tags = ["testing", "python"]
 +++
 
-# I like doctests
-
 It seems to be a recent trend to point out things you don't like about
 doctests. There are
 [two](http://andrew.puzzling.org/diary/2008/October/23/narrative-tests)
@@ -21,7 +19,7 @@ Gedminas](http://mg.pov.lt/blog/on-narrative-doctests).
 I take the doctest negativity as a sign of increased popularity of
 doctesting in the Python world. Doctests are now being seen and read by
 a larger amount of Python programmers, so there are now more people to
-talk about the undoubted drawbacks of doctests. (Of course it is *also*
+talk about the undoubted drawbacks of doctests. (Of course it is _also_
 a sign of people disliking aspects of doctests - Marius for one has been
 exposed to narrative doctests for years)
 
@@ -36,7 +34,7 @@ documentation either: a well-written, well-maintained dedicated text is
 better.
 
 The great thing about doctests is that you can write fair tests and fair
-developer documentation, *at the same time*. You can use doctests to
+developer documentation, _at the same time_. You can use doctests to
 provide reasonable test coverage suitable for solid, real-world code.
 Importantly, those same doctests then also provide developer-level
 documentation that may not always be great, but is still much better
@@ -49,7 +47,7 @@ to think about it early on during the design process. Unit tests of
 course have the same benefit: improved API design is actually one of the
 great but rather underacknowledged benefits of unit testing. But
 doctests encourage you to think about your API design more than plain
-unit tests, as you're actually writing prose that tries to *explain* the
+unit tests, as you're actually writing prose that tries to _explain_ the
 way your API works to the reader. If it's hard to explain, it may be
 time to change the design.
 

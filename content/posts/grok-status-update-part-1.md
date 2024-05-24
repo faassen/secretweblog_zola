@@ -7,8 +7,6 @@ slug = "grok-status-update-part-1"
 tags = ["grok"]
 +++
 
-# Grok Status Update Part 1
-
 Time for a [Grok](http://grok.zope.org) status report. I thought the
 Grokkerdam sprint was very successful. It is now a few weeks behind us.
 A fun time was had by the participants and we got a lot of work done.

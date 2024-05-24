@@ -7,8 +7,6 @@ slug = "the-new-hot-thing-in-web-development-client-side-templating-languages"
 tags = ["templating"]
 +++
 
-# The New Hot Thing in Web Development: Client-side Templating Languages
-
 Back in 2003 I found myself at a sprint (a hackaton) to help build a web
 framework. But that's not what I'm talking about right now.
 
@@ -29,7 +27,7 @@ whether I could implement ZPT in JavaScript and do templates in the
 browser. I told other developers about it, and they all asked "why?" My
 answer was something like "I don't know man, it's just cool!". I
 remember I even worked on implementing unit tests for it in JavaScript.
-But I *genuinely* didn't know what I'd use it for; how was I even going
+But I _genuinely_ didn't know what I'd use it for; how was I even going
 to get data into it? JSON as a concept didn't exist yet either so I
 probably was thinking about using XML.
 
@@ -60,10 +58,10 @@ minimalistic. You combine a JSON object with a text file that has some
 templating instructions in it to render a template. JSON-Template
 doesn't even feature an expression language.
 
-JSON-Template is a *push* only template language. Many templating
-languages (but not JSON-Template) are *pull*: allow you to embed calls
+JSON-Template is a _push_ only template language. Many templating
+languages (but not JSON-Template) are _pull_: allow you to embed calls
 to bits of application code within the template:
-`some_object.get_something()`. But `get_something` could do *anything*;
+`some_object.get_something()`. But `get_something` could do _anything_;
 call the database, raise exceptions, take a long time to execute, etc.
 If you write templates that call into the application's API, you can
 easily create a fairly tight coupling between application and template.
@@ -93,7 +91,7 @@ Let's go through some benefits of minimalistic push-only templates:
 
 - they can be more secure, as there's no application code called from
   the template.
-- they're more easy to test in isolation. The stuff going *into* the
+- they're more easy to test in isolation. The stuff going _into_ the
   template is also more easy to test in isolation.
 - you end up with less complicated templates that are easier to
   maintain. I don't think that means the complexity simply moves to
@@ -115,7 +113,7 @@ some important benefits as well:
 - In this modern age, we build a lot of dynamic client-side
   applications. Templates can be very handy in helping to structure
   them, avoiding hard to maintain blobs of HTML-generating JavaScript.
-- You almost *have* to use push strategies for templates, as you can't
+- You almost _have_ to use push strategies for templates, as you can't
   really avoid it - the data has to get to the client from the server.
   So doing things on the client can encourage more loose coupling in
   your codebase, and loose coupling is good.
@@ -134,7 +132,7 @@ On the client, there's only ever one user: the user of the web browser.
 If the template language is fast enough for that user, you're done. Your
 server-side application may have a thousand users more, but the template
 language performance is no longer a bottleneck. (Your JSON serializer
-is. but JSON serializers can be *very* fast)
+is. but JSON serializers can be _very_ fast)
 
 So can we exploit that? Since our language doesn't need to be blazingly
 fast, can we do neat things that might take a bit more time? I think so.

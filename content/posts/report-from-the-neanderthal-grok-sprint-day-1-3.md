@@ -7,8 +7,6 @@ slug = "report-from-the-neanderthal-grok-sprint-day-1-3"
 tags = ["grok", "sprint"]
 +++
 
-# report from the Neanderthal Grok sprint (day 1-3)
-
 Hello from the fourth [Grok](http://grok.zope.org) sprint! I wanted to
 write this report tuesday but didn't get around to it. The [Neanderthal
 Grok sprint](http://wiki.zope.org/grok/NeanderthalerSprint) is now more

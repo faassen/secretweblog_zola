@@ -7,8 +7,6 @@ slug = "benchmarks-and-lxml"
 tags = ["lxml"]
 +++
 
-# benchmarks and lxml
-
 The recent cElementTree release is causing some waves in the Python/XML
 community. It started when Uche Ugbuji posted [The Python Community has
 too many deceptive XML benchmarks](http://www.onlamp.com/pub/wlg/6291)
@@ -78,10 +76,10 @@ I've also rewritten it to use xpath instead:
 Since this program is printing stuff, and printing overhead can be
 large, I've tried a number of tests:
 
-1)  Unix 'time' command, print to stdout on Gnome terminal
-2)  Unix 'time' command, redirect output to file
-3)  time.time(), print to stdout on Gnome terminal
-4)  time.time(), redirect output to file
+1.  Unix 'time' command, print to stdout on Gnome terminal
+2.  Unix 'time' command, redirect output to file
+3.  time.time(), print to stdout on Gnome terminal
+4.  time.time(), redirect output to file
 
 Here are the results:
 

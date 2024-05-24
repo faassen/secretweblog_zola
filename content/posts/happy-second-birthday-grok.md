@@ -7,8 +7,6 @@ slug = "happy-second-birthday-grok"
 tags = ["grok", "silva"]
 +++
 
-# Happy Second Birthday Grok!
-
 Grok the codebase is 2 years old this week. Two years ago we had the
 first Grok sprint in Halle, Germany, at the Gocept offices. A lot has
 happened since then. For me personally Grok is my development workhorse

@@ -7,8 +7,6 @@ slug = "local-european-pycons-and-europython"
 tags = ["conference"]
 +++
 
-# Local European PyCons and EuroPython
-
 There is a PyCon UK. There is a PyCon Italy. Just now I saw the
 announcement of a PyCon France. I understand why these conferences
 happen - local user communities will want to see conferences where most
@@ -24,7 +22,7 @@ true for many of the smaller European countries.
 
 While I'm happy to see so much activity in the European Python
 community, it does worry me a little too - because it's not exactly the
-*European* Python community. There is already a conference for that
+_European_ Python community. There is already a conference for that
 community: EuroPython. EuroPython is more than for just the European
 Python community, in fact - it has traditionally been the most
 international Python conference there is. I enjoy meeting people from
@@ -36,13 +34,13 @@ grown large enough to support them. It can be argued that these attract
 different attendees than EuroPython, people who would not have visited
 EuroPython anyway. These conferences, in itself, are of course a good
 thing. One can even argue that perhaps they will energize their local
-communities so much that *more* people will end up going to EuroPython.
+communities so much that _more_ people will end up going to EuroPython.
 
 But there is bound to be some overlap between the potential attendees of
 a country-specific conference and the potential attendees of EuroPython.
 Moreover, there will be an increased competition to attract
 international speakers for these local conferences as well, as it's
-unlikely these will want to go speak at *four* European Python-related
+unlikely these will want to go speak at _four_ European Python-related
 conferences a year. So, local conferences in the UK, Italy and France
 may draw away visitors and good speakers from EuroPython. That would be
 a shame.

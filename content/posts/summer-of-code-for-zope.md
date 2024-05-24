@@ -7,8 +7,6 @@ slug = "summer-of-code-for-zope"
 tags = ["zope foundation"]
 +++
 
-# Summer of Code for Zope
-
 Last year the Zope Foundation participated in the Google Summer of Code.
 We had four students, all of whom are still active in the Zope
 community, so we can declare this a success. We hope to participate in

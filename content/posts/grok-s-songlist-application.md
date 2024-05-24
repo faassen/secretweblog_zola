@@ -7,8 +7,6 @@ slug = "grok-s-songlist-application"
 tags = ["grok", "framework"]
 +++
 
-# Grok's songlist application
-
 I've been following with interest a number of posts that talk about
 creating a simple REST-based web application that persists the number of
 plays various songs have had. Here's the history:
@@ -111,10 +109,10 @@ shabby):
     Total:          1    1   1.1      1      61
 
 Now to the good news. The other examples all store their information in
-a global variable in the form of a dictionary. *Gulp*. This application
-actually features *true persistence*. When you restart your server, the
-counted information is *still there* - it's in the database. This means
-that the benchmark actually includes *database access* (to the ZODB).
+a global variable in the form of a dictionary. _Gulp_. This application
+actually features _true persistence_. When you restart your server, the
+counted information is _still there_ - it's in the database. This means
+that the benchmark actually includes _database access_ (to the ZODB).
 
 You may have noted that there isn't much database access code there.
 That's because the ZODB allows transparent persistence of Python

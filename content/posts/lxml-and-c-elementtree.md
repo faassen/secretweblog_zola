@@ -7,8 +7,6 @@ slug = "lxml-and-c-elementtree"
 tags = ["lxml"]
 +++
 
-# lxml and (c)ElementTree
-
 I saw a [blog entry by Julien
 Anguenot](http://blogs.nuxeo.com/sections/blogs/julien_anguenot/2006_02_23_looking-for-fast-memory-friendly-python-xml-processing)
 praising the ElementTree+ (and cElementTree in particular) XML
@@ -39,7 +37,7 @@ him to use ElementTree.
 
 Now as to Julien's reasons as to why he doesn't use lxml. lxml is indeed
 somewhat less mature than ElementTree, though is stable enough to use in
-production applications. I'd also claim that it's *more* stable than the
+production applications. I'd also claim that it's _more_ stable than the
 Python libxml2 bindings that it replaces, as those make it extremely
 easy to shoot yourself in the foot. So, if you're using those and you
 need the featureset of libxml2, you might want to consider switching to
@@ -56,12 +54,12 @@ lxml when they need it.
 While libxml2 and libxslt are very widespread on systems and lxml is
 starting to be packaged by linux distributions (it's in Ubuntu), it's
 still a huge dependency that is problematic in some circumstances. It's
-not *that* hard to install a newer version of libxml2 and libxslt
+not _that_ hard to install a newer version of libxml2 and libxslt
 somewhere if you want to deploy a server application, but it's certainly
 not making life easier.
 
 Concerning Julien's Zope 3 note. I think that there has been no decision
-about Zope 3 *not* making it a dependency; in fact Zope 3 last I knew
+about Zope 3 _not_ making it a dependency; in fact Zope 3 last I knew
 has been looking into adopting lxml as a dependency. It hasn't done so
 yet, and the libxml2 requirements are an important reason why not. Since
 Zope 3 is going to turn into a component cloud that's separately

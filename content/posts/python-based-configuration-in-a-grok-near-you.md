@@ -7,8 +7,6 @@ slug = "python-based-configuration-in-a-grok-near-you"
 tags = ["grok", "framework"]
 +++
 
-# Python-based configuration in a Grok near you
-
 BFG 1.2 offers [imperative
 configuration](http://plope.com/Members/chrism/bfg_12_imperative_config):
 doing configuration not in ZCML but in Python. The declarative

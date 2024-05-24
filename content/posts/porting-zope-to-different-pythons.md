@@ -7,8 +7,6 @@ slug = "porting-zope-to-different-pythons"
 tags = ["python", "zope", "python3"]
 +++
 
-# Porting Zope to different Pythons
-
 Zope has been under development since 1996. It wasn't called Zope back
 then yet: it was called bobo, and later pieces were called Principia,
 and only in 1998 did it become Zope.
@@ -24,7 +22,7 @@ JPython), Python on the JVM. Unfortunately after a good start, Jython's
 development lagged behind CPython's for some time. More recently
 development of Jython picked up speed again, and received actual backing
 by Sun. Jython is very interesting as it can speak to Java libraries
-natively. Java has *lots* of libraries.
+natively. Java has _lots_ of libraries.
 
 Meanwhile, in 2004, the originator of Jython, Jim Huginin, came up with
 another implementation of Python: IronPython, on top of Microsoft's
@@ -55,7 +53,7 @@ signs of working towards any release at all: their last release was over
 a year ago and a new release doesn't appear to be in sight. They seem to
 prefer developing in their SVN repository, organize sprints and present
 at conferences. In my book, if it's not actually used for real-world
-projects it can still be cool, but only *theoretically* cool. This makes
+projects it can still be cool, but only _theoretically_ cool. This makes
 PyPy rather a dark horse that may become useful one day. I hope it does,
 but I'm not holding my breath anymore.
 

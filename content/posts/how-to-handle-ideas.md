@@ -7,8 +7,6 @@ slug = "how-to-handle-ideas"
 tags = ["open source"]
 +++
 
-# how to handle ideas
-
 Over the years I gained some experience with how open source communities
 function. Sometimes these communities make it difficult for relative
 outsiders (or even insiders) to make a proposal or to share an idea.
@@ -80,7 +78,7 @@ So now the people in the project start asking questions, give
 suggestions, consider solution strategies. The idea will likely change
 in shape as things become more clear. The project, and the person making
 the proposal, may end up with new features and at the very least the
-project will have learned something. Incidentally this is *also* a great
+project will have learned something. Incidentally this is _also_ a great
 way to draw newcomers into a project.
 
 Sometimes however a project will have to say no. If it's immediately

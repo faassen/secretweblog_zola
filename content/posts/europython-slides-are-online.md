@@ -7,8 +7,6 @@ slug = "europython-slides-are-online"
 tags = ["python", "conference"]
 +++
 
-# Europython slides are online
-
 Long time no blog. I've been at Pycon and EuroPython since then (which
 both were great experiences!). At EuroPython I gave a talk titled
 "Things I helped create". I've just uploaded the slides for this in the

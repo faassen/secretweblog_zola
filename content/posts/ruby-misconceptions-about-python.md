@@ -7,16 +7,14 @@ slug = "ruby-misconceptions-about-python"
 tags = ["python"]
 +++
 
-# Ruby misconceptions about Python
-
 I just ran into a rather misleading
 [article](http://www.rexx.com/~oinkoink/Ruby_v_Python.html) claiming to
 compare Ruby and Python. Let's please be done with some of these
 misconceptions:
 
 - Python 1.5.2 was released in april 1999. Talking about supposed design
-  flaws in a version released in 1999 is a bit misleading. We're *seven
-  years* past april 1999. Maybe the referenced article was written in
+  flaws in a version released in 1999 is a bit misleading. We're _seven
+  years_ past april 1999. Maybe the referenced article was written in
   2000, in which case it's somewhat more understandable. I do not
   believe it was, as it talks about Python's support for sets, which was
   added later.
@@ -34,7 +32,7 @@ misconceptions:
 
 - Let's please cut the crap about OO being a bolt-on in Python. This is
   FUD. It's probable that many people who repeat this meme are not even
-  aware of enough deep OO issues to ever have to care even if it *were*
+  aware of enough deep OO issues to ever have to care even if it _were_
   true.
 
 - Python's OO implementation has indeed been improved in version 2.0
@@ -128,4 +126,4 @@ misconceptions about Python:
 
 If you want to advocate Ruby over Python, advocate things like support
 for anonymous blocks. That's something neat that Python actually
-*doesn't* have.
+_doesn't_ have.

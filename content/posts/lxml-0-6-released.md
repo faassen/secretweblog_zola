@@ -7,8 +7,6 @@ slug = "lxml-0-6-released"
 tags = ["lxml", "release"]
 +++
 
-# lxml 0.6 released
-
 I've released lxml 0.6. lxml is an alternative, more Pythonic binding
 for the libxml2 and libxslt XML processing libraries.
 

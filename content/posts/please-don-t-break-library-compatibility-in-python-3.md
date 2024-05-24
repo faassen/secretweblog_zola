@@ -7,8 +7,6 @@ slug = "please-don-t-break-library-compatibility-in-python-3"
 tags = ["python3"]
 +++
 
-# Please don't break library compatibility in Python 3
-
 **Update**: Guido appears to [share my opinion on
 this](http://www.artima.com/weblogs/viewpost.jsp?thread=227041).
 
@@ -42,7 +40,7 @@ strategy aims to make the transition between Python 2 and Python 3
 easier by offering a script that convert your Python 2 code to Python 3
 code automatically.
 
-If lots of important libraries and frameworks however *also* break
+If lots of important libraries and frameworks however _also_ break
 backwards compatibility in their Python 3 versions, this means that any
 converted code that depends on them has no chance of working. Instead
 the developer would need to track all the API changes and make
@@ -50,7 +48,7 @@ adjustments there too before the code would work again: a much harder
 task.
 
 So my advice to library and framework maintainers would be: please do
-*not* use this opportunity to break backwards compatibility in your
+_not_ use this opportunity to break backwards compatibility in your
 library or framework too. I'd like to ask you to resist this temptation.
 The language changes already make this a major transition for everybody,
 and you'd make it that much harder by taking away people's ability to

@@ -7,8 +7,6 @@ slug = "grok-0-12-released"
 tags = ["grok", "release"]
 +++
 
-# Grok 0.12 released!
-
 It happened a few days already, but I hadn't mentioned it here yet:
 [Grok 0.12](http://grok.zope.org/project/releases/0.12/) has been
 released! Thanks go to Jan-Wijbrand Kolman for again playing the role of

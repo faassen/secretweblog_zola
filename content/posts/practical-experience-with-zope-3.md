@@ -7,8 +7,6 @@ slug = "practical-experience-with-zope-3"
 tags = ["zope"]
 +++
 
-# Practical experience with Zope 3
-
 ## Practical experience with Zope 3
 
 Jeff Shell has posted [a very interesting blog entry on his experiences
@@ -63,10 +61,9 @@ The Zope 3 security system is the one place where I keep tripping up.
 This is a shame as the rest of the system is very nice and Pythonic.
 
 On the one hand, I can't really blame Zope 3 too much for this, as
-whenever Zope 3 security complains there indeed *is* something wrong
+whenever Zope 3 security complains there indeed _is_ something wrong
 with my security declarations... So, part of this this reflects more the
-fundamental difficult nature of security than something wrong with Zope
-3. Zope 3 just forces you to have to think about it.
+fundamental difficult nature of security than something wrong with Zope 3. Zope 3 just forces you to have to think about it.
 
 That said, I still think we have a problem here. I'm very afraid the
 current system turns off beginners too much, including Python

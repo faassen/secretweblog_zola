@@ -7,8 +7,6 @@ slug = "lxml-should-now-compile-with-gcc-4-0"
 tags = ["lxml"]
 +++
 
-# lxml should now compile with gcc 4.0
-
 Recently I started getting reports that lxml does not compile with gcc
 4.0. Investigating this an issue with Pyrex was quickly identified -- it
 generates C code that is in fact illegal, was accepted by older gcc
@@ -53,7 +51,7 @@ Olivier did get everything working though and produced a cumulative
 patch for Pyrex 0.9.3. Mikhail's problem was finally resolved when
 Andrew Bennetts from Canonical (the Ubuntu developers) popped in on the
 lxml mailing list (wow!) and pointed out my mistake -- I accidentally
-had produced a patch file that was in reverse, *removing* my fixes.
+had produced a patch file that was in reverse, _removing_ my fixes.
 
 After this was clarified, it all worked for Mikhail too. I updated the
 lxml web pages and installation notes to include this info for those

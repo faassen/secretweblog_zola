@@ -7,8 +7,6 @@ slug = "silva-flexible-xml-released"
 tags = ["xml", "silva"]
 +++
 
-# Silva Flexible XML released
-
 I'm happy to have released today a new Silva extension, [Silva Flexible
 XML](http://www.infrae.com/download/SilvaFlexibleXML). Silva Flexible
 XML combines a lot of the interests and themes of my technical life in a

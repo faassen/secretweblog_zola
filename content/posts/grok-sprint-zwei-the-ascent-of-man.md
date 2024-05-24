@@ -7,8 +7,6 @@ slug = "grok-sprint-zwei-the-ascent-of-man"
 tags = ["grok", "sprint"]
 +++
 
-# Grok Sprint Zwei: the Ascent of Man
-
 Yesterday I returned from "Grok Sprint Zwei", the second grok sprint,
 hosted by Philipp von Weitershausen in Dresden, Germany (and partially
 at Gocept for the warming up). Grok is a project to make Zope 3 safe,
@@ -53,7 +51,7 @@ major new things in Grok after this sprint are:
   can now restrict access using permissions. This allows Grok to make
   use of Zope 3's advanced authentication/authorization support.
 
-  In Grok, we deliberately turn off security for anything *but* views
+  In Grok, we deliberately turn off security for anything _but_ views
   (only security where your app faces the web), as we noticed that the
   standard pervasive Zope 3 security proyxing model can hinder rapid
   application development.

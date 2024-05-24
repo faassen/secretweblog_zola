@@ -7,8 +7,6 @@ slug = "none_02_recognizing"
 tags = ["python", "patterns", "pythonic", "planetpython"]
 +++
 
-# The Story of None: Part 2 - Recognizing It
-
 [part 1](@/posts/none_01_the_beginning.md)
 [part 2](@/posts/none_02_recognizing.md)
 [part 3](@/posts/none_03_handling.md)

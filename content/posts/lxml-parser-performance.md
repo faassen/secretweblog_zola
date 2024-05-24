@@ -7,8 +7,6 @@ slug = "lxml-parser-performance"
 tags = ["lxml"]
 +++
 
-# lxml parser performance
-
 In a discussion with Fredrik Lundh about his (c)ElementTree parser
 performance benchmarks on the lxml.etree implementation.
 

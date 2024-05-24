@@ -7,8 +7,6 @@ slug = "five-0-3-released"
 tags = ["zope", "release"]
 +++
 
-# Five 0.3 released!
-
 I'm happy to announce the release of Five 0.3 today, the Zope 3 in Zope
 2 integration component. This release has great new features, including
 edit forms and add forms based on Zope 3 schemas. See [the Five

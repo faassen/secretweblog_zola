@@ -7,8 +7,6 @@ slug = "relax-ng-support-c14n"
 tags = ["lxml"]
 +++
 
-# Relax NG support, C14N
-
 Some progress over the last few days:
 
 've added basic Relax NG support to lxml.

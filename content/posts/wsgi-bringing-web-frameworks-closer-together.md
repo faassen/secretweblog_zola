@@ -7,8 +7,6 @@ slug = "wsgi-bringing-web-frameworks-closer-together"
 tags = ["wsgi", "framework", "django"]
 +++
 
-# WSGI: Bringing web frameworks closer together
-
 Recently I have seen a sentiment espoused by some people in the Python
 web community that WSGI has failed to live up to one of this promises:
 bringing Python web frameworks closer together.
@@ -58,7 +56,7 @@ transfers between web frameworks.
 So this sentiment is clearly wrong. Thank you to everybody who has
 helped create and push WSGI!
 
-Other arguments have been made, for instance that WSGI *middleware* in
+Other arguments have been made, for instance that WSGI _middleware_ in
 particular isn't bringing Python web frameworks closer together. I
 believe that's wrong too, but I will leave defending that point to
 someone more familiar with that topic.

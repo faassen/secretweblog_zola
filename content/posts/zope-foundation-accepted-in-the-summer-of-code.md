@@ -7,8 +7,6 @@ slug = "zope-foundation-accepted-in-the-summer-of-code"
 tags = ["zope foundation"]
 +++
 
-# Zope Foundation accepted in the Summer of Code
-
 The Zope Foundation is happy to announce it was accepted in Google's
 Summer of Code program in 2008!
 

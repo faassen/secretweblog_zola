@@ -7,8 +7,6 @@ slug = "python-3-worries-feedback"
 tags = ["python3"]
 +++
 
-# Python 3 worries: feedback
-
 I've received a lot of feedback to [my previous blog
 entry](http://faassen.n--tree.net/blog/view/weblog/2007/06/20/0). I
 stated there that I'm worried about the costs of breaking backwards
@@ -51,7 +49,7 @@ I wonder whether a dual-runtime model is something that was considered
 for Python 3. You could then upgrade one module at the time. The
 maintenance burden to the language developers would be increased for a
 longer period. Since the language developers are increasing the
-maintenance burden of all developers *using* Python with Python 3,
+maintenance burden of all developers _using_ Python with Python 3,
 perhaps I am not too concerned about making the maintenance burden of
 the core developers a bit higher. :)
 
@@ -69,11 +67,11 @@ about the disruption and costs it will cause to the community, flop or
 not.
 
 I disagree strongly with the statement that "in the end it all doesn't
-matter". It *does* matter that all the Python code in the world is going
-to be broken on Python 3. It *does* matter that all Python developers
+matter". It _does_ matter that all the Python code in the world is going
+to be broken on Python 3. It _does_ matter that all Python developers
 are going to have to invest time and effort in transition. The risk that
 we end up with two python communities for a significant period, with all
-the confusion surrounding it, *does* matter.
+the confusion surrounding it, _does_ matter.
 
 There is a significant cost in doing this. I think the Python community
 can bear this cost. I am not sure whether the cost is worth the gain,
@@ -86,7 +84,7 @@ community by splitting it asunder for a period of years, and increase
 the code maintenance costs of all Python developers significantly due to
 this transition. What I don't want to hear is "in the end it all doesn't
 matter". I want to hear is that you are aware of the trouble you're
-putting us all through and that it *does* matter. I want to hear that
+putting us all through and that it _does_ matter. I want to hear that
 getting the transition plan right weighs heavily on your hearts.
 
 The core developers should be fully aware of the very heavy cost of

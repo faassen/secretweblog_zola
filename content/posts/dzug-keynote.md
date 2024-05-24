@@ -7,8 +7,6 @@ slug = "dzug-keynote"
 tags = ["zope", "conference"]
 +++
 
-# DZUG keynote
-
 I was honoured to be asked to give a keynote talk at the recent DZUG
 conference in Sankt Augustin near Bonn, Germany. Even though DZUG is the
 German speaking Zope User Group, I was allowed to speak in English. :)

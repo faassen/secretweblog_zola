@@ -7,8 +7,6 @@ slug = "zope-criticisms"
 tags = ["zope"]
 +++
 
-# Zope Criticisms
-
 Chris McDonough just posted a capsule criticism of the Zope project and
 culture to zope-dev in a discussion I started. I believe Chris and I
 have been "violently" agreeing on most many issues in this discussion...
@@ -122,7 +120,7 @@ documentation efforts to go beyond doctests. We've seen the adoption of
 Sphinx in our community in the last year, and I have good hopes we will
 make a lot of progress on this in the coming year.
 
-I'll also note that documentation for the whole *system* has
+I'll also note that documentation for the whole _system_ has
 traditionally been lacking (how to get started, install it?). For this
 my answer is [Grok](http://grok.zope.org/). If you want to use the Zope
 3 technology stack, it's by far the easiest way to get started.
@@ -191,10 +189,10 @@ you'd think given our rather bad public presentation. There must be some
 value in it after all then! :)
 
 I think we should recognize the position of the Zope technology as
-central to Zope web frameworks that *do* attract users. I want to call
+central to Zope web frameworks that _do_ attract users. I want to call
 that technology the "Zope Framework". It's not something users install
 directly, but it's something that is used to build Grok, Zope 3 and Zope
-2, that *can* be installed.
+2, that _can_ be installed.
 
 We need to manage the Zope Framework as such. In it, there is a tension
 between the concerns of the individual libraries (the parts) and the
@@ -205,7 +203,7 @@ need to improve the parts, but in order to improve the parts we often
 need to think about how they fit into the whole as well.
 
 We need to manage it so that we can resolve this tension so that we can
-have *both* good individual libraries *and* a better integrated
+have _both_ good individual libraries _and_ a better integrated
 experience. I'm optimistic we can resolve this tension to the betterment
 of the whole and the parts.
 
@@ -216,7 +214,7 @@ comprehend.
 In reality we're not managing one big thing, but a tree of libraries
 that depend on each other, and people can approach parts of the trees as
 well as the whole. Breaking the tree metaphor, branches or nodes of the
-tree can be adopted into *other* trees such as repoze.bfg and Twisted.
+tree can be adopted into _other_ trees such as repoze.bfg and Twisted.
 The Zope Framework, like Chris' description, is in a way a caricature of
 something more complex. It's a handy concept to organize a community
 around.

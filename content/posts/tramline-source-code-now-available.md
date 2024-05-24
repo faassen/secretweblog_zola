@@ -7,8 +7,6 @@ slug = "tramline-source-code-now-available"
 tags = ["wsgi"]
 +++
 
-# Tramline source code now available
-
 At the Plone conference 2005 I gave a lightning talk about tramline, a
 lightweight up and download accelator for web applications. Now at last
 I've found some time to put the source code online. This is not a proper
@@ -55,6 +53,6 @@ list, here:
 
 <http://codespeak.net/mailman/listinfo/tramline-dev>
 
-*Update*: credit where credit's due: this is of course a project I built
+_Update_: credit where credit's due: this is of course a project I built
 for [Infrae](http://www.infrae.com), like almost all of the code I
 write. Tramline was conceived by myself and Jan-Wijbrand Kolman.

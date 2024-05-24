@@ -7,8 +7,6 @@ slug = "brief-python-3000-thoughts"
 tags = ["python3", "python"]
 +++
 
-# Brief Python 3000 thoughts
-
 Briefly, some of my Python 3000 thoughts. I see quite a bit of
 enthusiasm in some other blogs. I'm not very enthusiastic. While I
 understand the need to be able to break backwards compatibility, I am

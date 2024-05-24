@@ -7,8 +7,6 @@ slug = "the-purpose-to-my-whinging-about-the-transition-to-python-3"
 tags = ["python3"]
 +++
 
-# the purpose to my "whinging" about the transition to Python 3
-
 Collin Winter
 [writes](http://oakwinter.com/code/on-python-3000-whinging/):
 
@@ -18,7 +16,7 @@ to the Python community by splitting it asunder for a period of years“.
 Gloom, doom, pox and peril, blah blah blah."
 
 Collin's quoting me, so that means he's getting pretty sick of me, among
-others. I don't think I've been exactly *endless* about this though.
+others. I don't think I've been exactly _endless_ about this though.
 I've been talking about this for a few days now, so Collin in getting
 sick already seems to be displaying his rather fragile constitution. :)
 
@@ -39,7 +37,7 @@ but Guido thinks it's a good idea, and he does have enough credit with
 me to trust his judgement. I understand the attraction of cleaning up
 the language in a backwards incompatible fashion."
 
-Again, I *understand* that the core developers feel it necessary to
+Again, I _understand_ that the core developers feel it necessary to
 break backwards compatibility. I can see where this is coming from. I
 sympathize with the goals. (besides that, radical cleanups are fun and
 exciting to language developers too. that's fine) I remember talking to
@@ -79,7 +77,7 @@ Collin writes: "I have absolutely no pity for anyone trying to migrate
 to Python 3 without a test suite; you’re doing something fundamentally
 stupid and we will not bend over backwards to save your dumb ass."
 
-I see a *lot* of Python code out there in the real world being used in
+I see a _lot_ of Python code out there in the real world being used in
 production that doesn't have very good test coverage. I think a little
 bit of pity for the dumb asses who decided to commit to the Python
 language without writing proper unit test suites would do the core
@@ -146,5 +144,5 @@ we're in for a ride, that this ride is going to take a while, and the
 ride won't be all be fun, even if we believe the destination is worth
 it.
 
-I can show Collin a *lot* of code, by the way, but I don't need to: just
+I can show Collin a _lot_ of code, by the way, but I don't need to: just
 study the cheeseshop. Talk is cheap, indeed. All that code is not.

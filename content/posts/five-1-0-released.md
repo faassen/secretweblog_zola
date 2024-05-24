@@ -7,8 +7,6 @@ slug = "five-1-0-released"
 tags = ["zope", "release", "silva"]
 +++
 
-# Five 1.0 released!
-
 Yesterday I've released the one dot oh version of
 [Five](http://codespeak.net/z3/five), the Zope 2 product that allows you
 to use Zope 3 technology in Zope 2, today.

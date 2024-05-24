@@ -7,8 +7,6 @@ slug = "obviel-1-0b2-released"
 tags = ["obviel", "release"]
 +++
 
-# Obviel 1.0b2 released!
-
 Since the last release of Obviel 1.0b2, I've been plugging away at
 creating a new version. This version has a massive list of
 [changes](http://www.obviel.org/en/1.0b2/CHANGES.html). Some highlights:

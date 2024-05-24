@@ -7,8 +7,6 @@ slug = "grokkerdam-sprint-topics"
 tags = ["grok", "sprint"]
 +++
 
-# Grokkerdam sprint topics
-
 The [Grokkerdam](http://wiki.zope.org/grok/GrokkerdamSprint) sprint is
 coming up in a few weeks. I've put some topics people may want to work
 on during the sprint on the wiki page. Since those topics are just

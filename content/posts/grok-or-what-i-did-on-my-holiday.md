@@ -7,8 +7,6 @@ slug = "grok-or-what-i-did-on-my-holiday"
 tags = ["grok", "sprint"]
 +++
 
-# Grok: or what I did on my holiday
-
 I will use this blog entry to talk talk a bit about my holiday in
 Germany a few weeks ago. I went to a mini sprint at
 [Gocept](http://www.gocept.com), in Halle. I had a great time! (yes, I
@@ -34,14 +32,14 @@ resemblance of Grok to me is solely in your imagination and a pure
 coincidence and has absolutely nothing to do with the fact that the
 artist who drew Grok is my wife. Cavemen, like us programmers, want
 powerful and flexible tools. Cavemen are great at tools after all; they
-practically *invented* tools. But cavemen, and we, also want our tools
+practically _invented_ tools. But cavemen, and we, also want our tools
 to be simple and effective.
 
-Simple and effective like *clubs*: a club is powerful, flexible (you can
+Simple and effective like _clubs_: a club is powerful, flexible (you can
 bash in anything, mash potatoes too) and also simple and effective. Zope
 3 is powerful and flexible all right, but we need it to be simpler, thus
-making it even more effective. This brings me to the Grok motto: *Grok
--- now even cavemen can use Zope 3*.
+making it even more effective. This brings me to the Grok motto: _Grok
+-- now even cavemen can use Zope 3_.
 
 Besides a caveman, Grok is also a piece of software, and a project. The
 project that started at this year's pre-EuroPython sprint with some of

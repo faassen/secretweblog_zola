@@ -7,7 +7,7 @@ slug = "punctuated-equilibrium-in-software"
 tags = ["software development", "morepath", "reg", "python", "planetpython"]
 +++
 
-# Punctuated equilibrium
+# Introduction
 
 [Punctuated
 equilibrium](https://en.wikipedia.org/wiki/Punctuated_equilibrium) is a

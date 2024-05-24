@@ -7,8 +7,6 @@ slug = "grok-status-update-part-2"
 tags = ["grok"]
 +++
 
-# Grok Status Update Part 2
-
 I continue yesterday's [status
 update](http://faassen.n--tree.net/blog/view/weblog/2008/06/02/0) with
 some more topics. Lots of stuff is going on in the Grok world!

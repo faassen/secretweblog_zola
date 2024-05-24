@@ -7,8 +7,6 @@ slug = "how-to-delay-a-zope-release"
 tags = ["zope"]
 +++
 
-# How to delay a Zope release
-
 Jim Fulton, today, on the Zope-3 dev list:
 
 > Now that that the decision has been made to include Zope 3 in Zope
@@ -19,7 +17,7 @@ Jim Fulton, today, on the Zope-3 dev list:
 > used in Zope 2 and the Zope 3 code used in Zope 3 in sync as much as
 > possible.
 
-We've made more than just a *decision*. This week, about 5 to 10 of the
+We've made more than just a _decision_. This week, about 5 to 10 of the
 best Zope developers in the world have been gathered here in Paris. Many
 of us have worked all day on Zope 2.8, and integrating Zope X3 into it.
 This is a quite significant expenditure of resources.
@@ -43,14 +41,14 @@ Implications:
 - who knows what changes will sneak into Zope 2.8 and Zope X3.1 before
   june that will further delay matters.
 
-There are *always* good technical reasons to delay a release. And the
+There are _always_ good technical reasons to delay a release. And the
 longer you delay it, the more good technical reasons come up.
 
 If it is impossible to make a Zope release by throwing this amount of
 brain power at it, and this amount of time (and money; we're in business
 here), I give up.
 
-*Update*: Jim again:
+_Update_: Jim again:
 
 > My intent is that X3.1 would be released at about the same time, as
 > 2.8, so the X3.1 version of the software will be released. Of course,
@@ -62,6 +60,6 @@ here), I give up.
 > the same timeframe as X3.1. I doubt this makes much difference because
 > 2.8 is not yet ready to go out.
 
-*Update*: A clarification by Brian Lloyd cleared up the air a lot. We're
+_Update_: A clarification by Brian Lloyd cleared up the air a lot. We're
 going to stick with Zope X3.0 for Zope 2.8, which will make life a lot
 easier.

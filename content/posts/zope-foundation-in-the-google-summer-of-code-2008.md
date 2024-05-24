@@ -7,8 +7,6 @@ slug = "zope-foundation-in-the-google-summer-of-code-2008"
 tags = ["zope foundation"]
 +++
 
-# Zope Foundation in the Google Summer of Code
-
 The Zope Foundation is very happy to announce it has five projects
 accepted by the Google Summer of Code. Thank you Google! In this
 article, I will introduce the projects, students and mentors.
@@ -129,7 +127,7 @@ the pleasure of mentoring him myself.
 
 <http://code.google.com/soc/2008/zope/appinfo.html?csaid=67681C063AA1A4BF>
 
-*Wait! Extra bonus projects!*
+_Wait! Extra bonus projects!_
 
 Our sister foundation the Plone Foundation also applied to the Google
 Summer of Code, and some of the work done there will surely flow back
@@ -168,7 +166,7 @@ Grok!
 
 <http://code.google.com/soc/2008/plone/appinfo.html?csaid=69983137B55A28A5>
 
-*Another bonus project!*
+_Another bonus project!_
 
 That doesn't conclude the bonus projects. There's another project, this
 time one hosted by the Python Software Foundation, that is of great
@@ -194,7 +192,7 @@ what is involved in porting a complicated Python framework to Jython.
 For the Zope side, the hope is that in future you'd be able to deploy,
 say, your Grok application, on the Jython platform. This means we'd also
 have full access to the many java libraries. Another side effect is that
-this project would make it easier to port these libraries to *other*
+this project would make it easier to port these libraries to _other_
 Python interpreter platforms as well. I wrote more about this
 [here](http://faassen.n--tree.net/blog/view/weblog/2008/04/14/0).
 

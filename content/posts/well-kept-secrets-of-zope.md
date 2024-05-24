@@ -7,8 +7,6 @@ slug = "well-kept-secrets-of-zope"
 tags = ["zope"]
 +++
 
-# Well-kept secrets of Zope
-
 ## Well-kept secrets of Zope
 
 Zope is a web framework that comes equipped with powerful, apparently
@@ -23,8 +21,8 @@ Zope has in large parts of the Python community, and Zope isolating
 itself in its own community (it managed to build a large community many
 years ago).
 
-Before I start off *yet another* discussion with people burned by Zope 2
-in the past: Zope 3 is not Zope 2. It's not crufty. It *is* hard to
+Before I start off _yet another_ discussion with people burned by Zope 2
+in the past: Zope 3 is not Zope 2. It's not crufty. It _is_ hard to
 approach, but we're fixing this with [Grok](http://grok.zope.org), which
 cuts down on the complexity hard.
 
@@ -40,7 +38,7 @@ throughout [since 2002](http://wiki.zope.org/zope3/UnicodeForText).
 Consistently. Without backwards compatibility cruft. When the Django
 project gains this support, I, who doesn't really follow Django
 developments, learned about it from various blogs. We in the Zope
-community don't *tell* anyone as that'd spoil the surprise. Or
+community don't _tell_ anyone as that'd spoil the surprise. Or
 something.
 
 ### Zope 3 has a built-in form generation and validation system
@@ -56,10 +54,10 @@ to the evolution of a new form generation system (on top of the
 existing, solid, declarative schema system) in 2004. This year we've
 seen a further evolution of this system with
 [z3c.form](http://www.gossamer-threads.com/lists/zope/announce/208280)
-(a *fourth* new forms iteration evolving the work that had gone before).
+(a _fourth_ new forms iteration evolving the work that had gone before).
 
 So, Zope has a headstart of years of experience. We keep this hidden
-within our own community, because otherwise it'd be like, *telling*!
+within our own community, because otherwise it'd be like, _telling_!
 
 ### An object database
 
@@ -78,7 +76,7 @@ Wouldn't that be cool?
 It's time for me to yawn and say "been there, done that". People might
 somehow have missed it, but Zope 3 is equipped with an ACID-compliant,
 clusterable object database, the ZODB, that has been under development
-since *1997*. The Zope people *know* the benefits of document-oriented,
+since _1997_. The Zope people _know_ the benefits of document-oriented,
 object databases for web applications. We've worked in this
 impedance-mismatch-free world for so long that we know the drawbacks
 too, and thus have built Zope 3 extensions to work with SQLAlchemy as
@@ -110,7 +108,7 @@ Python community. And now we've told you about it.
 ### To conclude
 
 These features shouldn't be a secret. We should shout it off the
-rooftops: the Zope community in many ways is *still* pushing the
+rooftops: the Zope community in many ways is _still_ pushing the
 frontiers of Python web framework development.
 
 Zope 3 has powerful features, and now also has an easy entry point. If

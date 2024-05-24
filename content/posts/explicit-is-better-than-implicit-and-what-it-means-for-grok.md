@@ -7,8 +7,6 @@ slug = "explicit-is-better-than-implicit-and-what-it-means-for-grok"
 tags = ["grok", "joke"]
 +++
 
-# Explicit is better than implicit, and what it means for Grok
-
 **This post was, of course, an April Fool's joke**
 
 Grok has been using patterns like "Don't repeat yourself" and
@@ -32,7 +30,7 @@ You then place a template in the module `foo_templates` called
 code that helps render the template, you simply add methods to `Index`
 and use them from the template.
 
-All this *looks* nice and easy, but people do need to remember rules
+All this _looks_ nice and easy, but people do need to remember rules
 about base classes, and implicit association. Grok does offer more
 explicit directives to do so:
 
@@ -48,7 +46,7 @@ explicit directives to do so:
       grok.name('index')
       grok.template('foo')
 
-This also *seems* like a nice approach at first. The problem with these
+This also _seems_ like a nice approach at first. The problem with these
 directives is that they clutter up your Python code, and distract you
 from what is really going on. Instead of conveniently finding out (or
 modifying) how your view is hooked up to your model and your template in
@@ -133,7 +131,7 @@ And we change the ZCML to use that interface too:
         permission="zope.Public"
     </configure>
 
-These abstractions are *always* a good thing as our application will
+These abstractions are _always_ a good thing as our application will
 undoubtedly grow. We have to refer to the name of the interface in a few
 extra places, but the code becomes more understandable as a result.
 

@@ -7,8 +7,6 @@ slug = "my-europython-2005-slides-online"
 tags = ["conference"]
 +++
 
-# my EuroPython 2005 slides online
-
 I had a terribly good time at EuroPython 2005. The quality of talks was
 better than ever, with a nice diverse and big selection. I gave two of
 them. I also was on two panels, and just shouted out comments through

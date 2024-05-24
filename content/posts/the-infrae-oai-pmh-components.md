@@ -7,8 +7,6 @@ slug = "the-infrae-oai-pmh-components"
 tags = ["python", "xml", "standards", "silva"]
 +++
 
-# the Infrae OAI-PMH components
-
 Since these components are little known I'd like to give a brief
 introduction of the great set of open source OAI-PMH components that
 [Infrae](http://www.infrae.com) has developed.

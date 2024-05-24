@@ -7,8 +7,6 @@ slug = "the-why-of-lxml"
 tags = ["lxml"]
 +++
 
-# the why of lxml
-
 Today I read [an article about
 libxslt](http://www.xml.com/pub/a/2005/08/03/libxslt.html) on O'Reilly's
 xml.com. It demonstrates the power of libxslt; it's a cool library. It
@@ -64,7 +62,7 @@ process.
 It however has a memory bug. It doesn't matter in this context, as it's
 just a script, but it might start to matter quickly in a long-running
 process. What happens is that at the end of the script, the document and
-the XSLT sheet are cleaned up manually, but the *intermediate* results
+the XSLT sheet are cleaned up manually, but the _intermediate_ results
 or stylesheets never are.
 
 It's an easy mistake to make. Python programmers aren't supposed to have
@@ -102,4 +100,4 @@ lxml:
 This doesn't look much simpler than the pure libxml2/libxslt example
 (more involved examples would), but as you see the memory management
 logic is gone, as lxml takes care of this automatically. Moreover, the
-memory management logic is *correct*, or that's a bug in lxml.
+memory management logic is _correct_, or that's a bug in lxml.

@@ -7,8 +7,6 @@ slug = "lxml-progress"
 tags = ["lxml"]
 +++
 
-# lxml progress
-
 Since some people seem to be actually reading this and some progress has
 been made, I thought I'd give a report of what's been happening with
 lxml.
@@ -79,7 +77,7 @@ though lxml.etree is still better than ElementTree and many other
 Python/XML tools.
 
 Somewhat to my disappointment, cElementTree and even ElementTree are
-right now a *lot* faster at .find() and friends than lxml.etree. Since
+right now a _lot_ faster at .find() and friends than lxml.etree. Since
 they all use the same Python implementation, this means that
 lxml.etree's implementation of the ElementTree API is in some ways quite
 a bit slower than Fredrik's Python implementation! Thinking about it

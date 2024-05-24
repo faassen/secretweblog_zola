@@ -7,8 +7,6 @@ slug = "the-success-of-the-zope-component-architecture"
 tags = ["zope"]
 +++
 
-# The Success of the Zope Component Architecture
-
 Prompted by recent brief negative
 [pronunciations](http://mockit.blogspot.com/2009/11/emperors-new-clothes.html)
 by Malthe on the Zope Component Architecture (ZCA), I thought I'd talk a
@@ -24,7 +22,7 @@ What is the ZCA used for? It's used to glue things to each other: glue
 event handlers to events, glue views to models, glue plugins into
 applications and libraries, and more abstractly, glue adapters to
 adaptees. In ZCA terms, providing such glue is termed providing
-*configuration*.
+_configuration_.
 
 Why was the ZCA created? The Zope community had been building pluggable
 web applications for a long time and we noticed our components became
@@ -82,7 +80,7 @@ very useful in the 1 percent of cases where other options would be very
 ugly.
 
 The question is sometimes asked why not just modify code dynamically for
-overrides? Why not *monkey patch* it? (or "open the class", or whatever
+overrides? Why not _monkey patch_ it? (or "open the class", or whatever
 other terminology one would like to use).
 
 Brandon Rhodes at PyCon 2008 gave [a great
@@ -100,26 +98,26 @@ useful.
 
 Component approaches have become quite popular with web frameworks. Many
 popular ones adopt elements of it, but often in a somewhat limited way.
-For instance, one very popular *interface* is the WSGI interface, and
-one popular form of *adaptation* of this WSGI interface is to use WSGI
-middleware and framework components. With WSGI we see that *just one*
+For instance, one very popular _interface_ is the WSGI interface, and
+one popular form of _adaptation_ of this WSGI interface is to use WSGI
+middleware and framework components. With WSGI we see that _just one_
 well-defined, consensus interface has become an amazing source of
 creativity and pluggability within web development. With the ZCA we are
-able to define *more than one* interface in our applications, and
+able to define _more than one_ interface in our applications, and
 potentially create ecosystems of creativity around those. Not that this
 is easy, but at least we have a mechanism and method to do so.
 
 ## The ZCA is successful
 
 Why do I say the Zope Component Architecture (ZCA) is successful? It's
-successful as it's *being used*, by many people, for many years now. Of
+successful as it's _being used_, by many people, for many years now. Of
 course you can say it's only used by that weird Zope community, and a
 bit by weird Twisted people as well perhaps. That's fine, but realize
-that the wider Zope community is *big* and is made of many parts: Plone,
+that the wider Zope community is _big_ and is made of many parts: Plone,
 Silva, Zope 2, Zope Toolkit, Grok. I'll also count BFG as part of the
 wider Zope community.
 
-The ZCA is successful for *me*. Without it, I'd have to invent something
+The ZCA is successful for _me_. Without it, I'd have to invent something
 very much like it. It comes back in much code that I've written. I'm
 able to do all kinds of small, cool things in my applications and
 libraries on a daily basis, and I'm creating more reusable code as a

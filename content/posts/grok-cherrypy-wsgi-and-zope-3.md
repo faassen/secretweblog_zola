@@ -7,8 +7,6 @@ slug = "grok-cherrypy-wsgi-and-zope-3"
 tags = ["grok", "wsgi"]
 +++
 
-# Grok, CherryPy, WSGI and Zope 3
-
 Yesterday night I experimented with getting Zope 3/Grok to work
 CherryPy, through WSGI. This led to all kinds of interesting adventures
 and opportunities. Follow the path I took:
@@ -20,7 +18,7 @@ CherryPy so far; a nice, Pythonic and powerful web server.
 Currently Zope 3 uses [Twisted](http://www.twistedmatrix.com) as the
 default web server implementation. Using Twisted has lots of advantages.
 It's a high-quality framework with a lot of features. It's also
-maintained by people *other* than the Zope developers, which is good.
+maintained by people _other_ than the Zope developers, which is good.
 Since Zope was one of the first in the Python web space, the Zope
 developers still maintain a version of Medusa for Zope 2 called ZServer.
 It made sense to do that at the time, but it doesn't now.

@@ -7,8 +7,6 @@ slug = "lxml-etree-is-getting-there"
 tags = ["lxml"]
 +++
 
-# lxml.etree is getting there
-
 The lxml.etree implementation of ElementTree, on top of libxml2, is
 getting there now. It features automatic memory management and quite a
 bit of ElementTree compatibility. Not all of the ElementTree API has
