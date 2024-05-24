@@ -10,6 +10,7 @@ build_search_index = true
 theme = "tabi"
 
 title = "Secret Weblog"
+description = "Martijn Faassen's secret weblog"
 author = "Martijn Faassen"
 
 taxonomies = [{ name = "tags", feed = true }]
@@ -45,6 +46,10 @@ menu = [
 email = "faassen@startifact.com"
 encode_plaintext_email = true
 feed_icon = true
+
+socials = [
+    { name = "github", url = "https://github.com/faassen/", icon = "github" },
+]
 
 footer_menu = [
     { url = "sitemap.xml", name = "Sitemap", trailing_slash = false },

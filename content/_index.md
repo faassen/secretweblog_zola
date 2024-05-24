@@ -4,7 +4,8 @@ template = "index.html"
 
 [extra]
 section_path = "posts/_index.md"
-# header = {title = "Hello! I'm tabi~", img = "img/main.webp", img_alt = "Your Name" }
+header = { title = "Secret Weblog", img = "img/me-grok.webp", img_alt = "Martijn Faassen" }
+
 +++
 
-My weblog.
+Welcome to Martijn Faassen's secret weblog, established 8 January 2005.
