@@ -113,7 +113,7 @@ on PyPI.
 Chris has said in the past that this is a sort of "false optimum" that
 stops people from really fixing documentation issues, and I agree with
 him there that this is wrong (even though [I do value
-doctests](@/posts//i-like-doctests.md)). We
+doctests](@/posts/i-like-doctests.md)). We
 should make an effort to change our culture and redirect our
 documentation efforts to go beyond doctests. We've seen the adoption of
 Sphinx in our community in the last year, and I have good hopes we will
