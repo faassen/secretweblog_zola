@@ -111,7 +111,7 @@ enjoy the cleaner feel of Python 3. You can't use any of the cool new
 Python 3 features.
 
 If you feel some moral obligation to The Python, or at least want to be
-cool and modern, you might consider writing *polyglot* code: code that
+cool and modern, you might consider writing _polyglot_ code: code that
 works in Python 2 and Python 3. You gain for this some coolness points,
 potential users who use Python 3, and a harder to maintain codebase. You
 gain none of the benefits of Python 3.
@@ -127,7 +127,7 @@ writing Python 2.
 # The Gravity
 
 Okay, forget about all those legacy codebases! If we write all our new
-code at least in Polyglot, we can start more *new* projects in Python 3.
+code at least in Polyglot, we can start more _new_ projects in Python 3.
 
 I think that this does a disservice to those old projects. They were
 happy to upgrade to new Python 2.x versions, as that was doable with
@@ -138,7 +138,7 @@ But that's a moral argument. We have no allegiance to other people's
 codebases.
 
 **But those existing Python 2 codebases are the ones with business value
-to people**. Those are the codebases with the *bosses* and *customers*
+to people**. Those are the codebases with the _bosses_ and _customers_
 who want new functionality, not a port to a new version of Python that
 involves an effort with no near-future benefits and the potential to
 introduce bugs. **Those are the codebases with the money**.
@@ -160,7 +160,7 @@ move to Python 3.
 The gravity caused by reverse dependencies written in Python 2 then
 pulls at people so that the situation remains that way. You will write
 your new library in Python 2 or Polyglot, because you have to integrate
-with Python 2 codebases. That is going to make *more* Python 2
+with Python 2 codebases. That is going to make _more_ Python 2
 dependencies available, not less.
 
 # Passing the porting buck down the Python 2 gravity well
@@ -191,12 +191,12 @@ How do we get out of this situation?
 
 One option is for Python 3 to reach escape velocity. Python 3 the
 language becomes attractive enough, along with enough polyglot libraries
-being ported, that *new* projects will be written in Python 3. As we
+being ported, that _new_ projects will be written in Python 3. As we
 leave the gravity well old Python 2 codebases become just a pale blue
 dot in the cosmos. A Python 2 community is left behind.
 
 I don't think that Python 3 reaching escape velocity is exactly
-*friendly* to those dealing with Python 2 every day for no fault of
+_friendly_ to those dealing with Python 2 every day for no fault of
 their own, a "bye bye we don't care about you anymore".
 
 Another argument against escape velocity is that this is not healthy for
@@ -237,7 +237,7 @@ test coverage. Code is not going to become polyglot, let alone Python 3,
 in one fell swoop. We can do this with libraries, but it works less well
 for aplications.
 
-The keyword here is porting *incrementally*. Port to polyglot carefully,
+The keyword here is porting _incrementally_. Port to polyglot carefully,
 on a per-module basis, step by step, and write new modules in polyglot
 from the start, until finally you can switch the whole thing over.
 
@@ -251,12 +251,12 @@ This is why I argue for more official Python 2 releases, where these
 things are built in. This stuff needs to be as obvious as possible.
 
 And to make it even more obvious, we need Python 2.x releases where the
-deprecated stuff is *removed*, incrementally. Breaking code is making it
+deprecated stuff is _removed_, incrementally. Breaking code is making it
 as obvious as you can get! But you don't want to break it all at once,
 because then people will be inclined to give up before they even start.
 
 This is why I think a continued future for Python 2.x would be in the
 community's interest, even in The Python's interest. I created a
 [\#python2.8 IRC
-channel](http://blog.startifact.com/posts/python28-discussion-channel-on-freenode.html)
+channel](/posts/python28-discussion-channel-on-freenode.html)
 on freenode to gauge interest and discuss this further.

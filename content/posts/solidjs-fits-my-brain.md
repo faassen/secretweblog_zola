@@ -14,7 +14,7 @@ it's cool and fits my brain.
 # React
 
 I got interested in React because of a talk by Pete Hunt at [JSConf
-Europe](https://blog.startifact.com/posts/jsconf-eu-2013-impressions/)
+Europe](/posts/jsconf-eu-2013-impressions/)
 back in 2013. React was a baby then, a controversial baby, and this talk
 convinced me and many others to give it a serious look. What did I
 learn?
@@ -78,7 +78,7 @@ benchmarks SolidJS performs near the speed of hand-optimized DOM
 manipulation.
 
 Does performance matter a lot? It's
-[complicated](https://blog.startifact.com/posts/is-premature-optimization-the-root-of-all-evil/).
+[complicated](/posts/is-premature-optimization-the-root-of-all-evil/).
 
 React is fast enough for most purposes, and frameworks tend to engage in
 performance matches as it's an easy benchmark to compare. Users of
@@ -142,7 +142,7 @@ only that expression gets rerun and results in a DOM update.
 
 With Solid, just like React, you can also, sort of, pretend it's like a
 server-side framework, and that all your JSX re-runs whenever you change
-any data. But in fact the function components *don't* get rerun. They
+any data. But in fact the function components _don't_ get rerun. They
 only run once, when the component is created in the tree. That has some
 differences with React code:
 

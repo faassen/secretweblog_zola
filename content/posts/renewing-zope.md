@@ -18,7 +18,7 @@ bold new things. Perhaps too bold, as we'll see.
 We were learning new, better ways to do web development. Led by Jim
 Fulton, lead architect of Zope, we set out to rewrite Zope, fix
 mistakes, explore new innovations, make Zope cleaner, easier, and more
-powerful. I say *we* now, as by that time I and many others were fully
+powerful. I say _we_ now, as by that time I and many others were fully
 engaged in this project to build its next generation.
 
 One way that this engagement was fostered was by sprints. The Zope
@@ -36,8 +36,8 @@ ad-hoc APIs.
 
 Central to this was the Zope Component Architecture, which introduced
 the notion of an explicit interface, along with a way to register and
-look up components that would enrich models (we called them *views* and
-*adapters*). It could also fulfill the role of a service locator, and
+look up components that would enrich models (we called them _views_ and
+_adapters_). It could also fulfill the role of a service locator, and
 provided the basis for an event system.
 
 Besides sprint-driven development we were also early adopters of
@@ -49,10 +49,10 @@ scary; rewrites have a habit of never being completed, and you risk the
 effect](https://en.wikipedia.org/wiki/Second-system_effect). But in many
 ways we succeeded -- we had a capable, very powerful and much cleaner
 web framework in the new Zope. (There were flaws, as it was not
-*easier*, just difficult in new ways, but I'll go into that later.)
+_easier_, just difficult in new ways, but I'll go into that later.)
 
 So we had an exciting new Zope. We had a practical problem, however.
-Almost all of the *real* work done with Zope was done with the old Zope.
+Almost all of the _real_ work done with Zope was done with the old Zope.
 This new, better Zope was held up as the future, but was tantalizingly
 out of reach for those of us with large codebases built on top of the
 old Zope.
@@ -61,7 +61,7 @@ old Zope.
 
 I've written a lot of code over the years, some of it generally useful,
 most of it not. But I believe some of my biggest contributions to Zope
-were not in the form of code, but projects that helped *redefine* what
+were not in the form of code, but projects that helped _redefine_ what
 Zope was all about, giving people new ways to use it, and giving the
 project new directions.
 
@@ -71,7 +71,7 @@ by adding together the version numbers of the old Zope (2) and the new
 matter.
 
 The new Zope was out of reach to users of the old Zope. The community
-had been led to believe that the new Zope would be the *next* Zope. We
+had been led to believe that the new Zope would be the _next_ Zope. We
 thought that at some point in the nebulous future there would be a
 transition to the next system, some form of compatibility, some way to
 transfer code from the old to the new system. How this would work was
@@ -118,7 +118,7 @@ old Zope generated difficulty as well as opportunity. But through these
 projects Zope did continue to evolve, renew itself, and stay relevant.
 
 This blog entry is a part of a [series on
-Zope](http://blog.startifact.com/posts/my-exit-from-zope.html) and my
+Zope](/posts/my-exit-from-zope.html) and my
 involvement with it.
-[Previous](http://blog.startifact.com/posts/object-publishing.html).
-[Next](http://blog.startifact.com/posts/jim-fulton-zope-architect.html).
+[Previous](/posts/object-publishing.html).
+[Next](/posts/jim-fulton-zope-architect.html).

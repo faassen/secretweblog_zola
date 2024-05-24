@@ -7,13 +7,13 @@ slug = "the-centre-cannot-hold"
 tags = ["zope", "python", "planetpython", "grok"]
 +++
 
-*Things fall apart; the centre cannot hold*
+_Things fall apart; the centre cannot hold_
 
 ([The Second
 Coming](https://en.wikipedia.org/wiki/The_Second_Coming_%28poem%29) by
 Yeats)
 
-[Last time](http://blog.startifact.com/posts/back-to-the-center.html) I
+[Last time](/posts/back-to-the-center.html) I
 talked about how I went back to the center of the Zope project. Over the
 course of the year following, we managed to refactor the Zope Toolkit,
 clean up the dependency structure, and we could drop many of its
@@ -40,7 +40,7 @@ But I was talking about cleaning up circular dependencies and the
 ability to lose a lot of the code. Chris was talking about making
 libraries with a clear purpose and documentation.
 
-And while we got better dependencies at the end of the year, *I* failed.
+And while we got better dependencies at the end of the year, _I_ failed.
 
 # Burning out on Zope
 
@@ -60,7 +60,7 @@ the web was happening on the client-side, in JavaScript, but Zope had no
 client-side story. People had moved into different directions, and the
 community had fractured.
 
-The dependency cleanup was just about the *only* progress being made --
+The dependency cleanup was just about the _only_ progress being made --
 what about my personal goals? Where was the creativity, the getting
 together to do new interesting things? It wasn't there. Instead we had a
 bunch of opinionated people who couldn't agree enough to get anything
@@ -83,7 +83,7 @@ I had hoped that a summit could get things moving again. Talk about cool
 new things that we might do together.
 
 Zope was in trouble. The codebase would live on. It still does. But it
-is in maintenance mode - it doesn't do much that is *new*.
+is in maintenance mode - it doesn't do much that is _new_.
 
 I came to the Zope Summit with a gloomy heart. That did not help my mood
 at the summit -- sorry.
@@ -104,6 +104,6 @@ And there is life after Zope. Next I will talk a bit about what came
 after.
 
 This blog entry is a part of a [series on
-Zope](http://blog.startifact.com/posts/my-exit-from-zope.html) and my
+Zope](/posts/my-exit-from-zope.html) and my
 involvement with it.
-[Previous](http://blog.startifact.com/posts/back-to-the-center.html).
+[Previous](/posts/back-to-the-center.html).

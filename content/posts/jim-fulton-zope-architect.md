@@ -110,7 +110,7 @@ Life is distracting. I blame myself for not trying harder.
 I'll try to call him tonight. I will keep on trying this time.
 
 This blog entry is a part of a [series on
-Zope](http://blog.startifact.com/posts/my-exit-from-zope.html) and my
+Zope](/posts/my-exit-from-zope.html) and my
 involvement with it.
-[Previous](http://blog.startifact.com/posts/renewing-zope.html).
-[Next](http://blog.startifact.com/posts/the-new-zope-as-a-web-framework.html).
+[Previous](/posts/renewing-zope.html).
+[Next](/posts/the-new-zope-as-a-web-framework.html).

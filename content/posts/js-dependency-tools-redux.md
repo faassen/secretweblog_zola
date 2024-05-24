@@ -10,11 +10,11 @@ tags = ["javascript", "obviel", "packaging"]
 # Introduction
 
 \[UPDATE: This post has [new 2015
-followup](http://blog.startifact.com/posts/javascript-dependencies-revisited-an-example-project.html)\]
+followup](/posts/javascript-dependencies-revisited-an-example-project.html)\]
 
 Recently I looked into JavaScript dependency management and wrote a long
 post about it where I was
-[overwhelmed](http://blog.startifact.com/posts/overwhelmed-by-javascript-dependencies.html)
+[overwhelmed](/posts/overwhelmed-by-javascript-dependencies.html)
 and found some solutions. Since then I've learned a few new things and
 have thought a bit more, and I thought I'd share.
 
@@ -141,7 +141,7 @@ however, and this will help debugging.
 
 Then there's [uRequire](https://github.com/anodynos/uRequire).
 
-uRequire allows you to use CommonJS *or* AMD *or* both and converts them
+uRequire allows you to use CommonJS _or_ AMD _or_ both and converts them
 to whatever is needed. It talks about a Universal Module Definition
 ([UMD](https://github.com/umdjs/umd)) I haven't studied yet, but
 apparently its not necessary to use its boilerplate when using uRequire.
@@ -171,20 +171,20 @@ dependencies and modules. I've had some new insights on how these
 concepts apply to the JavaScript world. I'll review some of this again,
 this time with a focus on what these concepts look like in JavaScript.
 
-- a *project* is the codebase you're hacking on. In open-source JS land,
+- a _project_ is the codebase you're hacking on. In open-source JS land,
   typically it's something published on github. It's in hackable form,
   so contains a lot of separate `.js` files to separate concerns:
   modules.
 
-- a *module* is a JavaScript file that provides some functionality by
+- a _module_ is a JavaScript file that provides some functionality by
   exposing an API.
 
-- a module may *depend* on another module. A module dependency is
+- a module may _depend_ on another module. A module dependency is
   expressed in the module itself, in source code. In JavaScript there
   are multiple systems for expressing modules and their dependencies,
   such as CommonJS, AMD and Google Closure.
 
-- a *package* is a collection of one or more modules that is published
+- a _package_ is a collection of one or more modules that is published
   somewhere so others may use it (this may be published on the internet,
   or internal to a project). It has metadata that describes the package,
   its version number, who wrote it, and what other published packages it
@@ -212,7 +212,7 @@ this time with a focus on what these concepts look like in JavaScript.
   configuration file; it's unclear to me what the semantics of this is
   exactly.
 
-- *Package generation*. This is something I skipped in the previous
+- _Package generation_. This is something I skipped in the previous
   discussion of concepts, but is very important in the JavaScript world
   especially.
 
@@ -234,7 +234,7 @@ this time with a focus on what these concepts look like in JavaScript.
   It's like how a C linker works - it bundles individually units into a
   larger library file (`.so`, `.dll`).
 
-- A *package manager* is a tool that installs a package into your system
+- A _package manager_ is a tool that installs a package into your system
   so you can start using it. `npm` is popular for NodeJS,
   [Bower](http://bower.io/) is focused on client-side packages and tries
   to be very package format agnostic.
@@ -242,7 +242,7 @@ this time with a focus on what these concepts look like in JavaScript.
   manager too, centered around CommonJS (and also the build tool I
   mentioned earlier).
 
-- A *package registry* is a system where packages can be registered so
+- A _package registry_ is a system where packages can be registered so
   that others may find and download them. npm has an index, and so do
   [Bower](http://bower.io/) and
   [component](https://github.com/component/component).
@@ -257,7 +257,7 @@ from the developer, except for the dependency system.
 You define a module that depends on others like this in Mantri/Closure
 Tools:
 
-    goog.provide('obviel.template'); 
+    goog.provide('obviel.template');
     goog.require('obviel.util');
 
     obviel.template.foo = function() { ... };
@@ -332,8 +332,8 @@ Ember, and Knockout, and Mustache, and YUI, and Google Closure Tools. To
 just list a few. Let's call it the Global Namespace Modules pattern
 (GNM).
 
-GNM is not a module *definition* pattern like CommonJS or AMD. Instead
-it is defined by how modules are *used*: you refer to the API of a
+GNM is not a module _definition_ pattern like CommonJS or AMD. Instead
+it is defined by how modules are _used_: you refer to the API of a
 module using a global namespace that the module exposes (`jQuery`,
 `obviel`, `Backbone`, `Mustache`, etc).
 
@@ -538,13 +538,13 @@ fine-grained at all, breaking a fundamental requirement for Obviel.
 
 RequireJS is quite nice; script tag management goes away, no build step
 is needed but compilation to a `.js` file is still possible. It allows
-fine-grained reuse of modules in *other* RequireJS based packages, which
+fine-grained reuse of modules in _other_ RequireJS based packages, which
 is very nice. After some effort it integrates with BusterJS. But it
 doesn't offer Global Namespace Modules support out of the box. It
 shouldn't be too hard to make it do that, though, by simply exposing
 some modules myself, possibly during a build step.
 
-The various CommonJS approaches are interesting. It *is* attractive is
+The various CommonJS approaches are interesting. It _is_ attractive is
 to be able to use same approach on the browser as on the server. But
 most tools require a bundling build step and I'd like to avoid having to
 rely on still uncommon source maps to do debugging. That's why
@@ -572,7 +572,7 @@ however, so fine-grained module reuse of other packages is not possible.
 # Still overwhelmed
 
 I'm still
-[overwhelmed](http://blog.startifact.com/posts/overwhelmed-by-javascript-dependencies.html)
+[overwhelmed](/posts/overwhelmed-by-javascript-dependencies.html)
 by the choices available as well as all the details. But I know a bit
 more about what's possible and what I want now. Are there any players in
 this field that I missed? Undoubtedly more will come out of the woodwork

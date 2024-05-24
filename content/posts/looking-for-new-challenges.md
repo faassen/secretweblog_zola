@@ -17,7 +17,7 @@ development is also about people. **I think I can offer lot of value. I
 can develop software for you, and I can also help you improve the way
 you develop software.**
 
-I see myself as a *creative* developer -- I want to invent things to
+I see myself as a _creative_ developer -- I want to invent things to
 improve life for myself and others. Creativity is what attracts me to
 software development the most. **Creativity is transformative. If you
 need a bit of transformation in your software, talk to me.**
@@ -30,10 +30,10 @@ with the server-side, the only game in town then, but over the last 10
 years I've shifted more and more to the client-side and JavaScript,
 where much of the creativity is today. I am however still very much at
 home on the server as well. I've done
-[React](http://blog.startifact.com/posts/a-brief-history-of-reselect.html),
+[React](/posts/a-brief-history-of-reselect.html),
 I've done REST, I've done hypermedia APIs, I've
-[dug](http://blog.startifact.com/posts/graphql-and-rest.html) into
-[GraphQL](http://blog.startifact.com/posts/the-emerging-graphql-python-stack.html).
+[dug](/posts/graphql-and-rest.html) into
+[GraphQL](/posts/the-emerging-graphql-python-stack.html).
 **If you need a web developer with deep insight in the whole stack, look
 no further.**
 
@@ -42,7 +42,7 @@ career. I came to Python early; I have seen Python grow from a small
 language with no name recognition to the enormously popular language it
 is today. I greatly enjoy using it. I've also criticized it [where I
 felt it was
-needed](http://blog.startifact.com/posts/python-2-gravity.html), painful
+needed](/posts/python-2-gravity.html), painful
 as it was. **If you need a very experienced Python developer, contact
 me.**
 
@@ -63,7 +63,7 @@ transform it:
   world: [lxml](http://lxml.de/). I used the predecessor to
   [Cython](https://en.wikipedia.org/wiki/Cython) to do this (in 2004!).
 - I created a simpler, better way to use Zope with
-  [Grok](https://en.wikipedia.org/wiki/Grok_(web_framework)). I've
+  [Grok](<https://en.wikipedia.org/wiki/Grok_(web_framework)>). I've
   helped add web capabilities to existing codebases with a deep history.
 
 **I can help you open up your codebase to new possibilities.**

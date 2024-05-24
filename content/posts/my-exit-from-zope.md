@@ -22,7 +22,7 @@ had been involved with Zope since its inception as an open source
 project in 1998.
 
 In fact, I still use Zope, through Grok, though Grok is now in
-maintenance mode as well. I use Zope a lot *conceptually*, when I
+maintenance mode as well. I use Zope a lot _conceptually_, when I
 approach new problem domains like programming the web browser
 ([Obviel](http://obviel.org)) or creating a new server-side web
 framework ([morepath](https://github.com/morepath/morepath)). The
@@ -36,23 +36,23 @@ to some.
 I will post the entries in this series here:
 
 - [the Rise of
-  Zope](http://blog.startifact.com/posts/the-rise-of-zope.html)
+  Zope](/posts/the-rise-of-zope.html)
 - [the Weirdness of
-  Zope](http://blog.startifact.com/posts/the-weirdness-of-zope.html)
+  Zope](/posts/the-weirdness-of-zope.html)
 - [Object
-  Publishing](http://blog.startifact.com/posts/object-publishing.html)
-- [Renewing Zope](http://blog.startifact.com/posts/renewing-zope.html)
+  Publishing](/posts/object-publishing.html)
+- [Renewing Zope](/posts/renewing-zope.html)
 - [Jim Fulton, Zope
-  Architect](http://blog.startifact.com/posts/jim-fulton-zope-architect.html)
+  Architect](/posts/jim-fulton-zope-architect.html)
 - [The New Zope as a Web
-  Framework](http://blog.startifact.com/posts/the-new-zope-as-a-web-framework.html)
-- [Grok: the Idea](http://blog.startifact.com/posts/grok.html)
+  Framework](/posts/the-new-zope-as-a-web-framework.html)
+- [Grok: the Idea](/posts/grok.html)
 - [Implementing
-  Grok](http://blog.startifact.com/posts/implementing-grok.html)
+  Grok](/posts/implementing-grok.html)
 - [Back to the
-  Center](http://blog.startifact.com/posts/back-to-the-center.html)
+  Center](/posts/back-to-the-center.html)
 - [The Centre Cannot
-  Hold](http://blog.startifact.com/posts/the-centre-cannot-hold.html)
+  Hold](/posts/the-centre-cannot-hold.html)
 
 <blockquote class="twitter-tweet"><p>the Zope is dead! Long live the Zope!</p>&mdash; Martijn Faassen (@faassen) <a href="https://twitter.com/faassen/statuses/378159021636603906">September 12, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

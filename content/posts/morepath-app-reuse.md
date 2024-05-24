@@ -9,28 +9,28 @@ tags = ["planetpython", "python", "zope", "morepath"]
 
 I'm working on a new Python web microframework called Morepath, as I've
 mentioned
-[before](http://blog.startifact.com/posts/on-the-morepath.html). Here's
+[before](/posts/on-the-morepath.html). Here's
 the [code](https://github.com/morepath/morepath) and here's a [draft
 quickstart](https://github.com/morepath/morepath/blob/master/doc/quickstart.rst).
 Morepath is a microframework with a difference: it's small and easy to
 learn like the others, but has special super powers under the hood.
 
 One of those super powers is
-[Reg](http://blog.startifact.com/posts/reg-now-with-more-generic.html),
+[Reg](/posts/reg-now-with-more-generic.html),
 which along with Morepath's model/view separation makes it easy to write
 reusable views. But in this article I'll talk about another super power:
 Morepath's application reuse patterns.
 
 We'll talk about how Morepath lets you isolate applications, extend and
 override applications, and compose applications together. Morepath tries
-to make these possibilities simple, even obvious. *Morepath strives to
-make the possible as obvious as possible*.
+to make these possibilities simple, even obvious. _Morepath strives to
+make the possible as obvious as possible_.
 
 # Application Isolation
 
 Morepath lets you create app objects like this:
 
-``` python
+```python
 app = morepath.App()
 ```
 
@@ -38,7 +38,7 @@ These app objects are WSGI applications, but also serve as registries
 for application configuration information. This configuration is specify
 used decorators. Typically apps consist of models and views:
 
-``` python
+```python
 @app.model(model=User, path='user/{username}',
            variables=lambda user: { 'username': user.username })
 def get_user(username):
@@ -57,7 +57,7 @@ view will be found, and we've provided that too: it just renders "User:
 What now if we have another app where we want to publish `User` in a
 different way? No problem, we can just create one:
 
-``` python
+```python
 other_app = morepath.App()
 @other_app.model(model=User, path='different_path/{username}')
 def get_user(username):
@@ -84,17 +84,17 @@ functionality to this application so that we can edit users as well?
 
 This is simple; we can add a new `edit` view to `app`:
 
-``` python
+```python
 @app.view(model=User, name='edit')
 def edit_user(request, model):
     return 'Edit user: %s' % model.username
 ```
 
-The string we return here is of course useless for a *real* edit view,
+The string we return here is of course useless for a _real_ edit view,
 but you get the idea.
 
 But what if we have a scenario where there is a core application and we
-want to extend it *without modifying it*?
+want to extend it _without modifying it_?
 
 Why would this ever happen, you may ask? Well, it can, especially in
 more complex applications and reuse scenarios. Often you have a common
@@ -108,13 +108,13 @@ Principle](https://en.wikipedia.org/wiki/Open/closed_principle) in
 software engineering, and Morepath makes it really easy to follow it.
 What you do is create another app that extends the original:
 
-``` python
+```python
 extended_app = morepath.App(extends=[app])
 ```
 
 And then we can add the view to the extended app:
 
-``` python
+```python
 @extended_app.view(model=User, name='edit')
 def edit_user(request, model):
     return 'Edit user: %s' % model.username
@@ -134,7 +134,7 @@ view for `User`?
 
 Here's how we would do that:
 
-``` python
+```python
 @extended_app.view(model=User)
 def render_user_differently(request, model):
     return 'Different view for user: %s' % model.username
@@ -147,7 +147,7 @@ You can also do this for what is returned for model paths. We might for
 instance want to return a different user object altogether in our
 overriding app:
 
-``` python
+```python
 @extended_app.model(model=OtherUser, path='user/{username}')
 def get_user_differently(username):
     return OtherUser(username)
@@ -172,7 +172,7 @@ You would have paths like `/user/faassen/wiki` and `/user/bob/wiki`.
 One approach might be to implement a wiki application within the user
 application we already have, along these lines:
 
-``` python
+```python
 @app.model(model=Wiki, path='user/{username}/wiki')
 def get_wiki(username):
     return wiki_for_user(username)
@@ -202,7 +202,7 @@ But this feels bad. Why?
 A separate app for wikis seems obvious. So let's do it. Here's the wiki
 app by itself:
 
-``` python
+```python
 wiki_app = morepath.App()
 
 @wiki_app.model(model=Wiki, path='{wiki_id}')
@@ -220,10 +220,10 @@ This is an app that exposes wikis on URLs using `wiki_id`, like
 But that won't work if we want to associate wikis with users. What if we
 want the paths we had before, like `/user/faassen/wiki`?
 
-Morepath has a solution. We can *mount* the wiki app in the user app,
+Morepath has a solution. We can _mount_ the wiki app in the user app,
 like this:
 
-``` python
+```python
 @app.mount(app=wiki_app, path='user/{username}/wiki')
 def mount_wiki(username):
     return {
@@ -236,7 +236,7 @@ We do need to adjust the wiki app a bit as right now it expects
 mounted. This is a simple adjustment: we need to register the model so
 that its path is empty:
 
-``` python
+```python
 @wiki_app.model(model=Wiki, path='')
 def get_wiki(wiki_id):
     return query_wiki(wiki_id)
@@ -251,7 +251,7 @@ useful, also for testing purposes. It needs this `wiki_id` parameter
 now. We can construct this WSGI app from `wiki_app` by giving it a
 context explicitly:
 
-``` python
+```python
 wiki_app.context(wiki_id=5)
 ```
 
@@ -261,7 +261,7 @@ Many web frameworks have mechanisms for overriding specific behavior and
 to support reusable applications. These tend to have been developed in
 an ad-hoc fashion as new needs arose.
 
-Morepath instead has a *general* mechanism for supporting app extension
+Morepath instead has a _general_ mechanism for supporting app extension
 and reuse. You use the same principles and APIs you already use to
 create new applications. Any normal Morepath app can without extra
 effort be reused. Anything registered in a Morepath app can be
@@ -270,7 +270,7 @@ configuration system.
 
 This is because Morepath, like Grok or Pyramid, comes from the rich
 [Zope
-heritage](http://blog.startifact.com/posts/my-exit-from-zope.html),
+heritage](/posts/my-exit-from-zope.html),
 where we've thought about this stuff. And Morepath wraps all that power
 in a small, easy, reusable little framework.
 

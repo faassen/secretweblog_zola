@@ -24,7 +24,7 @@ approach to state.
 Another reason I really like React is because its community is so
 creative. I missed being involved with such a creative community after
 my exit from
-[Zope](http://blog.startifact.com/posts/my-exit-from-zope.html), which
+[Zope](/posts/my-exit-from-zope.html), which
 was due in large part as it had become less creative. A lot of the web
 is being rethought by the React community. Whether all of those ideas
 are good remains to be seen, but it's certainly exciting and good will
@@ -133,7 +133,7 @@ introduction](https://github.com/facebook/graphql), [GraphQL draft
 specification](http://facebook.github.io/graphql/) and a [reference
 implementation in JavaScript](https://github.com/graphql/graphql-js),
 resolving a
-[criticism](http://blog.startifact.com/posts/graphql-and-rest.html) I
+[criticism](/posts/graphql-and-rest.html) I
 had in a previous blog post. I started reading the spec that night (I
 had missed out on the intro; it's a better place to start!).
 
@@ -177,7 +177,7 @@ you [watch it](https://www.youtube.com/watch?v=xsSnOQynTHs). In it Dan
 develops and debugs a client-side application live, and due to the
 ingenious architecture behind it, he can modify code and see the changes
 in the application's behavior immediately, without an explicit reload
-and *without having to reenter data*. It was really eye-opening.
+and _without having to reenter data_. It was really eye-opening.
 
 What makes this style of development possible is a more purely
 functional approach towards the Flux pattern. Dan started the
@@ -192,7 +192,7 @@ for himself in the React community by working on all sorts of exciting
 new software and approaches, while being very approachable at the same
 time. He's doing open source right. He's also in his early 20s. I'm old
 enough to have run into very smart younger developers before, so his
-success is not *too* intimidating for me. I'll try to learn from what he
+success is not _too_ intimidating for me. I'll try to learn from what he
 does right and apply it in my own open source work.
 
 The purely functional reducer pattern was all over the conference; I saw

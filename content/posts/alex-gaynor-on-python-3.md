@@ -26,7 +26,7 @@ agree with. Thanks Ian! Everybody should read Ian Bicking:
 I've been thinking about this for a while. I brought my worries up in
 2007, before Python 3 was released:
 
-<http://blog.startifact.com/posts/older/brief-python-3000-thoughts.html>
+</posts/older/brief-python-3000-thoughts.html>
 
 I'll quote myself:
 
@@ -43,11 +43,11 @@ read about exciting new features I won't be using any time soon?
 
 I got feedback and wrote followups:
 
-<http://blog.startifact.com/posts/older/python-3-worries-feedback.html>
+</posts/older/python-3-worries-feedback.html>
 
-<http://blog.startifact.com/posts/older/the-purpose-to-my-whinging-about-the-transition-to-python-3.html>
+</posts/older/the-purpose-to-my-whinging-about-the-transition-to-python-3.html>
 
-<http://blog.startifact.com/posts/older/communicating-with-core-developers-on-the-python-3-transition.html>
+</posts/older/communicating-with-core-developers-on-the-python-3-transition.html>
 
 The feedback burned me quite heavily. I decided I was not going to
 actively do anything about Python 3 and would just develop Python 2 code
@@ -56,12 +56,12 @@ and let others worry about the problem.
 I shut up about Python 3 in public for years, until briefly in 2011, in
 response to a blog post by Armin Ronacher:
 
-<http://blog.startifact.com/posts/older/python-2-8--1.html>
+</posts/older/python-2-8--1.html>
 
 In early 2012 the now sadly deceased Aaron Swartz also talked about this
 topic, and I responded, saying "I told you so" (not Aaron personally):
 
-<http://blog.startifact.com/posts/older/cassandra-and-how-pypy-could-help-with-python-3.html>
+</posts/older/cassandra-and-how-pypy-could-help-with-python-3.html>
 
 # The path taken
 
@@ -78,7 +78,7 @@ gradually became the mainstream approach with support in Python 2.x
 itself.
 
 Now much library code has been ported. That is going fairly well. But
-when I *see* such code I think it's scary and ugly: writing code that
+when I _see_ such code I think it's scary and ugly: writing code that
 needs to work in both interpreters requires language knowledge that is
 more like that of an advanced C++ developer. It isn't Pythonic, at all.
 
@@ -90,7 +90,7 @@ together may outweigh the cost of maintaining more complicated code.
 # The bind we're in
 
 It's different for applications. An application developer usually has
-motivations *not* to port. Porting will introduce bugs in working
+motivations _not_ to port. Porting will introduce bugs in working
 applications, there's unclear benefit as the application will remain the
 same, and less libraries are available. It's also harder to port an
 application than a library, as libraries tend to have better test
@@ -125,7 +125,7 @@ The main advantage is that by gradually dropping compatibility
 applications may move forward again, and messy 2+3 codebases can slowly
 be cleaned up as support for older versions of Python 2.x is dropped.
 I'll repeat that: a path forward for developers to Python 3 that has
-your code become *cleaner*, not uglier.
+your code become _cleaner_, not uglier.
 
 # The closed door
 

@@ -12,7 +12,7 @@ web framework. Zope was born too early; before we understood either very
 well.
 
 Zope was like a futuristic space alien from another dimension. In many
-ways it was advanced far beyond its time. It was *weird*. Some of its
+ways it was advanced far beyond its time. It was _weird_. Some of its
 weird ideas didn't work out, but there are also ideas in there that are
 worthy of further consideration even today. Some of its innovations were
 weird at the time but have now become the new normal.
@@ -37,7 +37,7 @@ language community puts an emphasis on clarity, and Zope was using
 Python in strange new ways, not always clear or clean.
 
 This blog entry is a part of a [series on
-Zope](http://blog.startifact.com/posts/my-exit-from-zope.html) and my
+Zope](/posts/my-exit-from-zope.html) and my
 involvement with it. [The first
-entry](http://blog.startifact.com/posts/my-exit-from-zope.html).
-[Next](http://blog.startifact.com/posts/the-weirdness-of-zope.html).
+entry](/posts/my-exit-from-zope.html).
+[Next](/posts/the-weirdness-of-zope.html).

@@ -10,11 +10,11 @@ tags = ["javascript", "python", "obviel", "planetpython", "packaging"]
 # Introduction
 
 \[UPDATE: This post has [new 2015
-followup](http://blog.startifact.com/posts/javascript-dependencies-revisited-an-example-project.html)\]
+followup](/posts/javascript-dependencies-revisited-an-example-project.html)\]
 
 This is about managing dependencies in a well-tested client-side
 JavaScript codebase, how I got overwhelmed, and how I automated the
-pieces to make it *Just work* ™.
+pieces to make it _Just work_ ™.
 
 The JavaScript world has grown a lot of tools for dependency management.
 I've dipped my toes into it into the past, but didn't really know much
@@ -22,11 +22,11 @@ about it, especially on the client-side. Now I've done so, and I'm
 somewhat overwhelmed. I also found some solutions.
 
 If you don't feel overwhelmed by JavaScript dependency management yet,
-this document can help you to *become* overwhelmed. And then perhaps it
+this document can help you to _become_ overwhelmed. And then perhaps it
 can help a little to become less so.
 
 \[update: I've created a
-[followup](http://blog.startifact.com/posts/js-dependency-tools-redux.html)
+[followup](/posts/js-dependency-tools-redux.html)
 to this post further analyzing the various options available\]
 
 # A Client-side Codebase
@@ -70,7 +70,7 @@ object keys, for instance, should be in its own module, and not in, say,
 Deployment of client-side JavaScript code favors large `.js` files, but
 during development I want smaller ones.
 
-Moreover, I want everything to *Just Work* ™. If use a new internal
+Moreover, I want everything to _Just Work_ ™. If use a new internal
 module in my project, or if I start depending on a new external library
 in my project, I should be able to use them right away without the
 hassle of config file editing. I should be able to hack on my code and
@@ -79,9 +79,9 @@ write unit tests and depend on stuff in them without worrying.
 # My Python Background
 
 Over the years, I've
-[worked](http://blog.startifact.com/posts/older/the-ghost-of-packaging-past-and-future.html)
+[worked](/posts/older/the-ghost-of-packaging-past-and-future.html)
 [a
-lot](http://blog.startifact.com/posts/older/a-history-of-python-packaging.html)
+lot](/posts/older/a-history-of-python-packaging.html)
 with Python dependency management; PyPI, distutils, setuptools, pip etc.
 And build tools like buildout. And of course, the Python `import`
 statement. I learned a lot about JavaScript tools, and the Python tools
@@ -94,7 +94,7 @@ create. It can automatically insert needed dependencies (`.js`, `.css`,
 etc) into a web page on the server-side. Using Fanstatic-wrapped Obviel
 (the [js.obviel](https://pypi.python.org/pypi/js.obviel) Python library)
 works pretty well in a Python project, but it doesn't work for
-*developing* Obviel and it won't work for people who don't use Fanstatic
+_developing_ Obviel and it won't work for people who don't use Fanstatic
 or even Python.
 
 # Dependency management
@@ -102,21 +102,21 @@ or even Python.
 What do I mean by dependency management anyway? Let's write down a few
 concepts:
 
-- a *project* is the codebase I'm hacking on. It could be an application
+- a _project_ is the codebase I'm hacking on. It could be an application
   or a framework or a library. It's in hackable form, checked out from a
   version control repository such as git. You can check out jQuery or
   the Linux Kernel or Obviel as a project. A project can typically be
   used to generate one or more packages.
 
-- a *module* is a source code unit (normally a file) that provides some
+- a _module_ is a source code unit (normally a file) that provides some
   functionality. It contains things like functions and classes. Usually
   it exposes an API. A project typically contains multiple modules. So
   `foo.js` is a module, and so is `foo.py`, `foo.c`, etc.
 
-- a module may *depend* on another module. A module dependency is
+- a module may _depend_ on another module. A module dependency is
   expressed in the module itself, in source code.
 
-  In Python and many languages this is done by *importing* the module by
+  In Python and many languages this is done by _importing_ the module by
   name somehow:
 
       import foo
@@ -126,11 +126,11 @@ concepts:
 
       #include <stdio.h>
 
-  In JavaScript there *is* no native way to express module dependencies,
+  In JavaScript there _is_ no native way to express module dependencies,
   but people have created frameworks for it such as Node's module
   loading system and RequireJS, which I'll go into later.
 
-- a *package* is a collection of one or more modules that is published
+- a _package_ is a collection of one or more modules that is published
   somewhere so others may use it (this may be published on the internet,
   or internal to a project). It has metadata that describes the package,
   its version number, who wrote it, and what other published packages it
@@ -138,7 +138,7 @@ concepts:
   in JavaScript it's... well, it depends.
 
   I'll note that Linux distributions also feature packages that can be
-  installed. I'll call these *deployment packages*. Deployment packages
+  installed. I'll call these _deployment packages_. Deployment packages
   for various reasons are not very convenient to develop against. This
   is why many languages such as Python or JavaScript or Ruby or Perl
   have language-specific package systems. I'm focusing on such
@@ -146,16 +146,16 @@ concepts:
 
 - a module in package A may depend on another module in package B. In
   this case package A describes in its metadata that it depends on
-  package B. This is an *external* dependency on a module in another
+  package B. This is an _external_ dependency on a module in another
   package.
 
-- A *package manager* is a tool that installs a package into your system
+- A _package manager_ is a tool that installs a package into your system
   so you can start using it. It's distinct from a version control system
-  which installs a *project* into your system so you can start hacking
+  which installs a _project_ into your system so you can start hacking
   on it, though package managers can be built on top of version control
   system software.
 
-- A *package registry* is a system where packages can be registered so
+- A _package registry_ is a system where packages can be registered so
   that others may find and download them. CPAN is the package registry
   for Perl code, for instance. Some of these systems allow manual
   download of packages through a web interface as well as automated
@@ -173,7 +173,7 @@ And if I check out a project, I want to start hacking on it as soon as I
 can. To get the project's external dependencies I want to be able to run
 a command that does that for me.
 
-Again, it should *Just Work* ™.
+Again, it should _Just Work_ ™.
 
 # server-side js packaging
 
@@ -236,7 +236,7 @@ Definition, or [AMD](https://github.com/amdjs/amdjs-api/wiki/AMD). AMD
 modules look like this:
 
     define(['jquery', 'obviel'], function($, obviel) {
-       ... 
+       ...
        obviel.view({...});
        ...
        $('.foo').render(blah);
@@ -308,7 +308,7 @@ RequireJS in its config file how to find it: look in
 `components/jquery/jquery.js` for it, please. Only after that I can
 depend on it in my module.
 
-This doesn't *Just Work* ™. I want to install something with bower and
+This doesn't _Just Work_ ™. I want to install something with bower and
 start using it right away. We need something to help glue this together.
 
 # Grunt
@@ -352,7 +352,7 @@ can automatically start a [PhantomJS](http://phantomjs.org/) based web
 browser to run the tests, and then run them, if I type `grunt test`.
 Pretty neat!
 
-Is this enough to make things *Just Work* ™? After all I should be able
+Is this enough to make things _Just Work_ ™? After all I should be able
 to rely on RequireJS declare the dependencies for my test modules. But
 no...
 
@@ -380,14 +380,14 @@ Following Balazs' advice I then tweaked Buster's `buster.js`
 configuration file to load up `bowerbuster.json` into the test sources
 list.
 
-And then, at last, everything started to *Just Work* ™!
+And then, at last, everything started to _Just Work_ ™!
 
 # jspak - a sample project
 
 There is a good chance you're now overwhelmed as I was. Hopefully I can
 help: I've pulled all this together into a sample project called
 [jspak](https://github.com/faassen/jspak). It integrates bower and
-buster and grunt and RequireJS and seems to *Just Work* ™.
+buster and grunt and RequireJS and seems to _Just Work_ ™.
 
 I will consult it myself when I start the job of converting Obviel to
 use it but perhaps it's useful for others too.
@@ -396,15 +396,15 @@ use it but perhaps it's useful for others too.
 
 Here are a few thoughts concerning all this.
 
-It *would* be nice if the JavaScript world could work out a system where
+It _would_ be nice if the JavaScript world could work out a system where
 I don't need 5 or 6 configuration files just to get a project going
 where I can install client-side packages and run the tests
 (`Gruntfile.js`, `bower.json`, `bowerbuster.json`, `buster.js`,
 `package.json`, `rjs.js`). I'm sure glad I got it working though!
 
-Maybe such a system already exists; there just *might* be a parallel
+Maybe such a system already exists; there just _might_ be a parallel
 JavaScript ecosystem out there with yet another way to do packaging and
-imports that has *Just Worked* ™ all the time already. One never knows
+imports that has _Just Worked_ ™ all the time already. One never knows
 with JavaScript!
 
 The Python packaging world feels a lot more comfortable to me than the
@@ -427,5 +427,5 @@ I'm Dutch :) )
 
 Finally, a funny thing about JavaScript project names: Buster.JS,
 Node.js, CommonJS, RequireJS - not being very consistent with the
-spelling of the *JS* bit, are we? I'm a programmer and I'm trained to
+spelling of the _JS_ bit, are we? I'm a programmer and I'm trained to
 pay attention to irrelevant things like that.

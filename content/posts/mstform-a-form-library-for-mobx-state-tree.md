@@ -45,24 +45,24 @@ features in return.
 
 Here's a tiny example:
 
-``` javascript
+```javascript
 const Animal = types
   .model("Animal", {
     name: types.string,
-    hunger: types.integer
+    hunger: types.integer,
   })
-  .views(self => ({
+  .views((self) => ({
     get isSated() {
       return self.hunger === 0;
-    }
+    },
   }))
-  .actions(self => ({
+  .actions((self) => ({
     feed(amount) {
       self.hunger -= amount;
       if (self.hunger < 0) {
         self.hunger = 0;
       }
-    }
+    },
   }));
 ```
 
@@ -88,7 +88,7 @@ mstform builds on MST to help you create web forms.
 # Rendering a web form: you're on your own
 
 In the past, for a library like Formulator or Grok or Obviel Forms, I
-made sure it could *render* your form. That's nice to have when you have
+made sure it could _render_ your form. That's nice to have when you have
 simple forms -you just write a form description or perhaps a schema, and
 boom, the system automatically shows a form. Django's form system works
 like that too.
@@ -114,29 +114,29 @@ instead makes it easy to integrate with these components.
 # What does mstform do then?
 
 If mstform doesn't render your form, what does it do then? It manages
-the form contents - the *form state*. In fact, an earlier name for this
-library *was* FormState, until I discovered there already was another
+the form contents - the _form state_. In fact, an earlier name for this
+library _was_ FormState, until I discovered there already was another
 library out there with that name.
 
 mstform in its essence lets you define a form that represents a MST
 model. Here is an example for the <span class="title-ref">Animal</span>
 model we defined above:
 
-``` javascript
+```javascript
 import { Form, Field, converters } from "mstform";
 
 const form = new Form(Animal, {
-    name: new Field(converters.string),
-    hunger: new Field(converters.integer)
+  name: new Field(converters.string),
+  hunger: new Field(converters.integer),
 });
 ```
 
 You can then use this form to manage the state of instances of that
 model:
 
-``` javascript
+```javascript
 // use MST to create an instance of an animal
-const elephant = Animal.create({name: "Elephant", hunger: 3});
+const elephant = Animal.create({ name: "Elephant", hunger: 3 });
 
 // now make a form state for elephant
 const formState = form.state(elephant);
@@ -144,14 +144,14 @@ const formState = form.state(elephant);
 
 You can access fields from the form state:
 
-``` javascript
-const nameField = formState.field('name');
+```javascript
+const nameField = formState.field("name");
 ```
 
 Once you have a field, you can render it with React. Here is how you
 could render an input text:
 
-``` javascript
+```javascript
 import { Component }, React from "react";
 import { observer } from "mobx-react";
 
@@ -177,58 +177,69 @@ ask?
 
 Here we come to features of mstform:
 
-Convert form input  
+## Convert form input
+
 The form input is often just a bunch of texts, but you have a data model
 underneath. For instance, if I enter an integer in a text input it is a
 string. mstform converts this into an integer.
 
-Show edit forms  
+## Show edit forms
+
 Say you already already have form content, because you just loaded it
 from the backend and deserialized it for instance, you need to convert
 that content back again to its display state. For instance, render an
 integer as a string so it can be displayed in a text input.
 
-Client-side validation  
+## Client-side validation
+
 Even after the conversion was successful, you want to validate that the
 value fulfills some criteria, such as being within a certain range. You
 still need to do validation on the backend to be sure, but this way you
 can show errors right away.
 
-Error handling  
+## Error handling
+
 An easy way to show errors, both in conversion and validation. We can
 also show backend-generated errors, to which we will get in a bit.
 
-Repeated forms and sub forms  
+## Repeated forms and sub forms
+
 You can express nested and repeated structures in your models easily in
 the form.
 
-Backend integration  
+## Backend integration
+
 You can define how your form is saved to the backend. You can only
 submit a form if it's valid. The backend can return validation errors
 and warnings which can be displayed in the form.
 
-Server-side validation  
+## Server-side validation
+
 You can also set it up so that your backend generates validation errors
 during user interaction. This way the backend can remain in charge of
 validation as the single source of truth, while you still dynamically
 display errors right away.
 
-Form access states  
+## Form access states
+
 Make your fields required, disabled, hidden and read-only. Disable
 individual fields or a whole sub-form at once. You have to write
 rendering code that can handle these states as mstform doesn't do
 rendering, but once you have it your forms become very flexible indeed.
 
-Modify the underlying object  
+## Modify the underlying object
+
 You can modify the underlying MST model instance with your own code and
 the form automatically updates itself. Modify a field value, add a new
 repeated item, the works. It's just that simple.
 
-Derived values between fields  
+## Derived values between fields
+
 A field can have a default value that is based on the values filled in
 with other fields.
 
-Support for different kinds of React input components  
+## Support for different kinds of React input components
+
 Some components get the value with
 <span class="title-ref">onChange</span>, others get the value as
 <span class="title-ref">event.target.value</span>. Some components
@@ -236,13 +247,15 @@ display their value with <span class="title-ref">value</span>, others
 with <span class="title-ref">checked</span>. mstform converters have
 defaults, but you can override them to suit your needs.
 
-Support for internationalized decimal input  
+## Support for internationalized decimal input
+
 Decimal numbers tend to have quite a few differences between countries.
 For instance, in the US you use periods for the fraction, and commas for
 the thousands, but in the Netherlands it's the other way around. mstform
 has a special decimal parser built-in which takes care of that.
 
-TypeScript support  
+## TypeScript support
+
 mstform is written in TypeScript and exports TypeScript type definitions
 for your development convenience.
 

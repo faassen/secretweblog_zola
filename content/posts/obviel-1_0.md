@@ -18,7 +18,7 @@ validation, and routing. Obviel stays close to HTML but lets you build
 sophisticated components when you need to.
 
 Obviel has come a long way since its
-[beginnings](http://blog.startifact.com/posts/older/obviel.html). On top
+[beginnings](/posts/older/obviel.html). On top
 of the core we've added a template language, an internationalization
 system that integrates with JavaScript and templates alike and a routing
 library. So it's high time for the One Dot Oh release!
@@ -80,8 +80,8 @@ transfer has been complete and the code now lives [on
 github](https://github.com/obviel/obviel).
 
 We've been doing
-[lots](http://blog.startifact.com/posts/overwhelmed-by-javascript-dependencies.html)
-of [research](http://blog.startifact.com/posts/js-dependency-tools-redux.html)
+[lots](/posts/overwhelmed-by-javascript-dependencies.html)
+of [research](/posts/js-dependency-tools-redux.html)
 on using a JavaScript module system for Obviel so we can better maintain the
 codebase. I've been overwhelmed by the options, but soon we'll pick one, I
 promise! We'll also introduce various JavaScript codebase maintenance tools

@@ -19,7 +19,7 @@ In this post I'd like to explain what lead me there.
 Having had now quite a bit of experience with both Werkzeug and WebOb I
 will offer some points of comparison and feedback that may be useful to
 improve Werkzeug and WebOb both, but I have done that in [a followup
-post](http://blog.startifact.com/posts/webob-and-werkzeug-compared.html).
+post](/posts/webob-and-werkzeug-compared.html).
 
 # Performance Testing
 
@@ -194,7 +194,7 @@ was disappointing:
     flask        14638   6832     257    119
     morepath     15089   6627     289     95
 
-Morepath was only a little bit faster, and *still* flower than Flask.
+Morepath was only a little bit faster, and _still_ flower than Flask.
 What's going on here? Turning on the profiler showed me what was going
 on:
 
@@ -216,7 +216,7 @@ So I tried things again using `BaseRequest` instead:
     flask        14741   6784     257    119
     morepath     12236   8173     245     92
 
-That makes Morepath 30% faster with WebOb than with Werkzeug *and*
+That makes Morepath 30% faster with WebOb than with Werkzeug _and_
 faster than Flask.
 
 Not as good as with wheezy.http, but using a much more battle-tested
@@ -246,4 +246,4 @@ Morepath and Pyramid now have the same basic Tween API.
 
 I've followed up this post with [some feedback about Werkzeug and WebOb
 in
-general](http://blog.startifact.com/posts/webob-and-werkzeug-compared.html).
+general](/posts/webob-and-werkzeug-compared.html).

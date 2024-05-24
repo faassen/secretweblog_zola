@@ -39,7 +39,7 @@ repeat there will be no Python 2.8:
 The call for Python 2.8 is strong. Even Guido feels it!
 
 People talk about a Python 2.8, and are for it, or, like Guido, against
-it, but rarely talk about what it should *be*. So let's actually have
+it, but rarely talk about what it should _be_. So let's actually have
 that conversation.
 
 Why talk about something that will never be? Because **we can't call for
@@ -72,7 +72,7 @@ In the discussion about Python 3 there is a lot of discussion about the
 need to port Python libraries to Python 3. This is indeed important if
 you want the ability to start new projects on Python 3. But many of us
 in the trenches are working on large Python 2 code bases. This isn't
-just maintenance. A large code base is alive, so we're building *new*
+just maintenance. A large code base is alive, so we're building _new_
 features in Python 2.
 
 Such a large Python codebase is:
@@ -96,7 +96,7 @@ We could say, fine, they can stay on Python 2 forever then! Well, at
 least until 2020. I think this would be unwise, as these organizations
 are paying a lot of developers money to work on Python code. This has an
 effect on the community as a whole. It contributes to [the gravity of
-Python 2](http://blog.startifact.com/posts/python-2-gravity.html).
+Python 2](/posts/python-2-gravity.html).
 
 Those organizations, and thus the wider Python community, would be
 helped if there was an incremental way to upgrade their code bases to
@@ -111,20 +111,20 @@ work in both Python 2 and Python 3.
 
 If a Python 2.8 backported Python 3 features, it means that polyglot
 authors can start using those features if they drop Python 2.7 support
-right there in their polyglot libraries, *without giving up Python 2
-compatibility*. Python 2.8 would actually help *encourage* those on
+right there in their polyglot libraries, _without giving up Python 2
+compatibility_. Python 2.8 would actually help _encourage_ those on
 Python 2.7 codebases to move towards Python 3, so they can use the
 library upgrades.
 
 Of course dropping Python 2.x support entirely for a polyglot library
-will *also* make that possible. But I think it'll be feasible to drop
+will _also_ make that possible. But I think it'll be feasible to drop
 Python 2.7 support in favor of Python 2.8 much faster than it is
 possible to drop Python 2 support entirely.
 
 # But what do we want?
 
 I've seen Python 3 developers say: but we've done all we could with
-Python 2.7 already! What do you *want* from a Python 2.8?
+Python 2.7 already! What do you _want_ from a Python 2.8?
 
 And that's a great question. It's gone unanswered for far too long. We
 should get a lot more concrete.
@@ -155,11 +155,11 @@ interpreter behave a bit more like Python 3. In Python 2.8, those should
 be the default behavior.
 
 In order to encourage this and make it really obvious, we may want to
-consider *requiring* these in Python 2.8. That means that the
+consider _requiring_ these in Python 2.8. That means that the
 interpreter raises an error unless it has such a `from __future__`
 import there.
 
-If we go for that, it means you *have* to have this on the top of all
+If we go for that, it means you _have_ to have this on the top of all
 your Python modules in Python 2.8:
 
 - `from __future__ import division`
@@ -173,8 +173,8 @@ camp. I believe that is confusing at most a minor inconvenience with a
 dealbreaker. I think discussion about these is pretty pointless, and I'm
 not going to engage in it.
 
-I've left out `unicode_literals`. This is because I've seen *both* Nick
-Coghlan *and* Armin Ronacher [argue against
+I've left out `unicode_literals`. This is because I've seen _both_ Nick
+Coghlan _and_ Armin Ronacher [argue against
 them](https://github.com/PythonCharmers/python-future/issues/22). I have
 a different proposal. More below.
 
@@ -189,7 +189,7 @@ Compare that to an upgrade to Python 3.
 # `from __future3__ import new_classes`
 
 We can't do everything with the old future imports. We want to allow
-*more* incremental upgrading. So let's introduce a new future import.
+_more_ incremental upgrading. So let's introduce a new future import.
 
 New-style classes, that is classes that derive from `object`, were
 introduced in Python 2 many years ago, but old-style classes are still
@@ -241,7 +241,7 @@ more compatible with Python 3.
 
 This import line does two things:
 
-- you get a `str` function that creates a *Python 3 str*. This string
+- you get a `str` function that creates a _Python 3 str_. This string
   has unicode text in it and cannot be combined with Python 2 style
   bytes and Python 3 style bytes without error (which I'll discuss
   later).
@@ -273,8 +273,7 @@ Python 3
 rejects a Python 3 </span><span class="title-ref">str</span>\`. I'll
 talk about why it can be needed in a bit.
 
-Yes, `__past__` is another new namespace we can safely support in Python
-3. It would get more involved in Python 3: it contains a forward port of
+Yes, `__past__` is another new namespace we can safely support in Python 3. It would get more involved in Python 3: it contains a forward port of
 the Python 2 bytes object. Python 3 bytes have less features than Python
 2 bytes, and this has been a pain point for some developers who need to
 work with bytes a lot. Having a more capable bytes object in Python 3

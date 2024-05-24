@@ -53,10 +53,10 @@ explaining why this is a good thing.
 # Routing to Models
 
 Morepath's routing is different from any routing web framework I've
-encountered before. Morepath routes to *models*, not to views. In the
+encountered before. Morepath routes to _models_, not to views. In the
 wiki example the route to the wiki page model is done like this:
 
-``` python
+```python
 @app.model(model=Page, path='{name}',
            variables=lambda model: {'name': model.name})
 def get_page(name):
@@ -72,10 +72,10 @@ in a 404 error.
 # Views
 
 The routing code where the model is looked up is completely separate
-from presentation. That's done in the *view*. Here's the default view
+from presentation. That's done in the _view_. Here's the default view
 for `Page` (i.e. `/FrontPage`):
 
-``` python
+```python
 @app.html(model=Page)
 def display(request, model):
     return wiki.render_page(model.name)
@@ -83,7 +83,7 @@ def display(request, model):
 
 And here is the `edit` view (i.e. `/FrontPage/edit`):
 
-``` python
+```python
 @app.html(model=Page, name='edit', request_method='GET')
 def edit_form(request, model):
     return wiki.render_edit_form(model.name)
@@ -94,7 +94,7 @@ def edit_form(request, model):
 Because Morepath routes to models, it can construct a link for a model,
 which we see demonstrated for instance in a redirect response:
 
-``` python
+```python
 return redirect(request.link(model))
 ```
 
@@ -107,7 +107,7 @@ change your app's routes completely.
 # Reuse and Flexibility
 
 Morepath is powered by the generic function library
-[Reg](http://blog.startifact.com/posts/reg-now-with-more-generic.html).
+[Reg](/posts/reg-now-with-more-generic.html).
 This provides a general mechanism for composing, extending and
 overriding behavior.
 
@@ -118,7 +118,7 @@ automatically share these views. But you can specialize: if you want
 your `DiscussionPage` model to have a special way to display itself but
 still share `edit` and `history`, this is what you'd do:
 
-``` python
+```python
 @app.html(model=DiscussionPage)
 def discussion_display(request, model):
     return "<h2>A different discussion page!</h2>"
@@ -132,7 +132,7 @@ lets you do this too.
 
 That's a lot of power in a small package. It's in fact a condensation of
 15 years of [my experience with
-Zope](http://blog.startifact.com/posts/my-exit-from-zope.html) packed
+Zope](/posts/my-exit-from-zope.html) packed
 together into a micro-framework.
 
 # Development Status

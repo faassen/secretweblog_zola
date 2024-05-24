@@ -42,7 +42,7 @@ was too intimidating.
 # The Idea of Grok
 
 I decided to call this new framework Grok, as one has to give things a
-name. Grok is a term originally from *Stranger in a Strange Land*, a
+name. Grok is a term originally from _Stranger in a Strange Land_, a
 science fiction novel by Robert Heinlein, and is supposed to be a
 martian verb for "to understand/to become one with/to drink in". From
 there the word had made it into programming jargon.
@@ -77,7 +77,7 @@ So far not much convention over configuration was going on. What I had
 done was found a way to integrate configuration information directly
 into Python classes so that you wouldn't have to maintain separate XML
 files anymore for configuration. Convention over configuration came in
-because you could *leave out* `grok.context` and it would then
+because you could _leave out_ `grok.context` and it would then
 automatically associate the view with a model that happened to be
 defined in the same module.
 
@@ -99,7 +99,7 @@ Collider, which, they told us, was going to collide hadrons Real Soon
 Now.
 
 This blog entry is a part of a [series on
-Zope](http://blog.startifact.com/posts/my-exit-from-zope.html) and my
+Zope](/posts/my-exit-from-zope.html) and my
 involvement with it.
-[Previous](http://blog.startifact.com/posts/the-new-zope-as-a-web-framework.html).
-[Next](http://blog.startifact.com/posts/implementing-grok.html).
+[Previous](/posts/the-new-zope-as-a-web-framework.html).
+[Next](/posts/implementing-grok.html).

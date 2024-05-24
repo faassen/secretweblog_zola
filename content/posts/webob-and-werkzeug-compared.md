@@ -8,7 +8,7 @@ tags = ["planetpython", "python", "morepath"]
 +++
 
 Yesterday I wrote [an
-article](http://blog.startifact.com/posts/morepath-from-werkzeug-to-webob.html)
+article](/posts/morepath-from-werkzeug-to-webob.html)
 discussing why Morepath switched from the
 [Werkzeug](http://werkzeug.pocoo.org) library to the
 [WebOb](http://webob.org) library. I promised a followup with some
@@ -69,7 +69,7 @@ uses the `POST` attribute for this. This is also confusing, as it
 contains the `POST` body for other HTTP methods as well, such as `PUT`.
 In addition with `form` I get the immediate clue that it's a parsed
 form, whereas with `POST` I don't get this clue and in fact I had to
-check the manual to verify it *only* can contain form data.
+check the manual to verify it _only_ can contain form data.
 
 WebOb also offers `params`, which is `GET` and `POST` combined, but
 Morepath needs specific access, not this combined one. Werkzeug calls
@@ -97,7 +97,7 @@ introduced this compatibility evidently avoided performance issues.
 
 # Pyramid Compatibility
 
-While Morepath *looks* like Flask, it is quite similar to Pyramid under
+While Morepath _looks_ like Flask, it is quite similar to Pyramid under
 the hood in many details.
 
 When I announced the switch to WebOb from Werkzeug I got some positive
@@ -125,7 +125,7 @@ compatibility layer), as the way tweens are created is different.
 One thing that bothered me with Werkzeug are the many mixins provided
 that you can include in the Request and Response objects. It was never
 quite clear to me what mixins Morepath should be using exactly, except
-in one case, where I *had* to involve `CommonResponseDescriptorsMixin`
+in one case, where I _had_ to involve `CommonResponseDescriptorsMixin`
 to make sure the `content_type` header got set properly on the response
 -- which I found out only after some debugging.
 

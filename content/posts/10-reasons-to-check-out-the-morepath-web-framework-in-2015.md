@@ -21,7 +21,7 @@ year:
     Morepath does not make you write write verbose and failure-prone
     special cased code to handle status codes. Instead, [Morepath does
     HTTP status codes correctly right
-    away.](http://blog.startifact.com/posts/better-rest-with-morepath-08.html#what-about-http-status-codes)
+    away.](/posts/better-rest-with-morepath-08.html#what-about-http-status-codes)
 
 2.  **Morepath makes hyperlinks to objects**. In a typical routing web
     framework, to make a URL, you need to remember the name of a route,
@@ -105,7 +105,7 @@ year:
     performance, perhaps it's not doing enough for you.** But Morepath
     has more than adequate performance - [on "Hello world" at least
     Morepath outpaces some very popular web Python frameworks
-    comfortably](http://blog.startifact.com/posts/better-rest-with-morepath-08.html#faster).
+    comfortably](/posts/better-rest-with-morepath-08.html#faster).
 
 10. **Documentation**. Some Python micro frameworks also have micro
     documentation. Instead, [Morepath has lots of

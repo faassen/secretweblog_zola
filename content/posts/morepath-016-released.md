@@ -19,7 +19,7 @@ I want to discuss a few of the highlights of this release here.
 Morepath uses the predicate dispatch library
 [Reg](http://reg.readthedocs.io/en/latest/) for its view lookup system
 and other behavior. We've rewritten Reg [once
-again](http://blog.startifact.com/posts/punctuated-equilibrium-in-software.html).
+again](/posts/punctuated-equilibrium-in-software.html).
 **For most Morepath users nothing changes, except that Reg is faster
 which also makes Morepath faster. If you want to use Reg directly, the
 new registration API makes it easier to use.**
@@ -99,7 +99,7 @@ version is currently actually slightly faster than release 1.6.1.**
 
 I talked about Morepath's performance history recently in my article [Is
 Morepath Fast
-yet?](http://blog.startifact.com/posts/is-morepath-fast-yet.html). There
+yet?](/posts/is-morepath-fast-yet.html). There
 we had peaked at about 19000 requests per second (on a synthetic
 benchmark) for the development version. **I am happy to announce that
 we've managed to increase performance even more in our 0.16 release.

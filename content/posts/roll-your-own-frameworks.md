@@ -31,7 +31,7 @@ than code that has a lot of moving
 [imperative](https://en.wikipedia.org/wiki/Imperative_programming)
 parts. This way frameworks also help you structure your application. My
 article [Framework
-Patterns](https://blog.startifact.com/posts/framework-patterns.html)
+Patterns](/posts/framework-patterns.html)
 discusses a bunch of ways frameworks let you do that.
 
 I will fully admit my bias up front: I like creating frameworks. But
@@ -166,8 +166,8 @@ But the code of your framework is not application code and does not
 suffer from these problems. It's a subsystem. Tests tend to be easier to
 write and maintain and they can run quickly. So by creating a framework
 for application functionality you have taken that functionality out of
-*the difficult and frustrating to test* realm and put it into the *fun
-and easier to test* realm.
+_the difficult and frustrating to test_ realm and put it into the _fun
+and easier to test_ realm.
 
 Because you have separated the framework from the rest of the
 functionality, it becomes easier to ensure loose coupling between the
@@ -192,11 +192,11 @@ than you might expect -- if you extract a framework from your
 application you can effectively convert a larger maintenance burden in
 your application to a smaller one in your framework.
 
-But you still need to *create* the framework. Is this something super
+But you still need to _create_ the framework. Is this something super
 difficult that only elite genius programmers can do? It would be cool to
 think so as this would mean I'm an elite genius programmer, but I
 actually think framework creation should and can be part of the toolbox
-of any developer. It's something that you can *learn*.
+of any developer. It's something that you can _learn_.
 
 # Tiny frameworks
 
@@ -256,7 +256,7 @@ Ember, Angular, React and Vue came along. Now it's easy.
 
 I won't go into the technical details of how to create a framework here.
 Look at existing frameworks for guidance, and read my [Framework
-Patterns](https://blog.startifact.com/posts/framework-patterns.html)
+Patterns](/posts/framework-patterns.html)
 article. Instead I want to discuss ways to incrementally create
 frameworks while you build an application.
 
@@ -265,13 +265,13 @@ frameworks while you build an application.
 Certainly do not try to build a grand unifying framework that will solve
 everything once it is done. This is a trap. It will result in analysis
 paralysis or
-[over-engineering](https://blog.startifact.com/posts/older/under-engineering-over-engineering-right-engineering.html).
+[over-engineering](/posts/older/under-engineering-over-engineering-right-engineering.html).
 You risk solving problems you don't actually have and blinding yourself
 to the problems you do need to solve. Do not make the construction of a
 framework a requirement for the construction of the application that
 needs it.
 
-When I say create frameworks when you build an app I do mean *multiple*
+When I say create frameworks when you build an app I do mean _multiple_
 frameworks. By all means don't start from scratch. Build on existing
 frameworks. When you have a particular problem and you suspect someone
 else has solved it already, look around first.
@@ -348,7 +348,7 @@ opportunities. Don't be too ambitious, but start small, then slowly grow
 your framework. It's great to give it the open source treatment with
 tests, documentation and a changelog, but it doesn't have to be in set
 in stone right away because of that. It's your own framework and you can
-make it do what *you* need, even if you change your mind along the way.
+make it do what _you_ need, even if you change your mind along the way.
 
 So plant a few framework seeds in the garden of your application, and
 have fun!

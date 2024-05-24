@@ -450,7 +450,7 @@ was viable. In time it evolved into a map with some sparse and some
 dense areas like I've seen before. I let it run overnight. I came back
 to a fairly sparsely populated fast moving world:
 
-![A more sparsely populated map.](.img/apilar-longrun.png)
+![A more sparsely populated map.](/img/apilar-longrun.png)
 
 I disassembled one of the evolved replicators. I checked -- it's viable
 and when I seed a world with it, it results in a similar sparsely

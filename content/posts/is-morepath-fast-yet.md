@@ -13,7 +13,7 @@ But is it fast enough for your purposes?
 # Does performance matter?
 
 **Performance is one of the least important criteria you should use when
-you pick a Python web framework.** You're using *Python* for web
+you pick a Python web framework.** You're using _Python_ for web
 development after all; you are already compromising performance for ease
 of use.
 
@@ -116,7 +116,7 @@ as it's a lightweight framework.**
 demonstrates my point that web framework performance isn't that
 important overall.** I don't fully understand why Flask is relatively
 slow, but I know [part of the reason is
-werkzeug](http://blog.startifact.com/posts/morepath-from-werkzeug-to-webob.html),
+werkzeug](/posts/morepath-from-werkzeug-to-webob.html),
 its request/response implementation. Morepath is actually doing a lot
 more sophisticated stuff underneath than Flask and it's still faster.
 That Pyramid is faster than Morepath is impressive, as what it needs to
@@ -154,7 +154,7 @@ I do know what caused the huge bump in performance in 0.8. This marked
 the switch to Reg 0.9, which is a dispatch library that is used heavily
 by Morepath. Reg 0.9 got faster, as this is when [Reg switched to a more
 flexible and efficient predicate dispatch
-approach](http://blog.startifact.com/posts/punctuated-equilibrium-in-software.html).
+approach](/posts/punctuated-equilibrium-in-software.html).
 
 Performance was stable again until version 0.11, when it went down
 again. In 0.11 we introduced a measure to make the request object
@@ -175,7 +175,7 @@ the webob request, and also avoids a `for` loop through an empty list
 and a few `if` statements. **In Python, performance is sensitive to even
 a few extra lines of code on the critical path.**
 
-But when you *do* have URL parameters, [Morepath's
+But when you _do_ have URL parameters, [Morepath's
 feature](http://morepath.readthedocs.io/en/latest/paths_and_linking.html#type-hints)
 that lets you convert and validate them automatically is pretty nice --
 in almost all circumstances you should be glad to pay the slight

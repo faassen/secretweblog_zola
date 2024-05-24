@@ -41,7 +41,7 @@ which only got formally ratified as a standard last June. It's a huge
 update to the JavaScript language.
 
 JavaScript is in the interesting position of being a lingua franca: it's
-a language *many* developers learn, coming from a wide range of
+a language _many_ developers learn, coming from a wide range of
 different programming communities. Ideas and values from these different
 programming communities get adopted into JavaScript. One of the most
 interesting results of this has been the adoption of functional
@@ -152,7 +152,7 @@ check it in somewhere so I put it on my personal Github page. At the end
 of the day we had a pretty nice little library.
 
 I enjoyed the conference a lot, went home and wrote a
-[report](http://blog.startifact.com/posts/thoughts-about-react-europe.html).
+[report](/posts/thoughts-about-react-europe.html).
 
 # Reselect afterwards
 
@@ -229,7 +229,7 @@ The other lesson I learned is more personal. I used to be part of a
 larger open source community centered around Zope. But for various
 reasons that community stopped being creative and is slowly fading out;
 I wrote a blog series about [my exit from
-Zope](http://blog.startifact.com/posts/my-exit-from-zope.html). I was a
+Zope](/posts/my-exit-from-zope.html). I was a
 large player in the Zope community for quite a few years. In contrast
 I'm a bit player in the React community. But I greatly enjoy the
 community's creativity and the connections I'm making. I missed that in

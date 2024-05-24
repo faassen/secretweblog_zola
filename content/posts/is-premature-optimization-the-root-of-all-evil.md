@@ -191,7 +191,7 @@ obsessed with performance they worried the impact of giving up the
 Do most programmers these days indeed spend enormous amounts of time
 thinking about the speed of their programs?
 
-I would argue most programmers *do not*.
+I would argue most programmers _do not_.
 
 You get the
 [regular](https://medium.com/commitlog/electron-is-cancer-b066108e6c32)
@@ -203,12 +203,12 @@ You get the
 [too](https://www.remarkablyrestrained.com/articles/-software-bloat-makes-me-sad/)
 [bloated](https://www.reddit.com/r/emacs/comments/8h4shd/emacs_was_once_called_eight_megabytes_and/).
 
-I agree it would be *nice* if software were more light-weight, used less
+I agree it would be _nice_ if software were more light-weight, used less
 CPU resources, used less memory, had fewer layers, and was more power
 efficient. But as some of these articles acknowledge, there are reasons
 things are the way they are: making software more efficient can take a
 huge amount of effort. And even though we may feel progress has been
-uneven and slow, software can often *do* a lot more as well. People
+uneven and slow, software can often _do_ a lot more as well. People
 decide, correctly or not, that the effort to make it more efficient is
 not worth it.
 
@@ -257,7 +257,7 @@ unnecessarily obsessing about performance.
 # Performance as a marketing gimmick
 
 But, you may say, I saw graphs comparing performance of various
-frameworks just yesterday! That must mean that developers *do* care
+frameworks just yesterday! That must mean that developers _do_ care
 about performance.
 
 Perhaps.
@@ -266,9 +266,9 @@ I think people at times care so much about the performance of frameworks
 because it's easy. So performance is used as a marketing gimmick.
 
 People say, for instance, their web Python framework is faster. I've
-[done that](https://blog.startifact.com/posts/is-morepath-fast-yet.html)
-[myself](https://blog.startifact.com/posts/morepath-016-released.html).
-But let's not forget that this framework is in *Python*. If you *really*
+[done that](/posts/is-morepath-fast-yet.html)
+[myself](/posts/morepath-016-released.html).
+But let's not forget that this framework is in _Python_. If you _really_
 need insanely high performance at single core low level HTTP handling, I
 would suggest you take a look at other languages. In any case, when I
 last checked a few years ago, Flask, one of the most popular Python web
@@ -289,7 +289,7 @@ you've used a framework for a while. Because it's difficult to compare
 frameworks in more sophisticated ways, it feels like you're making a
 good decision if you pick a framework based on its performance. If all
 else were equal it would make sense to pick the framework that's faster,
-after all. [MongoDB is web scale](http://www.mongodb-is-web-scale.com/),
+after all. [MongoDB is web scale](https://www.youtube.com/watch?v=b2F-DItXtZs),
 so you can't go wrong, right? But all else is typically not equal.
 
 # Why can optimization be evil?
@@ -316,7 +316,7 @@ Many of us on occasion spend a bit of effort to make something really
 fast, for the joy of the craft. I think it happens mostly in library and
 framework code.
 
-Does it *waste* our time? Certainly sometimes, but not necessarily -- we
+Does it _waste_ our time? Certainly sometimes, but not necessarily -- we
 may be doing it in our free time, and even if not we may learn a few
 tricks that can help us when we're in a real performance bind. A major
 performance improvement could even lead to the aforementioned leap in
@@ -356,18 +356,18 @@ is tiny and you don't expect a lot of users either.
 
 This kind of premature optimization happens quite frequently: it wastes
 programmer time and makes code harder to maintain and therefore we can
-declare this practice *evil*. Knuth was talking about micro
+declare this practice _evil_. Knuth was talking about micro
 optimizations, the `goto` statement, but the wisdom still applies here.
 
 # Often optimization is not evil
 
-But often optimization is *just fine*. We can have the best of both
+But often optimization is _just fine_. We can have the best of both
 worlds! We can have our cake and eat it too!
 
 Imagine I need to look up something in a hash table, let's say a Python
 dictionary. I could write this:
 
-``` python
+```python
 def lookup(d, lookup_key):
   for key in d.keys():
       if key == lookup_key:
@@ -380,7 +380,7 @@ if the dictionary is not too big.
 
 The optimized version looks like this:
 
-``` python
+```python
 def lookup(d, lookup_key):
    return d.get(lookup_key)
 ```
@@ -393,8 +393,8 @@ impacts maintenance.
 
 And it's also slower. And it doesn't scale as well.
 
-Optimization in this case turns out to be not only only *faster* but
-also *good*. It's the opposite of wasting programming time!
+Optimization in this case turns out to be not only only _faster_ but
+also _good_. It's the opposite of wasting programming time!
 
 You may assert that this example is ridiculous!
 
@@ -404,9 +404,9 @@ dependencies like Python with ease. The context was definitely different
 in 1974.
 
 So since this optimization is not evil, this optimization is not
-premature. It's in fact *never* premature -- even if this dictionary
+premature. It's in fact _never_ premature -- even if this dictionary
 never grows beyond 10 items and the cost of the `for` loop version was
-negligible, it's *still* better code.
+negligible, it's _still_ better code.
 
 This type of tradeoff can also happen in the large. I once introduced
 the use of a pre-existing index component in a codebase, where

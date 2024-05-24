@@ -59,7 +59,7 @@ clear focus. This was in a large part due to the rise of Ruby on Rails.
 In the Python world Django and TurboGears were making a big splash.
 
 Ruby on Rails attracted developers from Java who were really happy to
-find *reduced* complexity of configuration. And here we were with the
+find _reduced_ complexity of configuration. And here we were with the
 new Zope adding more of it. How was the new Zope going to compete as a
 web framework?
 
@@ -69,14 +69,14 @@ strengths, and the developers of the new Zope were pretty smart ones.
 Many of them had no problem editing 3 files at once and adding lots of
 configuration XML to `configure.zcml`. They could keep all of this in
 their heads and remain productive. Or, as they argued, doing it this way
-*gained* you something too and they didn't want to lose that.
+_gained_ you something too and they didn't want to lose that.
 
 It was my problem. So how was I going to fix this? In 2006, I decided to
 go around the center, and start a new project to try to turn the new
 Zope into a modern web framework: Grok.
 
 This blog entry is a part of a [series on
-Zope](http://blog.startifact.com/posts/my-exit-from-zope.html) and my
+Zope](/posts/my-exit-from-zope.html) and my
 involvement with it.
-[Previous](http://blog.startifact.com/posts/jim-fulton-zope-architect.html).
-[Next](http://blog.startifact.com/posts/grok.html).
+[Previous](/posts/jim-fulton-zope-architect.html).
+[Next](/posts/grok.html).

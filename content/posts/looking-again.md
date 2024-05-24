@@ -7,8 +7,7 @@ slug = "looking-again"
 tags = ["python", "planetpython", "javascript", "typescript", "mobx", "frameworks"]
 +++
 
-<img src=".img/passion_flower.jpg" class="align-right"
-style="width:40.0%" alt="Passion flower on my balcony" />
+![Passion flower on my balcony](/img/passion_flower.jpg)
 
 I'm looking for new freelance challenges again! I've had an awesome
 couple of years working for a client that still keeps me very busy, but
@@ -46,8 +45,7 @@ approaches than an application that has a single deployment. If you have
 something new to build, I know how to get it started and how to keep it
 under control. I like building applications!
 
-<img src=".img/tomatoes_blackberries.jpg" class="align-right"
-style="width:45.0%" alt="Tomatoes and blackberries from my garden" />
+![Tomatoes and blackberries from my garden](/img/tomatoes_blackberries.jpg)
 
 I also enjoy creating software that helps developers build applications
 more effectively. This, to me, is an important part of application
@@ -77,10 +75,10 @@ lot of ideas about them!
 
 To learn more about what interests me and how I think, you can also
 consult [my blog
-highlights](https://blog.startifact.com/posts/secret-weblog-highlights.html).
+highlights](/posts/secret-weblog-highlights.html).
 
 A recent post that I'm a bit proud of is [framework
-patterns](https://blog.startifact.com/posts/framework-patterns.html).
+patterns](/posts/framework-patterns.html).
 
 # Technical Skills
 
@@ -100,8 +98,7 @@ is transferable and I'm willing to try new things.
 
 # Project Circumstances
 
-<img src=".img/sweet_peas.jpg" class="align-right"
-style="width:35.0%" alt="Sweet pea flowers growing in my garden" />
+![Sweet pea flowers growing in my garden](/img/sweet_peas.jpg)
 
 I'm a freelancer and have been self-employed for almost my entire
 career. I prefer to work with an hourly rate. I prefer longer duration

@@ -30,7 +30,7 @@ ride. Then take the Thalys that speeds from Rotterdam to Paris in about
 3 hours. In total it takes about 4 hours. Awesome.
 
 But it's strike season in France. Railway strikes were threatened. And
-then there was a railway strike in *Belgium*, through which the train
+then there was a railway strike in _Belgium_, through which the train
 passes, on the day I was to travel. Uh oh. I already got some warnings
 in the days in advance about possible train cancellations due to the
 strikes. But my train was still going.
@@ -64,7 +64,7 @@ the Mozilla offices in Paris.
 Last year's hackathon was special: I met up with Lee Bannard and we
 worked on reselect, which became quite a popular little library for use
 with Redux. You might enjoy [my story on
-that](http://blog.startifact.com/posts/a-brief-history-of-reselect.html).
+that](/posts/a-brief-history-of-reselect.html).
 
 I was very happy to see Lee again at this year's hackathon. We didn't
 create any new code this time; we spent most of our time learning about
@@ -140,9 +140,9 @@ React"](https://www.youtube.com/watch?v=-t8eOoRsJ7M)
 
 Christopher described what strategies Facebook uses when they open
 source stuff. I especially liked the question they made sure to ask:
-"What did you struggle with?". *Not* "what do you want?" as that can
+"What did you struggle with?". _Not_ "what do you want?" as that can
 easily devolve into a wishlist discussion, but specifically asking about
-*problems* that newcomers had. One fun anecdote: the way to make a FAQ
+_problems_ that newcomers had. One fun anecdote: the way to make a FAQ
 go away was not writing more documentation but changing an error
 message.
 
@@ -159,13 +159,13 @@ with [Morepath](http://morepath.readthedocs.io) I picked a saturated
 space: Python web frameworks. It's hard to convince people it's
 innovative. But that was the same problem React faced when it was first
 released.) (UPDATE: of course Facebook-level resources are not
-*required* for open source success, there are a lot of counter examples,
+_required_ for open source success, there are a lot of counter examples,
 but it sure helps. The talk mentions a team of multiple people engaging
 the community through multiple routes. A single individual can't
 replicate that at the start.)
 
 Nevertheless, open source success for React was by no means guaranteed,
-and React helped make *Facebook's* reputation among developers. They
+and React helped make _Facebook's_ reputation among developers. They
 made the React open source community really work. Kudos.
 
 [Watch "Being Successful at Open
@@ -177,7 +177,7 @@ I liked Dan Schafer's talk: a nice quick recap of why GraphQL is the way
 it is, some clear advice on how to deal with authorization in GraphQL,
 then a nice discussion on how to implement efficient queries with
 GraphQL, and why GraphQL cache keys are the way they are. Clear, focused
-and pragmatic, while still going into to the *why* of things, and
+and pragmatic, while still going into to the _why_ of things, and
 without overwhelming detail.
 
 [Watch "GraphQL at
@@ -186,7 +186,7 @@ Facebook"](https://www.youtube.com/watch?v=etax3aEe2dA)
 # Jeff Morrison: A Deepdive into Flow
 
 This talk was about the implementation of Flow, which is a type checker
-for JavaScript code. This is a *very* complex topic involving compiler
+for JavaScript code. This is a _very_ complex topic involving compiler
 technology and type inferencing, and was still amazingly clear. The talk
 gave me the nice illusion I actually understand how Flows works. It also
 makes me want to try Flow again and integrate it into my development
@@ -213,10 +213,10 @@ Cheng Lou's talk was a very high level talk about the benefits and the
 costs of abstraction. This is something I care about a lot as a
 developer: how do I avoid over-engineering and under-engineering (I've
 [written about it
-before](http://blog.startifact.com/posts/older/under-engineering-over-engineering-right-engineering.html)),
+before](/posts/older/under-engineering-over-engineering-right-engineering.html)),
 and solve problems at the right level? Software has many forces on many
 levels pulling at it, from end-users to low-level details, and how do
-you balance out these forces? Engineering is *so* much about dealing
+you balance out these forces? Engineering is _so_ much about dealing
 with tradeoffs. How do you even communicate about this?
 
 The next day I had an interesting chat with Cheng Lou about his talk,
@@ -249,11 +249,11 @@ when I see people like Preethi learn software development as quickly as
 they do. I certainly took more time to get where they are.
 
 But I'm old enough to have gotten used to intimidatingly smart younger
-people *too*. I can keep up. The Internet overall helps with learning:
+people _too_. I can keep up. The Internet overall helps with learning:
 the resources on the Internet for a new developer may be overwhelming,
 but they are also of tremendous value. Preethi called for more
 intermediate-level resources. I am not sure [this series I
-wrote](http://blog.startifact.com/posts/none_01_the_beginning.html)
+wrote](/posts/none_01_the_beginning.html)
 counts; I suspect Preethi is beyond it, but perhaps others will enjoy
 it.
 
@@ -301,10 +301,10 @@ Retrospective"](https://www.youtube.com/watch?v=-vl57brMWNg)
 
 # Phil Holden: subdivide and redux-swarmlog
 
-Phil Holden gave a 5 minute lightning talk, but *please* give him more
+Phil Holden gave a 5 minute lightning talk, but _please_ give him more
 space next time. He discussed
 [Subdivide](https://github.com/philholden/subdivide), an advanced split
-pane layout system for React, and then *also* discussed another
+pane layout system for React, and then _also_ discussed another
 mind-blowing topic: using WebRTC to create a peer to peer network
 between multiple Redux frontends, so that they share actions. This lets
 users share data without a server being around. This he packaged as a
@@ -395,7 +395,7 @@ trying to find a quiet place so we could look at some code together. We
 enjoyed the conversation but we didn't find such a place in the end.
 
 This is why I prefer the approach Python conferences take: a 1-3 day
-optional sprint for people to participate in *after* the conference has
+optional sprint for people to participate in _after_ the conference has
 ended. Why I like afterwards better:
 
 - You can get involved in cool projects you learned about during the
@@ -411,7 +411,7 @@ Many of the speakers at this conference work for Facebook. They gave
 excellent talks: thank you. I understand that having a lot of speakers
 from Facebook is natural for a conference on React, as that's where it
 originated. (and Facebook hires people from the community). But this
-*is* an open source community. While I realize you'd take on more
+_is_ an open source community. While I realize you'd take on more
 unknown quantities and it would be more difficult to keep up the quality
 of the talks, I would personally enjoy hearing a few more voices not
 from Facebook next year.

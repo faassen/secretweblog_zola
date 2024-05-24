@@ -35,7 +35,7 @@ I can't talk too much about that until I document them properly.
 
 Along with the new Morepath, I've also made the initial release of
 [BowerStatic](http://bowerstatic.readthedocs.org)
-([announcement](http://blog.startifact.com/posts/announcing-bowerstatic.html)).
+([announcement](/posts/announcing-bowerstatic.html)).
 BowerStatic is the WSGI framework that lets you easily include
 bower-installed resources in your web page and do the right thing with
 caching (forever, thank you, but on a separate URL for each version).

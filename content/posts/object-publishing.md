@@ -51,9 +51,9 @@ or possibly:
 
     root.a.b.c()
 
-or a combination thereof. The concept is called *object publishing* and
+or a combination thereof. The concept is called _object publishing_ and
 the process by which the right method to call is found is called
-*traversal*, as an object graph is traversed.
+_traversal_, as an object graph is traversed.
 
 URLs served from a Zope server looked clean, without complicated URL
 parameters to encode state, and without file extensions. The URLs looked
@@ -72,24 +72,24 @@ that typically queries an object from the database and then represents
 it as HTML or JSON.
 
 While the mapping of URL paths to code is now the norm, Zope's
-*particular* way of doing traversal is still weird to many. Zope's way
+_particular_ way of doing traversal is still weird to many. Zope's way
 fits well with the ZODB, as the ZODB is natively an object graph that
 can be traversed. Zope's way doesn't fit other database structures as
 well.
 
 Zope's approach is weird, but it's still worth examining. A benefit of
-this traversing approach is that it gives URLs to *models*, not only
+this traversing approach is that it gives URLs to _models_, not only
 views or controllers; making explicit something that is implicit in more
 modern routing-to-view web frameworks. This means that not only can a
 URL be resolved to a model (and only then a view/controller), but you
-can also *construct* a URL with just a model. This is very powerful and,
+can also _construct_ a URL with just a model. This is very powerful and,
 in the RESTful, client-side web of today more relevant than ever.[1]
 
 This blog entry is a part of a [series on
-Zope](http://blog.startifact.com/posts/my-exit-from-zope.html) and my
+Zope](/posts/my-exit-from-zope.html) and my
 involvement with it.
-[Previous](http://blog.startifact.com/posts/the-weirdness-of-zope.html).
-[Next](http://blog.startifact.com/posts/renewing-zope.html).
+[Previous](/posts/the-weirdness-of-zope.html).
+[Next](/posts/renewing-zope.html).
 
 [1] I myself have explored combining routing and traversal in my older
 [Traject](https://pypi.python.org/pypi/traject) library and the

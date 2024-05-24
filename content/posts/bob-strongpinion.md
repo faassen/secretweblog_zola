@@ -9,7 +9,7 @@ tags = ["software development", "python", "planetpython", "reg", "morepath"]
 
 I posted an article about programming yesterday. ([punctuated
 equilibrium in software
-development](http://blog.startifact.com/posts/punctuated-equilibrium-in-software.html))
+development](/posts/punctuated-equilibrium-in-software.html))
 In it I try to share some insights I've had about software development,
 and illustrate it with a library I work on that I think is interesting.
 I posted it to reddit `/r/programming`, obviously hoping to get a bit of
@@ -45,7 +45,7 @@ usually am. Sometimes I wish I was more like Bob Strongpinion.
 
 # Who is Bob Strongpinion?
 
-Bob Strongpinion has strong opinions and conviction. He *would* blog
+Bob Strongpinion has strong opinions and conviction. He _would_ blog
 saying all other web frameworks suck compared to Morepath. He'd have a
 lot blog posts with eye-catching titles:
 
@@ -61,15 +61,15 @@ lot blog posts with eye-catching titles:
 
 **Why routing to the model instead of the view is winning.**
 
-Bob Strongpinion posts a *lot* of articles with lists, and they're all
+Bob Strongpinion posts a _lot_ of articles with lists, and they're all
 10 items explaining that what he likes is plain better. Bob Strongpinion
 doesn't believe in trade offs in engineering. There's better, and
-there's worse, and what he likes is just plain *better*. Bob
+there's worse, and what he likes is just plain _better_. Bob
 Strongpinion knows there's ONE tool that's right for EVERY job.
 
 If someone doesn't agree with Bob Strongpinion's choice of tools,
 they're either stupid, or more likely,
-[evil](http://blog.startifact.com/posts/they-say-something-i-dont-like-so-they-must-be-lying.html).
+[evil](/posts/they-say-something-i-dont-like-so-they-must-be-lying.html).
 Bob Strongpinion may not have more experience in a problem domain than
 you do, but it's the RIGHT experience so he's still right.
 
@@ -91,7 +91,7 @@ destroy Linux.
 I think Bob Strongpinion would get a lot more upvotes on reddit. He'd
 get attention; some of it negative, but a lot of it would be positive.
 
-*"Yeah, Strongpinion! You tell the truth about software development!"*
+_"Yeah, Strongpinion! You tell the truth about software development!"_
 
 And he's always right. Obvious comparisons to certain public figures
 come to mind. You can see why his mindset would be comfortable, so it's
@@ -101,7 +101,7 @@ I sometimes wish I could be more like Bob Strongpinion when I promote my
 own work. As you can see from the above, I can channel him pretty well.
 I snuck him in while rejecting him, how sneaky! The Strongpinion must be
 strong in me. I've even done a [list of 10 bullet
-points](http://blog.startifact.com/posts/10-reasons-to-check-out-the-morepath-web-framework-in-2015.html)
+points](/posts/10-reasons-to-check-out-the-morepath-web-framework-in-2015.html)
 before. It got some upvotes.
 
 But in the end I keep choosing not to be him.

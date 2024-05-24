@@ -10,7 +10,7 @@ tags = ["zope", "python", "planetpython", "grok"]
 Grok the web framework was simple enough on its surface, but like an
 iceberg, beneath its simple surface lurked a vast codebase. This made it
 harder to understand Grok. We also were depending on a lot of code Grok
-was in fact *not using*. That unused code was still being loaded,
+was in fact _not using_. That unused code was still being loaded,
 distracting, and even at one point interacting with Grok to generate a
 security bug.
 
@@ -49,11 +49,11 @@ proper releases and how to manage such collections of libraries.
 
 But now we had a collection of supposedly independent libraries with a
 large amount of dependencies to each other. What was worse, we had
-*circular* dependencies. This meant that just about all libraries were
+_circular_ dependencies. This meant that just about all libraries were
 linked to all other libraries. Grab one Zope library off PyPI, get all
 of them. All 80 or so...
 
-As Chris McDonough pointed out later, what we *should* have done is
+As Chris McDonough pointed out later, what we _should_ have done is
 extract the libraries one by one, and for each give a clear purpose and
 documentation.
 
@@ -62,7 +62,7 @@ But it was too late. And at least the problem was clear now.
 # The Cave Sprint
 
 So the beginning of 2009 I organized a [small
-sprint](http://blog.startifact.com/posts/older/cleaning-up-zope-3-s-dependencies.html).
+sprint](/posts/older/cleaning-up-zope-3-s-dependencies.html).
 We'd just moved house and now had the room for it. I'm now in two minds
 about this sprint: while we did manage to make a good first step in
 cleaning up dependencies, it was also the beginning of the end of my
@@ -104,7 +104,7 @@ again? The answer was no, but that will have to wait for the next
 article in this series.
 
 This blog entry is a part of a [series on
-Zope](http://blog.startifact.com/posts/my-exit-from-zope.html) and my
+Zope](/posts/my-exit-from-zope.html) and my
 involvement with it.
-[Previous](http://blog.startifact.com/posts/implementing-grok.html).
-[Next](http://blog.startifact.com/posts/the-centre-cannot-hold.html).
+[Previous](/posts/implementing-grok.html).
+[Next](/posts/the-centre-cannot-hold.html).

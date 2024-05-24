@@ -12,7 +12,7 @@ tags = ["python", "grok", "zope", "planetpython"]
 I got the idea for Grok in the summer of 2006. In the fall I still
 hadn't done anything yet about it. Then I gave [a talk at a German Zope
 User Group (DZUG)
-conference](http://blog.startifact.com/posts/older/dzug-keynote.html)
+conference](/posts/older/dzug-keynote.html)
 (the video of that now appears to have sadly disappeared off the
 internet; if it's still somewhere I'd appreciate to get the link!). This
 was the series of conferences that a few years ago got broadened into
@@ -50,7 +50,7 @@ from the start. This was beneficial when we went home and had to
 cooperate online.
 
 I wrote a
-[report](http://blog.startifact.com/posts/older/grok-or-what-i-did-on-my-holiday.html)
+[report](/posts/older/grok-or-what-i-did-on-my-holiday.html)
 about the sprint and Grok to my blog back then; it may be interesting
 reading for some.
 
@@ -119,7 +119,7 @@ library, which I'm using today in Morepath. But that's another story.
 Grok as an open source project was moderately successful. A little
 community of people formed. It managed to attract a few people
 unfamiliar with Zope technology, and also made the new Zope technology
-more appealing to people who *were* already familiar with Zope. We got
+more appealing to people who _were_ already familiar with Zope. We got
 quite a few contributions, too.
 
 We had regular Grok sprints that helped push Grok forward. We also
@@ -159,7 +159,7 @@ make Grok smaller and more comprehensible all the way down, we would
 need to fix this.
 
 This blog entry is a part of a [series on
-Zope](http://blog.startifact.com/posts/my-exit-from-zope.html) and my
+Zope](/posts/my-exit-from-zope.html) and my
 involvement with it.
-[Previous](http://blog.startifact.com/posts/grok.html).
-[Next](http://blog.startifact.com/posts/back-to-the-center.html).
+[Previous](/posts/grok.html).
+[Next](/posts/back-to-the-center.html).

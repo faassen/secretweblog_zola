@@ -9,12 +9,12 @@ tags = ["javascript", "typescript", "react", "frameworks"]
 
 Software developers use software frameworks all the time, so it's good
 to think about them. You might even [create one
-yourself](https://blog.startifact.com/posts/roll-your-own-frameworks/),
+yourself](/posts/roll-your-own-frameworks/),
 but even if you don't, understanding the design principles underlying
 them helps you evaluate and use frameworks better.
 
 A few years ago I wrote a [post about
-patterns](https://blog.startifact.com/posts/framework-patterns.html)
+patterns](/posts/framework-patterns.html)
 I've seen in frameworks. In it, while I did discuss other languages, I
 mostly used examples from the Python world. This is a revised version
 that focuses on frameworks written in JavaScript or TypeScript.
@@ -89,7 +89,7 @@ instead we use higher level languages to help us do that.
 An example of a restriction in React is how state is managed. Here's
 some **BROKEN** code that breaks that restriction:
 
-``` jsx
+```tsx
 import React from "react";
 
 const myState = { value: 0 };
@@ -109,7 +109,7 @@ after we click the button.
 
 Let's fix that:
 
-``` jsx
+```tsx
 import React, { useState } from "react";
 
 const Foo = ({}) => {
@@ -164,7 +164,7 @@ them.
 
 So in a framework, we give our code to it, so it can call us. In order
 for the framework to call our code, we need to tell the framework about
-it. Let's call this *configuring* the framework. Configuration can take
+it. Let's call this _configuring_ the framework. Configuration can take
 the form of JS/TS code, or could be done through a separate DSL.
 
 There are many ways to configure a framework. Each approach has its own
@@ -189,7 +189,7 @@ This is a `createForm` function the framework provides. You can use it
 to configure what the framework should do when you save the form by
 providing a callback function:
 
-``` typescript
+```ts
 import { createForm, FormData } from "framework";
 
 function mySave(data: FormData) {
@@ -203,8 +203,8 @@ const myForm = createForm(mySave);
 
 `Array.map` is a (nano)framework that takes a (pure) function:
 
-``` javascript
-[1, 2, 3].map(x => x * x)
+```ts
+[1, 2, 3].map((x) => x * x);
 ```
 
 You can go very far with this approach. Functional languages do. If you
@@ -246,7 +246,7 @@ framework will call.
 
 ## Fictional example
 
-``` typescript
+```ts
 import { FormBase } from "framework";
 
 class MyForm extends FormBase {
@@ -267,7 +267,7 @@ This pattern is less common in JavaScript, which I think is a good
 thing. But there are examples, such as class-based React (which React
 has been moving away from for years now):
 
-``` typescript
+```ts
 class Welcome extends React.Component {
   render() {
     // application code here
@@ -283,7 +283,7 @@ class Welcome extends React.Component {
 When you subclass a class, this is what you might need to know:
 
 - What base class methods can you override?
-- Which methods should you *not* override?
+- Which methods should you _not_ override?
 - When you override a method, can you call other methods on `this`?
 - Is the method intended to be supplemented (don't forget `super` then!)
   or overridden, or both?
@@ -321,7 +321,7 @@ the framework designer to maintain.
 
 I think the disadvantages of subclassing outweigh the advantages for a
 framework's external API. I still sometimes use base classes
-*internally* in a library or framework -- base classes are a lightweight
+_internally_ in a library or framework -- base classes are a lightweight
 way to do reuse there. In this context many of the disadvantages go
 away: you are in control of the base class contract yourself and you
 presumably understand it. But those are internal, and not base classes
@@ -335,7 +335,7 @@ framework calls.
 
 ## Fictional example
 
-``` typescript
+```ts
 import { createForm, FormBackend, FormData } from "framework";
 
 // typescript checks that you're not lying
@@ -353,7 +353,7 @@ const myForm = createForm(myFormBackend);
 
 And inside `framework`:
 
-``` typescript
+```ts
 export interface FormBackend {
   load(): FormData;
   save(data: FormData);
@@ -371,7 +371,7 @@ In the above example we implemented the interface as an object literal,
 and this works well. There's an alternative implementation that uses
 classes (without inheritance):
 
-``` typescript
+```ts
 import { createForm, FormBackend, FormData } from "framework";
 
 // typescript checks that you're not lying
@@ -401,7 +401,7 @@ I had to look for a little while to find an example of this pattern; and
 then I realized the very editor I was typing in has an extension system
 that works this way. This is an example from the VSCode extension API:
 
-``` typescript
+```ts
 const provider: vscode.DocumentSemanticTokensProvider = {
   provideDocumentSemanticTokens(
     document: vscode.TextDocument
@@ -446,17 +446,17 @@ clean.
 
 Consider a framework like Express or NextJS: given a URL it needs to
 find a function or React component to handle that URL. We can say that
-the framework *dispatches* to application code based on the URL.
+the framework _dispatches_ to application code based on the URL.
 
 The framework is in charge of decoding the URL and dispatching, but how
 does it know where to dispatch? Internally it needs some form of
-*registry*; a collection like an `Array` or a `Map`.
+_registry_; a collection like an `Array` or a `Map`.
 
 The code that the application registers could be a callback function, an
 object that implements a certain interface, or even a class.
 
 Frameworks use different ways to let applications do this registration:
-we can call this *configuration*.
+we can call this _configuration_.
 
 # Pattern: imperative registration API
 
@@ -465,7 +465,7 @@ function or method to make the registration.
 
 ## Fictional Example
 
-``` typescript
+```ts
 import { register, dispatch } from "framework";
 
 register("chicken", () => "Cluck!");
@@ -477,7 +477,7 @@ that should be called to make that animal's sound.
 
 Let's look inside this framework:
 
-``` typescript
+```ts
 type Handler = () => string;
 
 const registry = new Map<string, Handler>();
@@ -509,7 +509,7 @@ the framework and do real work .
 The Express framework for implementing web backends uses the imperative
 registration pattern:
 
-``` typescript
+```ts
 router.get("/caravans", async (req, res) => {
   // application code here
 });
@@ -574,7 +574,7 @@ API) or even function signatures.
 
 ## Fictional example
 
-``` typescript
+```ts
 export function handleChicken() {
   return "Cluck!";
 }
@@ -588,7 +588,7 @@ So, anything prefixed with `handle` that is exported gets registered.
 We need to bootstrap the framework somewhere by loading the module with
 our `handle` functions in it and introspecting it:
 
-``` typescript
+```ts
 import * as myModule from "myModule";
 autoRegister(myModule);
 ```
@@ -596,7 +596,7 @@ autoRegister(myModule);
 Let's look inside this framework. It's layered over the previous
 imperative registration example:
 
-``` typescript
+```ts
 import { register } from "imperative-framework";
 
 export function autoRegister(module) {
@@ -626,7 +626,7 @@ NextJS uses convention over configuration:
 ## Trade-offs
 
 Convention over configuration can be great. It allows the user make code
-work without *any* ceremony. It can enforce useful norms that makes code
+work without _any_ ceremony. It can enforce useful norms that makes code
 easier to read -- it makes sense to postfix your test files with
 `.test.js` anyway, as that allows the human reader to recognize them.
 
@@ -673,7 +673,7 @@ subset of Python expressions with a custom parser and interpreter.
 
 ## Fictional example
 
-``` JSON
+```json
 {
   "entries": [
     "chicken": "Cluck!",
@@ -689,7 +689,7 @@ we've used JSON.
 
 A `package.json` file is a DSL that describes a JS package:
 
-``` JSON
+```JSON
 {
   "name": "framework-patterns-example",
   "version": "1.0.0",
@@ -757,7 +757,7 @@ order. A DSL doesn't have to use such sophistication, but a framework
 designer that designs a DSL is naturally lead in such a direction.
 
 A DSL also provides little flexibility during run-time. While you
-*could* generate configuration code dynamically, that's a level of meta
+_could_ generate configuration code dynamically, that's a level of meta
 that's quite expensive (lots of generate/parse cycles) and it can lead
 to headaches for the developers trying to understand what's going on.
 
@@ -773,7 +773,7 @@ registration system.
 
 The difference from imperative registration is that the framework
 implements a deferred configuration engine, instead of making
-registrations immediately: configuration is *transactional*.
+registrations immediately: configuration is _transactional_.
 Configuration commands are first collected in a separate configuration
 phase, and only after collection is complete are they preprocessed, then
 executed, resulting in actual registrations.
@@ -783,7 +783,7 @@ pluggable, extensible applications.
 
 ## Fictional example
 
-``` typescript
+```ts
 register("chicken", () => "Cluck!");
 register("cow", () => "Moo!");
 commit();
@@ -797,7 +797,7 @@ called does the registration in fact get applied.
 
 So, if you do this:
 
-``` typescript
+```ts
 register("chicken", () => "Cluck!");
 register("chicken", () => "Moo!");
 commit();
@@ -811,8 +811,8 @@ The configuration engine also allows you to override its default
 behavior. Let's say we have a special application profile "rooster"
 where we want the chicken to do something else:
 
-``` typescript
-register("chicken", () => "Cock-a-doodle-do!", "rooster")
+```ts
+register("chicken", () => "Cock-a-doodle-do!", "rooster");
 commit();
 ```
 
@@ -827,7 +827,7 @@ very often.
 
 ## Trade-offs
 
-This *looks* very similar to language-integrated **registration** but
+This _looks_ very similar to language-integrated **registration** but
 the behavior is declarative.
 
 This brings some of the benefits of a configuration DSL to code. Like a
@@ -887,8 +887,11 @@ Normally we give the framework our application code. But with
 TypeScript, we can also give the framework an application level type, so
 that it can use it to typecheck your code elsewhere.
 
-``` typescript
-export function registerThing<T>(thing: T, validateThing: (thing: T) => boolean) {
+```ts
+export function registerThing<T>(
+  thing: T,
+  validateThing: (thing: T) => boolean
+) {
   // something frameworky
 }
 ```
@@ -896,26 +899,26 @@ export function registerThing<T>(thing: T, validateThing: (thing: T) => boolean)
 This code is very generic: it works over any thing type `` `T ``. Let's
 write a concrete type as an example:
 
-``` typescript
+```ts
 type SomeThing = {
-   name: string
-   value: number
-}
+  name: string;
+  value: number;
+};
 ```
 
 And something that implements the type `SomeThing`:
 
-``` typescript
+```ts
 const myThing: SomeThing = {
-   name: "Some Thing",
-   value: 3
-}
+  name: "Some Thing",
+  value: 3,
+};
 ```
 
 Then we pass the type `SomeThing` explicitly as `T`:
 
-``` typescript
-registerThing<SomeThing>(myThing, thing => thing.value > 2)
+```ts
+registerThing<SomeThing>(myThing, (thing) => thing.value > 2);
 ```
 
 This way the framework knows about this type and uses it to typecheck
@@ -930,8 +933,8 @@ This already works in the example above: since we have a parameter
 `thing` of type `T` we can also omit the generic type as it can be
 inferred:
 
-``` typescript
-registerThing(myThing, thing => thing.value > 2)
+```ts
+registerThing(myThing, (thing) => thing.value > 2);
 ```
 
 Because of type inference, TypeScript still knows the `thing` argument
@@ -985,7 +988,11 @@ I hope this overview helped you understand the decisions made by
 frameworks a bit better.
 
 And if you design a framework -- which [you should
-do](https://blog.startifact.com/posts/roll-your-own-frameworks/), as
+do](/posts/roll-your-own-frameworks/), as
 larger applications need frameworks to stay coherent -- you now
 hopefully have some more concepts to work with to help you make better
 design decisions.
+
+```
+
+```

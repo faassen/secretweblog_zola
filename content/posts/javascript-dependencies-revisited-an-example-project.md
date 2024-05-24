@@ -11,14 +11,14 @@ tags = ["javascript", "packaging"]
 
 A few years ago I wrote an [article on how I was overwhelmed by
 JavaScript
-dependencies](http://blog.startifact.com/posts/overwhelmed-by-javascript-dependencies.html).
+dependencies](/posts/overwhelmed-by-javascript-dependencies.html).
 In it I explored the difficulty of managing dependencies in a JavaScript
 project: both internal modules as well as depending on external
 packages. There were a ton of options available, and none of them seemed
 to entirely fit what I wanted. I [followed up on
-it](http://blog.startifact.com/posts/js-dependency-tools-redux.html)
+it](/posts/js-dependency-tools-redux.html)
 going into the problem in more depth. Typical for JavaScript there were
-a *lot* of different solutions for this problem.
+a _lot_ of different solutions for this problem.
 
 The article on how I was overwhelmed is consistently one of the most
 read articles on this blog, even though the overwhelming majority of

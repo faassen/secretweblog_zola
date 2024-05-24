@@ -30,10 +30,10 @@ We're planning a few big changes for Obviel after 1.0:
 - finally finish Obviel Sync - a very configurable framework for syncing
   models with a backend (such as a HTTP server). We've made a huge leap
   forward with this recently, and there is also a lot of potential in
-  this, so this *will* happen.
+  this, so this _will_ happen.
 - use more JavaScript tools to manage the codebase besides Buster.js
   which we already use for test running. The main aim right now is to
   split Obviel's code into smaller modules, and still generate a simple
   usable `.js` package so it's easy to include in a codebase. See this
   blog entry for [some of my packaging
-  explorations](http://blog.startifact.com/posts/overwhelmed-by-javascript-dependencies.html).
+  explorations](/posts/overwhelmed-by-javascript-dependencies.html).

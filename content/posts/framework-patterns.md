@@ -17,7 +17,7 @@ bring some of the words. The words are the code you bring into it.
 
 If you as a developer use a framework, you need to tell it about your
 code. You need to tell the framework what to call, when. Let's call this
-*configuring* the framework.
+_configuring_ the framework.
 
 There are many ways to configure a framework. Each approach has its own
 trade-offs. I will describe some of these framework configuration
@@ -48,7 +48,7 @@ behavior.
 This is a <span class="title-ref">Form</span> class where you can pass
 in a function that implements what should happen when you save the form.
 
-``` python
+```python
 from framework import Form
 
 def my_save(data):
@@ -62,7 +62,7 @@ my_form = Form(save=my_save)
 A real-world example: <span class="title-ref">map</span> is a
 (nano)framework that takes a (pure) function:
 
-``` python
+```python
 >>> list(map(lambda x: x * x, [1, 2, 3]))
 [1, 4, 9]
 ```
@@ -111,7 +111,7 @@ framework will call.
 
 ## Fictional example
 
-``` python
+```python
 from framework import FormBase
 
 class MyForm(FormBase):
@@ -126,7 +126,7 @@ Framework even more.
 
 Here's an example from Django REST Framework:
 
-``` python
+```python
 class AccountViewSet(viewsets.ModelViewSet):
     """
     A simple ViewSet for viewing and editing accounts.
@@ -183,7 +183,7 @@ yourself.
 
 And then even with a well designed base class with plausible overridable
 methods, it can still be surprisingly hard for you to do what you
-actually *need* because the contract of the base class is just not right
+actually _need_ because the contract of the base class is just not right
 for your use case.
 
 Languages like Java and TypeScript offer the framework implementer a way
@@ -210,13 +210,13 @@ them. Too much flexibility can make it harder for the framework to offer
 useful features.
 
 Base classes also don't lend themselves very well to run-time dynamism -
-some languages (like Python) *do* let you generate a subclass
+some languages (like Python) _do_ let you generate a subclass
 dynamically with custom methods, but that kind of code is difficult to
 understand.
 
 I think the disadvantages of subclassing outweigh the advantages for a
 framework's external API. I still sometimes use base classes
-*internally* in a library or framework -- base classes are a lightweight
+_internally_ in a library or framework -- base classes are a lightweight
 way to do reuse there. In this context many of the disadvantages go
 away: you are in control of the base class contract yourself and you
 presumably understand it.
@@ -232,7 +232,7 @@ framework calls.
 
 ## Fictional example
 
-``` python
+```python
 from framework import Form, IFormBackend
 
 class MyFormBackend(IFormBackend):
@@ -252,7 +252,7 @@ If you implement it, the framework (in this case the Python language)
 will be able to do all sorts of things with it -- print out its
 contents, turn it into a list, reverse it, etc.
 
-``` python
+```python
 class RandomIterable:
     def __iter__(self):
          return self
@@ -267,7 +267,7 @@ class RandomIterable:
 Many typed languages offer native support for interfaces. But what if
 your language doesn't do that?
 
-In a dynamically typed language you don't really *need* to do anything:
+In a dynamically typed language you don't really _need_ to do anything:
 any object can implement any interface. It's just you don't really get a
 lot of guidance from the language. What if you want a bit more?
 
@@ -282,7 +282,7 @@ But let's say you don't have all of that or don't want to bother yet as
 you're just prototyping. You can use a simple Python base class to
 describe an interface:
 
-``` python
+```python
 class IFormBackend:
     def load(self):
         "Load the data from the backend. Should return a dict with the data."
@@ -338,7 +338,7 @@ build on top of this basic pattern -- I will elaborate on that later.
 
 ## Fictional Example
 
-``` python
+```python
 from framework import form_save_registry
 
 def save(data):
@@ -353,7 +353,7 @@ form_save_registry.register('my_form', save)
 A URL router such as in a web framework uses some type of registry. Here
 is an example from the Falcon web framework:
 
-``` python
+```python
 class QuoteResource:
     def on_get(self, req, resp):
         ... user code ...
@@ -415,7 +415,7 @@ database models, views and controllers by matching up names.
 
 ## Fictional example
 
-``` python
+```python
 # the framework looks for things prefixed form_save_. It hooks this
 # up with `myform` which is defined elsewhere in a module named `forms`
 def form_save_myform(data):
@@ -430,7 +430,7 @@ modules and functions prefixed by <span class="title-ref">test\_</span>.
 pytest also goes further and inspects the arguments to functions to
 figure out more things.
 
-``` python
+```python
 def test_ehlo(smtp_connection):
     response, msg = smtp_connection.ehlo()
     assert response == 250
@@ -451,7 +451,7 @@ provides.
 ## Trade-offs
 
 Convention over configuration can be great. It allows the user to type
-code and have it work without *any* ceremony. It can enforce useful
+code and have it work without _any_ ceremony. It can enforce useful
 norms that makes code easier to read -- it makes sense to prefix tests
 with <span class="title-ref">test\_</span> anyway, as that allows the
 human reader to recognize them.
@@ -508,7 +508,7 @@ A framework can exploit these side-effects to do some registration.
 
 ## Fictional example
 
-``` python
+```python
 from framework import FormBase
 
 class MyForm(FormBase):
@@ -524,7 +524,7 @@ When you declare a Django model by subclassing from its
 <span class="title-ref">Model</span> base class, Django automatically
 creates a new relational database table for it.
 
-``` python
+```python
 from django.db import models
 
 class Person(models.Model):
@@ -570,7 +570,7 @@ registry.
 
 ## Fictional example
 
-``` python
+```python
 from framework import form_save_registry
 
 # we define and configure the function at the same time
@@ -584,7 +584,7 @@ def save(data):
 A real-world example is the <span class="title-ref">@app.route</span>
 decorator of the Flask web framework.
 
-``` python
+```python
 from flask import Flask
 app = Flask(__name__)
 
@@ -597,7 +597,7 @@ def hello_world():
 
 I use this method of configuring software sometimes, but I'm also aware
 of its limitations -- I tend to go for language integrated
-*declaration*, discussed below, which looks identical to the end user
+_declaration_, discussed below, which looks identical to the end user
 but is more predictable.
 
 I'm warier than most about exposing this as an API to application
@@ -639,7 +639,7 @@ system.
 
 ## Fictional example
 
-``` JSON
+```JSON
 {
    "form": {
      "name": "my_form",
@@ -659,12 +659,12 @@ configure the way our system works. Here we plug in the
 
 [Pyramid](https://trypyramid.com/) and [Plone](https://plone.org/) both
 are descendants of
-[Zope](https://blog.startifact.com/posts/my-exit-from-zope.html), and
+[Zope](/posts/my-exit-from-zope.html), and
 you can use ZCML, a XML-derived configuration language with them both.
 
 Here is some ZCML from Plone:
 
-``` XML
+```XML
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
@@ -729,7 +729,7 @@ application. For many frameworks it can be much nicer to co-locate
 configuration with code.
 
 A DSL also provides little flexibility during run-time. While you
-*could* generate configuration code dynamically, that's a level of meta
+_could_ generate configuration code dynamically, that's a level of meta
 that's quite expensive (lots of generate/parse cycles) and it can lead
 to headaches for the developers trying to understand what's going on.
 
@@ -751,7 +751,7 @@ are they executed, resulting in actual registrations.
 
 ## Fictional example
 
-``` python
+```python
 from framework import Config
 
 def save(data):
@@ -770,7 +770,7 @@ the configuration has been validated.
 
 From the Pyramid web framework:
 
-``` python
+```python
 def hello_world(request):
     return Response('Hello World!')
 
@@ -780,7 +780,7 @@ with Configurator() as config:
 ```
 
 This looks very similar to a plain registry, but inside something else
-is going on: it first collects *all* registrations, and then generically
+is going on: it first collects _all_ registrations, and then generically
 detects whether there are conflicts, and generically applies overrides.
 Once the code exits the <span class="title-ref">with</span> statement,
 config is complete and committed.
@@ -815,7 +815,7 @@ declaration.
 
 ## Fictional example
 
-``` python
+```python
 from framework import Config
 
 config = Config()
@@ -834,7 +834,7 @@ config.commit()
 My own [Morepath](https://morepath.readthedocs.io) web framework is
 configured this way.
 
-``` python
+```python
 import morepath
 
 class App(morepath.App):
@@ -864,7 +864,7 @@ with new behavior for that path, but the same view.
 I like this way of configuring code very much, so I built a framework
 for it.
 
-This *looks* very similar to language-integrated **registration** but
+This _looks_ very similar to language-integrated **registration** but
 the behavior is declarative.
 
 It's more explicit than convention over configuration, but still low on

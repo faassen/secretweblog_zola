@@ -89,9 +89,9 @@ interest you; don't worry about it covering everything. Banish any
 thoughts about backwards compatibility and how to upgrade existing large
 code bases; that would be detrimental to the spirit of playfulness.
 
-*"Why are you reimplementing zope.interface, Martijn?"*
+_"Why are you reimplementing zope.interface, Martijn?"_
 
-*"Just for fun, I don't expect anyone to use this."*
+_"Just for fun, I don't expect anyone to use this."_
 
 After a few years of occasional play with various ideas I had concerning
 `zope.interface`, they finally started to come together in 2013. The
@@ -104,7 +104,7 @@ article may be somewhat fictional for educational purposes.
 
 Reg initially worked like this:
 
-``` python
+```python
 # the view API
 class IView(reg.Interface):
     def __call__(self):
@@ -153,7 +153,7 @@ functions](https://en.wikipedia.org/wiki/Generic_function) with
 [multiple dispatch](https://en.wikipedia.org/wiki/Multiple_dispatch)
 instead of interfaces and adapters. Something like this:
 
-``` python
+```python
 # generic function definition instead of interface
 @reg.generic
 def view(obj, request):
@@ -178,7 +178,7 @@ any more large changes.
 
 # Major transition to predicate dispatch
 
-*Meanwhile...*
+_Meanwhile..._
 
 I created a predicate registry implementation. This lived inside of a
 module in Reg, but it could as well have been in a totally different
@@ -193,7 +193,7 @@ type.
 Two things came together in the fall of 2014:
 
 - I realized that it was annoying that the multiple dispatch system
-  automatically dispatched on *all* arguments to the function -- in many
+  automatically dispatched on _all_ arguments to the function -- in many
   cases that wasn't required.
 - I needed the predicate system to understand about types and
   inheritance. The multiple dispatch system in Reg understood types but
@@ -206,7 +206,7 @@ system, I could actually unify the two systems. **The dialectic (thesis,
 antithesis, synthesis) is a strong force for creativity in software
 development**
 
-With predicate dispatch you can dispatch on *any* aspect of the
+With predicate dispatch you can dispatch on _any_ aspect of the
 arguments to a function; not just its class but also any attribute of
 it. You can still do multiple dispatch as before: dispatch on the type
 of an argument is now just be a special case. Since arguments now needed
@@ -222,7 +222,7 @@ reimplementation you gain understanding.**
 With that insight, the equilibrium was punctuated, and Reg underwent
 rapid change again. Now it looked like this:
 
-``` python
+```python
 # dispatch function instead of generic function
 # note how we explicitly name the arguments we want to match on
 # (obj, request) in the predicates, and how we match on the
@@ -279,7 +279,7 @@ I mentioned before how the code samples in this article are somewhat
 fictional. One fiction is the way you register implementations in Reg.
 It didn't actually work this way until now. Instead of this:
 
-``` python
+```python
 @view.register(obj=Document, request_method='GET')
 def document_view(obj, request):
     return "<p>%s</p>" % obj.content
@@ -287,7 +287,7 @@ def document_view(obj, request):
 
 until very recently, you'd write something like this:
 
-``` python
+```python
 r = reg.Registry()
 
 def document_view(obj, request):
@@ -305,14 +305,14 @@ smaller ones, each with their own context.
 To control which context Reg used you could pass in a special magic
 `lookup` parameter to each dispatch function call:
 
-``` python
+```python
 view(doc, request, lookup=registry)
 ```
 
 Dispatch implementations needed access to the context too. They could
 get to it by defining a magic lookup argument in their signature:
 
-``` python
+```python
 def document_view(obj, request, lookup):
     return "<p>%s</p>" % process_content(obj.content, lookup=lookup)
 ```
@@ -333,12 +333,12 @@ When Stefano and I discussed this we came up with the following ideas:
   dispatch functions as we've already seen in the examples above. Each
   function keeps its own private registry. Stefano pushed hard for this
   while I was resistant, but he was right.
-- To control context, introduce the notion of dispatch *methods*. Build
+- To control context, introduce the notion of dispatch _methods_. Build
   dispatch methods on dispatch functions.
 
 A dispatch method is associated with a context class:
 
-``` python
+```python
 class Context:
     @reg.dispatch_method(reg.match_instance('obj'))
     def foo(self, obj):
@@ -347,7 +347,7 @@ class Context:
 
 You can register implementations with the method:
 
-``` python
+```python
 @Context.foo.register(obj=Document)
 def implementation(self, obj):
     ...
@@ -355,15 +355,15 @@ def implementation(self, obj):
 
 When you call the dispatch method you call it in its context:
 
-``` python
+```python
 c = Context()
 c.foo(doc)
 ```
 
-Each subclass of the context class creates a *new* context, with a fresh
+Each subclass of the context class creates a _new_ context, with a fresh
 set of registrations:
 
-``` python
+```python
 # a completely new and clean context
 class NewContext(Context):
     pass
@@ -412,4 +412,4 @@ devs [are one click away](https://discord.gg/0xRQrJnOPiRsEANa).
 
 **Self-serving mercenary statement**: if you need a developer and like
 what you hear, talk to me -- I'm on the [lookout for interesting
-projects](http://blog.startifact.com/posts/looking-for-project.html).
+projects](/posts/looking-for-project.html).

@@ -8,7 +8,7 @@ tags = ["javascript", "python", "planetpython", "graphql", "relay"]
 +++
 
 GraphQL is an interesting technology originating at Facebook. It is a
-query language that lets you get JSON results from a server. It's *not*
+query language that lets you get JSON results from a server. It's _not_
 a database system but can work with any kind of backend structure. It
 tries to solve the same issues traditionally solved by HTTP "REST-ish"
 APIs.
@@ -58,7 +58,7 @@ they're not commonly used.
 REST will be here to stay for the foreseeable future. There is also
 nothing inherent in REST that stops you from solving this -- I wrote
 about this in a [previous blog
-entry](http://blog.startifact.com/posts/graphql-and-rest.html). But
+entry](/posts/graphql-and-rest.html). But
 meanwhile GraphQL has already solved much of this stuff, so at the very
 least is interesting to explore.
 
@@ -189,7 +189,7 @@ on the backend? I created a demo project,
 [relaypy](https://github.com/faassen/relaypy), that experimentally pulls
 all these pieces together. It exposes a GraphQL server with a
 Relay-compliant schema. I hooked up some simple React + Relay code on
-the frontend. *It worked!* In addition, I threw in a cool
+the frontend. _It worked!_ In addition, I threw in a cool
 introspection/query UI that was created for GraphQL called
 <span class="title-ref">GraphiQL</span>. This works too!
 

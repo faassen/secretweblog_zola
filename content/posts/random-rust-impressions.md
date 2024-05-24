@@ -29,7 +29,7 @@ it's complete overkill and could just as well be sync Python, but it's
 cool that it uses almost zero CPU or memory.
 
 This year I wrote an artificial life simulation that actually does work:
-[Apilar](https://blog.startifact.com/posts/apilar-an-alife-system/). I
+[Apilar](/posts/apilar-an-alife-system/). I
 made it run on multiple cores, and hooked it up with a web frontend
 written in TypeScript using [Axum](https://github.com/tokio-rs/axum).
 
@@ -118,7 +118,7 @@ Type Whack-A-Mole can be strangely addictive. It think this is because
 there's a quick feedback loop from the tooling; in this it's quite
 similar to test driven development. I've also experienced type
 whack-a-mole with TypeScript, but less frequently: in TS it's more about
-getting the *ergonomics* of the types right, deriving types from each
+getting the _ergonomics_ of the types right, deriving types from each
 other to make the user of the API have the best feedback possible. With
 Rust it's more about getting stuff to work, though the rules of Rust
 definitely push you into certain design patterns.
@@ -171,7 +171,7 @@ work out of the box, but the other reason is what you can do at
 compile-time.
 
 In dynamic programming language compile-time features are typically
-almost absent. With Rust, there is a *lot*. Here's an incomplete
+almost absent. With Rust, there is a _lot_. Here's an incomplete
 grab-bag:
 
 - constants are evaluated at compile-time. This means you can't use
@@ -203,7 +203,7 @@ typically don't find it cumbersome to create the fake implementation by
 hand, and doing so makes the dependencies really clear.
 
 Moreover some mocking libraries have the ability to override code in
-*existing libraries* with mocked versions during runtime. This is really
+_existing libraries_ with mocked versions during runtime. This is really
 powerful. It allows you to create tests for more tightly and implicitly
 coupled code. This is the opposite of making dependencies in code
 explicit and minimal so I actively avoid doing using that feature when I
@@ -313,13 +313,13 @@ powerful, but they can have significant downsides.
 Then there are async streams. Async stream iteration isn't built into
 the language yet, but that's not a big problem because a
 <span class="title-ref">while</span> loop works well to consume a
-stream. *Generating* an async stream is a lot trickier. It would be made
+stream. _Generating_ an async stream is a lot trickier. It would be made
 a lot easier by a <span class="title-ref">yield</span> statement,
 something that Rust doesn't support yet. Unless you use more macro
 magic: the
 [async-stream](https://docs.rs/async-stream/latest/async_stream/) crate
 allows you to use the <span class="title-ref">yield</span> statement
-anyway! If you want to use *recursion* when you generate an async stream
+anyway! If you want to use _recursion_ when you generate an async stream
 you have to worry about memory allocation, or alternatively use a crate
 called
 [async-recursion](https://docs.rs/async-recursion/latest/async_recursion/)
@@ -351,7 +351,7 @@ being, beware.
 
 It took a while to get used to it, but I am now fairly proficient at
 writing plain synchronous Rust code. I wrote
-[Apilar](https://blog.startifact.com/posts/apilar-an-alife-system/) in a
+[Apilar](/posts/apilar-an-alife-system/) in a
 48 hours programming contest, and it included a new stack-based
 programming language with assembler and disassembler, a CLI and
 text-based visualization.
@@ -369,8 +369,8 @@ stuff.
 
 Sometimes I want systems programming; it's useful when I really care
 about performance. High performance can sometimes make a qualitative
-difference too -- if you can do something *a lot faster* or with *a lot
-less memory* you might start to use it in new, creative ways.
+difference too -- if you can do something _a lot faster_ or with _a lot
+less memory_ you might start to use it in new, creative ways.
 
 Moreover, computers are devices that use a lot of energy. It would be
 nice if we could write more efficient software, to use a bit less.

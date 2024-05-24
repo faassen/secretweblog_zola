@@ -25,10 +25,10 @@ Morepath, [Morepath
 A batching UI is a UI where you have a larger amount of data available
 than you want to show to the user at once. You instead partition the
 data in smaller batches, and you let the user navigate through these
-batches by clicking a *previous* and *next* link. If you have 56 items
+batches by clicking a _previous_ and _next_ link. If you have 56 items
 in total and the batch size is 10, you first see items 0-9. You can then
-click *next* to see items 10-19, then items 20-29, and so on until you
-see the last few items 50-55. Clicking *previous* will take you
+click _next_ to see items 10-19, then items 20-29, and so on until you
+see the last few items 50-55. Clicking _previous_ will take you
 backwards again.
 
 In this example, a URL to see a single batch looks like this:
@@ -55,7 +55,7 @@ batch through.
 
 Here's the <span class="title-ref">Person</span> class:
 
-``` python
+```python
 class Person(object):
     def __init__(self, id, name, address, email):
         self.id = id
@@ -69,7 +69,7 @@ We use the neat
 create some fake data for our fake database; the fake database is just a
 Python list:
 
-``` python
+```python
 fake = Faker()
 
 def generate_random_person(id):
@@ -85,7 +85,7 @@ So far nothing special. But next we create a special
 <span class="title-ref">PersonCollection</span> model that represents a
 batch of persons:
 
-``` python
+```python
 class PersonCollection(object):
     def __init__(self, persons, start):
         self.persons = persons
@@ -146,7 +146,7 @@ of these instances without dealing with requests, HTML, etc.
 Now we expose these models to the web. We tell Morepath what models are
 behind what URLs, and how to create URLs to models:
 
-``` python
+```python
 @App.path(model=PersonCollection, path='/')
 def get_person_collection(start=0):
     return PersonCollection(person_db, start)
@@ -162,7 +162,7 @@ def get_person(id):
 
 Let's look at this in more detail:
 
-``` python
+```python
 @App.path(model=PersonCollection, path='/')
 def get_person_collection(start=0):
     return PersonCollection(person_db, start)
@@ -189,7 +189,7 @@ This is not a lot of code, but it actually tells Morepath a lot:
 
 Now let's look at \`get_person\`:
 
-``` python
+```python
 @App.path(model=Person, path='{id}',
           converters={'id': int})
 def get_person(id):
@@ -220,7 +220,7 @@ these URLs will respond with a 404.
 Let's fix this by defining some Morepath views. We'll do a simple view
 for <span class="title-ref">Person</span> first:
 
-``` python
+```python
 @App.html(model=Person, template='person.jinja2')
 def person_default(self, request):
     return {
@@ -248,7 +248,7 @@ data returned in the dictionary.
 The template <span class="title-ref">person.jinja2</span> looks like
 this:
 
-``` html+jinja
+```html.j2
 <!DOCTYPE html>
 <html>
   <head>
@@ -277,7 +277,7 @@ you prefer that.
 
 Here is the view that exposes \`PersonCollection\`:
 
-``` python
+```python
 @App.html(model=PersonCollection, template='person_collection.jinja2')
 def person_collection_default(self, request):
     return {
@@ -297,7 +297,7 @@ batch exists (this is the first or the last batch).
 
 Let's look at the template:
 
-``` html+jinja
+```html.j2
 <!DOCTYPE html>
 <html>
  <head>

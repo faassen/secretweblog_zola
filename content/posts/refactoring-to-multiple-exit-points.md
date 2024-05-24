@@ -24,7 +24,7 @@ reading.
 
 Let's consider the following function:
 
-``` python
+```python
 def process_items(items, bar, default):
     result = None
     if bar is not None:
@@ -68,7 +68,7 @@ Objections could be:
 That is all so, but let's do it anyway and see what happens, and then
 get back to this in the end:
 
-``` python
+```python
 def process_items(items, bar, default):
     result = None
     if bar is not None:
@@ -108,7 +108,7 @@ We notice that result is only touched once in each code path in
 `process_item`. This means we can convert the function to use multiple
 exit points with the `return` statement, so let's do that:
 
-``` python
+```python
 def process_item(item, bar):
     if item.match == "A":
         return item.payload
@@ -126,7 +126,7 @@ def process_item(item, bar):
 That's still more complicated than it should be. Since we have early
 exit points, we can get rid of the `elif` and `else` clauses:
 
-``` python
+```python
 def process_item(item, bar):
     if item.match == "A":
         return item.payload
@@ -141,7 +141,7 @@ def process_item(item, bar):
 Some indentation is gone, which is a good sign. And we see another
 `else` we can get rid of now:
 
-``` python
+```python
 def process_item(item, bar):
     if item.match == "A":
         return item.payload
@@ -158,7 +158,7 @@ I think the `return None` case is special, so let's move that up. That's
 safe as `A` and `B` for `item.match` are mutually exclusive and this
 function has no side effects:
 
-``` python
+```python
 def process_item(item, bar):
     if item.match == "B":
         return None
@@ -195,13 +195,13 @@ many other languages, such as Python, we're on our own. But we certainly
 still have to pay attention to `None`.
 
 See also my [the Story of
-None](https://blog.startifact.com/posts/none_01_the_beginning.html).
+None](/posts/none_01_the_beginning.html).
 
 # Back to process_items
 
 Now let's look at the `process_items` function again:
 
-``` python
+```python
 def process_items(items, bar, default):
     result = None
     if bar is not None:
@@ -220,7 +220,7 @@ def process_items(items, bar, default):
 
 Let's first transform this so we return early when we can:
 
-``` python
+```python
 def process_items(items, bar, default):
     result = None
     if bar is not None:
@@ -240,7 +240,7 @@ def process_items(items, bar, default):
 We can see clearly that `"No bar"` is returned if `bar is None`, so
 let's flip that condition:
 
-``` python
+```python
 def process_items(items, bar, default):
     result = None
     if bar is None:
@@ -259,7 +259,7 @@ We can now see the `else` clause is not needed anymore, so let's
 unindent the `for` loop. We also move `result = None` below that guard
 clause for `bar is None`, as it's not needed until that point:
 
-``` python
+```python
 def process_items(items, bar, default):
     if bar is None:
         return "No bar"
@@ -283,12 +283,12 @@ on refactoring this function a bit more.
 
 We take a look at the `break`. If `result is not None`, we break. Then
 after that we check if `result is None`. This can only happen if the
-loop never breaked. If the loop *did* break we end up returning
+loop never breaked. If the loop _did_ break we end up returning
 `result`.
 
 So we can just as well do the `return result` immediately in the loop:
 
-``` python
+```python
 def process_items(items, bar, default):
     if bar is None:
         return "No bar"
@@ -303,13 +303,13 @@ def process_items(items, bar, default):
 ```
 
 Let's look at the bit of code past the end of the loop again. We know
-that `result` *has* to be `None` if it reaches there. It's initialized
+that `result` _has_ to be `None` if it reaches there. It's initialized
 to <span class="title-ref">None</span> and the loop returns early if
 it's ever not <span class="title-ref">None</span>. So why do we even
 check whether `result is None` anymore? We can simply always return
 `default`:
 
-``` python
+```python
 def process_items(items, bar, default):
     if bar is None:
         return "No bar"
@@ -324,7 +324,7 @@ def process_items(items, bar, default):
 We have no more business setting `result` to `None` before the loop
 starts. It's a local variable within the loop body now:
 
-``` python
+```python
 def process_items(items, bar, default):
     if bar is None:
         return "No bar"
@@ -341,7 +341,7 @@ Let's look at where we started and ended.
 
 We started with this:
 
-``` python
+```python
 def process_items(items, bar, default):
     result = None
     if bar is not None:
@@ -366,7 +366,7 @@ def process_items(items, bar, default):
 
 And we ended with this:
 
-``` python
+```python
 def process_items(items, bar, default):
     if bar is None:
         return "No bar"
@@ -418,7 +418,7 @@ guard clause. If we know (or find a way to guarantee) that
 `item.payload` and `item.override` can never be `None` either, we can do
 this:
 
-``` python
+```python
 def process_items(items, bar, default):
     if bar is None:
         return "No bar"
