@@ -12,17 +12,29 @@ theme = "tabi"
 title = "Secret Weblog"
 author = "Martijn Faassen"
 
-
 taxonomies = [{ name = "tags", feed = true }]
 
 generate_feed = true
+
+[search]
+include_title = true
+include_description = true
+include_path = true
+include_content = true
+index_format = "elasticlunr_json"
 
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
 
+[link_checker]
+internal_level = "error"
+
 [extra]
+skin = "teal"
+
+
 # Put all your custom variables here
 menu = [
     { name = "blog", url = "posts", trailing_slash = true },
@@ -38,4 +50,38 @@ footer_menu = [
     { url = "sitemap.xml", name = "Sitemap", trailing_slash = false },
 ]
 
+theme_switcher = true
 compact_tags = false
+show_previous_next_article_links = true
+toc = false
+long_date_format = "%Y-%m-%d"
+short_date_format = "%Y-%m-%d"
+show_reading_time = false
+favicon_emoji = "🫥"
+copyright = "$TITLE © $CURRENT_YEAR $AUTHOR $SEPARATOR Unless otherwise noted, the content in this website is available under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license."
+
+allowed_domains = [
+    { directive = "font-src", domains = [
+        "'self'",
+        "data:",
+    ] },
+    { directive = "img-src", domains = [
+        "'self'",
+        "https://*",
+        "data:",
+    ] },
+    { directive = "media-src", domains = [
+        "'self'",
+    ] },
+    { directive = "script-src", domains = [
+        "'self'",
+    ] },
+    { directive = "style-src", domains = [
+        "'self'",
+    ] },
+    { directive = "frame-src", domains = [
+        "player.vimeo.com",
+        "https://www.youtube-nocookie.com",
+    ] },
+]
+enable_csp = true
