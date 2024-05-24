@@ -90,3 +90,5 @@ allowed_domains = [
     ] },
 ]
 enable_csp = true
+
+invert_previous_next_article_links = true
