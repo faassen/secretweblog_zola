@@ -78,7 +78,8 @@ between pages only updates the page being edited. That's definitely a lot
 better.
 
 I've brought up the runtime issue with the Zola devs and they say it may be a
-bug as it should be able to scale to much larger number of pages.
+bug as it should be able to scale to much larger number of pages. So we shall
+see!
 
 All of this is tolerable enough, anyway.
 
