@@ -30,7 +30,7 @@ index_format = "elasticlunr_json"
 highlight_code = true
 # have to use the css theme with tabi theme
 # https://github.com/welpo/tabi/issues/320
-highlight_theme = "css"
+highlight_theme = "gruvbox-light"
 
 
 [link_checker]
@@ -87,6 +87,8 @@ allowed_domains = [
     ] },
     { directive = "style-src", domains = [
         "'self'",
+        # inline styles won't work otherwise https://github.com/welpo/tabi/issues/320
+        "'unsafe-inline'",
     ] },
     { directive = "frame-src", domains = [
         "player.vimeo.com",
