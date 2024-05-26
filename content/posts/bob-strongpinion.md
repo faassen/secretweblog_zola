@@ -105,3 +105,50 @@ points](@/posts/10-reasons-to-check-out-the-morepath-web-framework-in-2015.md)
 before. It got some upvotes.
 
 But in the end I keep choosing not to be him.
+
+## Preserved Comments
+
+### Sean Upton
+
+There are those of us who have quietly (well, sort of) read and absorbed your
+thoughts on software for quite a long time. You do not need to stir the pot to
+have influence that may be well beyond what you see in places like reddit.
+
+### Marfig
+
+And anyone should be glad you are not him. In all truth, reddit is clearly not
+the best place to post... err... anything, really. The culture of that place is
+intellectually uninteresting (to say it nicely), which makes it a rather obtuse
+way to share or gather knowledge. But it is also unpredictable; your article
+could gather a 100 votes on some other day.
+
+And yet, see what happens when you stick to the core community of the subject
+you wish to address; I got to your blog through the Planet Python aggregator.
+
+Knowledge should be shared in server mode. Put your knowledge up, open a
+"port", "listen to requests", and automatically serve your knowledge . Don't
+care who makes requests or how many requests are made. In the end, it's our
+human responsibility to share knowledge, but it is our individual
+responsibility to look for it.
+
+### Gary
+
+I've been a programmer for 35 years, having consumed an almost uncountable
+number of blogs and other content along the way. I've followed the development
+of Morepath with interest and found the idea of punctuated equilibrium in
+software thought-provoking. Your contemplation of Bob Strongopinion makes me
+ashamed to tell you that this is the first comment I've made on any
+post--anywhere. It's simply not occurred to me that my feedback might be
+appreciated/interesting/worthwhile enough to warrant it.
+
+Thinking about it, I believe I've developed a strong "intake-only" mindset--the
+Internet is where I go to stuff a bit more into my brain. The nature of the
+medium (and probably some personal failing :) ) make it too easy to forget that
+there are human beings putting a lot of work into this content.
+
+Like many things on the Internet, if there's one instance of something there a
+likely many more. Not to be too dramatic, but who knows how many minds like
+mine you've touched along the way? That we may have passively contributed to
+the creation of the Bob Strongopinions of the Net is disturbing. I agree with
+Marfig that Reddit is a poor barometer and I hope you'll take some
+encouragement from this.

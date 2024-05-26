@@ -7,7 +7,7 @@ slug = "roll-your-own-frameworks"
 tags = ["python", "javascript", "framework", "programming", "planetpython"]
 +++
 
-# Introduction
+## Introduction
 
 When I build an application, I build frameworks along the way. I
 recently realized that not everybody thinks this is normal, so I thought
@@ -53,7 +53,7 @@ applications:
 - countless tiny frameworks. This is important so I will tell you more
   later.
 
-# Why a framework at all?
+## Why a framework at all?
 
 Frameworks are overhead. You need to learn them. They can be in the way.
 They may have performance implications.
@@ -76,7 +76,7 @@ Successful applications tend to grow in complexity over time. Frameworks
 can help you prevent your application from growing into a big ball of
 mud.
 
-# Why aren't existing frameworks enough?
+## Why aren't existing frameworks enough?
 
 Why should you roll your own frameworks at all and not just build on top
 of an existing one? After all, an existing popular framework has many
@@ -98,7 +98,7 @@ okay; sometimes the price you have to pay to write nice code is too high
 -- it's difficult to write, it's hard to test, or the maintenance burden
 is enormous.
 
-## Small versus large
+### Small versus large
 
 Small frameworks that do one thing well tend to be less constraining
 than larger frameworks that arrange a whole set of things for you. A web
@@ -123,7 +123,7 @@ might have been less room for this creative ferment. But it does load up
 developers with extra choices to make, such as whether they should use
 Redux, Mobx or something else.
 
-## Mind the gaps
+### Mind the gaps
 
 No matter which frameworks you choose to use, there will be gaps. There
 will be important functionality of your application where your existing
@@ -135,7 +135,7 @@ may be tolerable for minor features, but unfortunately it's most likely
 to happen in core features of your application, where you spend the most
 effort. What to do then?
 
-# Roll your own
+## Roll your own
 
 That's when I start thinking about rolling my own framework. I focus my
 own framework on exactly the problems the application needs help with
@@ -146,7 +146,7 @@ to write and maintain the framework.
 I think people often underestimate the benefits of doing this and
 overestimate the costs, so I will discuss both.
 
-## Benefits
+### Benefits
 
 The benefits are the same as you get from any framework. Your custom
 framework helps organize your code in structures that help with
@@ -185,7 +185,7 @@ from the application, though this also has drawbacks -- you need to
 manage these packages -- so decide whether you should do this on a
 case-by-case basis.
 
-## Costs
+### Costs
 
 All this means that the maintenance burden of your framework is less
 than you might expect -- if you extract a framework from your
@@ -198,7 +198,7 @@ think so as this would mean I'm an elite genius programmer, but I
 actually think framework creation should and can be part of the toolbox
 of any developer. It's something that you can _learn_.
 
-# Tiny frameworks
+## Tiny frameworks
 
 The act of creating a framework may seem daunting, but a framework can
 be tiny and still be worthwhile. Many frameworks fit in a single screen
@@ -252,7 +252,7 @@ Incidentally I could not describe my front-end web framework
 weren't very familiar with those ideas yet -- it was before Backbone,
 Ember, Angular, React and Vue came along. Now it's easy.
 
-# How to grow your frameworks
+## How to grow your frameworks
 
 I won't go into the technical details of how to create a framework here.
 Look at existing frameworks for guidance, and read my [Framework
@@ -260,7 +260,7 @@ Patterns](@/posts/framework-patterns.md)
 article. Instead I want to discuss ways to incrementally create
 frameworks while you build an application.
 
-## Start small
+### Start small
 
 Certainly do not try to build a grand unifying framework that will solve
 everything once it is done. This is a trap. It will result in analysis
@@ -288,7 +288,7 @@ that need it. But that is the exception to the rule: in general you
 should not build a framework before you are building the part of the
 application that needs it.
 
-## Look for opportunities
+### Look for opportunities
 
 You won't know about all the frameworks you need to build when you start
 building your application. Just iteratively build application features.
@@ -303,7 +303,7 @@ more declarative.
 Then build a modest framework to help you. Integrate it with the
 application early.
 
-## Controlled growth
+### Controlled growth
 
 When you integrate a framework into an application, first tackle a
 single case, and then spread it out to all the other places you can use
@@ -324,7 +324,7 @@ set defaults in the same validation phase. And since you have spread it
 to all forms already, now it is easy to add this new functionality
 everywhere in your application all at once.
 
-## Pretend a little
+### Pretend a little
 
 Don't worry too much about whether your framework is useful in another
 context. It's already useful if it helps you in a single application.
@@ -336,7 +336,7 @@ But because you didn't open-source it or since your open source project
 has 1.5 users (like most of mine!) don't be too afraid to break APIs in
 the early days if you need it. Mold them like the wet clay they are.
 
-# Conclusion
+## Conclusion
 
 Use existing frameworks where you can, but don't be afraid to roll your
 own when you can't. It may seem daunting but it can be learned. By
@@ -353,10 +353,48 @@ make it do what _you_ need, even if you change your mind along the way.
 So plant a few framework seeds in the garden of your application, and
 have fun!
 
-# Thank you
+## Thank you
 
 Thank you to those who generously helped to proofread this article:
 
 - Jürgen Gmach
 - Wasim Lorgat
 - Russ Ferriday
+
+## Preserved Comments
+
+### Olumide
+
+All your examples read more like libraries than frameworks. Inversion of
+control alone doth not framework make.
+
+### Martijn Faassen
+
+I myself see a huge gray area between non-framework library and framework. I
+can however understand the perspective that inversion of control alone does not
+make a framework, but I do think it shifts the code in that direction on the
+library/framework spectrum. I'm surprised about your comment that "all your
+examples" are definitely not frameworks. Would you really consider a frontend
+web framework or a frontend router to be libraries rather than frameworks?
+
+But perhaps you are responding to the "tiny frameworks" section. I think some
+of these are more obviously frameworky than others. The SOAP connection layer
+has typical framework properties: it defines its own declarative grammar to
+declare SOAP endpoints, where you can inject your own code to influence how
+parameters are passed. It helps structure the code that uses it. The framework
+has grown to also support mocking.
+
+The excel import/export system has a way to declare fields, and you can
+override their behavior on a per-field basis with custom code.
+
+I'll grant that the URL parameter management system may fit "library" better --
+it reads a model definition and turns it into URL parameters, and back through
+JSON, and more properly is really a part to support a little search framework
+where you can define frontend models that define search parameters.
+
+I think the word "framework" invite thoughts about declarative code that helps
+to structure your application, and I would encourage people to think in that
+direction.
+
+But to those with strong opinions about whether these are libraries or
+frameworks, may I suggest you read this as "roll your own libraries"?

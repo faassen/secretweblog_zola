@@ -11,7 +11,7 @@ In this article I'm going to talk about the
 [SolidJS](https://www.solidjs.com/) frontend framework, and why I think
 it's cool and fits my brain.
 
-# React
+## React
 
 I got interested in React because of a talk by Pete Hunt at [JSConf
 Europe](@/posts/jsconf-eu-2013-impressions.md)
@@ -24,7 +24,7 @@ and the use of a virtual DOM, even though de-empathised now, was a
 revelation. I gave up my own efforts on a frontend framework and
 switched to React instead.
 
-# State management
+## State management
 
 State management on the client is something I was interested in already.
 With React I went through the pre-flux era, flux and Redux. I thought
@@ -59,7 +59,7 @@ looked at other state management systems for React (including the
 built-in hooks), but nothing could compare with the ease of use and
 power of MobX.
 
-# The Genesis of SolidJS
+## The Genesis of SolidJS
 
 This capsule history is a vague impression more than an accurate
 historical reconstruction, but it appears Ryan Carniato, the creator of
@@ -71,7 +71,7 @@ could use a KVO framework directly to update DOM. This way you get
 fine-grained updates of the UI entirely skipping the virtual DOM. This
 lead to the development of SolidJS.
 
-# SolidJS Performance
+## SolidJS Performance
 
 The SolidJS approach turned out to be fast: according to various
 benchmarks SolidJS performs near the speed of hand-optimized DOM
@@ -95,7 +95,7 @@ developer usability**.
 
 So let's look at developer usability next.
 
-# Solid and React as frameworks
+## Solid and React as frameworks
 
 What's important in a framework is that it gives you the tools to build
 your application well, keeping a lot of tradeoffs in mind: how easy is
@@ -118,7 +118,7 @@ It has functions that look a lot like React hooks; `useState` becomes
 `createSignal`, `useMemo` becomes `createMemo`, and `useEffect` becomes
 `createEffect`. Solid was immediately familiar to me as a React user.
 
-# How Solid is different from React
+## How Solid is different from React
 
 But Solid does a few things differently. You don't need to declare any
 dependencies for hooks, unlike in React. It does dependency tracking, so
@@ -166,7 +166,7 @@ fine-grained updates. But in Solid, this matters a lot less - you can
 make your components as big or small as you like and it won't make much
 of a difference.
 
-# My experience with Solid
+## My experience with Solid
 
 After playing with Solid for a couple of months I've used it for real
 projects for the first time over the last month. I found it easy to
@@ -207,3 +207,14 @@ ecosystem, but the ecosystem needs more time to grow**. For some
 projects this drawback will outweigh the benefits. I love the benefits
 though, so I am going to look for more opportunities to use Solid in the
 future.
+
+## Preserved Comments
+
+## Iain Simmons
+
+This is a great write up, and it's nice to hear this from a more personal and
+practical standpoint instead of the usual pros and cons and frameworks
+competing on arbitrary criteria.
+
+I've also been learning a lot about Solid and hope to be able to use it in my
+day-to-day work soon.
