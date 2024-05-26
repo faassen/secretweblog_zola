@@ -1,4 +1,4 @@
 #!/bin/bash
-
- rsync -rvu --del public/ faassen@startifact.com:/var/www/blog.startifact.com/
+zola build
+rsync -rvu --del public/ faassen@startifact.com:/var/www/blog.startifact.com/
  
