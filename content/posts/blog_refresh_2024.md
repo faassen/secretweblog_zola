@@ -62,14 +62,10 @@ links I broke in the 2013 transition now work again!
 I like Zola - it was easy to install and easy to configure. The Tabi theme
 makes it look nice.
 
-I figured since Zola is written in Rust it would be fast. I admit I am a bit
-disappointed. Python developers always say, it's not the raw performance but
-the cleverness of the algorithm. Nikola has a clever algorithm where it
-regenerates only those pages that have changed. It appears that Zola does not.
-
-So it takes 7 to 8 seconds to regenerate all 233 pages. That's not a lot, but
-`zola serve` makes it worse, as it watches the filesystem for changes and then
-reruns the update if there is on.
+I figured that since Zola is written in Rust it would be fast. I admit I am a
+bit disappointed. It takes 7 to 8 seconds to regenerate all 233 pages. That's
+not a lot, but `zola serve` makes it worse, as it watches the filesystem for
+changes and then reruns the update if there is on.
 
 I also see no debouncing happening, so every file change triggers a rebuild (I
 noticed a commit 2 days ago may help). So if I save a file every few seconds
@@ -77,9 +73,14 @@ noticed a commit 2 days ago may help). So if I save a file every few seconds
 was doing fixing up links), Zola sits there and rebuilds the blog over and over
 again.
 
-All of this is tolerable enough. I'm going to chat with the Zola folks about
-whether incremental rebuilds are a feasible idea - it's definitely not easy to
-implement.
+I have now learned about `zola serve --fast` which at the cost of consistency
+between pages only updates the page being edited. That's definitely a lot
+better.
+
+I've brought up the runtime issue with the Zola devs and they say it may be a
+bug as it should be able to scale to much larger number of pages.
+
+All of this is tolerable enough, anyway.
 
 ## preserving comments
 
