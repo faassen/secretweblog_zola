@@ -4,7 +4,7 @@ date = 2016-11-23
 slug = "looking-for-new-challenges"
 
 [taxonomies]
-tags = ["planetpython", "python", "react", "javascript"]
+tags = ["planetpython", "python", "react", "javascript", "rest"]
 +++
 
 Fair warning: In this blog post I aim to sell myself. I'm looking for an

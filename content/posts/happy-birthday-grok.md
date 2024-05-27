@@ -4,7 +4,7 @@ date = 2007-10-15
 slug = "happy-birthday-grok"
 
 [taxonomies]
-tags = ["grok"]
+tags = ["grok", "rest"]
 +++
 
 Grok the codebase is 1 year old this week! One year ago, from the 12th

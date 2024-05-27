@@ -4,7 +4,7 @@ date = 2015-06-29
 slug = "morepath-batching-example"
 
 [taxonomies]
-tags = ["morepath", "python", "templating", "planetpython"]
+tags = ["morepath", "python", "templating", "planetpython", "rest"]
 +++
 
 # Introduction

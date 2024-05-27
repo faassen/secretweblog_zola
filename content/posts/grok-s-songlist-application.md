@@ -4,7 +4,7 @@ date = 2009-01-10
 slug = "grok-s-songlist-application"
 
 [taxonomies]
-tags = ["grok", "framework"]
+tags = ["grok", "framework", "rest"]
 +++
 
 I've been following with interest a number of posts that talk about

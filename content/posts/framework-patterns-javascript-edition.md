@@ -4,7 +4,7 @@ date = 2021-11-01
 slug = "framework-patterns-javascript-edition"
 
 [taxonomies]
-tags = ["javascript", "typescript", "react", "framework"]
+tags = ["javascript", "typescript", "react", "framework", "rest", "programming"]
 +++
 
 Software developers use software frameworks all the time, so it's good
@@ -992,3 +992,7 @@ do](@/posts/roll-your-own-frameworks.md), as
 larger applications need frameworks to stay coherent -- you now
 hopefully have some more concepts to work with to help you make better
 design decisions.
+
+```
+
+```

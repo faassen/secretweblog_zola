@@ -4,7 +4,7 @@ date = 2014-09-08
 slug = "morepath-06-released"
 
 [taxonomies]
-tags = ["morepath", "python", "planetpython"]
+tags = ["morepath", "python", "planetpython", "rest"]
 +++
 
 What's [Morepath](http://morepath.readthedocs.org)? Morepath is your
@@ -20,7 +20,7 @@ Besides a few documentation fixes, [Morepath
 improvement and a major improvement.
 
 Both improvements have to do with a relatively obscure use case that I
-ran into lately. Application composition *should* be an important
+ran into lately. Application composition _should_ be an important
 feature in a modern web framework, and so does linking, but we only
 rarely see things like this. That we run into use cases like this goes
 to show just how far Morepath is ahead in exploring this area. See
@@ -31,8 +31,8 @@ apps](http://morepath.readthedocs.org/en/latest/app_reuse.html#linking-to-other-
 for more information on these subsystems of Morepath.
 
 The major improvement is the ability to link to other applications by
-the *name* under which they've been mounted into their parent. By
-default the name is the *path* under which they were mounted. Imagine
+the _name_ under which they've been mounted into their parent. By
+default the name is the _path_ under which they were mounted. Imagine
 you have the following URL space:
 
     /v1/
@@ -43,7 +43,7 @@ You can model this as two applications, `A` and `B` that are mounted
 under a core application mounted at `v1`. That would look like this in
 Morepath:
 
-``` python
+```python
 class V1(morepath.App):
     pass
 
@@ -72,7 +72,7 @@ def b_context():
 Consider how you'd make a link from app `A` to a resource in app `B`
 given this setup. In Morepath before 0.6, you'd have to write:
 
-``` python
+```python
 request.parent.child(B).link(obj)
 ```
 
@@ -86,7 +86,7 @@ combination happens a lot and we've introduced a new
 [sibling](http://morepath.readthedocs.org/en/latest/api.html#morepath.Request.sibling)
 method to combine them in one step:
 
-``` python
+```python
 request.sibling(B).link(obj)
 ```
 
@@ -101,7 +101,7 @@ You've not changed anything in app `A` though. What you'd like to do is
 mount the new `B` and the old `A` into a `V2` app and have everything
 work as expected:
 
-``` python
+```python
 class V2(morepath.App):
     pass
 
@@ -128,13 +128,13 @@ But in `/v2/a` we'd like links to go to the new place in `NewB`:
 
     /v2/b/foos/3
 
-The solution is the new ability to find mount applications by *name*
+The solution is the new ability to find mount applications by _name_
 instead of by class. By the default the name is the same as the `path`
 argument you give in the `mount` directive.
 
 If you write linking code in app `A` to read like this:
 
-``` python
+```python
 request.sibling('b').link(obj)
 ```
 

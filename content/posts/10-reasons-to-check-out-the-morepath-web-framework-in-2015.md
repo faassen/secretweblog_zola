@@ -4,7 +4,7 @@ date = 2015-01-05
 slug = "10-reasons-to-check-out-the-morepath-web-framework-in-2015"
 
 [taxonomies]
-tags = ["python", "planetpython", "morepath"]
+tags = ["python", "planetpython", "morepath", "rest"]
 +++
 
 Happy new year everybody! Last year we've made a _lot_ of progress on

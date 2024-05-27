@@ -4,7 +4,7 @@ date = 2014-11-03
 slug = "morepath-07-new-inter-app-linking"
 
 [taxonomies]
-tags = ["python", "planetpython", "morepath"]
+tags = ["python", "planetpython", "morepath", "rest"]
 +++
 
 I've just released [Morepath](http://morepath.readthedocs.org) 0.7!
@@ -43,7 +43,7 @@ powerful new feature for inter-app linking: deferred links.
 
 In brief, Morepath lets you mount one application into another:
 
-``` python
+```python
 import morepath
 
 class RootApp(morepath.App)
@@ -64,7 +64,7 @@ application. When you go to `/sub`, `SubApp` takes over.
 This doesn't work just for simple sub-paths like `sub`, but also for
 parameterized paths. Consider this:
 
-``` python
+```python
 class WikiApp(morepath.App):
     def __init__(self, wiki_id):
         self.wiki_id = wiki_id
@@ -83,7 +83,7 @@ Morepath is very good at linking: it knows how to construct a link to an
 object instance. So, if you want to link to a particular `WikiPage`
 instance from within the wiki app, you'd simply write this:
 
-``` python
+```python
 request.link(some_wiki_page)
 ```
 
@@ -92,7 +92,7 @@ Just linking to the wiki page will fail, as the user app doesn't know
 how to create links to wiki pages. But you can tell it to create a link
 to an object in the wiki app explicitly:
 
-``` python
+```python
 wiki_app = request.app.child(WikiApp, username='foo')
 request.link(some_wiki_page, app=wiki_app)
 ```
@@ -100,7 +100,7 @@ request.link(some_wiki_page, app=wiki_app)
 If you are going to write a lot of such links, this can get boring.
 Morepath introduces a new `defer_links` directive to help automate this:
 
-``` python
+```python
 @UserApp.defer_links(model=WikiPage)
 def defer_links_wiki_page(app, obj):
     return app.child(WikiApp(obj.wiki_id))
@@ -113,7 +113,7 @@ in which wiki it belongs in this example.
 
 Now you can just write this in the user app to link to wiki pages:
 
-``` python
+```python
 request.link(some_wiki_page)
 ```
 

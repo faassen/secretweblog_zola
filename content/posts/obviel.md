@@ -4,7 +4,7 @@ date = 2011-11-02
 slug = "obviel"
 
 [taxonomies]
-tags = ["obviel"]
+tags = ["obviel", "rest"]
 +++
 
 ## Introduction
