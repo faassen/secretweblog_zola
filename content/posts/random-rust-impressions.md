@@ -13,6 +13,8 @@ background is mostly in dynamically typed languages like Python and
 JavaScript, though I have played with various other languages over the
 years. I thought I'd share some of my impressions of Rust.
 
+<!-- more -->
+
 # Learning Rust
 
 I'd had my eye on Rust for years until I decided to give it more serious

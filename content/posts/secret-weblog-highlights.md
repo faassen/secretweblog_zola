@@ -15,6 +15,8 @@ that I think are still relevant. So if you'd like, join me in my little
 journey through the history of my secret weblog. Warning: it's mostly
 about software development in one way or another.
 
+<!-- more -->
+
 In a few places I will brag about my uncanny ability to invent future
 web development trends just in time -- around the same time other people
 are more successfully inventing them.

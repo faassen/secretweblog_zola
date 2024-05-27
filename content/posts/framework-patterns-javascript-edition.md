@@ -13,6 +13,8 @@ yourself](@/posts/roll-your-own-frameworks.md),
 but even if you don't, understanding the design principles underlying
 them helps you evaluate and use frameworks better.
 
+<!-- more -->
+
 A few years ago I wrote a [post about
 patterns](@/posts/framework-patterns.md)
 I've seen in frameworks. In it, while I did discuss other languages, I

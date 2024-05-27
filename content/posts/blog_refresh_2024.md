@@ -6,10 +6,12 @@ date = 2024-05-26
 tags = ["blog", "rust", "python"]
 +++
 
-Let's talk a bit about the history of this blog, and more specifically the
-technology behind it.
+I've refreshed my blog again! Let's talk a bit about the history of this blog,
+and more specifically the technology behind it.
 
 I started my blog in January 2005. It's been a while.
+
+<!-- more -->
 
 ## Newsbruiser era
 

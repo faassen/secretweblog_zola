@@ -2,6 +2,7 @@
 title = "Framework Patterns"
 date = 2019-12-04
 slug = "framework-patterns"
+description = "A discussion of what patterns occur in software framework design."
 
 [taxonomies]
 tags = ["python", "planetpython", "morepath", "framework"]

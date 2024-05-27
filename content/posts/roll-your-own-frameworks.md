@@ -2,6 +2,7 @@
 title = "Roll Your Own Frameworks"
 date = 2020-05-18
 slug = "roll-your-own-frameworks"
+description = "When I build an application, I build frameworks along the way. I recently realized that not everybody thinks this is normal, so I thought I'd give a description of what I do and why I think it's a good idea."
 
 [taxonomies]
 tags = ["python", "javascript", "framework", "programming", "planetpython"]

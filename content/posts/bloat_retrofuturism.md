@@ -2,6 +2,7 @@
 title = "Bloat and Retrofuturism"
 date = 2024-05-26 18:06:00
 slug = "bloat-retrofuturism"
+description = "Developers like to complain about bloat in software. But should we feel guilty? What do to about it? Do we need software environmentalism and a retrofuturistic approach?"
 
 [taxonomies]
 tags = ["programming"]

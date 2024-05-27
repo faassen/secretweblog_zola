@@ -16,6 +16,8 @@ only work on one thing; something I had been thinking about for many
 years. I'm glad I did. I created
 [Apilar](https://github.com/faassen/apilar), an artificial life system.
 
+<!-- more -->
+
 # Artificial Life
 
 Let's first sketch the context: [artificial

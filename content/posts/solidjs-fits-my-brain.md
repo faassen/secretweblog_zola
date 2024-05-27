@@ -11,6 +11,8 @@ In this article I'm going to talk about the
 [SolidJS](https://www.solidjs.com/) frontend framework, and why I think
 it's cool and fits my brain.
 
+<!-- more -->
+
 ## React
 
 I got interested in React because of a talk by Pete Hunt at [JSConf

@@ -2,6 +2,7 @@
 title = "I Was a 1980s Teenage Programmer Part 2: Olivetti M24"
 date = 2022-07-21
 slug = "teenage-programmer-olivetti-m24"
+description = "Part two in a series about my teenage adventures learning about computers and programming in the 1980s."
 
 [taxonomies]
 tags = ["programming", "history"]

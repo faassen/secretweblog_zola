@@ -13,6 +13,8 @@ root of all evil**.
 Where did that come from? In what context was it used? Does it still
 apply?
 
+<!-- more -->
+
 # Citation needed
 
 [Looking at sources is good](https://danluu.com/dunning-kruger/). So

@@ -14,6 +14,8 @@ to see a small snapshot of what programming could be like back then. For
 some, of my generation or older, there may be recognition, but for
 others who got into programming later this might be an unknown world.
 
+<!-- more -->
+
 I had a long article sitting as a draft for a few years. Today I read
 [The Home Computer Generation](https://www.datagubbe.se/hcg/), and it
 reminded me of it. There's quite a lot of material, so I will publish it
