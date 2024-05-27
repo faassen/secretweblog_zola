@@ -2,6 +2,7 @@
 title = "Apilar: An Alife System"
 date = 2022-08-01
 slug = "apilar-an-alife-system"
+description = "I participated in a langjam. I created Apilar, an artificial life system based on a stack-based language."
 
 [taxonomies]
 tags = ["alife", "rust"]
@@ -15,8 +16,6 @@ overboard once the theme was announced: "Beautiful Assembly". I could
 only work on one thing; something I had been thinking about for many
 years. I'm glad I did. I created
 [Apilar](https://github.com/faassen/apilar), an artificial life system.
-
-<!-- more -->
 
 # Artificial Life
 
