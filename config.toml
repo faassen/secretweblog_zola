@@ -17,6 +17,7 @@ taxonomies = [{ name = "tags", feed = true }]
 
 generate_feed = true
 
+
 [search]
 include_title = true
 include_description = true
@@ -39,6 +40,7 @@ internal_level = "error"
 [extra]
 skin = "teal"
 
+show_author = true
 
 # Put all your custom variables here
 menu = [

@@ -4,7 +4,7 @@ date = 2009-12-28
 slug = "new-year-s-python-meme"
 
 [taxonomies]
-tags = ["python"]
+tags = ["python", "rest", "planetpython"]
 +++
 
 From
