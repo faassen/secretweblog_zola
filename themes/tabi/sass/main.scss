@@ -242,7 +242,8 @@ p {
     margin-top: 0.4rem;
     margin-bottom: var(--paragraph-spacing);
     font-size: 1em;
-    line-height: 2rem;
+    /* secret weblog, make the height less high */
+    line-height: 1.7rem;
 }
 
 strong {
