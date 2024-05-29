@@ -21,8 +21,11 @@ I had a long article sitting as a draft for a few years. Today I read
 reminded me of it. There's quite a lot of material, so I will publish it
 as a series. Here is part 1.
 
+Here are the other parts:
+
 - [Part 1: The Alphatronic](@/posts/teenage-programmer-alphatronic.md)
 - [Part 2: Olivetti M24](@/posts/teenage-programmer-olivetti-m24.md)
+- [Part 3: MSX-2](@/posts/teenage-programmer-msx2.md)
 
 # In a Dutch Village
 
