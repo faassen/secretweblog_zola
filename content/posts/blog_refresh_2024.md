@@ -85,6 +85,12 @@ see!
 
 All of this is tolerable enough, anyway.
 
+**Update 2024-05-30**: after some debugging it turns out the Tabi theme was
+doing something expensive when accessing the configuration. An easy fix later
+my whole blog builds in well under a second. The Tabi theme developer, who is
+extremely responsive to my feedback, has already accepted thisq fix too. That's
+more like it!
+
 ## preserving comments
 
 Newsbruiser had a comment system, and with Nikola I used Disqus. During the
