@@ -26,8 +26,9 @@ Here are the other parts:
 - [Part 1: The Alphatronic](@/posts/teenage-programmer-alphatronic.md)
 - [Part 2: Olivetti M24](@/posts/teenage-programmer-olivetti-m24.md)
 - [Part 3: MSX-2](@/posts/teenage-programmer-msx2.md)
+- [Part 4: The Call of Assembly](@posts/teenage-programmer-call-of-assembly.md)
 
-# In a Dutch Village
+## In a Dutch Village
 
 I grew up in a village in the south of the Netherlands. My father was an
 accountant who ran his own firm from an office near my house. It was
@@ -55,7 +56,7 @@ PET](https://en.wikipedia.org/wiki/Commodore_PET), owned by my uncle.
 
 ![A Commodore PET computer. My uncle had one.](/img/commodore-pet.jpg)
 
-# The Computer
+## The Computer
 
 I do know what the first computer was that I actually programmed -- the
 Triumph Adler Alphatronic. I have tried to reconstruct the model: I
@@ -82,7 +83,7 @@ speed of few megahertz. It had a monochrome screen, with amber letters
 in the standard 80x24 grid. The operating system was CP/M. But back then
 I had no idea what any of this meant. It was just the computer.
 
-# BASIC
+## BASIC
 
 My father had a [BASIC](https://en.wikipedia.org/wiki/BASIC)
 implementation for the computer on a floppy disk. He taught himself how
@@ -108,7 +109,7 @@ understood was probably 5 words. It could respond to whole words only,
 not a word in a sentence, as I didn't know how to make the program look
 inside a string yet.
 
-# Programming as Magic
+## Programming as Magic
 
 Programming back then for me involved some statements that I could
 understand, like `IF` and `FOR` and `GOTO` and `PRINT` and `A = 10`. If
@@ -128,7 +129,7 @@ variable and there was no argument passing. I did not know what a "type"
 was either, or what "mismatch" meant. These were just the mysteries of
 the machine and you learned to work with them.
 
-# Next time...
+## Next time...
 
 Thanks for reading so far! [Next
 time](@/posts/teenage-programmer-olivetti-m24.md), we'll delve into my

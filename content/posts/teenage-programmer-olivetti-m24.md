@@ -10,7 +10,7 @@ tags = ["programming", "history"]
 
 This is Part 2 of a [series](@/posts/teenage-programmer-alphatronic.md).
 
-# The Olivetti M24
+## The Olivetti M24
 
 When I was about age 11, around 1984, my father's office got a new
 computer: an Olivetti M24. Olivetti, like Triumph-Adler, started out as
@@ -38,7 +38,7 @@ on black:
 
 ![Light blue on black screen](/img/olivetti-screen.jpg)
 
-# RANDOMIZE TIMER
+## RANDOMIZE TIMER
 
 I continued my BASIC programming sessions. I had seen computer games at
 my uncle, who at some point had upgraded to a Commodore C64. The
@@ -72,7 +72,7 @@ I was elated! I am not sure when I put together that computers have a
 built-in clock and that this time taken as a number was arbitrary enough
 that it could serve as a seed for a random number generator.
 
-# User Guide
+## User Guide
 
 It's interesting to reflect on the fact that I barely spoke any English
 at this point. I had been exposed to English-spoken television with
@@ -92,7 +92,7 @@ amused to this day.
 
 ![Manual by famous Italian author "User Guide".](/img/m24-user-guide.jpg)
 
-# Information Space
+## Information Space
 
 Computers were magic, but if I cracked the magic I might be able to
 create a game. Some of the incantations I understood, and some remained
@@ -105,7 +105,7 @@ distant computer was still science fiction to me. My interformation
 space about computers the early days mostly consisted of my father and
 the User Guide.
 
-# More Olivetti Stories
+## More Olivetti Stories
 
 As to the M24, my father bought more of them for the office. He also
 acquired a second hand "luggable" computer a few years later, the
@@ -121,7 +121,9 @@ In the early 1990s I went off to college and I was gifted an old M24 for
 me to use. I remember running a LISP interpreter on it; by that time I
 was able to copy programs off the Internet to run on it.
 
-# Next time...
+## Next time...
 
-Thanks for reading part 2! Next time, we'll go into when I got an actual
-home computer.
+Thanks for reading part 2 of this
+[series](@/posts/teenage-programmer-alphatronic.md)! [Next
+time](@/posts/teenage-programmer-msx2.md), we'll go into when I got an actual
+home computer, an MSX-2.

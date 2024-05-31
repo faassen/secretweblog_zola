@@ -5,7 +5,7 @@ slug = "teenage-programmer-msx2"
 description = "Part three in a series about my teenage adventures learning about computers and programming in the 1980s: the MSX 2 computer."
 
 [taxonomies]
-tags = ["programming", "history"]
+tags = ["programming", "history", "msx"]
 +++
 
 A couple of years after the first two parts, we pick up on this series again.
@@ -172,3 +172,10 @@ even accomplished multi-colored ships by layering mono-colored sprites over
 each other, though the two sprite layers weren't always entirely in sync.
 
 [^1]: Actually [Sinterklaas](https://en.wikipedia.org/wiki/Sinterklaas)
+
+## Next time...
+
+Thanks for reading part 3 of this
+[series](@/posts/teenage-programmer-alphatronic.md)! [Next
+time](@/posts/teenage-programmer-call-of-assembly.md), we'll go deeper into the
+MSX hardware and the call to write code in assembly.
