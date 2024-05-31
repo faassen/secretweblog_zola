@@ -1,5 +1,5 @@
 +++
-title = "I Was a 1980s Teenage Programmer: The Call of Assembly"
+title = "I Was a 1980s Teenage Programmer Part 4: The Call of Assembly"
 date = 2024-05-31
 slug = "teenage-programmer-call-of-assembly"
 description = "Part four in a series about my teenage adventures learning about computers and programming in the 1980s: the call of assembly language."
