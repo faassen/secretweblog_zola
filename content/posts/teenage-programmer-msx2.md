@@ -171,11 +171,11 @@ an option by making the alien space ship move slightly more slowly. I believe I
 even accomplished multi-colored ships by layering mono-colored sprites over
 each other, though the two sprite layers weren't always entirely in sync.
 
-[^1]: Actually [Sinterklaas](https://en.wikipedia.org/wiki/Sinterklaas)
-
 ## Next time...
 
 Thanks for reading part 3 of this
 [series](@/posts/teenage-programmer-alphatronic.md)! [Next
 time](@/posts/teenage-programmer-call-of-assembly.md), we'll go deeper into the
 MSX hardware and the call to write code in assembly.
+
+[^1]: Actually [Sinterklaas](https://en.wikipedia.org/wiki/Sinterklaas)
