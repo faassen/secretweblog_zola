@@ -1,6 +1,6 @@
 +++
 paginate_by = 5 
-path = "/posts"
+# path = "/posts"
 title = "Secret Weblog"
 sort_by = "date"
 template = "section.html"

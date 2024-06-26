@@ -15,7 +15,7 @@ author = "Martijn Faassen"
 
 taxonomies = [{ name = "tags", feed = true }]
 
-generate_feed = true
+generate_feeds = true
 
 
 [search]
