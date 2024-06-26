@@ -1,6 +1,6 @@
 +++
 title = "I Was a 1980s Teenage Programmer Part 5: Achieving Assembly"
-date = 2024-06-11
+date = 2024-06-26
 slug = "teenage-programmer-achieving-assembly"
 description = "Part five in a series about my teenage adventures learning about computers and programming in the 1980s: achieving assembly"
 
