@@ -84,13 +84,22 @@ allowed_domains = [
     { directive = "media-src", domains = [
         "'self'",
     ] },
+    # note that unsafe-inline here and for style-src we break the much of the
+    # security CSP gives us. A better way is to externalize the script and
+    # create a hash for the inline script that invokes it. We don't yet know
+    # how to create that hash, zola's get_hash claims it's only for string
+    # literals but that may not be true
     { directive = "script-src", domains = [
         "'self'",
+        "'unsafe-inline'",
     ] },
     { directive = "style-src", domains = [
         "'self'",
         # inline styles won't work otherwise https://github.com/welpo/tabi/issues/320
         "'unsafe-inline'",
+    ] },
+    { directive = "connect-src", domains = [
+        "fosstodon.org",
     ] },
     { directive = "frame-src", domains = [
         "player.vimeo.com",
@@ -100,3 +109,6 @@ allowed_domains = [
 enable_csp = true
 
 invert_previous_next_article_links = true
+
+mastodon_comment_host = "fosstodon.org"
+mastodon_comment_username = "faassen"

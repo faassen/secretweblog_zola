@@ -221,6 +221,11 @@
             {% include "partials/comments.html" %}
         {% endif %}
 
+        {# mastodon comments #}
+        {% if page.extra.mastodon_comment_id %}
+            {% include "partials/mastodon_comments.html" %}
+        {% endif %}
+
     </article>
 </main>
 

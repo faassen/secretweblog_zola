@@ -6,6 +6,10 @@ description = "Part five in a series about my teenage adventures learning about 
 
 [taxonomies]
 tags = ["programming", "history", "msx", "assembly"]
+
+[extra]
+mastodon_comment_id = 112683232586199446
+
 +++
 
 This is the last part; Part 5 of a
