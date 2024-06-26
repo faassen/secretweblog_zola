@@ -5,10 +5,10 @@ slug = "teenage-programmer-achieving-assembly"
 description = "Part five in a series about my teenage adventures learning about computers and programming in the 1980s: achieving assembly"
 
 [taxonomies]
-tags = ["programming", "history", "msx", "assembly"]
+tags = ["programming", "history", "msx", "assembler"]
 
 [extra]
-
+mastodon_comment_id = 112684101991207653
 
 +++
 
@@ -24,7 +24,7 @@ I still have it:
 
 ![The book.](/img/msx-programmeren-in-machinetaal.png)
 
-The cover said "Complete cource on programming in machine language. Everything
+The cover said "Complete course on programming in machine language. Everything
 about the Z80 processor and the internal life of the MSX computer".
 
 One problem with this book was that it only covered the MSX-1. But the bigger

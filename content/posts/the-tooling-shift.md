@@ -6,6 +6,10 @@ description = "Tool maven versus language maven. Do modern development environme
 
 [taxonomies]
 tags = ["programming"]
+
+[extra]
+mastodon_comment_id = 112529877831369105
+
 +++
 
 ## I'm not a power user
