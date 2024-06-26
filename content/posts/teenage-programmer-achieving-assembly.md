@@ -8,7 +8,7 @@ description = "Part five in a series about my teenage adventures learning about 
 tags = ["programming", "history", "msx", "assembly"]
 
 [extra]
-mastodon_comment_id = 112503201253524252
+
 
 +++
 
