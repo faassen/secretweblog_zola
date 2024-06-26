@@ -3,190 +3,110 @@
   {% set mastodon_comment_url = "https://" ~ config.extra.mastodon_comment_host ~ "/@" ~ config.extra.mastodon_comment_username ~ "/" ~ page.extra.mastodon_comment_id %}
 
   <h2>Comments</h2>
-  <p>With an account on the Fediverse or Mastodon, you can respond to this <a href="{{mastodon_comment_url}}">post</a>. Since Mastodon is decentralized, you can use your existing account hosted by another Mastodon server or compatible platform if you don't have an account on this one. Known non-private replies are displayed below.</p>
-  <p>Learn how this is implemented <a class="link" href="/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/">here.</a></p>
+  <p>You can use your Mastodon account to reply to this <a
+  href="{{ mastodon_comment_url }}">post</a>. Learn how
+  this is implemented <a 
+  href="/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/">here.</a></p>
+  
+  <p><button id="replyButton" class="mastodon-button" href="{{mastodon_comment_url}}">Reply</button></p>
+  <p id="mastodon-comments-list"><button id="load-comment" class="mastodon-button">Load comments</button></p>
 
-  <p id="mastodon-comments-list"><button id="load-comment">Load comments</button></p>
-  <div id="comments-wrapper">
-    <noscript><p>Loading comments relies on JavaScript. Try enabling JavaScript and reloading, or visit <a href="{{mastodon_comment_url}}">the original post</a> on Mastodon.</p></noscript>
-  </div>
+  <dialog id=""toot-reply" class=""mastodon" data-component="dialog">
+    <h3>Reply to this post</h3>
+    <p>
+      With an account on the Fediverse or Mastodon, you can respond to this
+      post. Since Mastodon is decentralized, you can use your existing account
+      hosted by another Mastodon server or compatible platform if you don't
+      have an account on this one.
+    </p>
+    <p>Copy and paste this URL into the search field of your favorite Fediverse app or the web interface of your Mastodon server.</p>
+    <div class="copypaste">
+      <input type="text" readonly="" value="{{mastodon_comment_url}}">
+      <button class="button" id="copyButton">Copy</button>
+      <button class="button" id="cancelButton">Close</button>
+    </div>
+  </dialog>
   <noscript>You need JavaScript to view the comments.</noscript>
   <script src="/assets/js/purify.min.js"></script>
   <script type="text/javascript">
-    function escapeHtml(unsafe) {
-      return unsafe
-           .replace(/&/g, "&amp;")
-           .replace(/</g, "&lt;")
-           .replace(/>/g, "&gt;")
-           .replace(/"/g, "&quot;")
-           .replace(/'/g, "&#039;");
-    }
-    function emojify(input, emojis) {
-      let output = input;
 
-      emojis.forEach(emoji => {
-        let picture = document.createElement("picture");
+    const dialog = document.querySelector('dialog');
 
-        let source = document.createElement("source");
-        source.setAttribute("srcset", escapeHtml(emoji.url));
-        source.setAttribute("media", "(prefers-reduced-motion: no-preference)");
-
-        let img = document.createElement("img");
-        img.className = "emoji";
-        img.setAttribute("src", escapeHtml(emoji.static_url));
-        img.setAttribute("alt", `:${ emoji.shortcode }:`);
-        img.setAttribute("title", `:${ emoji.shortcode }:`);
-        img.setAttribute("width", "20");
-        img.setAttribute("height", "20");
-
-        picture.appendChild(source);
-        picture.appendChild(img);
-
-        output = output.replace(`:${ emoji.shortcode }:`, picture.outerHTML);
+    document.getElementById('replyButton').addEventListener('click', () => {
+       dialog.showModal();
       });
 
-      return output;
+    document.getElementById('copyButton').addEventListener('click', () => {
+      navigator.clipboard.writeText("{{mastodon_comment_url | safe }}");
+    });
+
+    document.getElementById('cancelButton').addEventListener('click', () => {
+      dialog.close();
+    });
+
+    dialog.addEventListener('keydown', e => {
+      if (e.key === 'Escape') dialog.close();
+    });
+
+
+    function escapeHtml(unsafe) {
+      return unsafe
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#039;");
     }
 
-    function loadComments() {
-      let commentsWrapper = document.getElementById("comments-wrapper");
-      document.getElementById("load-comment").innerHTML = "Loading";
-      fetch('https://{{ config.extra.mastodon_comment_host }}/api/v1/statuses/{{ page.extra.mastodon_comment_id }}/context')
-        .then(function(response) {
-          return response.json();
-        })
-        .then(function(data) {
-          let descendants = data['descendants'];
-          if(
-            descendants &&
-            Array.isArray(descendants) &&
-            descendants.length > 0
-          ) {
-            commentsWrapper.innerHTML = "";
+    // render date as YYYY-MM-DD HH:MM, not using the browser's locale
+    function renderDate(date) {
+        return date.getFullYear() + "-" + (date.getMonth() + 1).toString().padStart(2, '0') + "-" + date.getDate().toString().padStart(2, '0') + " " + date.getHours().toString().padStart(2, '0') + ":" + date.getMinutes().toString().padStart(2, '0');
+    }
 
-            descendants.forEach(function(status) {
-              if( status.account.display_name.length > 0 ) {
-                status.account.display_name = escapeHtml(status.account.display_name);
-                status.account.display_name = emojify(status.account.display_name, status.account.emojis);
-              } else {
-                status.account.display_name = status.account.username;
-              };
-
-              let instance = "";
-              if( status.account.acct.includes("@") ) {
-                instance = status.account.acct.split("@")[1];
-              } else {
-                instance = "{{ config.extra.mastodon_comment_host }}";
-              }
-
-              const isReply = status.in_reply_to_id !== "{{ page.extra.mastodon_comment_id }}";
-
-              let op = false;
-              if( status.account.acct == "{{ config.extra.mastodon_comment_username }}" ) {
-                op = true;
-              }
-
-              status.content = emojify(status.content, status.emojis);
-
-              let avatarSource = document.createElement("source");
-              avatarSource.setAttribute("srcset", escapeHtml(status.account.avatar));
-              avatarSource.setAttribute("media", "(prefers-reduced-motion: no-preference)");
-
-              let avatarImg = document.createElement("img");
-              avatarImg.className = "avatar";
-              avatarImg.setAttribute("src", escapeHtml(status.account.avatar_static));
-              avatarImg.setAttribute("alt", `@${ status.account.username }@${ instance } avatar`);
-
-              let avatarPicture = document.createElement("picture");
-              avatarPicture.appendChild(avatarSource);
-              avatarPicture.appendChild(avatarImg);
-
-              let avatar = document.createElement("a");
-              avatar.className = "avatar-link";
-              avatar.setAttribute("href", status.account.url);
-              avatar.setAttribute("rel", "external nofollow");
-              avatar.setAttribute("title", `View profile at @${ status.account.username }@${ instance }`);
-              avatar.appendChild(avatarPicture);
-
-              let instanceBadge = document.createElement("a");
-              instanceBadge.className = "instance";
-              instanceBadge.setAttribute("href", status.account.url);
-              instanceBadge.setAttribute("title", `@${ status.account.username }@${ instance }`);
-              instanceBadge.setAttribute("rel", "external nofollow");
-              instanceBadge.textContent = instance;
-
-              let display = document.createElement("span");
-              display.className = "display";
-              display.setAttribute("itemprop", "author");
-              display.setAttribute("itemtype", "http://schema.org/Person");
-              display.innerHTML = status.account.display_name;
-
-              let header = document.createElement("header");
-              header.className = "author";
-              header.appendChild(display);
-              header.appendChild(instanceBadge);
-
-              let permalink = document.createElement("a");
-              permalink.setAttribute("href", status.url);
-              permalink.setAttribute("itemprop", "url");
-              permalink.setAttribute("title", `View comment at ${ instance }`);
-              permalink.setAttribute("rel", "external nofollow");
-              permalink.textContent = new Date( status.created_at ).toLocaleString('en-US', {
-                dateStyle: "long",
-                timeStyle: "short",
-              });
-
-              let timestamp = document.createElement("time");
-              timestamp.setAttribute("datetime", status.created_at);
-              timestamp.appendChild(permalink);
-
-              let main = document.createElement("main");
-              main.setAttribute("itemprop", "text");
-              main.innerHTML = status.content;
-
-              let interactions = document.createElement("footer");
-              if(status.favourites_count > 0) {
-                let faves = document.createElement("a");
-                faves.className = "faves";
-                faves.setAttribute("href", `${ status.url }/favourites`);
-                faves.setAttribute("title", `Favorites from ${ instance }`);
-                faves.textContent = status.favourites_count;
-
-                interactions.appendChild(faves);
-              }
-
-              let comment = document.createElement("article");
-              comment.id = `comment-${ status.id }`;
-              comment.className = isReply ? "comment comment-reply" : "comment";
-              comment.setAttribute("itemprop", "comment");
-              comment.setAttribute("itemtype", "http://schema.org/Comment");
-              comment.appendChild(avatar);
-              comment.appendChild(header);
-              comment.appendChild(timestamp);
-              comment.appendChild(main);
-              comment.appendChild(interactions);
-
-              if(op === true) {
-                comment.classList.add("op");
-
-                avatar.classList.add("op");
-                avatar.setAttribute(
-                  "title",
-                  "Blog post author; " + avatar.getAttribute("title")
-                );
-
-                instanceBadge.classList.add("op");
-                instanceBadge.setAttribute(
-                  "title",
-                  "Blog post author: " + instanceBadge.getAttribute("title")
-                );
-              }
-
-              commentsWrapper.innerHTML += DOMPurify.sanitize(comment.outerHTML);
-            });
-          }
+    document.getElementById("load-comment").addEventListener("click", function() {
+        document.getElementById("load-comment").innerHTML = "Loading";
+        fetch('https://{{ config.extra.mastodon_comment_host }}/api/v1/statuses/{{ page.extra.mastodon_comment_id }}/context')
+          .then(function(response) {
+            return response.json();
+          })
+          .then(function(data) {
+            if(data['descendants'] &&
+               Array.isArray(data['descendants']) && 
+              data['descendants'].length > 0) {
+                document.getElementById('mastodon-comments-list').innerHTML = "";
+                data['descendants'].forEach(function(reply) {
+                  reply.account.display_name = escapeHtml(reply.account.display_name);
+                  reply.account.reply_class = reply.in_reply_to_id == "{{ page.extra.mastodon_comment_id }}" ? "reply-original" : "reply-child";
+                  reply.created_date = new Date(reply.created_at);
+                  reply.account.emojis.forEach(emoji => {
+                    reply.account.display_name = reply.account.display_name.replace(`:${emoji.shortcode}:`,
+                      `<img src="${escapeHtml(emoji.static_url)}" alt="Emoji ${emoji.shortcode}" height="20" width="20" />`);
+                  });
+                  mastodonComment =
+                    `
+<div class="mastodon-wrapper">
+  <div class="comment-level ${reply.account.reply_class}"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    <path fill="currentColor" stroke="currentColor" d="m 307,477.17986 c -11.5,-5.1 -19,-16.6 -19,-29.2 v -64 H 176 C 78.8,383.97986 -4.6936293e-8,305.17986 -4.6936293e-8,207.97986 -4.6936293e-8,94.679854 81.5,44.079854 100.2,33.879854 c 2.5,-1.4 5.3,-1.9 8.1,-1.9 10.9,0 19.7,8.9 19.7,19.7 0,7.5 -4.3,14.4 -9.8,19.5 -9.4,8.8 -22.2,26.4 -22.2,56.700006 0,53 43,96 96,96 h 96 v -64 c 0,-12.6 7.4,-24.1 19,-29.2 11.6,-5.1 25,-3 34.4,5.4 l 160,144 c 6.7,6.2 10.6,14.8 10.6,23.9 0,9.1 -3.9,17.7 -10.6,23.8 l -160,144 c -9.4,8.5 -22.9,10.6 -34.4,5.4 z" />
+  </svg></div>
+  <div class="mastodon-comment">
+    <div class="comment">
+      <div class="comment-avatar"><img src="${escapeHtml(reply.account.avatar_static)}" alt=""></div>
+      <div class="comment-author">
+        <div class="comment-author-name"><a href="${reply.account.url}" rel="nofollow">${reply.account.display_name}</a></div>
+        <div class="comment-author-reply"><a href="${reply.account.url}" rel="nofollow">${escapeHtml(reply.account.acct)}</a></div>
+      </div>
+      <div class="meta">${renderDate(reply.created_date)}</div>
+    </div>
+    <div class="comment-content">${reply.content}</div> 
+  </div>
+</div>
+`;
+                  document.getElementById('mastodon-comments-list').appendChild(DOMPurify.sanitize(mastodonComment, {'RETURN_DOM_FRAGMENT': true}));
+                });
+            } else {
+              document.getElementById('mastodon-comments-list').innerHTML = "<p>Not comments found</p>";
+            }
+          });
         });
-      }
-      document.getElementById("load-comment").addEventListener("click", loadComments);
   </script>
 </section>
