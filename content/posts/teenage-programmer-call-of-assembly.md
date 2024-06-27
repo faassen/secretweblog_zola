@@ -127,5 +127,5 @@ his face or name.
 ## Next time...
 
 Thanks for reading part 4 of this
-[series](@/posts/teenage-programmer-alphatronic.md)! Next time we'll discuss
-more experiences with the MSX and assembly.
+[series](@/posts/teenage-programmer-alphatronic.md)! [Next time](@/posts/teenage-programmer-achieving-assembly.md) we'll discuss
+me actually writing Z80 assembly code.
