@@ -994,7 +994,3 @@ do](@/posts/roll-your-own-frameworks.md), as
 larger applications need frameworks to stay coherent -- you now
 hopefully have some more concepts to work with to help you make better
 design decisions.
-
-```
-
-```
