@@ -26,8 +26,8 @@ Here are the other parts:
 - [Part 1: The Alphatronic](@/posts/teenage-programmer-alphatronic.md)
 - [Part 2: Olivetti M24](@/posts/teenage-programmer-olivetti-m24.md)
 - [Part 3: MSX-2](@/posts/teenage-programmer-msx2.md)
-- [Part 4: The Call of Assembly](@posts/teenage-programmer-call-of-assembly.md)
-- [Part 5: Achieving Assembly](@posts/teenage-programmer-achieving-assembly.md)
+- [Part 4: The Call of Assembly](@/posts/teenage-programmer-call-of-assembly.md)
+- [Part 5: Achieving Assembly](@/posts/teenage-programmer-achieving-assembly.md)
 
 ## In a Dutch Village
 
