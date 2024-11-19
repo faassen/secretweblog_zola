@@ -14,7 +14,7 @@ the years. Let's explore together.
 
 I wrote two thirds of this article and then I discovered Annalee Newitz
 was way ahead of me and [wrote about the same thing two years
-ago](http://io9.com/today-cyber-means-war-but-back-in-the-1990s-it-mean-1325671487).
+ago](https://gizmodo.com/today-cyber-means-war-but-back-in-the-1990s-it-mean-1325671487).
 Since my article has different details I decided to finish it and put it
 on my blog after all. There's plenty of room in cyberspace. But read
 Annalee Newitz's article too!
