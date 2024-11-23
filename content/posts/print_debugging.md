@@ -72,7 +72,7 @@ So to be absolutely clear, here's the workflow:
 
 You can use expressions to process data! You can format data for readability!
 You can use if statements and loops and whatever you want! Even just a dumb
-`print(here!)` is good enough to see whether something gets called at all. And
+`print("here!")` is good enough to see whether something gets called at all. And
 it's all in the programming language you already know.
 
 ## Even More Power
@@ -99,7 +99,7 @@ everything everywhere all at once.
 
 Before this somehow morphs into a [deadly best
 practice](@/posts/question_best_practices.md), I'm not saying that using more
-sophisticated tools is bad. Use them if they're there and you they fit your
+sophisticated tools is bad. Use them if they're there and they fit your
 goals. Just don't dismiss print.
 
 ## P.S. Not the first
@@ -131,7 +131,7 @@ benefit of print debugging. **Maybe print debugging is actually an optimum for
 a whole lot of scenarios?**
 
 The article ["The Evolution of Debugging: From Print Statements to Modern
-Tools"](The Evolution of Debugging: From Print Statements to Modern Tools) has
+Tools"](https://medium.com/@lala.ibadullayeva/the-evolution-of-debugging-from-print-statements-to-modern-tools-7c244cd4b7fe) has
 a good analysis of the trade-offs, and even though the title implies print
 debugging is an antiquated, primitive tool, it ends with "Don't dismiss
 traditional debugging methods".
