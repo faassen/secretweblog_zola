@@ -1,6 +1,6 @@
 
 +++
-title = "The Humble For Loop"
+title = "The Humble For Loop in JavaScript"
 date = 2024-12-10
 slug = "humble-for-loop"
 description = "Sometimes the humble for loop is what you want"
@@ -15,7 +15,12 @@ mastodon_comment_id = 113527996081665381
 I've seen some programmers try to avoid the humble `for` loop at all costs, in
 favor of more functional abstractions. I'm going to argue that the `for` loop
 is sometimes simply the best option. That doesn't mean you should always use it
--- far from it -- but it does mean you should give it due consideration.
+-- far from it -- but it does mean you should give it due consideration. The
+goal is to help develop some intuitions about this topic.
+
+I talk about readability of code in this post, but I also talk about
+performance. My argument will be that there are cases where the `for` loop
+combines readability with performance.
 
 ## JavaScript
 
@@ -33,18 +38,26 @@ for (let entry of list) {
 }
 ```
 
-where we say we want to make a new array where each entry has been transformed
-using the `transform` function, is more involved and less declarative than:
+where we say we want to make a new array from an original one where each entry
+has been transformed using the `transform` function, is more involved and less
+declarative than:
 
 ```javascript
 let result = list.map(transform)
 ```
 
-where we say the same.
+where we express the same. So using `.map()` is cool!
 
 ### Reduce
 
-But then we get to `reduce`. `reduce`, if you're not familiar with it, takes in
+I've run into JavaScript programmers who insist on using functional patterns as
+somehow superior in all cases, even though at the same time they struggled with
+implementing it. Maybe functional programming was considered a [best
+practice](https://blog.startifact.com/posts/question-best-practices/) by them?
+Perhaps being able to figure it out is considered to be a badge of being a good
+developer?
+
+Let's look at `reduce`. `.reduce()`, if you're not familiar with it, takes in
 some collection of things and condenses it down to something else. Summing all
 the numbers in a list can be implemented as `reduce`:
 
@@ -53,10 +66,10 @@ let sum  = list.reduce((total, current) => total + current, 0);
 ```
 
 This says "in order to get the sum, we add the total of everything else in the
-list to the value of the current item".
+list to the value of the current item". And we start the sum with 0.
 
 Reduce is cool, reduce is very functional, but reduce in JavaScript isn't the
-best fit for all patterns. Consider this one:
+best fit for all purposes. Consider this one:
 
 ```javascript
 let flat = list_of_lists.reduce((accumulator, list) => [...accumulator, ...list], []);
@@ -74,21 +87,20 @@ for (let entry of list) {
 }
 ```
 
-Which one is easier to understand depends on what you're used to. For me, and I
-think for a lot of developers, it varies. Sometimes it's the functional
-pattern, sometimes it's the `for` loop. In this example, I find the `for` loop
-easier to comprehend. I'd say that most people would find the comprehensibility
-of the `for` loop version to be at least equal to that of the `reduce` version.
+For me, and I think for a lot of developers, the `for` loop is easier to
+understand. While I can see that for some `reduce` might be superior in
+readability, I think we all can agree that the `for` loop is very readable.
 
-But what's more important is that the `for` loop version is more efficient. In
-my experiment the loop version was about 200 times faster on a large list of
-about 10,000 entries. The implementation with reduce constructs arrays all over
-the place, whereas the `for` loop version modifies the accumulator in-place.
-For small lists all that doesn't matter much, but if you expect larger lists,
-it's going to matter in both processing time and memory usage. And even with
-very small lists the `for` loop version is still faster.
+What is more important is that the `for` loop version is far more efficient. In
+my experiment the `for` loop version was about 200 times faster on a large list
+of about 10,000 entries. The implementation with `reduce()` constructs arrays
+all over the place, whereas the `for` loop version modifies the accumulator
+in-place. For small lists that doesn't matter much, but if you expect larger
+lists, it's going to matter in both processing time and memory usage. And even
+with very small lists the `for` loop version is still faster.
 
-You could cheat in the reduce version and modify the accumulator in place:
+You could of course cheat in the reduce version and modify the accumulator in
+place too, just like the `for` loop does:
 
 ```javascript
 let flat = list_of_lists.reduce((accumulator, list) => {
@@ -97,20 +109,24 @@ let flat = list_of_lists.reduce((accumulator, list) => {
 }, []);
 ```
 
-This code is indeed about the same performance as the `for` loop, but it
+This code has indeed about the same performance as the `for` loop, but it
 destroys the "but this code is declarative" argument. It becomes more difficult
 to understand what's going on. Mutating the argument could in fact risk
 breaking the algorithm, and reasoning about that takes mental effort I don't
-want to be spending. So, the `for` loop is a clear winner over this one from a
-readability perspective.
+want to be spending. 
 
-Yet I've run into JavaScript programmers who, insist on using `reduce` as
-somehow superior, even though at the same time they struggled with implementing
-it, and even though it's less efficient. Maybe functional programming was
-considered a [best
-practice](https://blog.startifact.com/posts/question-best-practices/).
+So, the `for` loop is a clear winner over this one from a readability
+perspective, and it's a little bit faster too, so the `for` loop wins.
 
-Use the humble `for` loop!
+### Learning the wrong lesson
+
+I don't want people to take home the wrong lesson. What we examined here were
+cases where the `for` loop version is easy to understand and implement, and I'm
+arguing you should give it serious consideration in this case.
+
+In other contexts using `reduce` makes complex code a lot more easy to
+implement and understand. Even if a `for` loop version were a lot faster, that
+very well may not be worth it in your context.
 
 ## Brief Haskell intermission
 
@@ -119,15 +135,17 @@ Haskell, using the reduce approach is perfectly fine. You have things like pure
 functional data structures (which can be combined very efficiently, like using
 a linked list with a head and a tail), and maybe a sufficiently smart compiler.
 
-But JavaScript is not Haskell. Don't worry and use the humble `for` loop.
+But JavaScript and most other languages are not Haskell. Don't worry and use
+the humble `for` loop.
 
 ## Rust
 
 Excluding languages with entirely different data structures, does this pattern
 involving `for` loops versus functional approaches hold up across languages?
 
-Rust requires JavaScript programmers to retune their intuitions, but some
-intuitions stand across most programming language.
+Rust requires JavaScript (and Python, and many other languages) programmers to
+retune their intuitions, but some intuitions stand across most programming
+languages. Let's look at this one!
 
 Rust has a `for` loop. Rust has some very nice functional facilities as well.
 They get compiled to highly efficient code.
@@ -163,7 +181,7 @@ When the `result` vector grows, it may need to reallocate. Here we avoid
 reallocations by giving it the final amount right away; we know it's going to
 be identical in length to the input list.
 
-But `map` is a lot faster. On a loop of 10000 integers it's 6 times
+But `map()` is a lot faster. On a loop of 10000 integers it's 6 times
 faster on my machine!
 
 ```rust
@@ -181,18 +199,19 @@ A few explanations are in order:
 
 * `collect()` takes an iterator and turns it back into a vector.
 
-Why is `map` so much faster? I am not sure. I suspect with the `map` option the
-Rust compiler figures out it can avoid allocations altogether by simply writing
-over the original vector, while with the loop it can't. I tried to look in the
-[compiler explorer](https://godbolt.org/z/fKEPaTdTv) but I'm not competent
-enough yet to figure it out. Maybe someone else can confirm my suspicion!
+Why is `map` so much faster? I am not sure. I suspect with the `map()` option
+the Rust compiler figures out it can avoid allocations altogether by simply
+writing over the original vector, while with the loop it can't. I tried to look
+in the [compiler explorer](https://godbolt.org/z/fKEPaTdTv) but I'm not
+competent enough yet to figure it out. Maybe someone else can confirm my
+suspicion!
 
 This is a great argument to use functional programming patterns when they're
 simple!
 
-### Reduce
+### Reduce (actually: fold)
 
-Okay, so `map` is good and we should use it when we can. Does this mean that
+Okay, so `map()` is good and we should use it when we can. Does this mean that
 with Rust we should use `reduce` rather than a `for` loop too, unlike in
 JavaScript?
 
@@ -207,13 +226,15 @@ for entry in list_of_lists {
 
 `extend()` a way to push a whole lot of items at once, like we have in Python.
 
-Note that we can't really do much with capacity as we don't know the total length of the
-flattened list in advance, so we don't bother.
+Note that we can't really do much with capacity as we don't know the total
+length of the flattened list in advance, so we don't bother.
 
 Here's the `reduce` version closest to the one we used in JavaScript:
 
 ```rust
-let flat = list_of_lists.into_iter().fold(Vec::new(), |accumulator, list| [accumulator, list].concat());
+let flat = list_of_lists.into_iter().fold(Vec::new(), 
+  |accumulator, list| [accumulator, list].concat()
+);
 ```
 
 Let's pick this one apart: 
@@ -268,14 +289,10 @@ So the pattern holds: the humble `for` loop, even in Rust, is worth your
 consideration. Use `fold()` if it makes your code easier to write, not because
 it's necessarily faster (it may well be for your purposes; measure!).
 
+### Errors
 
-
-
-
-
-
-In Rust the balance gets more complicated. Rust has a very nice system for returning error values. Let's say you have
-a for loop like this:
+Let's consider errors. Rust has a very nice system for returning error values.
+Let's consider `map()` again, but with errors.
 
 ```rust
 struct Error;
@@ -285,41 +302,43 @@ fn transform(entry: Entry) -> Result<Transformed, Error> {
 }
 
 fn transform_list(list: Vec<Entry>) -> Result<Vec<Transformed>, Error> {
-	let mut new_list = Vec::with_capacity(list.len());
+	let mut result = Vec::with_capacity(list.len());
 	for entry in list {
-		new_list.push(transform(entry)?)
+		result.push(transform(entry)?);
 	}
-	new_list
+	result
 }
 ```
 
-We can see that the `transform` function returns a `Result`, which is either a `Transformed` object (success!) or
-or a failure (some object describing the error).
+We can see that the `transform` function returns a `Result`, which is either a
+`Transformed` object (success!) or or an error (some object describing the
+error).
 
-Since transform is fallible, `transform_list` is also fallible and thus needs to return `Result` too. We either get a list that was
-successfully transformed, or an error. As soon as we have an error, we want to bail out with it. That's what the `?` operator
-after `transform(entry)?` does; it is equivalent to an if statement that checks whether the value evaluated
-is an error, and if so, it immediately bails out of the function with a return using the error value.
+Since transform is fallible, `transform_list` is also fallible and thus needs
+to return `Result` too. We either get a list that was successfully transformed,
+or an error. 
 
-So what's the `with_capacity` for? It's to make things more efficient - we know that `new_list` is 
-going to be the same size as `list`, we don't want to have to reallocate stuff as the vector grows,
-so we allocate the right amount from the start.
+As soon as we have an error, we want to bail out with it. That's what the `?`
+operator after `transform(entry)?` does; it is equivalent to an if statement
+that checks whether the value evaluated is an error, and if so, it immediately
+returns from the function using the error value.
 
-But we can write this more efficiently using `map`:
+What does this look like with `map()`?
 
 ```rust
 fn transform_list(list: Vec<Entry>) -> Result<Vec<Transformed>, Error> {
-   list.iter().map(transform).collect()
+   list.into_iter().map(transform).collect()
 }
 ```
 
-This is functionally equivalent to the above, believe it or not. First we turn the list
-into an iterator, so we can iterate through all the values in it. Then we use the `functional` map
-with the `transform` function. Then we collect it back into a vector. Normally that would be a `Vec<Result<Transformed>, Error>`; a 
-list of results - either values or error objects. But since we have declared the return
-value of the function to be `Result<Vec<Transformed>, Error>` a *different* `collect` is
-selected that short-circuits and bails out with an error as soon as the first one is found, just
-like in the for loop.
+This is functionally equivalent to the above, believe it or not. First we turn
+the list into an iterator, so we can iterate through all the values in it. Then
+we use the `functional` map with the `transform` function. Then we collect it
+back into a vector. Normally that would be a `Vec<Result<Transformed>, Error>`;
+a list of results - either values or error objects. But since we have declared
+the return value of the function to be `Result<Vec<Transformed>, Error>` a
+*different* `collect` is selected that short-circuits and bails out with an
+error as soon as the first one is found, just like in the for loop.
 
 And what about `with_capacity`? We don't need it, because the implementation is smart enough to
 ask the iterator whether it has a size hint for that, and since it's based on a vector with a known
@@ -333,12 +352,17 @@ a vast catalog of iteration possibilities (itertools), but it will get more comp
 reasoning abilities will be stretched, and while there is definitely a time and place for it, in many 
 cases the trade-offs for both the writer and reader of the code go back to the humble `for` loop.
 
-[^1]:
+## Conclusion
 
-Yes, I know
-[`flat`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat)
-exists, but not everything that involves constructing a structure does, so I'm
-using it as an example.
+So, I'm going to give some performance numbers in this article. The precise
+details of these numbers don't really matter. They will be different depending
+on the language you use and what data you're working with. Whenever there's
+merely a percentage difference in performance, that's relatively unimportant.
+Where it gets interesting is when I start to talk about 3, 10, or a 100 times
+faster, as these demonstrate real algorithmic differences that will hold up in
+many contexts, and therefore can help guide our behavior.
+
+
 
 [^2]:
  
