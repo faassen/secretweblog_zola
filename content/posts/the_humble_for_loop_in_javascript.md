@@ -56,7 +56,7 @@ where we express the same. So using `.map()` is cool!
 I've run into JavaScript programmers who insist on using functional patterns in
 all cases, even though at the same time they struggled with implementing them.
 Maybe functional programming was considered a [best
-practice](https://blog.startifact.com/posts/question-best-practices/) by them?
+practice](@/posts/question_best_practices.md) by them?
 Perhaps being able to figure it out is considered to be a badge of being a good
 developer?
 
@@ -148,8 +148,10 @@ level constructs, and computers like those, but the readability benefits are
 sometimes ignored.
 
 The intuition that `for` loops are sometimes plain better carries across to
-many other programming languages. I have another article lined up talking about
-`for` loops in Rust and I will link to it here when it's ready.
+many other programming languages. What are the trade-offs for the humble `for`
+loop in Rust? [Here is another article for your reading
+pleasure](@/posts/the_humble_for_loop_in_rust.md). You should be able to
+follow along even if you don't know Rust. 
 
 [^1]:
 
