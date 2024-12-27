@@ -7,6 +7,10 @@ description="I go on a journey to learn about a man named Quentell, and discover
 
 [taxonomies]
 tags = []
+
+[extra]
+mastodon_comment_id = 113726836079540908
+
 +++
 
 I hang out on Mastodon quite a bit. [^1] One of the most consistently engaging
@@ -390,7 +394,7 @@ Here's another entry, for Rudolf Wolf:
 > contribution to the history of modern design.
 
 Now Rudolf Wolf is apparently a Dutch designer, not German as the name might
-suggest. The Bauhaus period had his heyday before he was 14 years old. I can't
+suggest. The Bauhaus period had its heyday before he was 14 years old. I can't
 find evidence of him doing the interior design of Munich's National Theatre,
 but there was another a Rudolf Wolf who was a typeface designer who died in
 Munich in 1940, and a Rudolf Wolf who was a Munich painter. Nor can I find
