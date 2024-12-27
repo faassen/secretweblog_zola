@@ -274,7 +274,7 @@ biographical information. [^4]
 
 The main bio was on the first search hit when we look for "Quentell
 illustrator", and I found out that indeed the name is listed as "Jung-Koch
-Quentell" in their system.
+Quentell" in their system. Let's call this site X.
 
 So I decided to look more closely. So I follow a link to a seller website with
 some biographical information, with a decidedly different domain as site X. Hm,
@@ -555,7 +555,8 @@ more than just be part of the problem.
 
 [^1]: Mastodon is great. Like all systems, it has drawbacks. Many media people
 think in terms of a flat, instantly updated global state for news, run by
-corporations, so take their opinions about Mastodon with that bias in mind.
+corporations, and Mastodon isn't quite that, so take their opinions about
+Mastodon with that bias in mind.
 
 [^2]: I deliberately leave the sellers unsourced, as I don't want to get into
 trouble with them nor help them with their SEO by linking to them.
