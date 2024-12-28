@@ -156,7 +156,7 @@ hyphenation:
 
 Who are these three, then? This is F. Quentell - I ran into him earlier but he
 seemed to be from a different era; I couldn't find out much about him in
-general. Maybe that was wrong? Perhaps this biograophy is about Friedrich
+general. Maybe that was wrong? Perhaps this biography is about Friedrich
 Quentell after all?
 
 I did some more digging and found this on Amazon:
@@ -335,7 +335,7 @@ pursuade without regard for the truth. When there's not much to go on in its
 training data, an LLM tends to produce bullshit. This problem of
 "hallucination" (I think a more accurate term is
 [confabulation](https://en.wikipedia.org/wiki/Confabulation)) is well known,
-and it's inherent to the statitical nature of these systems.
+and it's inherent to the statistical nature of these systems.
 
 **So here is what I think happened**. Someone at site X was tasked to create a lot
 of biographies of designers; the site has a lot of designers. And they used
@@ -412,7 +412,7 @@ I have mixed feelings about generative AI. I am not as negative as many critics
 I see. I have had positive experiences using it for a few years now in computer
 programming. I think there's a lot of untapped entertainment potential. 
 
-An just the fact that we have machines that can use natural language - the
+And just the fact that we have machines that can use natural language - the
 first besides humans on this planet - is actually very impressive to me.
 Generative AI should lead to interesting philosophical discussions about the
 nature of intelligence, something unfortunately often lacking in both the pro
