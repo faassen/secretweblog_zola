@@ -373,7 +373,7 @@ Here's the entry for "Lyngfeldt Larsen":
 
 I can't find much about Lyngfeldt Larsen, but a Danish furniture designer named
 Kai Lyngfeldt Larsen appears to exist. The bio text seems to imply it's some
-kind husband and wife team. This is what I find elsewhere:
+kind of husband and wife team. This is what I find elsewhere:
 
 > A low, Danish lounge chair by husband-and-wife design team Tove and Edvard
 > Kindt-Larsen for France.
@@ -396,7 +396,7 @@ Here's another entry, for Rudolf Wolf:
 Now Rudolf Wolf is apparently a Dutch designer, not German as the name might
 suggest. The Bauhaus period had its heyday before he was 14 years old. I can't
 find evidence of him doing the interior design of Munich's National Theatre,
-but there was another a Rudolf Wolf who was a typeface designer who died in
+but there was another Rudolf Wolf who was a typeface designer who died in
 Munich in 1940, and a Rudolf Wolf who was a Munich painter. Nor can I find
 evidence the Dutch furniture designer Rudolf Wolf became a professor in
 Germany. But there was a Swiss astronomy professor [Rudolf
@@ -457,7 +457,7 @@ I'm Dutch. A large part of the landscape of my country would not be there
 without a lot of water management. We've had hundreds of years to figure it
 out. We have elected independent regional bodies solely charged with the
 [management of surface
-water](https://en.wikipedia.org/wiki/Water_board_(Netherlands))
+water](https://en.wikipedia.org/wiki/Water_board_(Netherlands)).
 
 Meanwhile we, humans, are letting our information landscape turn into a bog. A
 lot of effort is required if we want to keep from sinking into
@@ -521,7 +521,7 @@ Here's what the free ChatGPT has to say:
 
 Oh wow. It got it right! Unfortunately after getting that right, it starts
 freely confabulating information about Jung, Koch and Quentell. Here's what it
-has to say about Quentell in that same answer for instance [^5]:
+has to say about Quentell in that same answer for instance:
 
 > Franz Quentell (1852–1933): A publisher and entrepreneur who facilitated the
 > printing and distribution of the charts.
@@ -550,7 +550,7 @@ itself, and when I ask about "Jung-Koch Quentell" it tells me:
 > throughout Europe and were known for their detailed scientific illustrations
 > of plants and animals.
 
-Which is in fact entirely correct. It gives a glimmering of hope LLMs could be
+Which is in fact entirely correct. It gives a glimmer of hope LLMs could be
 more than just be part of the problem.
 
 [^1]: Mastodon is great. Like all systems, it has drawbacks. Many media people
