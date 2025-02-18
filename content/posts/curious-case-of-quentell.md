@@ -501,11 +501,26 @@ needs to figure out what to do about this. [^8]
 
 While the individuals may not warrant their own Wikipedia pages, the
 Jung-Koch-Quentell collective evidently had a big impact on culture, that's
-lasting until this Their works are being sold by many sellers. But Wikipedia
-doesn't mention it; I'm still half in doubt I missed something! I invite
-readers to start a Wikipedia page on this. It will have to start as a stub, but
-I'm sure if we keep digging we can find out more real information. And we
-might want to mention the bogus information floating about as well.
+lasting until this day. Their works are being sold by many sellers. But
+Wikipedia doesn't mention it; I'm still half in doubt I missed something! I
+invite readers to start a Wikipedia page on this. It will have to start as a
+stub, but I'm sure if we keep digging we can find out more real information.
+And we might want to mention the bogus information floating about as well.
+
+### Happy Update (2025-02-18)
+
+Thanks especially to the efforts of
+[Wolfgang](https://darmstadt.social/@bewo001) who even went out of his way to
+scour the internet and even visit the university library to borrow rare
+materials, we now have Wikipedia pages! Here's the one about the
+[Jung-Koch-Quentell Wall
+Charts](https://en.wikipedia.org/wiki/Jung-Koch-Quentell_Wall_Charts). One of
+the co-creators, [Gottlieb von
+Koch](https://en.wikipedia.org/wiki/Gottlieb_von_Koch) was prominent enough to
+get his own Wikipedia page. And thus this information pollution in this rare
+case caught the attention of the right people. These creators, so interested in
+the world around them and about educating children, are thus rescued from the
+bog of slop.
 
 ## Postscript 2: LLMs on Quentell
 
