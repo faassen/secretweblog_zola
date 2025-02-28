@@ -28,11 +28,12 @@ but I figured I'd take a look anyway. But when I went to the website the
 resource wasn't there. So I mailed the owner of the website, who happened to be
 a computer science professor.
 
-This professor was very friendly and immediately mailed me back [^mailing].
-Only during our conversation did I realize I was seeing his name on a *lot* of
-papers in the field. Turned out I had stumbled into talking to one of the world
-experts the field of succinct data strucures, within a few days of my discovery
-they even existed. Ignorance can bring you far.
+This professor ([Gonzalo Navarro](https://users.dcc.uchile.cl/~gnavarro/)) was
+very friendly and immediately mailed me back [^mailing] [^asked]. Only during
+our conversation did I realize I was seeing his name on a *lot* of papers in
+the field. Turned out I had stumbled into talking to one of the world experts
+the field of succinct data strucures, within a few days of my discovery they
+even existed. Ignorance can bring you far.
 
 So what are succinct data structures? If you've taken computer science courses
 in recent decades you might have, but I didn't run into them before as a
@@ -413,6 +414,9 @@ developers out there that could find interesting uses for them.
    The experiences I've had recently with professors, as well as the open
    source developers in the Rust succinct space, give me some badly needed new
    faith in humanity.
+
+[^asked]: I asked professor Navarro whether mentioning him by name was okay.
+    Now you can all email him.
 
 [^hashmaps]: I've actually run into surprisingly many programmers who don't use
     them. Then during review I find code that loops through the entire array in
