@@ -6,6 +6,9 @@ description = "An overview of a class of data structures I didn't know about!"
 
 [taxonomies]
 tags = ["computer science", "xml", "rust"]
+
+[extra]
+mastodon_comment_id = 114081872158733879
 +++
 
 ## Introduction
