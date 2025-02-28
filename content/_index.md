@@ -11,4 +11,7 @@ max_posts = 10
 
 This is Martijn Faassen's secret weblog, established 8 January 2005.
 
-Content is mostly programming related.
+Content here is mostly computer and programming related.
+
+For my rash utterances of vulnerability and strength, see
+[Hyperstate](https://hyperstate.org), my poetry blog
