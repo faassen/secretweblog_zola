@@ -370,9 +370,9 @@ the beginning described a way to store XML data using succinct data structures.
 
 It use a balanced parenthesis tree to store the XML tree. This does not allow
 one to attach information to nodes such as the XML tag information (i.e. the
-`p` in `<p>` and `</p>`). But you can attach attach information to each node by
-maintaining a spare rank/select bit vector for each tag that marks the relevant
-parenthesis with additional information.
+`p` in `<p>` and `</p>`). But you can attach information to each node by
+maintaining a sparse rank/select bit vector for each tag that marks the
+relevant parenthesis with additional information.
 
 This rank/select bit vector then allows fundamental new operations: you can
 "jump" to the first descendant node with a particular tag without having to
