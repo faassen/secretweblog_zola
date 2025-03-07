@@ -31,7 +31,7 @@ a computer science professor.
 This professor ([Gonzalo Navarro](https://users.dcc.uchile.cl/~gnavarro/)) was
 very friendly and immediately mailed me back [^mailing] [^asked]. Only during
 our conversation did I realize I was seeing his name on a *lot* of papers in
-the field. Turned out I had stumbled into talking to one of the world experts
+the field. Turned out I had stumbled into talking to one of the world experts in
 the field of succinct data strucures, within a few days of my discovery they
 even existed. Ignorance can bring you far.
 
@@ -86,7 +86,7 @@ so if you're not interested in Rust I invite you to read on as well.
 
 Consider a vector (array) of bits. For instance `[0, 1, 0, 1, 1, 0, 1, 0]`
 
-Let's consider a bit vector for a moment. What I'm going to say is pretty
+What I'm going to say is pretty
 obvious, but I think it's useful to highlight anyway. The bit vector above is 8
 entries long. This means it fits into a single byte of memory.
 
