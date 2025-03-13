@@ -398,6 +398,10 @@ less memory has performance implications all of its own. And until last
 December I had no idea they even existed! I'm sure there are a lot of
 developers out there that could find interesting uses for them.
 
+Update: if you're interested in succinct data structures I've created [a small
+Discord channel](https://discord.gg/bV5UqAU2) about them which you can join.
+
+
 [^learning]: Accept the confusion and ignorance. Accept feeling overwhelmed.
     This is how you learn new stuff.
 
