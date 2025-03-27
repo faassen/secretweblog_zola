@@ -180,11 +180,12 @@ world in the early 2000s, but I think that although standards are still
 considered important today, they're less culturally prominent.
 
 The XML culture is different: stuff needs to be specified. If it's not in a
-specification it's fully *real*. This makes the XML community move more slowly
-than the rest of the software community. I was somewhat bemused to hear talk in
-2024 about updating the RESTXQ spec, an XQuery based web framework standard,
-first discussed in 2012, to make use of language features like hashmaps and
-arrays, now that they had been finally added to XPath/XQuery in 2017.
+specification it's not fully *real*. This makes the XML community move more
+slowly than the rest of the software community. I was somewhat bemused to hear
+talk in 2024 about updating the RESTXQ spec, an XQuery based web framework
+standard, first discussed in 2012, to make use of language features like
+hashmaps and arrays, now that they had been finally added to XPath/XQuery in
+2017.
 
 These XML specifications go deep, they build on each other, they are solid. If
 you value solid foundations that will stand the test of time, the XML world has
