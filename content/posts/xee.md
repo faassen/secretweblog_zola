@@ -12,7 +12,7 @@ mastodon_comment_id = 114235009789423262
 +++
 
 For the last two years I've been working on a programming language
-implementation in Rust named Xee. Xee standards for "XML Execution Engine" and
+implementation in Rust named Xee. Xee stands for "XML Execution Engine" and
 it supports modern versions of XPath and XSLT. Those are programming languages,
 and yes, that's XML stuff. 
 
