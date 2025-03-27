@@ -11,6 +11,8 @@ tags = []
 Once every while I use this blog to look for new challenges! Let me give a
 brief description of who I am, what I can do, and what I enjoy doing.
 
+<!-- more -->
+
 I'm Martijn Faassen, a freelance software engineer based in the Netherlands.
 I've been working in this capacity for almost 20 years now. I can safely say I
 have deep experience developing software, from web development to systems
