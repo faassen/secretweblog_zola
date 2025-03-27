@@ -6,6 +6,9 @@ description = "I announce Xee, the implementation of XPath and XSLT in Rust that
 
 [taxonomies]
 tags = ["xml", "rust", "xpath", "lxml"]
+
+[extra]
+mastodon_comment_id = 114235009789423262
 +++
 
 For the last two years I've been working on a programming language
