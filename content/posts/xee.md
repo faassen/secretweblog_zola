@@ -273,7 +273,7 @@ on [XSLT and XQuery Serialization
 3.0](https://www.w3.org/TR/xslt-xquery-serialization-30/), which describes
 options for how to serialize XML and various other things.
 
-Of course all of this builds on the XML specification itself, [Extensive Markup
+Of course all of this builds on the XML specification itself, [Extensible Markup
 Language (XML) 1.0 (Fifth Edition)](https://www.w3.org/TR/xml/), extended with
 namespaces, in [Namespaces in XML 1.0](https://www.w3.org/TR/REC-xml-names/).
 
