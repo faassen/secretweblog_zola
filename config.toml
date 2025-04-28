@@ -54,6 +54,7 @@ encode_plaintext_email = true
 feed_icon = true
 
 socials = [
+    { name = "mastodon", url = "https://hachyderm.io/@faassen", icon = "mastodon" },
     { name = "github", url = "https://github.com/faassen/", icon = "github" },
 ]
 
