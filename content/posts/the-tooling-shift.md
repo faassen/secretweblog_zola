@@ -69,7 +69,7 @@ learning the tooling.
 
 But something has shifted over the course of the last 10 years. For myself, I
 can date a major transition exactly, as I tweeted about it at the time. I've
-since left Twitter for [mastodon](https://fosstodon.org/@faassen), so I'll
+since left Twitter for [mastodon](https://hachyderm.io/@faassen), so I'll
 quote my tweet here. This is from January 27, 2017:
 
 > I used atom ide, prettier, mobx, pony orm for the first time for a project

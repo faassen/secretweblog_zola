@@ -99,7 +99,7 @@ allowed_domains = [
         "'unsafe-inline'",
     ] },
     { directive = "connect-src", domains = [
-        "fosstodon.org",
+        "hachyderm.io",
     ] },
     { directive = "frame-src", domains = [
         "player.vimeo.com",
@@ -110,5 +110,5 @@ enable_csp = true
 
 invert_previous_next_article_links = true
 
-mastodon_comment_host = "fosstodon.org"
+mastodon_comment_host = "hachyderm.io"
 mastodon_comment_username = "faassen"

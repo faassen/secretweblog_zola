@@ -592,4 +592,4 @@ Wolf](https://en.wikipedia.org/wiki/Max_Wolf).
 
 [^7]: I am sure you can find it.
 
-[^8]: I have a few ideas myself. Hit me up via email or [Mastodon](https://fosstodon.org/@faassen).
+[^8]: I have a few ideas myself. Hit me up via email or [Mastodon](https://hachyderm.io/@faassen).
