@@ -3,6 +3,9 @@ title = "Becoming More"
 date = 2026-02-11
 slug = "becoming_more"
 description = "Empowering developers in ways that matter."
+
+[extra]
+mastodon_comment_id = 116052615619796944
 +++
 
 ## Introduction
