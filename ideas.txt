@@ -1,0 +1,5 @@
+I wrote about the piles of abstractions [a few years ago](https://blog.startifact.com/posts/bloat-retrofuturism/).
+
+There's an interesting tension in the current era. AI is causing a massive *expansion* of computing resource usage. And this expansion is actually putting more pressure on individual computation devices, where both GPUs and memories are getting a lot more expensive. 
+
+So while we have an expansion of computation the pressure on us to 
