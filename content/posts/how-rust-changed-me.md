@@ -42,7 +42,7 @@ struct Human {
 
 The fields of the `Human` struct [^struct] can vary independently from each
 other, and we have to deal with all possible combinations: all possible first
-names and last names, combined. The *product* of their combinations, to to
+names and last names, combined. The *product* of their combinations, so to
 speak.
 
 But it turns out there's another type thing that's been around forever but that
@@ -164,7 +164,7 @@ if something {
 Rust has dynamic dispatch, if you ask for it. It also has the powered up version
 of conditional dispatch I already discussed: match on enums. It has conditional
 dispatch too - that's just [a special
-case][https://docs.rs/bool/latest/bool/enum.Boolean.html].
+case](https://docs.rs/bool/latest/bool/enum.Boolean.html).
 
 There's another type of dispatch that Rust makes you think about: dispatch
 that's statically compiled.
